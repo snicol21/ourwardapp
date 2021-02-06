@@ -1,6 +1,7 @@
 import HeroCard from "../components/cards/HeroCard"
+import InfoCard from "../components/cards/InfoCard"
 
-export const dataSundayMeetings: HeroCard = {
+export const dataSundayMeeting: HeroCard = {
   id: 1,
   title: "Sunday Meetings",
   subTitle: "Schedule, Broadcasts & Sign Ups",
@@ -10,6 +11,20 @@ export const dataSundayMeetings: HeroCard = {
     width: 100,
     height: 197,
   },
-  color: "string",
   href: "/sunday-meetings",
 }
+
+export const dataInfoCards: InfoCard[] = [
+  {
+    id: 1,
+    title: "Temple & Family History Basket",
+    href: "/",
+    hidden: false,
+  },
+  {
+    id: 2,
+    title: "Bishop Mobile",
+    href: "/",
+    hidden: false,
+  },
+]

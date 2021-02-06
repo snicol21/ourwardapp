@@ -11,7 +11,6 @@ type HeroCard = {
     width: number
     height: number
   }
-  color: string
   href: string
   passHref?: boolean
 }
