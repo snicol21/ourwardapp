@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const PrimaryButton = ({ children, disabled = false, href = "", passHref = false, className = "" }) => {
+const LightButton = ({ children, disabled = false, href = "", passHref = false, className = "" }) => {
   return (
     <Link href={href} passHref={passHref}>
       <button
@@ -13,4 +13,4 @@ const PrimaryButton = ({ children, disabled = false, href = "", passHref = false
     </Link>
   )
 }
-export default PrimaryButton
+export default LightButton
