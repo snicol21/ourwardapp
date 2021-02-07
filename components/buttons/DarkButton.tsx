@@ -6,7 +6,7 @@ const DarkButton = ({ children, disabled = false, href = "", passHref = false, c
       <button
         disabled={disabled}
         type="button"
-        className={`focus:outline-none ${className} bg-primary border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-white hover:bg-gray-50`}
+        className={`focus:outline-none ${className} bg-primary border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-white hover:bg-primary-700`}
       >
         {children}
       </button>

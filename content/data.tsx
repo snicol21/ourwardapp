@@ -32,13 +32,13 @@ export const dataInfoCards: IInfoCard[] = [
 export const dataFaceCards: IFaceCard[] = [
   {
     id: "f-bish",
-    title: "Bishop Harman",
+    title: "Bishop\xa0Harman",
     subTitle: "Bishop",
     images: [
       {
         id: "f-bish-img",
         src: "/images/bishopric/bishop.png",
-        alt: "Bishop Harman",
+        alt: "Bishop\xa0Harman",
         width: 100,
         height: 100,
       },
@@ -48,20 +48,20 @@ export const dataFaceCards: IFaceCard[] = [
   },
   {
     id: "f-cns",
-    title: "Bro. Wheeler or Bro. Hammon",
+    title: "Bro.\xa0Wheeler or Bro.\xa0Hammon",
     subTitle: "Counselor",
     images: [
       {
         id: "f-cns-img1",
         src: "/images/bishopric/first_counselor.png",
-        alt: "Bro. Wheeler",
+        alt: "Bro.\xa0Wheeler",
         width: 100,
         height: 100,
       },
       {
         id: "f-cns-img2",
         src: "/images/bishopric/second_counselor.png",
-        alt: "Bro. Hammon",
+        alt: "Bro.\xa0Hammon",
         width: 100,
         height: 100,
       },
