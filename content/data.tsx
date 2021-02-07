@@ -43,7 +43,8 @@ export const dataFaceCards: IFaceCard[] = [
         height: 100,
       },
     ],
-    href: "/",
+    href: "https://calendly.com/ssr3-bishop/bishop",
+    calendly: true,
     hidden: false,
   },
   {
@@ -66,7 +67,8 @@ export const dataFaceCards: IFaceCard[] = [
         height: 100,
       },
     ],
-    href: "/",
+    href: "https://calendly.com/ssr3rdward/counselor",
+    calendly: true,
     hidden: false,
   },
 ]

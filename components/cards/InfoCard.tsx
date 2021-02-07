@@ -1,4 +1,4 @@
-import LightButton from "../buttons/LightButton"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IInfoCard } from "../layout/Interfaces"
 
 const InfoCard = ({ ...card }: IInfoCard) => {
@@ -8,9 +8,9 @@ const InfoCard = ({ ...card }: IInfoCard) => {
         <div className="w-full flex flex-wrap items-center justify-center sm:justify-between">
           <h2 className="text-md font-bold text-white text-center w-full pb-5 sm:pb-0 sm:text-left sm:w-auto sm:text-lg">{card.title}</h2>
           <div className="flex items-center">
-            <LightButton href={card.href} passHref={!!card.passHref}>
+            <PrimaryButton href={card.href} passHref={!!card.passHref} type="light">
               Learn More
-            </LightButton>
+            </PrimaryButton>
           </div>
         </div>
       </div>

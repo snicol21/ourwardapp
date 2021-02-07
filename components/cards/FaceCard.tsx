@@ -1,4 +1,4 @@
-import DarkButton from "../buttons/DarkButton"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IFaceCard, IImage } from "../layout/Interfaces"
 
 const FaceCard = ({ ...card }: IFaceCard) => {
@@ -19,9 +19,9 @@ const FaceCard = ({ ...card }: IFaceCard) => {
         <div className="text-primary font-semibold">{card.subTitle}</div>
         <h3 className="text-2xl text-center font-bold pb-5">{card.title}</h3>
       </div>
-      <DarkButton href={card.href} passHref={!!card.passHref} className="px-12">
+      <PrimaryButton type="dark" href={card.href} passHref={!!card.passHref} calendly={!!card.calendly} className="px-12">
         Schedule
-      </DarkButton>
+      </PrimaryButton>
     </div>
   )
 }

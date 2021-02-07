@@ -13,6 +13,7 @@ export type IFaceCard = {
   images: IImage[]
   href: string
   passHref?: boolean
+  calendly?: boolean
   hidden: boolean
 }
 
@@ -21,6 +22,7 @@ export type IInfoCard = {
   title: string
   href: string
   passHref?: boolean
+  calendly?: boolean
   hidden: boolean
 }
 
@@ -31,4 +33,5 @@ export type IHeroCard = {
   image: IImage
   href: string
   passHref?: boolean
+  calendly?: boolean
 }

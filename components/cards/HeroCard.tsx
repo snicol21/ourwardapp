@@ -1,4 +1,4 @@
-import LightButton from "../buttons/LightButton"
+import PrimaryButton from "../buttons/PrimaryButton"
 import Image from "next/image"
 import { IHeroCard } from "../layout/Interfaces"
 
@@ -14,9 +14,9 @@ const HeroCard = ({ ...card }: IHeroCard) => {
           </div>
         </div>
         <div className="flex items-center">
-          <LightButton href={card.href} passHref={!!card.passHref} className="px-16 py-2 mt-5 md:mt-0 lg:py-4">
+          <PrimaryButton type="light" href={card.href} passHref={!!card.passHref} className="px-16 py-2 mt-5 md:mt-0 lg:py-4">
             View
-          </LightButton>
+          </PrimaryButton>
         </div>
       </div>
     </div>
