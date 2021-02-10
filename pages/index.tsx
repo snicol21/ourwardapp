@@ -12,7 +12,6 @@ function Home() {
     <Layout>
       <Head>
         <title>Maples 3rd Ward</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <HeroCard {...dataSundayMeeting} />
