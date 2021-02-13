@@ -1,11 +1,12 @@
 import Head from "next/head"
-import { dataSundayMeeting, dataInfoCards, dataFaceCards } from "../content/data"
+import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards } from "../content/data"
 import Layout from "../components/layout/Layout"
-import { IFaceCard, IInfoCard } from "../components/layout/Interfaces"
+import { IFaceCard, IInfoCard, IMiniCard } from "../components/layout/Interfaces"
 import HeroCard from "../components/cards/HeroCard"
 import InfoCard from "../components/cards/InfoCard"
 import FaceCard from "../components/cards/FaceCard"
 import SectionHeader from "../components/headers/SectionHeader"
+import MiniCard from "../components/cards/MiniCard"
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <HeroCard {...dataSundayMeeting} />
       </div>
       <div className="pt-20">
+        <SectionHeader title="Announcements" />
         {dataInfoCards
           .filter((card) => !card.hidden)
           .map((card: IInfoCard) => (
@@ -33,6 +35,15 @@ function Home() {
             .map((card: IFaceCard) => (
               <div key={card.id} className="pt-5 flex-1 w-full sm:mx-2 md:mx-4">
                 <FaceCard {...card} />
+              </div>
+            ))}
+        </div>
+        <div className="flex flex-col justify-between flex-wrap sm:flex-row sm:-mx-1 md:-mx-4">
+          {dataMiniCards
+            .filter((card) => !card.hidden)
+            .map((card: IMiniCard) => (
+              <div key={card.id} className="pt-5 flex-1 w-full sm:mx-2 md:mx-4">
+                <MiniCard {...card} />
               </div>
             ))}
         </div>

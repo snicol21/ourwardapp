@@ -9,6 +9,7 @@
     "format": "prettier --config ./.prettierrc --write \"**/*.{ts,tsx,json,md,scss,css}\""
   },
   "dependencies": {
+    "@headlessui/react": "^0.3.0",
     "next": "10.0.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",

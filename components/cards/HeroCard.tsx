@@ -1,10 +1,10 @@
-import PrimaryButton from "../buttons/PrimaryButton"
+import Button from "../buttons/Button"
 import Image from "next/image"
 import { IHeroCard } from "../layout/Interfaces"
 
 const HeroCard = ({ ...card }: IHeroCard) => {
   return (
-    <div className="bg-gradient-to-r from-primary-900 via-primary-700 to-primary-500 rounded-lg shadow-xl overflow-hidden">
+    <div className="bg-gradient-to-r from-primary-900 via-primary-700 to-primary-500 rounded-lg shadow-xl">
       <div className="flex flex-wrap justify-center p-6 sm:p-12 md:p-14 lg:p-16 xl:px-28">
         <div className="flex items-center md:flex-1">
           <Image key={card.image.id} src={card.image.src} alt={card.image.alt || ""} width={card.image.width} height={card.image.height} />
@@ -14,9 +14,9 @@ const HeroCard = ({ ...card }: IHeroCard) => {
           </div>
         </div>
         <div className="flex items-center">
-          <PrimaryButton type="light" href={card.href} passHref={!!card.passHref} className="px-16 py-2 mt-5 md:mt-0 lg:py-4">
+          <Button type="light" href={card.href} className="px-16 py-2 mt-5 md:mt-0 lg:py-4">
             View
-          </PrimaryButton>
+          </Button>
         </div>
       </div>
     </div>

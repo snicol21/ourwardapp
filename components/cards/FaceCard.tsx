@@ -1,9 +1,9 @@
-import PrimaryButton from "../buttons/PrimaryButton"
+import Button from "../buttons/Button"
 import { IFaceCard, IImage } from "../layout/Interfaces"
 
 const FaceCard = ({ ...card }: IFaceCard) => {
   return (
-    <div className="flex flex-col justify-between items-center rounded-lg shadow-xl overflow-hidden p-8 h-full">
+    <div className="flex flex-col bg-white justify-between items-center rounded-lg shadow-xl p-8 h-full">
       <div className="flex flex-col items-center">
         <div className="flex -space-x-4 pb-5">
           {card.images.map((image: IImage) => (
@@ -19,9 +19,9 @@ const FaceCard = ({ ...card }: IFaceCard) => {
         <div className="text-primary font-semibold">{card.subTitle}</div>
         <h3 className="text-2xl text-center font-bold pb-5">{card.title}</h3>
       </div>
-      <PrimaryButton type="dark" href={card.href} passHref={!!card.passHref} calendly={!!card.calendly} className="px-12">
+      <Button type="dark" href={card.href} className="px-12">
         Schedule
-      </PrimaryButton>
+      </Button>
     </div>
   )
 }
