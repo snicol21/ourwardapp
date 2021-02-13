@@ -69,9 +69,9 @@ const MenuButton = ({ children, styles, refs }) => {
                 <div className="py-1">
                   {refs.map((href: IHref) =>
                     href.calendly ? (
-                      <CalendlyMenuItem label={href.label} url={href.url} />
+                      <CalendlyMenuItem key={href.label} label={href.label} url={href.url} />
                     ) : (
-                      <LinkMenuItem label={href.label} url={href.url} external={!!href.external} />
+                      <LinkMenuItem key={href.label} label={href.label} url={href.url} external={!!href.external} />
                     )
                   )}
                 </div>
@@ -85,7 +85,7 @@ const MenuButton = ({ children, styles, refs }) => {
 }
 const CalendlyButton = ({ children, styles, url, disabled }) => {
   return (
-    <button disabled={disabled} type="button" className={styles} onClick={() => openPopupWidget({ url } as PopupWidgetOptions)}>
+    <button disabled={disabled} type="button" className={styles} onClick={() => openPopupWidget({ url, pageSettings: {} } as PopupWidgetOptions)}>
       {children}
     </button>
   )
