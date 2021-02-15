@@ -1,12 +1,11 @@
-import { IHeroCard, IInfoCard, IFaceCard, IMiniCard } from "../components/layout/Interfaces"
+import { IHeroCard, IInfoCard, IFaceCard, IMiniCard, IImageCard } from "../components/layout/Interfaces"
 
 export const dataSundayMeeting: IHeroCard = {
-  id: "s",
   title: "Sunday Meetings",
   subTitle: "Schedule, Broadcasts & Sign Ups",
+  button: "View",
   image: {
-    id: "s-img",
-    src: "/images/jesuschrist.png",
+    src: "/images/hero-cards/jesuschrist.png",
     alt: "Jesus Christ",
     width: 100,
     height: 197,
@@ -18,16 +17,16 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IInfoCard[] = [
   {
-    id: "i-temp",
     title: "Temple & Family History Basket",
+    button: "Learn More",
     href: {
       url: "/",
     },
     hidden: false,
   },
   {
-    id: "i-mob",
     title: "Bishop Mobile",
+    button: "Learn More",
     href: {
       url: "/",
     },
@@ -37,13 +36,12 @@ export const dataInfoCards: IInfoCard[] = [
 
 export const dataFaceCards: IFaceCard[] = [
   {
-    id: "f-bish",
     title: "Bishop\xa0Harman",
     subTitle: "Bishop",
+    button: "Schedule",
     images: [
       {
-        id: "f-bish-img",
-        src: "/images/bishopric/bishop.png",
+        src: "/images/face-cards/bishop.png",
         alt: "Bishop\xa0Harman",
         width: 100,
         height: 100,
@@ -56,20 +54,18 @@ export const dataFaceCards: IFaceCard[] = [
     hidden: false,
   },
   {
-    id: "f-cns",
     title: "Bro.\xa0Wheeler or Bro.\xa0Hammon",
     subTitle: "Counselor",
+    button: "Schedule",
     images: [
       {
-        id: "f-cns-img1",
-        src: "/images/bishopric/first_counselor.png",
+        src: "/images/face-cards/first_counselor.png",
         alt: "Bro.\xa0Wheeler",
         width: 100,
         height: 100,
       },
       {
-        id: "f-cns-img2",
-        src: "/images/bishopric/second_counselor.png",
+        src: "/images/face-cards/second_counselor.png",
         alt: "Bro.\xa0Hammon",
         width: 100,
         height: 100,
@@ -85,17 +81,17 @@ export const dataFaceCards: IFaceCard[] = [
 
 export const dataMiniCards: IMiniCard[] = [
   {
-    id: "m-temp",
     title: "Temple Recommend",
     subTitle: "Interview",
+    button: "Schedule",
     href: [
       {
-        url: "https://calendly.com/ssr3-bishop/bishop",
+        url: "https://calendly.com/ssr3rdward/temple",
         label: "Expired less than 6 months",
         calendly: true,
       },
       {
-        url: "https://calendly.com/ssr3-bishop/bishop",
+        url: "https://calendly.com/ssr3-bishop/temple",
         label: "Expired 6 months or more",
         calendly: true,
       },
@@ -103,9 +99,9 @@ export const dataMiniCards: IMiniCard[] = [
     hidden: false,
   },
   {
-    id: "m-youth",
     title: "Youth Interview",
     subTitle: "Interview",
+    button: "Schedule",
     href: [
       {
         url: "https://calendly.com/ssr3rdward/youth-interview",
@@ -121,12 +117,47 @@ export const dataMiniCards: IMiniCard[] = [
     hidden: false,
   },
   {
-    id: "m-visit",
     title: "Bishopric Visit",
     subTitle: "Visit",
+    button: "Schedule",
     href: {
       url: "https://calendly.com/ssr3rdward/bishopric-visit",
       calendly: true,
+    },
+    hidden: false,
+  },
+]
+
+export const dataImageCards: IImageCard[] = [
+  {
+    title: "New Move-in",
+    subTitle: "Welcome",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+    button: "Learn More",
+    image: {
+      src: "/images/image-cards/new-movein.webp",
+      alt: "New Move-in",
+    },
+    href: {
+      url: "/welcome",
+      calendly: false,
+    },
+    hidden: false,
+  },
+  {
+    title: "Temple & Family History",
+    subTitle: "Activities",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+    button: "Learn More",
+    image: {
+      src: "/images/image-cards/temple-and-family-history.webp",
+      alt: "New Move-in",
+    },
+    href: {
+      url: "/temple-and-family-history",
+      calendly: false,
     },
     hidden: false,
   },

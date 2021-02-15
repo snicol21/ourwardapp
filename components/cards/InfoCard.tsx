@@ -9,7 +9,7 @@ const InfoCard = ({ ...card }: IInfoCard) => {
           <h2 className="text-md font-bold text-white text-center w-full pb-5 sm:pb-0 sm:text-left sm:w-auto sm:text-lg">{card.title}</h2>
           <div className="flex items-center">
             <Button href={card.href} type="light">
-              Learn More
+              {card.button}
             </Button>
           </div>
         </div>

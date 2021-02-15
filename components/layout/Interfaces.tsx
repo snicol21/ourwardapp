@@ -12,11 +12,10 @@ export type IIcon = {
 }
 
 export type IImage = {
-  id: string
   src: string
   alt?: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
 
 export type IHref = {
@@ -27,33 +26,43 @@ export type IHref = {
 }
 
 export type IFaceCard = {
-  id: string
   title: string
   subTitle: string
   images: IImage[]
+  button: string
+  href: IHref
+  hidden: boolean
+}
+
+export type IImageCard = {
+  title: string
+  subTitle: string
+  description: string
+  image: IImage
+  button: string
   href: IHref
   hidden: boolean
 }
 
 export type IInfoCard = {
-  id: string
   title: string
+  button: string
   href: IHref
   hidden: boolean
 }
 
 export type IHeroCard = {
-  id: string
   title: string
   subTitle?: string
   image: IImage
+  button: string
   href: IHref
 }
 
 export type IMiniCard = {
-  id: string
   title: string
   subTitle: string
+  button: string
   href: IHref | IHref[]
   hidden: boolean
 }
