@@ -6,7 +6,7 @@ import { IMiniCard } from "../components/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
   title: "Sunday Meetings",
-  subTitle: "Schedule, Broadcasts & Sign Ups",
+  subtitle: "Schedule, Broadcasts & Sign Ups",
   button: "View",
   image: {
     src: "/images/hero-cards/jesuschrist.png",
@@ -41,7 +41,7 @@ export const dataInfoCards: IInfoCard[] = [
 export const dataFaceCards: IFaceCard[] = [
   {
     title: "Bishop\xa0Harman",
-    subTitle: "Bishop",
+    subtitle: "Bishop",
     button: "Schedule",
     images: [
       {
@@ -59,7 +59,7 @@ export const dataFaceCards: IFaceCard[] = [
   },
   {
     title: "Bro.\xa0Wheeler or Bro.\xa0Hammon",
-    subTitle: "Counselor",
+    subtitle: "Counselor",
     button: "Schedule",
     images: [
       {
@@ -86,7 +86,7 @@ export const dataFaceCards: IFaceCard[] = [
 export const dataMiniCards: IMiniCard[] = [
   {
     title: "Temple Recommend",
-    subTitle: "Interview",
+    subtitle: "Interview",
     button: "Schedule",
     href: [
       {
@@ -104,7 +104,7 @@ export const dataMiniCards: IMiniCard[] = [
   },
   {
     title: "Youth Interview",
-    subTitle: "Interview",
+    subtitle: "Interview",
     button: "Schedule",
     href: [
       {
@@ -122,7 +122,7 @@ export const dataMiniCards: IMiniCard[] = [
   },
   {
     title: "Bishopric Visit",
-    subTitle: "Visit",
+    subtitle: "Visit",
     button: "Schedule",
     href: {
       url: "https://calendly.com/ssr3rdward/bishopric-visit",
@@ -135,7 +135,7 @@ export const dataMiniCards: IMiniCard[] = [
 export const dataImageCards: IImageCard[] = [
   {
     title: "New Move-in",
-    subTitle: "Welcome",
+    subtitle: "Welcome",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     button: "Learn More",
@@ -151,7 +151,7 @@ export const dataImageCards: IImageCard[] = [
   },
   {
     title: "Temple & Family History",
-    subTitle: "Activities",
+    subtitle: "Activities",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     button: "Learn More",
