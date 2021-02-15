@@ -1,6 +1,14 @@
 import Button from "../buttons/Button"
 import Image from "next/image"
-import { IHeroCard } from "../layout/Interfaces"
+import { IImage, IHref } from "../shared/Interfaces"
+
+export type IHeroCard = {
+  title: string
+  subTitle?: string
+  image: IImage
+  button: string
+  href: IHref
+}
 
 const HeroCard = ({ ...card }: IHeroCard) => {
   return (

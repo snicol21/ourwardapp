@@ -1,13 +1,12 @@
 import Head from "next/head"
 import Layout from "../components/layout/Layout"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../content/data"
-import { IFaceCard, IImageCard, IInfoCard, IMiniCard } from "../components/layout/Interfaces"
 import SectionHeader from "../components/headers/SectionHeader"
 import HeroCard from "../components/cards/HeroCard"
-import InfoCard from "../components/cards/InfoCard"
-import FaceCard from "../components/cards/FaceCard"
-import MiniCard from "../components/cards/MiniCard"
-import ImageCard from "../components/cards/ImageCard"
+import InfoCard, { IInfoCard } from "../components/cards/InfoCard"
+import FaceCard, { IFaceCard } from "../components/cards/FaceCard"
+import MiniCard, { IMiniCard } from "../components/cards/MiniCard"
+import ImageCard, { IImageCard } from "../components/cards/ImageCard"
 
 function Home() {
   return (

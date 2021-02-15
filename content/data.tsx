@@ -1,4 +1,8 @@
-import { IHeroCard, IInfoCard, IFaceCard, IMiniCard, IImageCard } from "../components/layout/Interfaces"
+import { IFaceCard } from "../components/cards/FaceCard"
+import { IHeroCard } from "../components/cards/HeroCard"
+import { IImageCard } from "../components/cards/ImageCard"
+import { IInfoCard } from "../components/cards/InfoCard"
+import { IMiniCard } from "../components/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
   title: "Sunday Meetings",
@@ -11,7 +15,7 @@ export const dataSundayMeeting: IHeroCard = {
     height: 197,
   },
   href: {
-    url: "/sunday-meetings",
+    url: "/sunday",
   },
 }
 

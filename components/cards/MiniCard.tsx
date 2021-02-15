@@ -1,5 +1,13 @@
 import Button from "../buttons/Button"
-import { IMiniCard } from "../layout/Interfaces"
+import { IHref } from "../shared/Interfaces"
+
+export type IMiniCard = {
+  title: string
+  subTitle: string
+  button: string
+  href: IHref | IHref[]
+  hidden: boolean
+}
 
 const MiniCard = ({ ...card }: IMiniCard) => {
   return (

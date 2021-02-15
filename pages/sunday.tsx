@@ -1,11 +1,11 @@
 import Layout from "../components/layout/Layout"
 
-function SundayMeetings() {
+function Sunday() {
   return (
     <Layout>
-      <div>Sunday Meetings</div>
+      <div>Sunday</div>
     </Layout>
   )
 }
 
-export default SundayMeetings
+export default Sunday

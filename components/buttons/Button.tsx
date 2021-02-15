@@ -1,9 +1,17 @@
 import Link from "next/link"
 import { openPopupWidget } from "react-calendly"
-import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
-import { IButton, IHref } from "../layout/Interfaces"
-import Icon from "../Icon"
 import { Menu, Transition } from "@headlessui/react"
+import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
+import { IHref } from "../shared/Interfaces"
+import Icon from "../shared/Icon"
+
+export type IButton = {
+  children: React.ReactNode
+  disabled?: boolean
+  href?: IHref | IHref[]
+  className?: string
+  type?: "dark" | "light"
+}
 
 const Button = ({ children, href = { url: "", calendly: false }, disabled = false, className = "", type = "dark" }: IButton) => {
   const baseStyles = `focus:outline-none ${className} border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium `

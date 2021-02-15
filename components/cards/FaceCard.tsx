@@ -1,5 +1,14 @@
 import Button from "../buttons/Button"
-import { IFaceCard, IImage } from "../layout/Interfaces"
+import { IHref, IImage } from "../shared/Interfaces"
+
+export type IFaceCard = {
+  title: string
+  subTitle: string
+  images: IImage[]
+  button: string
+  href: IHref
+  hidden: boolean
+}
 
 const FaceCard = ({ ...card }: IFaceCard) => {
   return (

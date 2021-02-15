@@ -1,4 +1,7 @@
-import { IIcon } from "./layout/Interfaces"
+export type IIcon = {
+  name: "chevron-down" | ""
+  className?: string
+}
 
 const Icon = ({ name = "", className = "" }: IIcon) => {
   const getIcon = () => {

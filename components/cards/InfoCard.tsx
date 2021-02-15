@@ -1,5 +1,12 @@
 import Button from "../buttons/Button"
-import { IInfoCard } from "../layout/Interfaces"
+import { IHref } from "../shared/Interfaces"
+
+export type IInfoCard = {
+  title: string
+  button: string
+  href: IHref
+  hidden: boolean
+}
 
 const InfoCard = ({ ...card }: IInfoCard) => {
   return (
