@@ -4,7 +4,7 @@ import { IImage, IHref } from "../shared/Interfaces"
 
 export type IHeroCard = {
   title: string
-  subTitle?: string
+  subtitle?: string
   image: IImage
   button: string
   href: IHref
@@ -17,8 +17,8 @@ const HeroCard = ({ ...card }: IHeroCard) => {
         <div className="flex items-center md:flex-1">
           <Image key={card.image.src} src={card.image.src} alt={card.image.alt || ""} width={card.image.width} height={card.image.height} />
           <div className="w-full px-4 md:px-10 lg:px-16 xl:px-24">
-            <h2 className="text-lg font-extrabold text-white sm:text-4xl">{card.title}</h2>
-            {card.subTitle && <h4 className="mt-1 leading-6 text-primary-200">{card.subTitle}</h4>}
+            <h2 className="text-xl font-extrabold text-white sm:text-4xl">{card.title}</h2>
+            {card.subtitle && <h4 className="mt-1 leading-6 text-white">{card.subtitle}</h4>}
           </div>
         </div>
         <div className="flex items-center">

@@ -3,7 +3,7 @@ import { IHref, IImage } from "../shared/Interfaces"
 
 export type IFaceCard = {
   title: string
-  subTitle: string
+  subtitle: string
   images: IImage[]
   button: string
   href: IHref
@@ -25,7 +25,7 @@ const FaceCard = ({ ...card }: IFaceCard) => {
             />
           ))}
         </div>
-        <div className="text-primary font-semibold">{card.subTitle}</div>
+        <div className="text-primary font-semibold">{card.subtitle}</div>
         <h3 className="text-2xl text-center font-bold pb-5">{card.title}</h3>
       </div>
       <Button type="dark" href={card.href} className="px-12">
