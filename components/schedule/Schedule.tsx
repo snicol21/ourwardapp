@@ -43,7 +43,7 @@ const Schedule = ({ date, times }: ISchedule) => {
     <>
       <SectionHeader title={date.dateFormatted} />
       {times.map((time) => (
-        <>
+        <div key={time.time}>
           <Divider className="mt-8 md:mt-12 lg:mt-14" />
           <div className="pt-8">
             <div className={`inline-flex items-center px-8 py-1 rounded-full text-lg font-semibold ${getColor[time.color]}`}>{time.time}</div>
@@ -52,31 +52,33 @@ const Schedule = ({ date, times }: ISchedule) => {
                 .filter((event) => event.repeat.includes(date.weekOfTheMonth))
                 .map((event) =>
                   event.image ? (
-                    <ImageCard
-                      key={event.title}
-                      title={event.title}
-                      subtitle={event.subtitle}
-                      paragraph={event.paragraph}
-                      image={event.image}
-                      button={event.button}
-                      buttonColor={time.color}
-                      href={event.href}
-                    />
+                    <div key={event.title} className="py-3 w-full">
+                      <ImageCard
+                        title={event.title}
+                        subtitle={event.subtitle}
+                        paragraph={event.paragraph}
+                        image={event.image}
+                        button={event.button}
+                        buttonColor={time.color}
+                        href={event.href}
+                      />
+                    </div>
                   ) : (
-                    <MiniCard
-                      key={event.title}
-                      title={event.title}
-                      subtitle={event.subtitle}
-                      paragraph={event.paragraph}
-                      button={event.button}
-                      buttonColor={time.color}
-                      href={event.href}
-                    />
+                    <div key={event.title} className="py-3 w-full">
+                      <MiniCard
+                        title={event.title}
+                        subtitle={event.subtitle}
+                        paragraph={event.paragraph}
+                        button={event.button}
+                        buttonColor={time.color}
+                        href={event.href}
+                      />
+                    </div>
                   )
                 )}
             </div>
           </div>
-        </>
+        </div>
       ))}
     </>
   )
