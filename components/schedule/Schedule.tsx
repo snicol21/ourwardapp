@@ -31,6 +31,13 @@ export type IScheduleEvent = {
   image?: IImage
 }
 
+const getColor = {
+  primary: "bg-primary-100 text-primary-800",
+  blue: "bg-blue-100 text-blue-800",
+  red: "bg-red-100 text-red-800",
+  green: "bg-green-100 text-green-800",
+}
+
 const Schedule = ({ date, times }: ISchedule) => {
   return (
     <>
@@ -39,15 +46,14 @@ const Schedule = ({ date, times }: ISchedule) => {
         <>
           <Divider className="mt-8 md:mt-12 lg:mt-14" />
           <div className="pt-8">
-            <div className={`inline-flex items-center px-8 py-1 rounded-full text-lg font-semibold bg-${time.color}-100 text-${time.color}-800`}>
-              {time.time}
-            </div>
+            <div className={`inline-flex items-center px-8 py-1 rounded-full text-lg font-semibold ${getColor[time.color]}`}>{time.time}</div>
             <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5">
               {time.events
                 .filter((event) => event.repeat.includes(date.weekOfTheMonth))
                 .map((event) =>
                   event.image ? (
                     <ImageCard
+                      key={event.title}
                       title={event.title}
                       subtitle={event.subtitle}
                       paragraph={event.paragraph}
@@ -58,6 +64,7 @@ const Schedule = ({ date, times }: ISchedule) => {
                     />
                   ) : (
                     <MiniCard
+                      key={event.title}
                       title={event.title}
                       subtitle={event.subtitle}
                       paragraph={event.paragraph}

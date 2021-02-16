@@ -14,10 +14,25 @@ export type IButton = {
   type?: "dark" | "light"
 }
 
+const getColor = {
+  dark: {
+    primary: "bg-primary-500 hover:bg-primary-700",
+    blue: "bg-blue-500 hover:bg-blue-700",
+    red: "bg-red-500 hover:bg-red-700",
+    green: "bg-green-500 hover:bg-green-700",
+  },
+  light: {
+    primary: "text-primary-600 hover:bg-primary-50",
+    blue: "text-blue-600 hover:bg-blue-50",
+    red: "text-red-600 hover:bg-red-50",
+    green: "text-green-600 hover:bg-green-50",
+  },
+}
+
 const Button = ({ children, color = "primary", href = { url: "", calendly: false }, disabled = false, className = "", type = "dark" }: IButton) => {
   const baseStyles = `focus:outline-none ${className} border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium `
-  const dark = `bg-${color}-500 text-white hover:bg-${color}-700`
-  const light = `bg-white text-${color}-600 hover:bg-${color}-50`
+  const dark = `${getColor.dark[color]} text-white`
+  const light = `${getColor.light[color]} bg-white`
   let styles: string
   switch (type) {
     case "dark":
@@ -100,7 +115,7 @@ const CalendlyButton = ({ children, styles, url, disabled }) => {
   )
 }
 const LinkButton = ({ children, styles, url, external, disabled }) => {
-  return !!external ? (
+  return external ? (
     <a href={url} target="_blank">
       <button disabled={disabled} type="button" className={styles}>
         {children}
@@ -135,7 +150,7 @@ const LinkMenuItem = ({ label, url, external }) => {
   return (
     <Menu.Item>
       {({ active }) =>
-        !!external ? (
+        external ? (
           <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} styles`}>
             {label}
           </a>
