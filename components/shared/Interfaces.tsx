@@ -12,4 +12,4 @@ export type IHref = {
   calendly?: boolean
 }
 
-export type IButtonColor = "primary" | "blue" | "red" | "green"
+export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
