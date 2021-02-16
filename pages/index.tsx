@@ -14,7 +14,9 @@ function Home() {
       <Head>
         <title>Maples 3rd Ward</title>
       </Head>
-      <HeroCard {...dataSundayMeeting} />
+      <div className="pt-16">
+        <HeroCard {...dataSundayMeeting} />
+      </div>
       {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Announcements" subtitle="Find out more details of some of the upcoming events and activities." />

@@ -2,21 +2,22 @@ import Link from "next/link"
 import { openPopupWidget } from "react-calendly"
 import { Menu, Transition } from "@headlessui/react"
 import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
-import { IHref } from "../shared/Interfaces"
+import { IHref, IButtonColor } from "../shared/Interfaces"
 import Icon from "../shared/Icon"
 
 export type IButton = {
   children: React.ReactNode
+  color?: IButtonColor
   disabled?: boolean
   href?: IHref | IHref[]
   className?: string
   type?: "dark" | "light"
 }
 
-const Button = ({ children, href = { url: "", calendly: false }, disabled = false, className = "", type = "dark" }: IButton) => {
+const Button = ({ children, color = "primary", href = { url: "", calendly: false }, disabled = false, className = "", type = "dark" }: IButton) => {
   const baseStyles = `focus:outline-none ${className} border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium `
-  const dark = "bg-primary text-white hover:bg-primary-700"
-  const light = "bg-white text-primary-600 hover:bg-primary-50"
+  const dark = `bg-${color}-500 text-white hover:bg-${color}-700`
+  const light = `bg-white text-${color}-600 hover:bg-${color}-50`
   let styles: string
   switch (type) {
     case "dark":
@@ -99,8 +100,14 @@ const CalendlyButton = ({ children, styles, url, disabled }) => {
   )
 }
 const LinkButton = ({ children, styles, url, external, disabled }) => {
-  return (
-    <Link href={url} passHref={external}>
+  return !!external ? (
+    <a href={url} target="_blank">
+      <button disabled={disabled} type="button" className={styles}>
+        {children}
+      </button>
+    </a>
+  ) : (
+    <Link href={url}>
       <button disabled={disabled} type="button" className={styles}>
         {children}
       </button>
@@ -124,19 +131,20 @@ const CalendlyMenuItem = ({ label, url }) => {
   )
 }
 const LinkMenuItem = ({ label, url, external }) => {
+  const styles = "flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer"
   return (
     <Menu.Item>
-      {({ active }) => (
-        <Link href={url} passHref={external}>
-          <a
-            className={`${
-              active ? "bg-gray-100 text-gray-900" : "text-gray-700"
-            } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer`}
-          >
+      {({ active }) =>
+        !!external ? (
+          <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} styles`}>
             {label}
           </a>
-        </Link>
-      )}
+        ) : (
+          <Link href={url}>
+            <a className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} styles`}>{label}</a>
+          </Link>
+        )
+      }
     </Menu.Item>
   )
 }

@@ -1,17 +1,19 @@
 import Button from "../buttons/Button"
-import { IImage, IHref } from "../shared/Interfaces"
+import { IImage, IHref, IButtonColor } from "../shared/Interfaces"
 
 export type IImageCard = {
   title: string
   subtitle: string
-  description: string
+  paragraph?: string
   image: IImage
   button: string
+  buttonColor?: IButtonColor
   href: IHref
-  hidden: boolean
+  hidden?: boolean
 }
 
 const ImageCard = ({ ...card }: IImageCard) => {
+  const buttonColor = card.buttonColor ? card.buttonColor : "primary"
   return (
     <>
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -23,11 +25,11 @@ const ImageCard = ({ ...card }: IImageCard) => {
             <div className="text-primary font-semibold">{card.subtitle}</div>
             <a href="#" className="block mt-2">
               <p className="text-xl font-semibold text-gray-900">{card.title}</p>
-              <p className="mt-3 text-base text-gray-500">{card.description}</p>
+              {card.paragraph && <p className="mt-3 text-base text-gray-500">{card.paragraph}</p>}
             </a>
           </div>
           <div className="pt-6 text-center md:text-left">
-            <Button type="dark" href={card.href} className="px-16">
+            <Button type="dark" color={buttonColor} href={card.href} className="px-16">
               {card.button}
             </Button>
           </div>

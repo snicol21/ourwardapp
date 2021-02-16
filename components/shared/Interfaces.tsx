@@ -11,3 +11,5 @@ export type IHref = {
   external?: boolean
   calendly?: boolean
 }
+
+export type IButtonColor = "primary" | "blue" | "red" | "green"

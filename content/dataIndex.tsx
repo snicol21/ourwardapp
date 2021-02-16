@@ -136,7 +136,7 @@ export const dataImageCards: IImageCard[] = [
   {
     title: "New Move-in",
     subtitle: "Welcome",
-    description:
+    paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     button: "Learn More",
     image: {
@@ -152,7 +152,7 @@ export const dataImageCards: IImageCard[] = [
   {
     title: "Temple & Family History",
     subtitle: "Activities",
-    description:
+    paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     button: "Learn More",
     image: {
