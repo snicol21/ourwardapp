@@ -1,5 +1,4 @@
 import Button from "../buttons/Button"
-import { IEventModal } from "../modals/EventModal"
 import { IHref, IButtonColor } from "../shared/Interfaces"
 
 export type IInfoCard = {
