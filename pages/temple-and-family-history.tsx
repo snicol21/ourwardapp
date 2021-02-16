@@ -17,7 +17,7 @@ function TempleAndFamilyHistory() {
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </Button>
-        <SectionHeader title="Temple &amp; Family History" />
+        <SectionHeader title="Our mission for Temple &amp; Family History" />
       </Layout>
     </>
   )

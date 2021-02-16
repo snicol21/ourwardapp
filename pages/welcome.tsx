@@ -17,7 +17,7 @@ function Welcome() {
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </Button>
-        <SectionHeader title="Welcome" />
+        <SectionHeader title="Welcome to the Maples 3rd Ward" />
       </Layout>
     </>
   )
