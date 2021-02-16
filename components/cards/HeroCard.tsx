@@ -23,12 +23,10 @@ const HeroCard = ({ ...card }: IHeroCard) => {
           <h2 className="text-base font-semibold uppercase tracking-wider text-primary-600">{card.subtitle}</h2>
           <p className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">{card.title}</p>
           {card.paragraph && <p className="mt-3 text-lg text-gray-600">{card.paragraph}</p>}
-          <div className="mt-2 md:mt-8">
-            <div className="flex items-center">
-              <Button type="dark" color={buttonColor} href={card.href} className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4">
-                {card.button}
-              </Button>
-            </div>
+          <div className="mt-2 md:mt-8 text-center sm:text-left">
+            <Button type="dark" color={buttonColor} href={card.href} className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4">
+              {card.button}
+            </Button>
           </div>
         </div>
       </div>
