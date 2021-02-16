@@ -6,13 +6,12 @@ import { IMiniCard } from "../components/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
   title: "Sunday Meetings",
-  subtitle: "Schedule, Broadcasts & Sign Ups",
+  subtitle: "Maples 3rd Ward",
+  paragraph: "Schedule, Broadcasts & Sign Ups",
   button: "View",
   image: {
-    src: "/images/hero-cards/jesuschrist.png",
-    alt: "Jesus Christ",
-    width: 100,
-    height: 197,
+    src: "/images/hero-cards/church-building.png",
+    alt: "Meetinghouse",
   },
   href: {
     url: "/sunday",
