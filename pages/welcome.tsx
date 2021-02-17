@@ -13,7 +13,7 @@ function Welcome() {
       </Head>
       <PageHeader title="Welcome" />
       <Layout>
-        <Button type="link" className="absolute top-5" href={{ url: "/" }}>
+        <Button type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </Button>
