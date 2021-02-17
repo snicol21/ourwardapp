@@ -1,5 +1,5 @@
 import Button from "../buttons/Button"
-import { IImage, IHref, IButtonColor } from "../shared/Interfaces"
+import { IImage, IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IImageCard = {
   title: string
@@ -8,8 +8,9 @@ export type IImageCard = {
   image: IImage
   button: string
   buttonColor?: IButtonColor
-  href: IHref
   hidden?: boolean
+  href?: IHref
+  modal?: IModal
 }
 
 const ImageCard = ({ ...card }: IImageCard) => {

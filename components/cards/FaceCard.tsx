@@ -7,8 +7,8 @@ export type IFaceCard = {
   images: IImage[]
   button: string
   buttonColor?: IButtonColor
-  href: IHref
   hidden?: boolean
+  href: IHref
 }
 
 const FaceCard = ({ ...card }: IFaceCard) => {
@@ -21,7 +21,7 @@ const FaceCard = ({ ...card }: IFaceCard) => {
             <img
               key={image.src}
               style={{ height: image.height, width: image.width }}
-              className="relative z-30 inline-block rounded-full ring-2 ring-primary"
+              className="relative inline-block rounded-full ring-2 ring-primary"
               src={image.src}
               alt={image.alt || ""}
             />

@@ -10,30 +10,44 @@ export const dataSundayMeeting: IHeroCard = {
   paragraph: "Schedule, Broadcasts & Sign Ups",
   button: "View",
   image: {
-    src: "/images/hero-cards/church-building.png",
+    src: "/images/hero-cards/church-building.jpg",
     alt: "Meetinghouse",
   },
   href: {
     url: "/sunday",
   },
+  type: "dark",
 }
 
 export const dataInfoCards: IInfoCard[] = [
   {
     title: "Temple & Family History Basket",
     button: "Learn More",
+    hidden: false,
     href: {
       url: "/",
     },
-    hidden: false,
   },
   {
     title: "Bishop Mobile",
     button: "Learn More",
-    href: {
-      url: "/",
-    },
     hidden: false,
+    modal: {
+      type: "event",
+      data: {
+        title: "Bishop Mobile",
+        subtitle: "Ward Activity",
+        image: {
+          src: "/images/hero-cards/church-building.jpg",
+          alt: "Meetinghouse",
+        },
+        date: "Saturday, February 13, 2021",
+        time: "2:00 PM - 4:00 PM",
+        location: "Maples 3rd Ward",
+        details:
+          "Valentine's Day is on it's way! And so is the Bishop Mobile! Be on the lookup this Saturday, the 13th. We'll start our valentine distributing trek at 2pm",
+      },
+    },
   },
 ]
 

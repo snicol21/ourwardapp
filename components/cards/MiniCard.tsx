@@ -1,5 +1,5 @@
 import Button from "../buttons/Button"
-import { IHref, IButtonColor } from "../shared/Interfaces"
+import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IMiniCard = {
   title: string
@@ -7,8 +7,9 @@ export type IMiniCard = {
   paragraph?: string
   button: string
   buttonColor?: IButtonColor
-  href: IHref | IHref[]
   hidden?: boolean
+  href?: IHref | IHref[]
+  modal?: IModal
 }
 
 const MiniCard = ({ ...card }: IMiniCard) => {

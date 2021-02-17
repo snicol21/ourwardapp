@@ -1,9 +1,12 @@
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { openPopupWidget } from "react-calendly"
 import { Menu, Transition } from "@headlessui/react"
 import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
-import { IHref, IButtonColor } from "../shared/Interfaces"
+import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 import Icon from "../shared/Icon"
+import Overlay from "../shared/Overlay"
+import EventModal from "../modals/EventModal"
 
 export type IButton = {
   children: React.ReactNode
@@ -12,6 +15,7 @@ export type IButton = {
   href?: IHref | IHref[]
   className?: string
   type?: "dark" | "light" | "link"
+  modal?: IModal
 }
 
 const getColor = {
@@ -37,8 +41,22 @@ const getColor = {
     gray: "text-gray-700 hover:text-gray-500",
   },
 }
+const getModal = (modal: IModal) => {
+  switch (modal.type) {
+    case "event":
+      return <EventModal {...modal} />
+  }
+}
 
-const Button = ({ children, color = "primary", href = { url: "", calendly: false }, disabled = false, className = "", type = "dark" }: IButton) => {
+const Button = ({
+  children,
+  color = "primary",
+  href = { url: "", calendly: false },
+  disabled = false,
+  className = "",
+  type = "dark",
+  modal = undefined,
+}: IButton) => {
   const baseStyles = `${className} font-medium focus:outline-none border border-transparent rounded-md inline-flex items-center text-base`
   let styles: string
   switch (type) {
@@ -53,7 +71,13 @@ const Button = ({ children, color = "primary", href = { url: "", calendly: false
       styles = `${baseStyles} ${getColor.dark[color]} px-6 py-3 shadow text-white`
   }
 
-  if (Array.isArray(href)) {
+  if (modal) {
+    return (
+      <ModalButton button={children} styles={styles} disabled={disabled}>
+        {getModal(modal)}
+      </ModalButton>
+    )
+  } else if (Array.isArray(href)) {
     return (
       <MenuButton styles={styles} refs={href}>
         {children}
@@ -169,5 +193,69 @@ const LinkMenuItem = ({ label, url, external }) => {
         )
       }
     </Menu.Item>
+  )
+}
+const ModalButton = ({ button, children, styles, disabled }) => {
+  const [showModal, setShowModal] = useState(false)
+  const hideBodyScroll = (hide: boolean) => {
+    if (typeof document !== `undefined`) {
+      const setOverFlowY = (value) => (document.getElementsByTagName("body")[0].style.overflowY = value)
+      hide ? setOverFlowY("hidden") : setOverFlowY("auto")
+    }
+  }
+  const toggleModal = () => {
+    hideBodyScroll(!showModal)
+    setShowModal(!showModal)
+  }
+  const node = useRef(null)
+  const handleClickOutside = (e) => {
+    if (node.current && node.current.contains(e.target)) {
+      return
+    }
+    hideBodyScroll(false)
+    setShowModal(false)
+  }
+  useEffect(() => {
+    if (showModal) {
+      document.addEventListener("mousedown", handleClickOutside)
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  })
+  return (
+    <>
+      <button disabled={disabled} type="button" className={styles} onClick={toggleModal}>
+        {button}
+      </button>
+      <Transition show={showModal}>
+        <div className="fixed z-10 inset-0 overflow-y-auto">
+          <div className="flex items-start justify-center min-h-screen pt-12 text-center sm:block sm:p-0">
+            <Overlay />
+            <div
+              ref={node}
+              className="inline-block align-bottom sm:m-4 sm:my-8 sm:align-middle sm:max-w-xl sm:w-full"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-headline"
+            >
+              <Transition.Child
+                className="transform transition-all bg-white text-left overflow-hidden shadow-xl sm:rounded-lg"
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                {children}
+              </Transition.Child>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </>
   )
 }

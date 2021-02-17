@@ -13,3 +13,21 @@ export type IHref = {
 }
 
 export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
+
+export type IModalEventData = {
+  title: string
+  subtitle?: string
+  image?: IImage
+  button?: string
+  buttonColor?: IButtonColor
+  href?: IHref
+  date: string
+  time: string
+  location?: string
+  details?: string
+}
+
+export type IModal = {
+  type: "event"
+  data: IModalEventData
+}

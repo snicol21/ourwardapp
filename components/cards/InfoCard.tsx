@@ -1,12 +1,13 @@
 import Button from "../buttons/Button"
-import { IHref, IButtonColor } from "../shared/Interfaces"
+import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IInfoCard = {
   title: string
   button?: string
   buttonColor?: IButtonColor
-  href?: IHref
   hidden?: boolean
+  href?: IHref
+  modal?: IModal
 }
 
 const InfoCard = ({ ...card }: IInfoCard) => {
@@ -18,7 +19,7 @@ const InfoCard = ({ ...card }: IInfoCard) => {
           <h2 className="text-md font-bold text-white text-center w-full pb-5 sm:pb-0 sm:text-left sm:w-auto sm:text-lg">{card.title}</h2>
           {card.button && (
             <div className="flex items-center">
-              <Button type="light" color={buttonColor} href={card.href}>
+              <Button type="light" color={buttonColor} href={card.href} modal={card.modal}>
                 {card.button}
               </Button>
             </div>
