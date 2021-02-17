@@ -33,12 +33,12 @@ export const dataInfoCards: IInfoCard[] = [
     button: "Learn More",
     hidden: false,
     modal: {
-      type: "event",
+      type: "announcement",
       data: {
         title: "Bishop Mobile",
         subtitle: "Ward Activity",
         image: {
-          src: "/images/hero-cards/church-building.jpg",
+          src: "/images/announcements/bishop-mobile.jpg",
           alt: "Meetinghouse",
         },
         date: "Saturday, February 13, 2021",

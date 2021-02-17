@@ -15,3 +15,10 @@ export function getNextDayOfWeek(date: Date, dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 
     weekOfTheMonth: Math.floor(resultDate.getDate() / 7),
   }
 }
+
+export const hideBodyScroll = (hide: boolean) => {
+  if (typeof document !== `undefined`) {
+    const setOverFlowY = (value) => (document.getElementsByTagName("body")[0].style.overflowY = value)
+    hide ? setOverFlowY("hidden") : setOverFlowY("auto")
+  }
+}

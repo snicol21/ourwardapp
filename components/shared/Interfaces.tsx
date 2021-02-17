@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react"
+
 export type IImage = {
   src: string
   alt?: string
@@ -14,7 +16,7 @@ export type IHref = {
 
 export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
 
-export type IModalEventData = {
+export type IModalAnnouncementData = {
   title: string
   subtitle?: string
   image?: IImage
@@ -28,6 +30,13 @@ export type IModalEventData = {
 }
 
 export type IModal = {
-  type: "event"
-  data: IModalEventData
+  type: "announcement"
+  data: IModalAnnouncementData
+}
+
+export type IModalWrapper = {
+  id: string
+  children: React.ReactNode
+  showModal: boolean
+  setShowModal: Dispatch<SetStateAction<boolean>>
 }

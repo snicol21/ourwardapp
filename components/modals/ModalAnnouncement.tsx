@@ -1,15 +1,19 @@
+import { Transition } from "@headlessui/react"
+import { useEffect, useRef } from "react"
+import Icon from "../shared/Icon"
 import { IModal } from "../shared/Interfaces"
+import { hideBodyScroll } from "../shared/Utilities"
 
-const EventModal = ({ ...modal }: IModal) => {
-  const { title, subtitle, image, button, buttonColor, href, date, time, location, details } = modal.data
+const ModalAnnouncement = ({ type, data }: IModal) => {
+  const { title, subtitle, image, button, buttonColor, href, date, time, location, details } = data
   return (
-    <>
+    <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
       {image && (
         <div className="flex flex-shrink-0">
-          <img className="h-24 w-full object-cover lg:h-32" src={image.src} alt={image.alt || ""} />
+          <img className="h-24 w-full object-cover object-top lg:h-40" src={image.src} alt={image.alt || ""} />
         </div>
       )}
-      <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+      <div className="bg-white shadow overflow-hidden">
         <div className="px-4 py-5 sm:px-6">
           <h3 className="text-2xl leading-6 font-semibold text-black">{title}</h3>
           {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
@@ -43,8 +47,8 @@ const EventModal = ({ ...modal }: IModal) => {
           </dl>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
-export default EventModal
+export default ModalAnnouncement

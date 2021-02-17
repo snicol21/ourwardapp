@@ -1,12 +1,13 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { openPopupWidget } from "react-calendly"
 import { Menu, Transition } from "@headlessui/react"
 import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
 import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 import Icon from "../shared/Icon"
-import Overlay from "../shared/Overlay"
-import EventModal from "../modals/EventModal"
+import ModalAnnouncement from "../modals/ModalAnnouncement"
+import { hideBodyScroll } from "../shared/Utilities"
+import ModalWrapper from "../modals/ModalWrapper"
 
 export type IButton = {
   children: React.ReactNode
@@ -41,12 +42,6 @@ const getColor = {
     gray: "text-gray-700 hover:text-gray-500",
   },
 }
-const getModal = (modal: IModal) => {
-  switch (modal.type) {
-    case "event":
-      return <EventModal {...modal} />
-  }
-}
 
 const Button = ({
   children,
@@ -73,8 +68,8 @@ const Button = ({
 
   if (modal) {
     return (
-      <ModalButton button={children} styles={styles} disabled={disabled}>
-        {getModal(modal)}
+      <ModalButton styles={styles} disabled={disabled} modal={modal}>
+        {children}
       </ModalButton>
     )
   } else if (Array.isArray(href)) {
@@ -195,67 +190,27 @@ const LinkMenuItem = ({ label, url, external }) => {
     </Menu.Item>
   )
 }
-const ModalButton = ({ button, children, styles, disabled }) => {
+const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)
-  const hideBodyScroll = (hide: boolean) => {
-    if (typeof document !== `undefined`) {
-      const setOverFlowY = (value) => (document.getElementsByTagName("body")[0].style.overflowY = value)
-      hide ? setOverFlowY("hidden") : setOverFlowY("auto")
+  const Modal = () => {
+    switch (modal.type) {
+      case "announcement":
+        return <ModalAnnouncement {...modal} />
     }
   }
   const toggleModal = () => {
     hideBodyScroll(!showModal)
     setShowModal(!showModal)
   }
-  const node = useRef(null)
-  const handleClickOutside = (e) => {
-    if (node.current && node.current.contains(e.target)) {
-      return
-    }
-    hideBodyScroll(false)
-    setShowModal(false)
-  }
-  useEffect(() => {
-    if (showModal) {
-      document.addEventListener("mousedown", handleClickOutside)
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  })
+
   return (
     <>
       <button disabled={disabled} type="button" className={styles} onClick={toggleModal}>
-        {button}
+        {children}
       </button>
-      <Transition show={showModal}>
-        <div className="fixed z-10 inset-0 overflow-y-auto">
-          <div className="flex items-start justify-center min-h-screen pt-12 text-center sm:block sm:p-0">
-            <Overlay />
-            <div
-              ref={node}
-              className="inline-block align-bottom sm:m-4 sm:my-8 sm:align-middle sm:max-w-xl sm:w-full"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-headline"
-            >
-              <Transition.Child
-                className="transform transition-all bg-white text-left overflow-hidden shadow-xl sm:rounded-lg"
-                enter="ease-out duration-300"
-                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                enterTo="opacity-100 translate-y-0 sm:scale-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-              >
-                {children}
-              </Transition.Child>
-            </div>
-          </div>
-        </div>
-      </Transition>
+      <ModalWrapper id={modal.title} showModal={showModal} setShowModal={setShowModal}>
+        <Modal />
+      </ModalWrapper>
     </>
   )
 }
