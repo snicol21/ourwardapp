@@ -1,8 +1,4 @@
-import { Transition } from "@headlessui/react"
-import { useEffect, useRef } from "react"
-import Icon from "../shared/Icon"
 import { IModal } from "../shared/Interfaces"
-import { hideBodyScroll } from "../shared/Utilities"
 
 const ModalAnnouncement = ({ type, data }: IModal) => {
   const { title, subtitle, image, button, buttonColor, href, date, time, location, details } = data
