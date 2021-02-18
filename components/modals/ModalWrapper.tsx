@@ -4,25 +4,6 @@ import Icon from "../shared/Icon"
 import { IModalWrapper } from "../shared/Interfaces"
 import { hideBodyScroll } from "../shared/Utilities"
 
-const transitionClassNames = {
-  overlay: {
-    enter: "ease-out duration-300",
-    enterFrom: "opacity-0",
-    enterTo: "opacity-100",
-    leave: "ease-in duration-200",
-    leaveFrom: "opacity-100",
-    leaveTo: "opacity-0",
-  },
-  content: {
-    enter: "ease-out duration-300",
-    enterFrom: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95",
-    enterTo: "opacity-100 translate-y-0 sm:scale-100",
-    leave: "ease-in duration-200",
-    leaveFrom: "opacity-100 translate-y-0 sm:scale-100",
-    leaveTo: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95",
-  },
-}
-
 const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) => {
   const modalContent = useRef(null)
 
@@ -50,14 +31,21 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
       toggleModal()
     }
     document.addEventListener("keydown", keyHandler)
-
     return () => document.removeEventListener("keydown", keyHandler)
   })
   return (
     <Transition show={showModal}>
-      <div className="fixed z-10 inset-0 mt-12 -mb-12 overflow-y-auto">
+      <div className="fixed z-10 inset-0 mt-12 -mb-12 overflow-y-scroll">
         <div className="flex items-start justify-center min-h-screen text-center sm:block sm:p-0">
-          <Transition.Child className="fixed inset-0 transition-opacity overflow-visible" {...transitionClassNames.overlay}>
+          <Transition.Child
+            className="fixed inset-0 transition-opacity overflow-visible"
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
             <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
             <Icon name="close" className="absolute right-2 top-2 text-white h-8 w-8 cursor-pointer " />
           </Transition.Child>
@@ -75,7 +63,12 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
             <Transition.Child
               id={id}
               className="transform transition-all bg-white text-left overflow-hidden shadow-xl mb-12 sm:rounded-lg"
-              {...transitionClassNames.content}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              enterTo="opacity-100 translate-y-0 sm:scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+              leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               {children}
             </Transition.Child>
