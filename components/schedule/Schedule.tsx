@@ -38,12 +38,6 @@ const getColorStyle = {
   green: "bg-green-100 text-green-800",
 }
 
-const getGridColsStyle = {
-  1: "sm:grid-cols-1",
-  2: "sm:grid-cols-2",
-  3: "sm:grid-cols-3",
-}
-
 const Schedule = ({ date, times }: ISchedule) => {
   return (
     <>
@@ -53,7 +47,7 @@ const Schedule = ({ date, times }: ISchedule) => {
           <Divider className="mt-8 md:mt-12 lg:mt-14" />
           <div className="pt-8">
             <div className={`inline-flex items-center px-8 py-1 rounded-full text-lg font-semibold ${getColorStyle[time.color]}`}>{time.time}</div>
-            <div className={`grid grid-cols-1 gap-x-6 ${getGridColsStyle[time.events.filter((e) => e.repeat.includes(date.weekOfTheMonth)).length]} pt-5`}>
+            <div className={`grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5`}>
               {time.events
                 .filter((event) => event.repeat.includes(date.weekOfTheMonth))
                 .map((event) =>
