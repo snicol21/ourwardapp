@@ -46,7 +46,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+            <div className="absolute z-10 inset-0 bg-gray-500 opacity-75"></div>
             <Icon name="close" className="absolute right-2 top-2 text-white h-8 w-8 cursor-pointer " />
           </Transition.Child>
           <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
@@ -55,7 +55,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
 
           <div
             ref={modalContent}
-            className="inline-block align-bottom sm:align-middle sm:max-w-xl sm:w-full"
+            className="z-20 inline-block align-bottom sm:align-middle sm:max-w-xl sm:w-full"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-headline"
