@@ -1,3 +1,4 @@
+import Button from "../buttons/Button"
 import { IModal } from "../shared/Interfaces"
 
 const ModalAnnouncement = ({ type, data }: IModal) => {
@@ -10,9 +11,16 @@ const ModalAnnouncement = ({ type, data }: IModal) => {
         </div>
       )}
       <div className="bg-white shadow overflow-hidden">
-        <div className="px-4 py-5 sm:px-6">
-          <h3 className="text-2xl leading-6 font-semibold text-black">{title}</h3>
-          {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
+        <div className="flex justify-between px-4 py-5 sm:px-6">
+          <div>
+            <h3 className="text-2xl leading-6 font-semibold text-black">{title}</h3>
+            {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
+          </div>
+          {href && (
+            <Button href={href} color={buttonColor}>
+              {button}
+            </Button>
+          )}
         </div>
         <div className="border-t border-gray-200 px-4 py-2 sm:p-0">
           <dl className="sm:divide-y sm:divide-gray-200">
