@@ -46,6 +46,10 @@ export const dataInfoCards: IInfoCard[] = [
         location: "Maples 3rd Ward",
         details:
           "Valentine's Day is on it's way! And so is the Bishop Mobile! Be on the lookup this Saturday, the 13th. We'll start our valentine distributing trek at 2pm",
+        href: {
+          url: "/",
+        },
+        button: "Sign Up",
       },
     },
   },
