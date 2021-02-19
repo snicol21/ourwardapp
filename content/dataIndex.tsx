@@ -13,7 +13,7 @@ export const dataSundayMeeting: IHeroCard = {
     src: "/images/hero-cards/church-building.jpg",
     alt: "Meetinghouse",
   },
-  href: {
+  link: {
     url: "/sunday",
   },
   type: "dark",
@@ -24,7 +24,7 @@ export const dataInfoCards: IInfoCard[] = [
     title: "Temple & Family History Basket",
     button: "Learn More",
     hidden: false,
-    href: {
+    link: {
       url: "/",
     },
   },
@@ -46,7 +46,7 @@ export const dataInfoCards: IInfoCard[] = [
         location: "Maples 3rd Ward",
         details:
           "Valentine's Day is on it's way! And so is the Bishop Mobile! Be on the lookup this Saturday, the 13th. We'll start our valentine distributing trek at 2pm",
-        href: {
+        link: {
           url: "/",
         },
         button: "Sign Up",
@@ -68,7 +68,7 @@ export const dataFaceCards: IFaceCard[] = [
         height: 100,
       },
     ],
-    href: {
+    link: {
       url: "https://calendly.com/ssr3-bishop/bishop",
       calendly: true,
     },
@@ -92,7 +92,7 @@ export const dataFaceCards: IFaceCard[] = [
         height: 100,
       },
     ],
-    href: {
+    link: {
       url: "https://calendly.com/ssr3rdward/counselor",
       calendly: true,
     },
@@ -105,7 +105,7 @@ export const dataMiniCards: IMiniCard[] = [
     title: "Temple Recommend",
     subtitle: "Interview",
     button: "Schedule",
-    href: [
+    link: [
       {
         url: "https://calendly.com/ssr3rdward/temple",
         label: "Expired less than 6 months",
@@ -123,7 +123,7 @@ export const dataMiniCards: IMiniCard[] = [
     title: "Youth Interview",
     subtitle: "Interview",
     button: "Schedule",
-    href: [
+    link: [
       {
         url: "https://calendly.com/ssr3rdward/youth-interview",
         label: "Ages 12-15",
@@ -141,7 +141,7 @@ export const dataMiniCards: IMiniCard[] = [
     title: "Bishopric Visit",
     subtitle: "Visit",
     button: "Schedule",
-    href: {
+    link: {
       url: "https://calendly.com/ssr3rdward/bishopric-visit",
       calendly: true,
     },
@@ -160,7 +160,7 @@ export const dataImageCards: IImageCard[] = [
       src: "/images/image-cards/new-movein.webp",
       alt: "New Move-in",
     },
-    href: {
+    link: {
       url: "/welcome",
       calendly: false,
     },
@@ -176,7 +176,7 @@ export const dataImageCards: IImageCard[] = [
       src: "/images/image-cards/temple-and-family-history.webp",
       alt: "New Move-in",
     },
-    href: {
+    link: {
       url: "/temple-and-family-history",
       calendly: false,
     },

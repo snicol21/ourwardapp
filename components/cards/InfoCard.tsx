@@ -1,12 +1,12 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
+import { ILink, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IInfoCard = {
   title: string
   button?: string
   buttonColor?: IButtonColor
   hidden?: boolean
-  href?: IHref
+  link?: ILink
   modal?: IModal
 }
 
@@ -19,7 +19,7 @@ const InfoCard = ({ ...card }: IInfoCard) => {
           <h2 className="text-md font-bold text-white text-center w-full pb-5 sm:pb-0 sm:text-left sm:w-auto sm:text-lg">{card.title}</h2>
           {card.button && (
             <div className="flex items-center">
-              <PrimaryButton type="light" color={buttonColor} href={card.href} modal={card.modal}>
+              <PrimaryButton type="light" color={buttonColor} link={card.link} modal={card.modal}>
                 {card.button}
               </PrimaryButton>
             </div>

@@ -1,5 +1,5 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IHref, IImage, IButtonColor } from "../shared/Interfaces"
+import { ILink, IImage, IButtonColor } from "../shared/Interfaces"
 
 export type IFaceCard = {
   title: string
@@ -8,7 +8,7 @@ export type IFaceCard = {
   button: string
   buttonColor?: IButtonColor
   hidden?: boolean
-  href: IHref
+  link: ILink
 }
 
 const FaceCard = ({ ...card }: IFaceCard) => {
@@ -30,7 +30,7 @@ const FaceCard = ({ ...card }: IFaceCard) => {
         <div className="text-primary font-semibold">{card.subtitle}</div>
         <h3 className="text-2xl text-center font-bold pb-5">{card.title}</h3>
       </div>
-      <PrimaryButton type="dark" color={buttonColor} href={card.href} className="px-12">
+      <PrimaryButton type="dark" color={buttonColor} link={card.link} className="px-12">
         {card.button}
       </PrimaryButton>
     </div>

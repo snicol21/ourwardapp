@@ -1,5 +1,5 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IImage, IHref, IButtonColor, IModal } from "../shared/Interfaces"
+import { IImage, ILink, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IImageCard = {
   title: string
@@ -9,7 +9,7 @@ export type IImageCard = {
   button: string
   buttonColor?: IButtonColor
   hidden?: boolean
-  href?: IHref
+  link?: ILink
   modal?: IModal
 }
 
@@ -30,7 +30,7 @@ const ImageCard = ({ ...card }: IImageCard) => {
             </a>
           </div>
           <div className="pt-6 text-center md:text-left">
-            <PrimaryButton type="dark" color={buttonColor} href={card.href} className="px-16">
+            <PrimaryButton type="dark" color={buttonColor} link={card.link} className="px-16">
               {card.button}
             </PrimaryButton>
           </div>

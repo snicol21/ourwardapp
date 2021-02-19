@@ -2,7 +2,7 @@ import ImageCard from "../cards/ImageCard"
 import MiniCard from "../cards/MiniCard"
 import Divider from "../dividers/Divider"
 import SectionHeader from "../headers/SectionHeader"
-import { IButtonColor, IHref, IImage } from "../shared/Interfaces"
+import { IButtonColor, ILink, IImage } from "../shared/Interfaces"
 
 export type ISchedule = {
   date: IScheduleDate
@@ -27,7 +27,7 @@ export type IScheduleEvent = {
   subtitle: string
   paragraph: string
   button: string
-  href: IHref
+  link: ILink
   image?: IImage
 }
 
@@ -60,7 +60,7 @@ const Schedule = ({ date, times }: ISchedule) => {
                         image={event.image}
                         button={event.button}
                         buttonColor={time.color}
-                        href={event.href}
+                        link={event.link}
                       />
                     </div>
                   ) : (
@@ -71,7 +71,7 @@ const Schedule = ({ date, times }: ISchedule) => {
                         paragraph={event.paragraph}
                         button={event.button}
                         buttonColor={time.color}
-                        href={event.href}
+                        link={event.link}
                       />
                     </div>
                   )

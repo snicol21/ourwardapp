@@ -1,4 +1,4 @@
-import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
+import { ILink, IButtonColor, IModal } from "../shared/Interfaces"
 import CalendlyButton from "./CalendlyButton"
 import LinkButton from "./LinkButton"
 import MenuButton from "./MenuButton"
@@ -8,7 +8,7 @@ export type IPrimaryButton = {
   children: React.ReactNode
   color?: IButtonColor
   disabled?: boolean
-  href?: IHref | IHref[]
+  link?: ILink | ILink[]
   className?: string
   type?: "dark" | "light" | "link"
   modal?: IModal
@@ -41,7 +41,7 @@ const getColor = {
 const PrimaryButton = ({
   children,
   color = "primary",
-  href = { url: "", calendly: false },
+  link = { url: "", calendly: false },
   disabled = false,
   className = "",
   type = "dark",
@@ -67,19 +67,19 @@ const PrimaryButton = ({
         {children}
       </ModalButton>
     )
-  } else if (Array.isArray(href)) {
+  } else if (Array.isArray(link)) {
     return (
-      <MenuButton styles={styles} refs={href}>
+      <MenuButton styles={styles} links={link}>
         {children}
       </MenuButton>
     )
   } else {
-    return href.calendly ? (
-      <CalendlyButton styles={styles} url={href.url} disabled={disabled}>
+    return link.calendly ? (
+      <CalendlyButton styles={styles} url={link.url} disabled={disabled}>
         {children}
       </CalendlyButton>
     ) : (
-      <LinkButton styles={styles} url={href.url} external={!!href.external} disabled={disabled}>
+      <LinkButton styles={styles} url={link.url} external={!!link.external} disabled={disabled}>
         {children}
       </LinkButton>
     )

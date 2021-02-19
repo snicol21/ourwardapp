@@ -11,7 +11,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Youth",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-youth.ourwardapp.com",
           external: true,
         },
@@ -22,7 +22,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Adult Men",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-eq.ourwardapp.com",
           external: true,
         },
@@ -33,7 +33,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Young Men",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-ym.ourwardapp.com",
           external: true,
         },
@@ -44,7 +44,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Youth",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-youth.ourwardapp.com",
           external: true,
         },
@@ -61,7 +61,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Adults",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-gospel.ourwardapp.com",
           external: true,
         },
@@ -72,7 +72,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Adult Women",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-rs.ourwardapp.com",
           external: true,
         },
@@ -83,7 +83,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Young Women",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-yw.ourwardapp.com",
           external: true,
         },
@@ -94,7 +94,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "Zoom Meeting",
         paragraph: "30 Min. All Adults",
         button: "Join Meeting",
-        href: {
+        link: {
           url: "http://virtual-gospel.ourwardapp.com",
           external: true,
         },
@@ -111,7 +111,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "In-Person Meeting",
         paragraph: "45 Min. All Individuals (up to 99 people)",
         button: "Sign Up",
-        href: {
+        link: {
           url: "https://calendly.com/ssr3rdward/sacrament",
           calendly: true,
         },
@@ -126,7 +126,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         subtitle: "YouTube Live Stream",
         paragraph: "30 Min. All Individuals",
         button: "Join Live Stream",
-        href: {
+        link: {
           url: "http://virtual-sacrament.ourwardapp.com",
           external: true,
         },

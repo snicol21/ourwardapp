@@ -2,9 +2,9 @@ import Link from "next/link"
 import { Menu, Transition } from "@headlessui/react"
 import { openPopupWidget } from "react-calendly"
 import Icon from "../shared/Icon"
-import { IHref } from "../shared/Interfaces"
+import { ILink } from "../shared/Interfaces"
 
-const MenuButton = ({ children, styles, refs }) => {
+const MenuButton = ({ children, styles, links }) => {
   return (
     <div className="relative inline-block text-left">
       <Menu>
@@ -30,11 +30,11 @@ const MenuButton = ({ children, styles, refs }) => {
                 className="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
               >
                 <div className="py-1">
-                  {refs.map((href: IHref) =>
-                    href.calendly ? (
-                      <CalendlyMenuItem key={href.label} label={href.label} url={href.url} />
+                  {links.map((link: ILink) =>
+                    link.calendly ? (
+                      <CalendlyMenuItem key={link.label} label={link.label} url={link.url} />
                     ) : (
-                      <LinkMenuItem key={href.label} label={href.label} url={href.url} external={!!href.external} />
+                      <LinkMenuItem key={link.label} label={link.label} url={link.url} external={!!link.external} />
                     )
                   )}
                 </div>
@@ -70,12 +70,12 @@ const LinkMenuItem = ({ label, url, external }) => {
     <Menu.Item>
       {({ active }) =>
         external ? (
-          <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} styles`}>
+          <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>
             {label}
           </a>
         ) : (
           <Link href={url}>
-            <a className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} styles`}>{label}</a>
+            <a className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>{label}</a>
           </Link>
         )
       }

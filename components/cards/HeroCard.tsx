@@ -1,5 +1,5 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IImage, IHref, IButtonColor } from "../shared/Interfaces"
+import { IImage, IButtonColor, ILink } from "../shared/Interfaces"
 
 export type IHeroCard = {
   title: string
@@ -9,7 +9,7 @@ export type IHeroCard = {
   button: string
   buttonColor?: IButtonColor
   type: "light" | "dark"
-  href: IHref
+  link: ILink
 }
 
 const getColor = {
@@ -33,7 +33,7 @@ const HeroCard = ({ ...card }: IHeroCard) => {
             <PrimaryButton
               type={card.type === "light" ? "dark" : "light"}
               color={buttonColor}
-              href={card.href}
+              link={card.link}
               className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4"
             >
               {card.button}

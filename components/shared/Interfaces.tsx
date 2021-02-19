@@ -7,7 +7,7 @@ export type IImage = {
   height?: number
 }
 
-export type IHref = {
+export type ILink = {
   url: string
   label?: string
   external?: boolean
@@ -22,7 +22,7 @@ export type IModalAnnouncementData = {
   image?: IImage
   button?: string
   buttonColor?: IButtonColor
-  href?: IHref
+  link?: ILink
   date: string
   time: string
   location?: string

@@ -16,7 +16,7 @@ function Sunday() {
       </Head>
       <PageHeader title="Sunday Meetings" subtitle="Below is a list of scheduled events this upcoming Sunday" />
       <Layout>
-        <PrimaryButton type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
+        <PrimaryButton type="link" className="absolute top-2 md:top-5" link={{ url: "/" }}>
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </PrimaryButton>
