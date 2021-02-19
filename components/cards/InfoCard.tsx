@@ -1,4 +1,4 @@
-import Button from "../buttons/Button"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IInfoCard = {
@@ -19,9 +19,9 @@ const InfoCard = ({ ...card }: IInfoCard) => {
           <h2 className="text-md font-bold text-white text-center w-full pb-5 sm:pb-0 sm:text-left sm:w-auto sm:text-lg">{card.title}</h2>
           {card.button && (
             <div className="flex items-center">
-              <Button type="light" color={buttonColor} href={card.href} modal={card.modal}>
+              <PrimaryButton type="light" color={buttonColor} href={card.href} modal={card.modal}>
                 {card.button}
-              </Button>
+              </PrimaryButton>
             </div>
           )}
         </div>

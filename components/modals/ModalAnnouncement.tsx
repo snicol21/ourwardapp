@@ -1,4 +1,4 @@
-import Button from "../buttons/Button"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IModal } from "../shared/Interfaces"
 
 const ModalAnnouncement = ({ type, data }: IModal) => {
@@ -17,9 +17,9 @@ const ModalAnnouncement = ({ type, data }: IModal) => {
             {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
           </div>
           {href && (
-            <Button href={href} color={buttonColor}>
+            <PrimaryButton href={href} color={buttonColor}>
               {button}
-            </Button>
+            </PrimaryButton>
           )}
         </div>
         <div className="border-t border-gray-200 px-4 py-2 sm:p-0">

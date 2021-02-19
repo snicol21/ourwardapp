@@ -1,4 +1,4 @@
-import Button from "../buttons/Button"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IImage, IHref, IButtonColor } from "../shared/Interfaces"
 
 export type IHeroCard = {
@@ -30,9 +30,14 @@ const HeroCard = ({ ...card }: IHeroCard) => {
           <p className={`mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl ${getColor[card.type][2]}`}>{card.title}</p>
           {card.paragraph && <p className={`mt-3 text-lg ${getColor[card.type][3]}`}>{card.paragraph}</p>}
           <div className="mt-2 md:mt-8 text-center sm:text-left">
-            <Button type={card.type === "light" ? "dark" : "light"} color={buttonColor} href={card.href} className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4">
+            <PrimaryButton
+              type={card.type === "light" ? "dark" : "light"}
+              color={buttonColor}
+              href={card.href}
+              className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4"
+            >
               {card.button}
-            </Button>
+            </PrimaryButton>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import Button from "../buttons/Button"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IImage, IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IImageCard = {
@@ -30,9 +30,9 @@ const ImageCard = ({ ...card }: IImageCard) => {
             </a>
           </div>
           <div className="pt-6 text-center md:text-left">
-            <Button type="dark" color={buttonColor} href={card.href} className="px-16">
+            <PrimaryButton type="dark" color={buttonColor} href={card.href} className="px-16">
               {card.button}
-            </Button>
+            </PrimaryButton>
           </div>
         </div>
       </div>

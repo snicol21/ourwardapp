@@ -1,4 +1,4 @@
-import Button from "../buttons/Button"
+import PrimaryButton from "../buttons/PrimaryButton"
 import { IHref, IButtonColor, IModal } from "../shared/Interfaces"
 
 export type IMiniCard = {
@@ -21,9 +21,9 @@ const MiniCard = ({ ...card }: IMiniCard) => {
         <h3 className="text-xl text-center font-bold">{card.title}</h3>
         {card.paragraph && <p className="mt-3 text-base text-gray-500">{card.paragraph}</p>}
       </div>
-      <Button type="dark" color={buttonColor} href={card.href} className="mt-5 px-12">
+      <PrimaryButton type="dark" color={buttonColor} href={card.href} className="mt-5 px-12">
         {card.button}
-      </Button>
+      </PrimaryButton>
     </div>
   )
 }

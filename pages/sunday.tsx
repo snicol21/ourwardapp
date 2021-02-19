@@ -4,7 +4,7 @@ import PageHeader from "../components/headers/PageHeader"
 import Schedule, { IScheduleDate } from "../components/schedule/Schedule"
 import { dataScheduleTimes } from "../content/dataSunday"
 import { getNextDayOfWeek } from "../components/shared/Utilities"
-import Button from "../components/buttons/Button"
+import PrimaryButton from "../components/buttons/PrimaryButton"
 import Icon from "../components/shared/Icon"
 
 function Sunday() {
@@ -16,10 +16,10 @@ function Sunday() {
       </Head>
       <PageHeader title="Sunday Meetings" subtitle="Below is a list of scheduled events this upcoming Sunday" />
       <Layout>
-        <Button type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
+        <PrimaryButton type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
-        </Button>
+        </PrimaryButton>
         <Schedule date={nextSunday} times={dataScheduleTimes} />
       </Layout>
     </>

@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Layout from "../components/layout/Layout"
 import PageHeader from "../components/headers/PageHeader"
-import Button from "../components/buttons/Button"
+import PrimaryButton from "../components/buttons/PrimaryButton"
 import Icon from "../components/shared/Icon"
 import SectionHeader from "../components/headers/SectionHeader"
 
@@ -13,10 +13,10 @@ function TempleAndFamilyHistory() {
       </Head>
       <PageHeader title="Temple &amp; Family History" />
       <Layout>
-        <Button type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
+        <PrimaryButton type="link" className="absolute top-2 md:top-5" href={{ url: "/" }}>
           <Icon name="chevron-left" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
-        </Button>
+        </PrimaryButton>
         <SectionHeader title="Our mission for Temple &amp; Family History" />
       </Layout>
     </>
