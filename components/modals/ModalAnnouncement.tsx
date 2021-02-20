@@ -1,8 +1,8 @@
 import PrimaryButton from "../buttons/PrimaryButton"
 import { IModal } from "../shared/Interfaces"
 
-const ModalAnnouncement = ({ type, data }: IModal) => {
-  const { title, subtitle, image, button, buttonColor, link, date, time, location, details } = data
+const ModalAnnouncement = ({ data }: IModal) => {
+  const { title, subtitle, image, button, date, time, location, details } = data
   return (
     <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
       {image && (
@@ -16,9 +16,9 @@ const ModalAnnouncement = ({ type, data }: IModal) => {
             <h3 className="text-2xl leading-6 font-semibold text-black">{title}</h3>
             {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
           </div>
-          {link && (
-            <PrimaryButton link={link} color={buttonColor}>
-              {button}
+          {button?.link && (
+            <PrimaryButton link={button.link} color={button.color}>
+              {button.text}
             </PrimaryButton>
           )}
         </div>

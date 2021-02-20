@@ -2,7 +2,7 @@ import ImageCard from "../cards/ImageCard"
 import MiniCard from "../cards/MiniCard"
 import Divider from "../dividers/Divider"
 import SectionHeader from "../headers/SectionHeader"
-import { IButtonColor, ILink, IImage } from "../shared/Interfaces"
+import { IButtonColor, IImage, IButton } from "../shared/Interfaces"
 
 export type ISchedule = {
   date: IScheduleDate
@@ -26,8 +26,7 @@ export type IScheduleEvent = {
   title: string
   subtitle: string
   paragraph: string
-  button: string
-  link: ILink
+  button: IButton
   image?: IImage
 }
 
@@ -58,21 +57,12 @@ const Schedule = ({ date, times }: ISchedule) => {
                         subtitle={event.subtitle}
                         paragraph={event.paragraph}
                         image={event.image}
-                        button={event.button}
-                        buttonColor={time.color}
-                        link={event.link}
+                        button={{ ...event.button, color: time.color }}
                       />
                     </div>
                   ) : (
                     <div key={event.title} className="py-3 w-full">
-                      <MiniCard
-                        title={event.title}
-                        subtitle={event.subtitle}
-                        paragraph={event.paragraph}
-                        button={event.button}
-                        buttonColor={time.color}
-                        link={event.link}
-                      />
+                      <MiniCard title={event.title} subtitle={event.subtitle} paragraph={event.paragraph} button={{ ...event.button, color: time.color }} />
                     </div>
                   )
                 )}

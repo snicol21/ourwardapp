@@ -1,15 +1,13 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IImage, IButtonColor, ILink } from "../shared/Interfaces"
+import { IImage, IButton } from "../shared/Interfaces"
 
 export type IHeroCard = {
   title: string
   subtitle?: string
   paragraph?: string
   image: IImage
-  button: string
-  buttonColor?: IButtonColor
+  button: IButton
   type: "light" | "dark"
-  link: ILink
 }
 
 const getColor = {
@@ -18,7 +16,7 @@ const getColor = {
 }
 
 const HeroCard = ({ ...card }: IHeroCard) => {
-  const buttonColor = card.buttonColor ? card.buttonColor : "primary"
+  const buttonColor = card.button.color ? card.button.color : "primary"
   return (
     <div className={`relative rounded-lg shadow-xl ${getColor[card.type][0]}`}>
       <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
@@ -33,10 +31,10 @@ const HeroCard = ({ ...card }: IHeroCard) => {
             <PrimaryButton
               type={card.type === "light" ? "dark" : "light"}
               color={buttonColor}
-              link={card.link}
+              link={card.button.link}
               className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4"
             >
-              {card.button}
+              {card.button.text}
             </PrimaryButton>
           </div>
         </div>

@@ -16,13 +16,18 @@ export type ILink = {
 
 export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
 
+export type IButton = {
+  text: string
+  color?: IButtonColor
+  link?: ILink | ILink[]
+  modal?: IModal
+}
+
 export type IModalAnnouncementData = {
   title: string
   subtitle?: string
   image?: IImage
-  button?: string
-  buttonColor?: IButtonColor
-  link?: ILink
+  button?: IButton
   date: string
   time: string
   location?: string

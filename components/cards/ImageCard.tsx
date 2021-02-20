@@ -1,20 +1,17 @@
 import PrimaryButton from "../buttons/PrimaryButton"
-import { IImage, ILink, IButtonColor, IModal } from "../shared/Interfaces"
+import { IImage, IButton } from "../shared/Interfaces"
 
 export type IImageCard = {
   title: string
   subtitle: string
   paragraph?: string
   image: IImage
-  button: string
-  buttonColor?: IButtonColor
+  button: IButton
   hidden?: boolean
-  link?: ILink
-  modal?: IModal
 }
 
 const ImageCard = ({ ...card }: IImageCard) => {
-  const buttonColor = card.buttonColor ? card.buttonColor : "primary"
+  const buttonColor = card.button.color ? card.button.color : "primary"
   return (
     <>
       <div className="flex flex-col rounded-lg shadow-xl overflow-hidden">
@@ -30,8 +27,8 @@ const ImageCard = ({ ...card }: IImageCard) => {
             </a>
           </div>
           <div className="pt-6 text-center md:text-left">
-            <PrimaryButton type="dark" color={buttonColor} link={card.link} className="px-16">
-              {card.button}
+            <PrimaryButton type="dark" color={buttonColor} link={card.button.link} className="px-16">
+              {card.button.text}
             </PrimaryButton>
           </div>
         </div>
