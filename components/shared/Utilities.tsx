@@ -1,4 +1,4 @@
-import { IScheduleDate } from "../schedule/Schedule"
+import { IScheduleDate } from "../schedules/Schedule"
 
 export function getNextDayOfWeek(date: Date, dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 7): IScheduleDate {
   let resultDate = new Date(date.getTime())

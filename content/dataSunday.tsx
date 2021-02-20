@@ -1,4 +1,4 @@
-import { IScheduleTime } from "../components/schedule/Schedule"
+import { IScheduleTime } from "../components/schedules/Schedule"
 
 export const dataScheduleTimes: IScheduleTime[] = [
   {

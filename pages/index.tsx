@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Layout from "../components/layout/Layout"
+import Layout from "../components/layouts/Layout"
 import SectionHeader from "../components/headers/SectionHeader"
 import HeroCard from "../components/cards/HeroCard"
 import InfoCard, { IInfoCard } from "../components/cards/InfoCard"

@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Layout from "../components/layout/Layout"
+import Layout from "../components/layouts/Layout"
 import PageHeader from "../components/headers/PageHeader"
 import PrimaryButton from "../components/buttons/PrimaryButton"
 import Icon from "../components/shared/Icon"
