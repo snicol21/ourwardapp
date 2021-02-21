@@ -15,7 +15,7 @@ const InfoCard = ({ ...card }: IInfoCard) => {
       type="pass-thru"
       link={card.button.link}
       modal={card.button.modal}
-      className="flex text-left col-span-1 shadow-xl rounded-md border-t border-r border-b border-gray-200 bg-white focus:outline-none"
+      className="flex text-left col-span-1 shadow-xl rounded-md bg-white focus:outline-none"
     >
       <div className="w-16 md:w-20">
         <img className="w-full h-full object-cover rounded-l-md" src={card.image?.src || "https://via.placeholder.com/382"} alt={card.image?.alt || ""} />
