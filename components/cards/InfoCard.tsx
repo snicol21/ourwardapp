@@ -22,11 +22,18 @@ const InfoCard = ({ ...card }: IInfoCard) => {
       </div>
       <div className="flex-1 flex items-center justify-between truncate">
         <div className="flex-1 px-4 py-2 text-sm overflow-hidden">
-          <div className="text-gray-900 font-medium truncate hover:text-gray-600" title={card.title}>
+          <div className="text-black font-semibold text-md pb-1 md:text-lg truncate" title={card.title}>
             {card.title}
           </div>
-          <p className="text-gray-500">
-            <time dateTime="2021-02-13">2/13/2021</time>
+          <p className="text-gray-500 flex">
+            <div className="pr-2 flex items-center">
+              <Icon name="calendar" className="h-4 w-4 mr-2" />
+              <time dateTime="2/13/2021">2/13/2021</time>
+            </div>
+            <div className="pr-2 flex items-center">
+              <Icon name="clock" className="h-4 w-4 mr-2" />
+              <time dateTime="2:00 PM">2:00 PM</time>
+            </div>
           </p>
         </div>
         <div className="flex-shrink-0 pr-2">
