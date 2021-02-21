@@ -15,12 +15,12 @@ const InfoCard = ({ ...card }: IInfoCard) => {
       type="pass-thru"
       link={card.button.link}
       modal={card.button.modal}
-      className="flex text-left col-span-1 shadow-xl rounded-md focus:outline-none"
+      className="flex text-left col-span-1 shadow-xl rounded-md border-t border-r border-b border-gray-200 bg-white focus:outline-none"
     >
       <div className="w-16 md:w-20">
         <img className="w-full h-full object-cover rounded-l-md" src={card.image?.src || "https://via.placeholder.com/382"} alt={card.image?.alt || ""} />
       </div>
-      <div className="h-full flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+      <div className="flex-1 flex items-center justify-between truncate">
         <div className="flex-1 px-4 py-2 text-sm overflow-hidden">
           <div className="text-gray-900 font-medium truncate hover:text-gray-600" title={card.title}>
             {card.title}
