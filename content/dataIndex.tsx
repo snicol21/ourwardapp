@@ -23,19 +23,17 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IInfoCard[] = [
   {
-    title: "Temple & Family History Basket",
-    hidden: false,
+    title: "Relief Society Birthday Social",
     button: {
-      text: "Learn More",
       link: {
         url: "/",
       },
     },
+    hidden: false,
   },
   {
     title: "Bishop Mobile",
     button: {
-      text: "Learn More",
       modal: {
         type: "announcement",
         data: {

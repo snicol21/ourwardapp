@@ -18,7 +18,7 @@ const MiniCard = ({ ...card }: IMiniCard) => {
         <h3 className="text-xl text-center font-bold">{card.title}</h3>
         {card.paragraph && <p className="mt-3 text-base text-gray-500">{card.paragraph}</p>}
       </div>
-      <PrimaryButton type="dark" color={buttonColor} link={card.button.link} className="mt-5 px-12">
+      <PrimaryButton type="dark" color={buttonColor} link={card.button.link} className="mt-5">
         {card.button.text}
       </PrimaryButton>
     </div>

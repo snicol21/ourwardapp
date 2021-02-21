@@ -32,7 +32,8 @@ const HeroCard = ({ ...card }: IHeroCard) => {
               type={card.type === "light" ? "dark" : "light"}
               color={buttonColor}
               link={card.button.link}
-              className="px-16 py-2 mt-5 font-bold md:mt-0 lg:py-4"
+              size="lg"
+              className="mt-5 font-bold md:mt-0"
             >
               {card.button.text}
             </PrimaryButton>

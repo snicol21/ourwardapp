@@ -10,7 +10,8 @@ export type IPrimaryButton = {
   disabled?: boolean
   link?: ILink | ILink[]
   className?: string
-  type?: "dark" | "light" | "link"
+  type?: "dark" | "light" | "link" | "pass-thru"
+  size?: "sm" | "md" | "lg"
   modal?: IModal
 }
 
@@ -38,6 +39,12 @@ const getColor = {
   },
 }
 
+const getSize = {
+  sm: "px-6 py-1 lg:py-2",
+  md: "px-12 py-2 lg:py-3",
+  lg: "px-16 py-3 lg:py-4",
+}
+
 const PrimaryButton = ({
   children,
   color = "primary",
@@ -45,20 +52,24 @@ const PrimaryButton = ({
   disabled = false,
   className = "",
   type = "dark",
+  size = "md",
   modal = undefined,
 }: IPrimaryButton) => {
   const baseStyles = `${className} font-medium focus:outline-none border border-transparent rounded-md inline-flex items-center text-base`
   let styles: string
   switch (type) {
     case "light":
-      styles = `${baseStyles} ${getColor.light[color]} px-6 py-3 shadow bg-white`
+      styles = `${baseStyles} ${getColor.light[color]} ${getSize[size]} shadow bg-white`
       break
     case "link":
       styles = `${baseStyles} ${getColor.link[color]}`
       break
+    case "pass-thru":
+      styles = `${className}`
+      break
     case "dark":
     default:
-      styles = `${baseStyles} ${getColor.dark[color]} px-6 py-3 shadow text-white`
+      styles = `${baseStyles} ${getColor.dark[color]} ${getSize[size]} shadow text-white`
   }
 
   if (modal) {

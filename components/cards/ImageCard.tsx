@@ -27,7 +27,7 @@ const ImageCard = ({ ...card }: IImageCard) => {
             </a>
           </div>
           <div className="pt-6 text-center md:text-left">
-            <PrimaryButton type="dark" color={buttonColor} link={card.button.link} className="px-16">
+            <PrimaryButton type="dark" color={buttonColor} link={card.button.link}>
               {card.button.text}
             </PrimaryButton>
           </div>

@@ -17,7 +17,7 @@ function Sunday() {
       <PageHeader title="Sunday Meetings" subtitle="Below is a list of scheduled events this upcoming Sunday" />
       <Layout>
         <PrimaryButton type="link" className="absolute top-2 md:top-5" link={{ url: "/" }}>
-          <Icon name="chevron-left" />
+          <Icon name="chevron-left" className="h-5 w-5" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </PrimaryButton>
         <Schedule date={nextSunday} times={dataScheduleTimes} />

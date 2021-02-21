@@ -13,7 +13,7 @@ const MenuButton = ({ children, styles, links }) => {
             <span className="rounded-md shadow-sm">
               <Menu.Button className={styles}>
                 <span>{children}</span>
-                <Icon name="chevron-down" />
+                <Icon name="chevron-down" className="-mr-1 ml-2 h-5 w-5" />
               </Menu.Button>
             </span>
             <Transition
