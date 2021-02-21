@@ -17,8 +17,8 @@ const InfoCard = ({ ...card }: IInfoCard) => {
       modal={card.button.modal}
       className="flex text-left col-span-1 shadow-sm rounded-md focus:outline-none"
     >
-      <div className="flex-shrink-0 flex w-16 rounded-l-md">
-        <img className="h-full object-cover rounded-l-md" src={card.image?.src || "https://via.placeholder.com/382"} alt={card.image?.alt || ""} />
+      <div className="w-16 md:w-20">
+        <img className="w-full h-full object-cover rounded-l-md" src={card.image?.src || "https://via.placeholder.com/382"} alt={card.image?.alt || ""} />
       </div>
       <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
         <div className="flex-1 px-4 py-2 text-sm overflow-hidden">
