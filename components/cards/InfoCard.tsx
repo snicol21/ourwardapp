@@ -18,11 +18,7 @@ const InfoCard = ({ ...card }: IInfoCard) => {
       className="flex text-left col-span-1 shadow-sm rounded-md focus:outline-none"
     >
       <div className="flex-shrink-0 flex w-16 rounded-l-md">
-        <img
-          className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-          src={card.image?.src || "https://via.placeholder.com/382"}
-          alt={card.image?.alt || ""}
-        />
+        <img className="w-full h-full object-cover rounded-l-md" src={card.image?.src || "https://via.placeholder.com/382"} alt={card.image?.alt || ""} />
       </div>
       <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
         <div className="flex-1 px-4 py-2 text-sm overflow-hidden">
