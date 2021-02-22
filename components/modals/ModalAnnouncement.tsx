@@ -1,8 +1,10 @@
 import PrimaryButton from "../buttons/PrimaryButton"
 import { IModal } from "../shared/Interfaces"
+import { getDateDisplay } from "../shared/Utilities"
 
 const ModalAnnouncement = ({ data }: IModal) => {
-  const { title, subtitle, image, button, date, time, location, details } = data
+  const { title, subtitle, image, button, date, duration, location, details } = data
+  const dateDisplay = getDateDisplay(date, 7, duration)
   return (
     <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
       {image && (
@@ -25,16 +27,29 @@ const ModalAnnouncement = ({ data }: IModal) => {
         <div className="border-t border-gray-200 px-4 py-2 sm:p-0">
           <dl className="sm:divide-y sm:divide-gray-200">
             {date && (
-              <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-md font-medium text-gray-500">Date</dt>
-                <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2">{date}</dd>
-              </div>
-            )}
-            {time && (
-              <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-md font-medium text-gray-500">Time</dt>
-                <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2">{time}</dd>
-              </div>
+              <>
+                <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-md font-medium text-gray-500">Date</dt>
+                  <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2 flex">
+                    {dateDisplay.dateFullDisplay}
+                    <span
+                      className={`inline-flex items-center ml-2 px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                        dateDisplay.isWithin ? "bg-green-100 text-green-800" : "bg-primary-100 text-primary-800"
+                      }`}
+                    >
+                      {dateDisplay.relativeDisplay}
+                    </span>
+                  </dd>
+                </div>
+                <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-md font-medium text-gray-500">Time</dt>
+                  {dateDisplay.timeRangeDisplay ? (
+                    <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2">{dateDisplay.timeRangeDisplay}</dd>
+                  ) : (
+                    <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2">{dateDisplay.timeDisplay}</dd>
+                  )}
+                </div>
+              </>
             )}
             {location && (
               <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

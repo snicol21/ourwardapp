@@ -7,6 +7,16 @@ export type IImage = {
   height?: number
 }
 
+export type IDateDisplay = {
+  dateDisplay: string
+  dateFullDisplay: string
+  timeDisplay: string
+  timeRangeDisplay?: string
+  relativeDisplay: string
+  isoString: string
+  isWithin: boolean
+}
+
 export type ILink = {
   url: string
   label?: string
@@ -28,8 +38,8 @@ export type IModalAnnouncementData = {
   subtitle?: string
   image?: IImage
   button?: IButton
-  date: string
-  time: string
+  date: Date
+  duration: number
   location?: string
   details?: string
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^0.3.0",
+    "dayjs": "^1.10.4",
     "next": "10.0.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",

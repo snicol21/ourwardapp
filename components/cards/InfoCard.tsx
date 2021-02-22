@@ -1,15 +1,18 @@
 import PrimaryButton from "../buttons/PrimaryButton"
 import Icon from "../shared/Icon"
 import { IButton, IImage } from "../shared/Interfaces"
+import { getDateDisplay } from "../shared/Utilities"
 
 export type IInfoCard = {
   title: string
+  date?: Date
   image?: IImage
   button?: IButton
   hidden?: boolean
 }
 
 const InfoCard = ({ ...card }: IInfoCard) => {
+  const dateDisplay = getDateDisplay(card.date, 7)
   return (
     <PrimaryButton
       type="pass-thru"
@@ -25,16 +28,25 @@ const InfoCard = ({ ...card }: IInfoCard) => {
           <div className="text-black font-semibold text-md pb-1 md:text-lg truncate" title={card.title}>
             {card.title}
           </div>
-          <p className="text-gray-500 flex">
-            <div className="pr-2 flex items-center">
-              <Icon name="calendar" className="h-4 w-4 mr-2" />
-              <time dateTime="2/13/2021">2/13/2021</time>
+          {card.date && (
+            <div className="text-gray-500 flex flex-wrap pb-1">
+              <div className="pr-2 flex items-center">
+                <Icon name="calendar" className="h-4 w-4 mr-2 text-gray-300" />
+                <time dateTime={dateDisplay.isoString}>{dateDisplay.dateDisplay}</time>
+              </div>
+              <div className="pr-2 flex items-center">
+                <Icon name="clock" className="h-4 w-4 mr-2 text-gray-300" />
+                <time dateTime={dateDisplay.isoString}>{dateDisplay.timeDisplay}</time>
+              </div>
+              <div
+                className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                  dateDisplay.isWithin ? "bg-green-100 text-green-800" : "bg-primary-100 text-primary-800"
+                }`}
+              >
+                {dateDisplay.relativeDisplay}
+              </div>
             </div>
-            <div className="pr-2 flex items-center">
-              <Icon name="clock" className="h-4 w-4 mr-2" />
-              <time dateTime="2:00 PM">2:00 PM</time>
-            </div>
-          </p>
+          )}
         </div>
         <div className="flex-shrink-0 pr-2">
           <div className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 bg-transparent hover:text-gray-500">

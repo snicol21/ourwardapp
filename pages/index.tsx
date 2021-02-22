@@ -20,7 +20,7 @@ function Home() {
       {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Announcements" subtitle="Find out more details of some of the upcoming events and activities." />
-          <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2">
+          <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden)
               .map((card: IInfoCard) => (
