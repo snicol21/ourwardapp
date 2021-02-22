@@ -4,4 +4,5 @@
 
 .calendly-popup {
   max-height: 100vh !important;
+  max-width: 998px !important;
 }

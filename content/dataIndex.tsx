@@ -177,17 +177,16 @@ export const dataImageCards: IImageCard[] = [
   {
     title: "New Move-in",
     subtitle: "Welcome",
-    paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+    paragraph: "Welcome! The bishop would like to get to know you better and welcome you to the ward.",
     image: {
       src: "/images/image-cards/new-movein.webp",
       alt: "New Move-in",
     },
     button: {
-      text: "Learn More",
+      text: "Schedule",
       link: {
-        url: "/welcome",
-        calendly: false,
+        url: "https://calendly.com/ssr3-bishop/new-move-in",
+        calendly: true,
       },
     },
     hidden: false,
@@ -196,7 +195,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Temple & Family History",
     subtitle: "Activities",
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+      "Sign up for the opportunity to have the basket in your home. Find resources and activities to help your family get involved with the temple and family history.",
     image: {
       src: "/images/image-cards/temple-and-family-history.webp",
       alt: "New Move-in",
