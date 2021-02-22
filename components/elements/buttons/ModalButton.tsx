@@ -1,7 +1,7 @@
 import { useState } from "react"
-import ModalAnnouncement from "../modals/ModalAnnouncement"
-import { hideBodyScroll } from "../shared/Utilities"
-import ModalWrapper from "../modals/ModalWrapper"
+import ModalAnnouncement from "../../modules/modals/ModalAnnouncement"
+import { hideBodyScroll } from "../../../shared/utils/document.util"
+import ModalWrapper from "../../modules/modals/ModalWrapper"
 
 const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)

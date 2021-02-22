@@ -1,9 +1,9 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
-import PageHeader from "../components/headers/PageHeader"
-import PrimaryButton from "../components/buttons/PrimaryButton"
-import Icon from "../components/shared/Icon"
-import SectionHeader from "../components/headers/SectionHeader"
+import PageHeader from "../components/elements/headers/PageHeader"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
+import Icon from "../components/elements/icons/Icon"
+import SectionHeader from "../components/elements/headers/SectionHeader"
 
 function Welcome() {
   return (

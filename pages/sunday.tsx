@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
-import PageHeader from "../components/headers/PageHeader"
-import Schedule, { IScheduleDate } from "../components/schedules/Schedule"
-import { dataScheduleTimes } from "../content/dataSunday"
-import { getNextDayOfWeek } from "../components/shared/Utilities"
-import PrimaryButton from "../components/buttons/PrimaryButton"
-import Icon from "../components/shared/Icon"
+import PageHeader from "../components/elements/headers/PageHeader"
+import Schedule, { IScheduleDate } from "../components/modules/schedules/Schedule"
+import { dataScheduleTimes } from "../data/dataSunday"
+import { getNextDayOfWeek } from "../shared/utils/date.util"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
+import Icon from "../components/elements/icons/Icon"
 
 function Sunday() {
   const nextSunday: IScheduleDate = getNextDayOfWeek(new Date(), 7)

@@ -1,5 +1,5 @@
-import PrimaryButton from "../buttons/PrimaryButton"
-import { IButton } from "../shared/Interfaces"
+import PrimaryButton from "../../elements/buttons/PrimaryButton"
+import { IButton } from "../../../shared/types"
 
 export type IMiniCard = {
   title: string

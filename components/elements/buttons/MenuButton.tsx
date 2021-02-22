@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { Menu, Transition } from "@headlessui/react"
 import { openPopupWidget } from "react-calendly"
-import Icon from "../shared/Icon"
-import { ILink } from "../shared/Interfaces"
+import Icon from "../icons/Icon"
+import { ILink } from "../../../shared/types"
 
 const MenuButton = ({ children, styles, links }) => {
   return (

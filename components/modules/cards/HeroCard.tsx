@@ -1,5 +1,5 @@
-import PrimaryButton from "../buttons/PrimaryButton"
-import { IImage, IButton } from "../shared/Interfaces"
+import { IButton, IImage } from "../../../shared/types"
+import PrimaryButton from "../../elements/buttons/PrimaryButton"
 
 export type IHeroCard = {
   title: string

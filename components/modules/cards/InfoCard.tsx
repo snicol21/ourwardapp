@@ -1,7 +1,7 @@
-import PrimaryButton from "../buttons/PrimaryButton"
-import Icon from "../shared/Icon"
-import { IButton, IImage } from "../shared/Interfaces"
-import { getDateDisplay } from "../shared/Utilities"
+import PrimaryButton from "../../elements/buttons/PrimaryButton"
+import Icon from "../../elements/icons/Icon"
+import { getDateDisplay } from "../../../shared/utils/date.util"
+import { IButton, IImage } from "../../../shared/types"
 
 export type IInfoCard = {
   title: string

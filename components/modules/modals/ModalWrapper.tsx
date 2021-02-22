@@ -1,8 +1,15 @@
+import { Dispatch, SetStateAction } from "react"
 import { Transition } from "@headlessui/react"
 import { useEffect, useRef } from "react"
-import Icon from "../shared/Icon"
-import { IModalWrapper } from "../shared/Interfaces"
-import { hideBodyScroll } from "../shared/Utilities"
+import Icon from "../../elements/icons/Icon"
+import { hideBodyScroll } from "../../../shared/utils/document.util"
+
+export type IModalWrapper = {
+  id: string
+  children: React.ReactNode
+  showModal: boolean
+  setShowModal: Dispatch<SetStateAction<boolean>>
+}
 
 const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) => {
   const modalContent = useRef(null)

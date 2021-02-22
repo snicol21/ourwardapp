@@ -1,7 +1,7 @@
-import { IFaceCard } from "../components/cards/FaceCard"
-import { IHeroCard } from "../components/cards/HeroCard"
-import { IImageCard } from "../components/cards/ImageCard"
-import { IBlockQuote } from "../components/headers/BlockQuote"
+import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IHeroCard } from "../components/modules/cards/HeroCard"
+import { IImageCard } from "../components/modules/cards/ImageCard"
+import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "Temple & Family\xa0History Basket",

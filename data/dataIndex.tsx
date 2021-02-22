@@ -1,8 +1,8 @@
-import { IFaceCard } from "../components/cards/FaceCard"
-import { IHeroCard } from "../components/cards/HeroCard"
-import { IImageCard } from "../components/cards/ImageCard"
-import { IInfoCard } from "../components/cards/InfoCard"
-import { IMiniCard } from "../components/cards/MiniCard"
+import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IHeroCard } from "../components/modules/cards/HeroCard"
+import { IImageCard } from "../components/modules/cards/ImageCard"
+import { IInfoCard } from "../components/modules/cards/InfoCard"
+import { IMiniCard } from "../components/modules/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
   title: "Sunday Meetings",

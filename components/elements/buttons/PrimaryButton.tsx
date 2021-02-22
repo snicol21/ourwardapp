@@ -1,4 +1,4 @@
-import { ILink, IButtonColor, IModal } from "../shared/Interfaces"
+import { IButtonColor, ILink, IModal } from "../../../shared/types"
 import CalendlyButton from "./CalendlyButton"
 import LinkButton from "./LinkButton"
 import MenuButton from "./MenuButton"

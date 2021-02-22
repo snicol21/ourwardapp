@@ -1,8 +1,8 @@
 import ImageCard from "../cards/ImageCard"
 import MiniCard from "../cards/MiniCard"
-import Divider from "../dividers/Divider"
-import SectionHeader from "../headers/SectionHeader"
-import { IButtonColor, IImage, IButton } from "../shared/Interfaces"
+import Divider from "../../elements/dividers/Divider"
+import SectionHeader from "../../elements/headers/SectionHeader"
+import { IButtonColor, IImage, IButton } from "../../../shared/types"
 
 export type ISchedule = {
   date: IScheduleDate

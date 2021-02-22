@@ -1,12 +1,12 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
-import SectionHeader from "../components/headers/SectionHeader"
-import HeroCard from "../components/cards/HeroCard"
-import InfoCard, { IInfoCard } from "../components/cards/InfoCard"
-import FaceCard, { IFaceCard } from "../components/cards/FaceCard"
-import MiniCard, { IMiniCard } from "../components/cards/MiniCard"
-import ImageCard, { IImageCard } from "../components/cards/ImageCard"
-import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../content/dataIndex"
+import SectionHeader from "../components/elements/headers/SectionHeader"
+import HeroCard from "../components/modules/cards/HeroCard"
+import InfoCard, { IInfoCard } from "../components/modules/cards/InfoCard"
+import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
+import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
+import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
+import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 
 function Home() {
   return (

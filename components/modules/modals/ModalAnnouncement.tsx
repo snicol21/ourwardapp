@@ -1,6 +1,6 @@
-import PrimaryButton from "../buttons/PrimaryButton"
-import { IModal } from "../shared/Interfaces"
-import { getDateDisplay } from "../shared/Utilities"
+import PrimaryButton from "../../elements/buttons/PrimaryButton"
+import { IModal } from "../../../shared/types"
+import { getDateDisplay } from "../../../shared/utils/date.util"
 
 const ModalAnnouncement = ({ data }: IModal) => {
   const { title, subtitle, image, button, date, duration, location, details } = data
