@@ -10,7 +10,7 @@ const BlockQuote = ({ quote, name = "", title = "" }: IBlockQuote) => {
     <>
       <Divider className="mb-14" />
       <blockquote>
-        <div className="max-w-3xl mx-auto text-center text-3xl leading-10 font-bold text-black">
+        <div className="max-w-3xl mx-auto text-center text-2xl leading-8 sm:text-3xl sm:leading-10 font-bold text-black">
           <p>&ldquo;{quote}&rdquo;</p>
         </div>
         <footer className="mt-8">

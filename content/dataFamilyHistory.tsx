@@ -4,7 +4,7 @@ import { IImageCard } from "../components/cards/ImageCard"
 import { IBlockQuote } from "../components/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "Temple & Family History Basket",
+  title: "Temple & Family\xa0History Basket",
   paragraph: "Sign up for your family to have a turn.",
   image: {
     src: "/images/image-cards/temple-and-family-history.webp",

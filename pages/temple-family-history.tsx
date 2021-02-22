@@ -17,7 +17,7 @@ function TempleAndFamilyHistory() {
       <Head>
         <title>Maples 3rd Ward - Temple &amp; Family History</title>
       </Head>
-      <PageHeader title="Temple &amp; Family History" />
+      <PageHeader title="Temple &amp; Family History" subtitle="Take the opportunity to have the basket in your home." />
       <Layout>
         <PrimaryButton type="link" className="absolute top-2 md:top-5" link={{ url: "/" }}>
           <Icon name="chevron-left" className="h-5 w-5" />
@@ -46,8 +46,8 @@ function TempleAndFamilyHistory() {
         <div className="pt-16">
           <Divider />
           <SectionHeader title="Contact" />
-          <div className="grid grid-cols-4 pt-10">
-            <FaceCard {...Object.assign(dataFaceCard, { className: "col-span-2 col-start-2" })} />
+          <div className="grid grid-cols-1 sm:grid-cols-4 pt-10">
+            <FaceCard {...Object.assign(dataFaceCard, { className: "col-span-1 sm:col-span-2 sm:col-start-2" })} />
           </div>
         </div>
       </Layout>

@@ -18,7 +18,7 @@ const getColor = {
 const HeroCard = ({ ...card }: IHeroCard) => {
   const buttonColor = card.button.color ? card.button.color : "primary"
   return (
-    <div className={`relative rounded-lg shadow-xl ${getColor[card.type][0]}`}>
+    <div className={`relative text-center sm:text-left rounded-lg shadow-xl ${getColor[card.type][0]}`}>
       <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none" src={card.image.src} alt={card.image.alt || ""} />
       </div>
