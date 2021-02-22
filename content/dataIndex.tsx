@@ -203,7 +203,7 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "Learn More",
       link: {
-        url: "/temple-and-family-history",
+        url: "/temple-family-history",
         calendly: false,
       },
     },

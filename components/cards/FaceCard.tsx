@@ -4,15 +4,16 @@ import { IImage, IButton } from "../shared/Interfaces"
 export type IFaceCard = {
   title: string
   subtitle: string
+  className?: string
   images: IImage[]
-  button: IButton
+  button?: IButton
   hidden?: boolean
 }
 
 const FaceCard = ({ ...card }: IFaceCard) => {
-  const buttonColor = card.button.color ? card.button.color : "primary"
+  const buttonColor = card.button?.color ? card.button?.color : "primary"
   return (
-    <div className="col-span-1 bg-white rounded-lg shadow-xl p-8 h-full text-center flex flex-col justify-between">
+    <div className={`${card.className} bg-white rounded-lg shadow-xl p-8 h-full text-center flex flex-col justify-between`}>
       <div className="flex flex-col items-center">
         <div className="flex -space-x-4 pb-5">
           {card.images.map((image: IImage) => (
@@ -26,13 +27,15 @@ const FaceCard = ({ ...card }: IFaceCard) => {
           ))}
         </div>
         <div className="text-primary font-semibold">{card.subtitle}</div>
-        <h3 className="text-2xl text-center font-bold pb-5">{card.title}</h3>
+        <h3 className="text-2xl text-center font-bold">{card.title}</h3>
       </div>
-      <div>
-        <PrimaryButton type="dark" color={buttonColor} link={card.button.link}>
-          {card.button.text}
-        </PrimaryButton>
-      </div>
+      {card.button && (
+        <div className="pt-5">
+          <PrimaryButton type="dark" color={buttonColor} link={card.button.link}>
+            {card.button.text}
+          </PrimaryButton>
+        </div>
+      )}
     </div>
   )
 }

@@ -37,7 +37,7 @@ function Home() {
               .filter((card) => !card.hidden)
               .map((card: IFaceCard) => (
                 <div key={card.title} className="py-3 w-full">
-                  <FaceCard {...card} />
+                  <FaceCard {...Object.assign(card, { className: "col-span-1" })} />
                 </div>
               ))}
           </div>
