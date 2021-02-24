@@ -5,28 +5,9 @@ import ModalEventActionUpdate from "./ModalEventActionUpdate"
 const ModalEventAction = () => {
   const [action, setAction] = useState("add")
 
-  const handleChange = (event) => {
-    setAction(event.target.value)
-  }
-
   return (
     <div>
-      <div className="sm:hidden">
-        <label htmlFor="tabs" className="sr-only">
-          Select a tab
-        </label>
-        <select
-          id="tabs"
-          name="tabs"
-          value={action}
-          onChange={handleChange}
-          className="block w-full text-primary font-semibold focus:ring-primary-500 focus:border-gray-500 border-gray-300"
-        >
-          <option value="add">Add</option>
-          <option value="update">Update</option>
-        </select>
-      </div>
-      <div className="hidden sm:block">
+      <div>
         <nav className="relative z-0 rounded-lg shadow flex divide-x divide-gray-200" aria-label="Tabs">
           <button
             onClick={() => setAction("add")}
