@@ -6,3 +6,7 @@
   max-height: 100vh !important;
   max-width: 998px !important;
 }
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
