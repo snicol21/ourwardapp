@@ -26,7 +26,7 @@ const ModalEventActionAdd = () => {
   }
 
   return (
-    <form className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6" onSubmit={handleSubmit(onSubmit)}>
+    <form className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6 min-h-1460 sm:min-h-1243" onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <h3 className="text-lg leading-6 font-medium text-gray-900">Adding a new event</h3>
