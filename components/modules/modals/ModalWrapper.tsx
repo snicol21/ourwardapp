@@ -3,7 +3,6 @@ import { Transition } from "@headlessui/react"
 import { useEffect, useRef } from "react"
 import Icon from "../../elements/icons/Icon"
 import { hideBodyScroll } from "../../../shared/utils/document.util"
-import FocusTrap from "focus-trap-react"
 
 export type IModalWrapper = {
   id: string
@@ -57,7 +56,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
       </Transition.Child>
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
-        <div ref={modalContent} className="sm:mt-20 sm:max-w-xl sm:w-full">
+        <div ref={modalContent} className="w-full h-full sm:mt-20 sm:max-w-xl">
           <div className="pb-12 sm:pb-32">
             <Transition.Child
               id={id}
@@ -69,7 +68,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <FocusTrap>{children}</FocusTrap>
+              {children}
             </Transition.Child>
           </div>
         </div>
