@@ -24,7 +24,7 @@ const ModalEventActionAdd = () => {
   }
 
   return (
-    <form className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6" onSubmit={handleSubmit(onSubmit)}>
+    <form className="z-30 space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6" onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <h3 className="text-lg leading-6 font-medium text-gray-900">Adding a new event</h3>
@@ -51,7 +51,7 @@ const ModalEventActionAdd = () => {
               </div>
               {errors.title ? (
                 <p className="mt-2 text-sm text-red-600" id="title-error">
-                  This is a required field.
+                  {errors.title?.type === "required" && <>Name is required</>}
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-gray-500">(ex: Bishop Mobile)</p>
@@ -94,8 +94,8 @@ const ModalEventActionAdd = () => {
                 {errors.date && <Error />}
               </div>
               {errors.date ? (
-                <p className="mt-2 text-sm text-red-600" id="title-error">
-                  This is a required field.
+                <p className="mt-2 text-sm text-red-600" id="date-error">
+                  {errors.date?.type === "required" && <>Date is required</>}
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-gray-500">(ex: 02/13/2021)</p>
@@ -250,8 +250,8 @@ const ModalEventActionAdd = () => {
                     {errors.button_text && <Error />}
                   </div>
                   {errors.button_text ? (
-                    <p className="mt-2 text-sm text-red-600" id="title-error">
-                      This is a required field.
+                    <p className="mt-2 text-sm text-red-600" id="button_text-error">
+                      {errors.button_text?.type === "required" && <>Button label is required</>}
                     </p>
                   ) : (
                     <p className="mt-2 text-sm text-gray-500">(ex: Sign Up)</p>
@@ -292,7 +292,10 @@ const ModalEventActionAdd = () => {
                   </label>
                   <div className="mt-1 relative rounded-md shadow-sm">
                     <input
-                      ref={register({ required: true })}
+                      ref={register({
+                        required: true,
+                        pattern: /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
+                      })}
                       name="button_link_url"
                       type="text"
                       id="button_link_url"
@@ -302,8 +305,9 @@ const ModalEventActionAdd = () => {
                     {errors.button_link_url && <Error />}
                   </div>
                   {errors.button_link_url ? (
-                    <p className="mt-2 text-sm text-red-600" id="title-error">
-                      This is a required field.
+                    <p className="mt-2 text-sm text-red-600" id="button_link_url-error">
+                      {errors.button_link_url?.type === "required" && <>Website is required</>}
+                      {errors.button_link_url?.type === "pattern" && <>Enter a valid url!</>}
                     </p>
                   ) : (
                     <p className="mt-2 text-sm text-gray-500">(ex: https://docs.google.com/forms/my-google-form-that-i-made)</p>
