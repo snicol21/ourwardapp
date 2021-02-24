@@ -7,12 +7,17 @@ export type IButton = {
   modal?: IModal
 }
 
-export type IModal = {
-  type: "announcement"
-  data: IModalAnnouncementData
-}
+export type IModal =
+  | {
+      type: "event"
+      data: IModalEventData
+    }
+  | {
+      type: "event-action"
+      data: {}
+    }
 
-export type IModalAnnouncementData = {
+export type IModalEventData = {
   title: string
   subtitle?: string
   image?: IImage

@@ -42,7 +42,7 @@ export const dataInfoCards: IInfoCard[] = [
     },
     button: {
       modal: {
-        type: "announcement",
+        type: "event",
         data: {
           title: "Bishop Mobile",
           subtitle: "Ward Activity",

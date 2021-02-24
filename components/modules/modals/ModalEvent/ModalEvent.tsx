@@ -1,9 +1,9 @@
-import PrimaryButton from "../../elements/buttons/PrimaryButton"
-import { IModal } from "../../../shared/types"
-import { getDateDisplay } from "../../../shared/utils/date.util"
+import PrimaryButton from "../../../elements/buttons/PrimaryButton"
+import { IModal, IModalEventData } from "../../../../shared/types"
+import { getDateDisplay } from "../../../../shared/utils/date.util"
 
-const ModalAnnouncement = ({ data }: IModal) => {
-  const { title, subtitle, image, button, date, duration, location, details } = data
+const ModalEvent = ({ data }: IModal) => {
+  const { title, subtitle, image, button, date, duration, location, details } = data as IModalEventData
   const dateDisplay = getDateDisplay(date, 7, duration)
   return (
     <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
@@ -70,4 +70,4 @@ const ModalAnnouncement = ({ data }: IModal) => {
   )
 }
 
-export default ModalAnnouncement
+export default ModalEvent

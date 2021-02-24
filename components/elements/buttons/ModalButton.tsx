@@ -1,14 +1,18 @@
 import { useState } from "react"
-import ModalAnnouncement from "../../modules/modals/ModalAnnouncement"
 import { hideBodyScroll } from "../../../shared/utils/document.util"
 import ModalWrapper from "../../modules/modals/ModalWrapper"
+import ModalEvent from "../../modules/modals/ModalEvent/ModalEvent"
+import ModalEventAction from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventAction"
+import ModalEventActionAdd from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventActionAdd"
 
 const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)
   const Modal = () => {
     switch (modal.type) {
-      case "announcement":
-        return <ModalAnnouncement {...modal} />
+      case "event":
+        return <ModalEvent {...modal} />
+      case "event-action":
+        return <ModalEventAction {...modal} />
     }
   }
   const toggleModal = () => {

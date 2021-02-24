@@ -7,6 +7,8 @@ import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
+import Icon from "../components/elements/icons/Icon"
 
 function Home() {
   return (
@@ -26,6 +28,20 @@ function Home() {
               .map((card: IInfoCard) => (
                 <InfoCard key={card.title} {...card} />
               ))}
+          </div>
+          <div className="flex pt-5 justify-end">
+            <PrimaryButton
+              type="light"
+              size="sm"
+              color="gray"
+              modal={{
+                type: "event-action",
+                data: {},
+              }}
+            >
+              <Icon name="pencil" className="h-5 w-5" />
+              <span className="pl-2">Update</span>
+            </PrimaryButton>
           </div>
         </>
       )}
