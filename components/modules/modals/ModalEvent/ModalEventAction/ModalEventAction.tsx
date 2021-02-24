@@ -7,7 +7,7 @@ const ModalEventAction = () => {
 
   return (
     <div>
-      <div>
+      <div className="block">
         <nav className="relative z-0 rounded-lg shadow flex divide-x divide-gray-200" aria-label="Tabs">
           <button
             onClick={() => setAction("add")}
