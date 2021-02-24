@@ -56,7 +56,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
       </Transition.Child>
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
-        <div ref={modalContent} className="sm:mt-20 sm:max-w-xl">
+        <div ref={modalContent} className="sm:m-auto sm:max-w-xl">
           <div className="pb-12 sm:pb-32">
             <Transition.Child
               id={id}
