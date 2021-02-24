@@ -13,7 +13,6 @@
     "@tailwindcss/forms": "^0.2.1",
     "dayjs": "^1.10.4",
     "firebase": "^8.2.9",
-    "focus-trap-react": "^8.4.2",
     "next": "10.0.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
