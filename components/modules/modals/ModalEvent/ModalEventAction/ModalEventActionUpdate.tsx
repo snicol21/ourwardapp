@@ -1,6 +1,6 @@
 const ModalEventActionUpdate = () => {
   return (
-    <div className="z-30 space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6">
+    <div className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6">
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <h3 className="text-lg leading-6 font-medium text-gray-900">Updating an existing event</h3>

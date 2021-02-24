@@ -3,7 +3,6 @@ import { hideBodyScroll } from "../../../shared/utils/document.util"
 import ModalWrapper from "../../modules/modals/ModalWrapper"
 import ModalEvent from "../../modules/modals/ModalEvent/ModalEvent"
 import ModalEventAction from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventAction"
-import ModalEventActionAdd from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventActionAdd"
 
 const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)
@@ -16,7 +15,7 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
     }
   }
   const toggleModal = () => {
-    // hideBodyScroll(!showModal)
+    hideBodyScroll(!showModal)
     setShowModal(!showModal)
   }
 
