@@ -80,7 +80,7 @@ const ModalEventActionAdd = () => {
             </div>
 
             {/* Date */}
-            <div className="sm:col-span-3 sm:col-start-1">
+            <div className="sm:col-span-2 sm:col-start-1">
               <label htmlFor="date" className="block text-sm font-medium text-gray-700">
                 Date*
               </label>
@@ -95,17 +95,38 @@ const ModalEventActionAdd = () => {
                 />
                 {errors.date && <Error />}
               </div>
-              {errors.date ? (
+              {errors.date && (
                 <p className="mt-2 text-sm text-red-600" id="date-error">
                   {errors.date?.type === "required" && <>Date is required</>}
                 </p>
-              ) : (
-                <p className="mt-2 text-sm text-gray-500">(ex: 02/13/2021)</p>
+              )}
+            </div>
+
+            {/* Time */}
+            <div className="sm:col-span-2">
+              <label htmlFor="time" className="block text-sm font-medium text-gray-700">
+                Time*
+              </label>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <input
+                  ref={register({ required: true })}
+                  name="time"
+                  type="time"
+                  id="time"
+                  autoComplete="time"
+                  className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.time ? "error" : "default"]}`}
+                />
+                {errors.time && <Error />}
+              </div>
+              {errors.time && (
+                <p className="mt-2 text-sm text-red-600" id="time-error">
+                  {errors.time?.type === "required" && <>Time is required</>}
+                </p>
               )}
             </div>
 
             {/* Duration */}
-            <div className="sm:col-span-3">
+            <div className="sm:col-span-2">
               <label htmlFor="duration" className="block text-sm font-medium text-gray-700">
                 Duration*
               </label>
@@ -161,7 +182,7 @@ const ModalEventActionAdd = () => {
                   ref={register}
                   name="details"
                   id="details"
-                  rows={3}
+                  rows={5}
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
                 ></textarea>
               </div>
@@ -194,7 +215,7 @@ const ModalEventActionAdd = () => {
               <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                 <div className="space-y-1 text-center">
                   <Icon name="add-image" className="mx-auto h-12 w-12 text-gray-400" />
-                  <div className="flex text-sm text-gray-600">
+                  <div className="flex justify-center text-sm text-gray-600">
                     <label
                       htmlFor="file-upload"
                       className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
@@ -202,7 +223,6 @@ const ModalEventActionAdd = () => {
                       <span>Upload a file</span>
                       <input id="file-upload" name="file-upload" type="file" className="sr-only" />
                     </label>
-                    <p className="pl-1">or drag and drop</p>
                   </div>
                   <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
                 </div>
@@ -290,7 +310,7 @@ const ModalEventActionAdd = () => {
                 {/* Button Url */}
                 <div className="sm:col-span-6">
                   <label htmlFor="button_link_url" className="block text-sm font-medium text-gray-700">
-                    Button Link*
+                    Button Url*
                   </label>
                   <div className="mt-1 relative rounded-md shadow-sm">
                     <input
@@ -308,7 +328,7 @@ const ModalEventActionAdd = () => {
                   </div>
                   {errors.button_link_url ? (
                     <p className="mt-2 text-sm text-red-600" id="button_link_url-error">
-                      {errors.button_link_url?.type === "required" && <>Website is required</>}
+                      {errors.button_link_url?.type === "required" && <>Button url is required</>}
                       {errors.button_link_url?.type === "pattern" && <>Enter a valid url!</>}
                     </p>
                   ) : (

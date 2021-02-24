@@ -40,7 +40,7 @@ function Home() {
               }}
             >
               <Icon name="pencil" className="h-5 w-5" />
-              <span className="pl-2">Update</span>
+              <span className="pl-2">Add/Update</span>
             </PrimaryButton>
           </div>
         </>
