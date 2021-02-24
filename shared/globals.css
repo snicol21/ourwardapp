@@ -10,3 +10,7 @@
 body {
   -webkit-overflow-scrolling: touch;
 }
+
+.is-scrollLocked {
+  overflow: hidden;
+}
