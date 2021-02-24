@@ -17,6 +17,8 @@ const Error = () => {
 
 const ModalEventActionAdd = () => {
   const [hasButton, setHasButton] = useState(false)
+  const urlPattern = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/
+  const regExpUrlPattern = new RegExp(urlPattern, "i")
 
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = (formData) => {
@@ -294,7 +296,7 @@ const ModalEventActionAdd = () => {
                     <input
                       ref={register({
                         required: true,
-                        pattern: /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
+                        pattern: regExpUrlPattern,
                       })}
                       name="button_link_url"
                       type="text"
