@@ -15,7 +15,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
   const modalContent = useRef(null)
 
   const toggleModal = () => {
-    hideBodyScroll(!showModal)
+    // hideBodyScroll(!showModal)
     setShowModal(!showModal)
   }
 

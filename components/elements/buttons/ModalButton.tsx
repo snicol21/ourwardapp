@@ -16,7 +16,7 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
     }
   }
   const toggleModal = () => {
-    hideBodyScroll(!showModal)
+    // hideBodyScroll(!showModal)
     setShowModal(!showModal)
   }
 
