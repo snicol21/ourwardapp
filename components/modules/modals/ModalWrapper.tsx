@@ -32,7 +32,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
 
   useEffect(() => {
     const keyHandler = ({ keyCode }) => {
-      if (keyCode !== 27) {
+      if (!showModal || keyCode !== 27) {
         return
       }
       toggleModal()
