@@ -41,7 +41,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
     return () => document.removeEventListener("keydown", keyHandler)
   })
   return (
-    <Transition show={showModal} className="fixed z-10 inset-0">
+    <Transition show={showModal} className="fixed z-10 inset-0 overflow-hidden">
       <Transition.Child
         className="fixed inset-0 transition-opacity"
         enter="ease-out duration-300"
@@ -56,7 +56,7 @@ const ModalWrapper = ({ id, children, showModal, setShowModal }: IModalWrapper) 
       </Transition.Child>
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
-        <div ref={modalContent} className="w-full h-full sm:mt-20 sm:max-w-xl">
+        <div ref={modalContent} className="sm:mt-20 sm:max-w-xl">
           <div className="pb-12 sm:pb-32">
             <Transition.Child
               id={id}
