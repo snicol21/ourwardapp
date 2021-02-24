@@ -6,7 +6,7 @@ const ModalEvent = ({ data }: IModal) => {
   const { title, subtitle, image, button, date, duration, location, details } = data as IModalEventData
   const dateDisplay = getDateDisplay(date, 7, duration)
   return (
-    <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
+    <div className="bg-white overflow-auto max-w-6xl w-full max-h-full z-20">
       {image && (
         <div className="flex flex-shrink-0">
           <img className="h-36 w-full object-cover object-top lg:h-56" src={image.src} alt={image.alt || ""} />
