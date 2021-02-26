@@ -22,6 +22,9 @@ module.exports = {
           900: "#312E81",
         },
       },
+      spacing: {
+        "1/2": "50%",
+      },
     },
   },
   variants: {

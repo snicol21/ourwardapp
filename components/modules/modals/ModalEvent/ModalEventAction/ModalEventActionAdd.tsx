@@ -247,52 +247,59 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
                 <div>
                   {/* Image */}
                   <label htmlFor="image" className="block text-sm font-medium text-gray-700">
-                    Image*
+                    Image*{" "}
+                    <span className="text-gray-400 italic text-xs">
+                      (works best if image has a <span className="underline text-semibold">2:1</span> aspect ratio)
+                    </span>
                   </label>
                   {image ? (
-                    <div className="mt-2 bg-white overflow-auto w-full max-h-full rounded-xl">
-                      <div className="relative flex flex-shrink-0">
+                    <div className="mt-2">
+                      <div className="relative w-full pt-1/2 border-2 border-transparent rounded-xl">
+                        <img className="absolute h-full w-full top-0 rounded-xl object-cover object-center" src={imageData} />
                         <button
                           type="button"
                           onClick={() => setImage(null)}
-                          className="absolute right-3 mt-3 inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                          className="absolute top-0 right-3 mt-3 inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                         >
                           <Icon name="trash" className="h-6 w-6" />
                         </button>
-                        <img className="h-36 w-full lg:h-56 object-cover object-center" src={imageData} />
                       </div>
                     </div>
                   ) : (
                     <>
                       <div
-                        className={`mt-2 flex justify-center items-center h-36 w-full lg:h-56 px-6 pt-5 pb-6 rounded-xl border-2 border-dashed ${
+                        className={`mt-2 relative w-full pt-1/2 flex justify-center items-center rounded-xl border-2 border-dashed ${
                           errors.image ? "border-red-600" : "border-gray-400"
                         }`}
                       >
-                        <div className="space-y-1 text-center">
-                          <Icon name="add-image" className="mx-auto h-12 w-12 text-gray-400" />
-                          <div className="flex justify-center text-sm text-gray-600">
-                            <label
-                              htmlFor="image"
-                              className={`relative cursor-pointer bg-transparent rounded-md font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 ${
-                                errors.image
-                                  ? "text-red-600 hover:text-red-500 focus-within:ring-red-500"
-                                  : "text-primary-600 hover:text-primary-500 focus-within:ring-primary-500"
-                              }`}
-                            >
-                              <span>Upload an image</span>
-                              <input
-                                id="image"
-                                ref={register({ required: true, validate: { fileSize: (value) => value[0].size <= 2000000 } })}
-                                name="image"
-                                type="file"
-                                accept="image/*"
-                                className="sr-only"
-                                onChange={onChangeImage}
-                              />
-                            </label>
+                        <div className="absolute top-0 left-0 bottom-0 right-0">
+                          <div className="flex justify-center items-center h-full">
+                            <div className="space-y-1 text-center">
+                              <Icon name="add-image" className="mx-auto h-12 w-12 text-gray-400" />
+                              <div className="flex justify-center text-sm text-gray-600">
+                                <label
+                                  htmlFor="image"
+                                  className={`relative cursor-pointer bg-transparent rounded-md font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 ${
+                                    errors.image
+                                      ? "text-red-600 hover:text-red-500 focus-within:ring-red-500"
+                                      : "text-primary-600 hover:text-primary-500 focus-within:ring-primary-500"
+                                  }`}
+                                >
+                                  <span>Upload an image</span>
+                                  <input
+                                    id="image"
+                                    ref={register({ required: true, validate: { fileSize: (value) => value[0].size <= 2000000 } })}
+                                    name="image"
+                                    type="file"
+                                    accept="image/*"
+                                    className="sr-only"
+                                    onChange={onChangeImage}
+                                  />
+                                </label>
+                              </div>
+                              <p className="text-xs text-gray-500">PNG, JPG, GIF up to 2MB</p>
+                            </div>
                           </div>
-                          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 2MB</p>
                         </div>
                       </div>
                       {errors.image && (
