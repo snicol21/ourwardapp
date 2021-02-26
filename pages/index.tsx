@@ -36,7 +36,6 @@ function Home() {
               color="gray"
               modal={{
                 type: "event-action",
-                data: {},
               }}
             >
               <Icon name="pencil" className="h-5 w-5" />
