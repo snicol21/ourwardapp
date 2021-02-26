@@ -16,7 +16,7 @@ const ImageCard = ({ ...card }: IImageCard) => {
     <>
       <div className="flex flex-col rounded-lg shadow-xl h-full overflow-hidden">
         <div className="flex-shrink-0">
-          <img className="h-48 w-full object-cover object-top lg:h-64" src={card.image.src} alt={card.image.alt || ""} />
+          <img className="h-48 w-full object-cover object-center lg:h-64" src={card.image.src} alt={card.image.alt || ""} />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">

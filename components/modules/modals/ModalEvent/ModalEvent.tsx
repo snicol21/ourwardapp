@@ -9,7 +9,7 @@ const ModalEvent = ({ data }: IModal) => {
     <div className="bg-white overflow-auto max-w-6xl w-full max-h-full">
       {image && (
         <div className="flex flex-shrink-0">
-          <img className="h-36 w-full object-cover object-top lg:h-56" src={image.src} alt={image.alt || ""} />
+          <img className="h-36 w-full object-cover object-center lg:h-56" src={image.src} alt={image.alt || ""} />
         </div>
       )}
       <div className="bg-white shadow overflow-hidden">

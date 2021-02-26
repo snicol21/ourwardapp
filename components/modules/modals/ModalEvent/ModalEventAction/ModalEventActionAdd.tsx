@@ -259,7 +259,7 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
                         >
                           <Icon name="trash" className="h-6 w-6" />
                         </button>
-                        <img className="h-36 w-full lg:h-56 object-cover object-top" src={imageData} />
+                        <img className="h-36 w-full lg:h-56 object-cover object-center" src={imageData} />
                       </div>
                     </div>
                   ) : (
