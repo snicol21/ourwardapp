@@ -7,11 +7,20 @@ import ModalEventAction from "../../modules/modals/ModalEvent/ModalEventAction/M
 const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)
   const Modal = () => {
+    const wrapperProps = { id: modal.title, showModal: showModal, setShowModal: setShowModal }
     switch (modal.type) {
       case "event":
-        return <ModalEvent {...modal} />
+        return (
+          <ModalWrapper {...wrapperProps} closeOnClickOutside={true} className="md:mt-10 lg:mt-20 sm:max-w-xl">
+            <ModalEvent {...modal} />
+          </ModalWrapper>
+        )
       case "event-action":
-        return <ModalEventAction {...modal} />
+        return (
+          <ModalWrapper {...wrapperProps} closeOnClickOutside={false} className="md:mt-10 w-full sm:max-w-xl md:max-w-3xl xl:max-w-6xl">
+            <ModalEventAction {...modal} />
+          </ModalWrapper>
+        )
     }
   }
   const toggleModal = () => {
@@ -24,9 +33,7 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
       <button disabled={disabled} type="button" className={styles} onClick={toggleModal}>
         {children}
       </button>
-      <ModalWrapper id={modal.title} showModal={showModal} setShowModal={setShowModal}>
-        <Modal />
-      </ModalWrapper>
+      <Modal />
     </>
   )
 }

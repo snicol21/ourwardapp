@@ -22,10 +22,6 @@ module.exports = {
           900: "#312E81",
         },
       },
-      minHeight: {
-        1460: "1460.2px",
-        1243: "1243.73px",
-      },
     },
   },
   variants: {

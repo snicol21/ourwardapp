@@ -1,10 +1,25 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
+import { IModalEventActionData } from "../../../../../shared/types"
+import { isSameOrAfterToday } from "../../../../../shared/utils/date.util"
 import Icon from "../../../../elements/icons/Icon"
 
+const regExpUrlPattern = new RegExp(
+  /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
+  "i"
+)
+
 const getInputStyle = {
-  default: "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500",
+  default: "border-gray-300 focus:ring-primary-500 focus:border-primary-500",
   error: "border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500",
+}
+
+const getButtonColor = {
+  primary: "bg-primary-600",
+  blue: "bg-blue-600",
+  red: "bg-red-600",
+  green: "bg-green-600",
+  gray: "bg-gray-600",
 }
 
 const Error = () => {
@@ -15,28 +30,40 @@ const Error = () => {
   )
 }
 
-const ModalEventActionAdd = () => {
+const ModalEventActionAdd = ({ setShowModal }: IModalEventActionData) => {
   const [hasButton, setHasButton] = useState(false)
-  const urlPattern = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/
-  const regExpUrlPattern = new RegExp(urlPattern, "i")
+  const [hasImage, setHasImage] = useState(false)
+  const [image, setImage] = useState(null)
+  const [imageData, setImageData] = useState(null)
+  const [buttonColor, setButtonColor] = useState("primary")
 
   const { register, handleSubmit, errors } = useForm()
-  const onSubmit = (formData) => {
-    alert(JSON.stringify(formData))
+  const onSubmit = (data) => {
+    console.log(data)
+  }
+
+  const onChangeImage = (e) => {
+    if (e.target.files[0]) {
+      setImage(e.target.files[0])
+      const reader = new FileReader()
+      reader.addEventListener("load", () => {
+        setImageData(reader.result)
+      })
+      reader.readAsDataURL(e.target.files[0])
+    }
   }
 
   return (
-    <form className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6 min-h-1460 sm:min-h-1243" onSubmit={handleSubmit(onSubmit)}>
+    <form id="add-event" className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6" onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <h3 className="text-lg leading-6 font-medium text-gray-900">Adding a new event</h3>
           <p className="mt-1 text-sm text-gray-500">
             This information will be displayed publicly so ensure that the information detailed in your event is appropriate for anybody to see and share.
           </p>
-
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
             {/* Title */}
-            <div className="sm:col-span-4">
+            <div className="sm:col-span-4 lg:col-span-3">
               <label htmlFor="title" className="block text-sm font-medium text-gray-700">
                 Name*
               </label>
@@ -46,7 +73,6 @@ const ModalEventActionAdd = () => {
                   name="title"
                   type="text"
                   id="title"
-                  autoComplete="title"
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.title ? "error" : "default"]}`}
                 />
                 {errors.title && <Error />}
@@ -71,7 +97,6 @@ const ModalEventActionAdd = () => {
                   name="subtitle"
                   type="text"
                   id="subtitle"
-                  autoComplete="subtitle"
                   placeholder="(optional)"
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
                 />
@@ -86,11 +111,14 @@ const ModalEventActionAdd = () => {
               </label>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <input
-                  ref={register({ required: true })}
+                  ref={register({
+                    required: true,
+                    valueAsDate: true,
+                    validate: { isSameOrAfterToday: (value) => !!isSameOrAfterToday(value) },
+                  })}
                   name="date"
                   type="date"
                   id="date"
-                  autoComplete="date"
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.date ? "error" : "default"]}`}
                 />
                 {errors.date && <Error />}
@@ -98,6 +126,7 @@ const ModalEventActionAdd = () => {
               {errors.date && (
                 <p className="mt-2 text-sm text-red-600" id="date-error">
                   {errors.date?.type === "required" && <>Date is required</>}
+                  {errors.date?.type === "isSameOrAfterToday" && <>Not a future date</>}
                 </p>
               )}
             </div>
@@ -113,7 +142,6 @@ const ModalEventActionAdd = () => {
                   name="time"
                   type="time"
                   id="time"
-                  autoComplete="time"
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.time ? "error" : "default"]}`}
                 />
                 {errors.time && <Error />}
@@ -132,10 +160,9 @@ const ModalEventActionAdd = () => {
               </label>
               <div className="mt-1">
                 <select
-                  ref={register}
+                  ref={register({ setValueAs: (value) => parseInt(value) })}
                   name="duration"
                   id="duration"
-                  autoComplete="duration"
                   defaultValue={60}
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
                 >
@@ -164,7 +191,6 @@ const ModalEventActionAdd = () => {
                   name="location"
                   type="text"
                   id="location"
-                  autoComplete="location"
                   placeholder="(optional)"
                   className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
                 />
@@ -188,162 +214,223 @@ const ModalEventActionAdd = () => {
               </div>
               <p className="mt-2 text-sm text-gray-500">Write a few sentences about this event/announcement.</p>
             </div>
-
-            {/* Tile Image */}
-            <div className="sm:col-span-6">
-              <label htmlFor="image_small" className="block text-sm font-medium text-gray-700">
-                Tile Image
-              </label>
-              <div className="mt-1 flex items-center">
-                <span className="flex justify-center items-center h-16 w-16 rounded-full overflow-hidden bg-gray-100">
-                  <Icon name="add-image" className="h-10 w-10 text-gray-300" />
-                </span>
-                <button
-                  type="button"
-                  className="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Change
-                </button>
-              </div>
-            </div>
-
-            {/* Header Image */}
-            <div className="sm:col-span-6">
-              <label htmlFor="image_large" className="block text-sm font-medium text-gray-700">
-                Header Image
-              </label>
-              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                <div className="space-y-1 text-center">
-                  <Icon name="add-image" className="mx-auto h-12 w-12 text-gray-400" />
-                  <div className="flex justify-center text-sm text-gray-600">
-                    <label
-                      htmlFor="file-upload"
-                      className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
-                    >
-                      <span>Upload a file</span>
-                      <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                    </label>
-                  </div>
-                  <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
-                </div>
-              </div>
-            </div>
           </div>
-          <div className="mt-6">
-            <legend className="text-base font-medium text-gray-900">
-              Do you need a <span className="text-primary">button</span> to redirect people to a sign-up page?
-            </legend>
-            <div className="mt-4 space-y-4">
-              <div className="relative flex items-start">
-                <div className="flex items-center h-5">
-                  <input
-                    id="comments"
-                    name="comments"
-                    type="checkbox"
-                    onChange={() => setHasButton(!hasButton)}
-                    checked={hasButton}
-                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                  />
-                </div>
-                <div className="ml-3 text-sm">
-                  <label htmlFor="comments" className="font-medium text-gray-700">
-                    Yes, I need a button
-                  </label>
-                  <p className="text-gray-500">.</p>
+
+          <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+            {/* Image Section */}
+            <div className="sm:col-span-6 xl:col-span-3">
+              <legend className="text-base font-medium text-gray-900">
+                Do you want an <span className="underline font-semibold">image</span> to style your event/announcement?
+              </legend>
+              <div className="mt-4 space-y-4">
+                <div className="relative flex items-start">
+                  <div className="flex items-center h-5">
+                    <input
+                      id="imageCheckbox"
+                      name="imageCheckbox"
+                      type="checkbox"
+                      onChange={() => setHasImage(!hasImage)}
+                      accept=".jpg, .png, .jpg"
+                      checked={hasImage}
+                      className="focus:ring-primary-500 h-5 w-5 text-primary-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div className="ml-3 text-sm">
+                    <label htmlFor="imageCheckbox" className="font-medium text-gray-700">
+                      <span className="underline font-semibold">Yes</span>, I want an image
+                    </label>
+                    <p className="text-gray-500">.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            {hasButton && (
-              <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-                {/* Button Label */}
-                <div className="sm:col-span-2 sm:col-start-1">
-                  <label htmlFor="button_text" className="block text-sm font-medium text-gray-700">
-                    Button Label*
+              {hasImage && (
+                <div>
+                  {/* Image */}
+                  <label htmlFor="image" className="block text-sm font-medium text-gray-700">
+                    Image*
                   </label>
-                  <div className="mt-1 relative rounded-md shadow-sm">
-                    <input
-                      ref={register({ required: true })}
-                      name="button_text"
-                      type="text"
-                      id="button_text"
-                      autoComplete="button_text"
-                      className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.button_text ? "error" : "default"]}`}
-                    />
-                    {errors.button_text && <Error />}
-                  </div>
-                  {errors.button_text ? (
-                    <p className="mt-2 text-sm text-red-600" id="button_text-error">
-                      {errors.button_text?.type === "required" && <>Button label is required</>}
-                    </p>
+                  {image ? (
+                    <div className="mt-2 bg-white overflow-auto w-full max-h-full rounded-xl">
+                      <div className="relative flex flex-shrink-0">
+                        <button
+                          type="button"
+                          onClick={() => setImage(null)}
+                          className="absolute right-3 mt-3 inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                        >
+                          <Icon name="trash" className="h-6 w-6" />
+                        </button>
+                        <img className="h-36 w-full lg:h-56 object-cover object-top" src={imageData} />
+                      </div>
+                    </div>
                   ) : (
-                    <p className="mt-2 text-sm text-gray-500">(ex: Sign Up)</p>
-                  )}
-                </div>
-
-                {/* Button Color */}
-                <div className="sm:col-span-2">
-                  <label htmlFor="button_color" className="block text-sm font-medium text-gray-700">
-                    Button Color*
-                  </label>
-                  <div className="mt-1 flex items-center">
-                    <div className="w-full pr-2">
-                      <select
-                        ref={register}
-                        name="button_color"
-                        id="button_color"
-                        autoComplete="button_color"
-                        className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
+                    <>
+                      <div
+                        className={`mt-2 flex justify-center items-center h-36 w-full lg:h-56 px-6 pt-5 pb-6 rounded-xl border-2 border-dashed ${
+                          errors.image ? "border-red-600" : "border-gray-400"
+                        }`}
                       >
-                        <option value={"primary"}>Default</option>
-                        <option value={"blue"}>Blue</option>
-                        <option value={"red"}>Red</option>
-                        <option value={"green"}>Green</option>
-                        <option value={"gray"}>Gray</option>
-                      </select>
-                    </div>
-                    <div>
-                      <div className="h-5 w-5 bg-primary rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Button Url */}
-                <div className="sm:col-span-6">
-                  <label htmlFor="button_link_url" className="block text-sm font-medium text-gray-700">
-                    Button Url*
-                  </label>
-                  <div className="mt-1 relative rounded-md shadow-sm">
-                    <input
-                      ref={register({
-                        required: true,
-                        pattern: regExpUrlPattern,
-                      })}
-                      name="button_link_url"
-                      type="text"
-                      id="button_link_url"
-                      autoComplete="button_link_url"
-                      className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.button_link_url ? "error" : "default"]}`}
-                    />
-                    {errors.button_link_url && <Error />}
-                  </div>
-                  {errors.button_link_url ? (
-                    <p className="mt-2 text-sm text-red-600" id="button_link_url-error">
-                      {errors.button_link_url?.type === "required" && <>Button url is required</>}
-                      {errors.button_link_url?.type === "pattern" && <>Enter a valid url!</>}
-                    </p>
-                  ) : (
-                    <p className="mt-2 text-sm text-gray-500">(ex: https://docs.google.com/forms/my-google-form-that-i-made)</p>
+                        <div className="space-y-1 text-center">
+                          <Icon name="add-image" className="mx-auto h-12 w-12 text-gray-400" />
+                          <div className="flex justify-center text-sm text-gray-600">
+                            <label
+                              htmlFor="image"
+                              className={`relative cursor-pointer bg-transparent rounded-md font-medium focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 ${
+                                errors.image
+                                  ? "text-red-600 hover:text-red-500 focus-within:ring-red-500"
+                                  : "text-primary-600 hover:text-primary-500 focus-within:ring-primary-500"
+                              }`}
+                            >
+                              <span>Upload an image</span>
+                              <input
+                                id="image"
+                                ref={register({ required: true, validate: { fileSize: (value) => value[0].size <= 2000000 } })}
+                                name="image"
+                                type="file"
+                                accept="image/*"
+                                className="sr-only"
+                                onChange={onChangeImage}
+                              />
+                            </label>
+                          </div>
+                          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 2MB</p>
+                        </div>
+                      </div>
+                      {errors.image && (
+                        <p className="mt-2 text-sm text-red-600" id="image-error">
+                          {errors.image?.type === "required" && <>Image is required if you say you want one 😉</>}
+                          {errors.image?.type === "fileSize" && <>Sorry, your file is too big. Please resize the image and keep it under 2 MB.</>}
+                        </p>
+                      )}
+                    </>
                   )}
                 </div>
+              )}
+            </div>
+            {/* Button Section */}
+            <div className="sm:col-span-6 xl:col-span-3">
+              <legend className="text-base font-medium text-gray-900">
+                Do you want a <span className="underline font-semibold">button</span> to redirect people to a sign-up page?
+              </legend>
+              <div className="mt-4 space-y-4">
+                <div className="relative flex items-start">
+                  <div className="flex items-center h-5">
+                    <input
+                      id="buttonCheckbox"
+                      name="buttonCheckbox"
+                      type="checkbox"
+                      onChange={() => setHasButton(!hasButton)}
+                      checked={hasButton}
+                      className="focus:ring-primary-500 h-5 w-5 text-primary-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div className="ml-3 text-sm">
+                    <label htmlFor="buttonCheckbox" className="font-medium text-gray-700">
+                      <span className="underline font-semibold">Yes</span>, I want a button
+                    </label>
+                    <p className="text-gray-500">.</p>
+                  </div>
+                </div>
               </div>
-            )}
+              {hasButton && (
+                <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                  {/* Button Label */}
+                  <div className="sm:col-span-2 sm:col-start-1">
+                    <label htmlFor="buttonText" className="block text-sm font-medium text-gray-700">
+                      Button Label*
+                    </label>
+                    <div className="mt-1 relative rounded-md shadow-sm">
+                      <input
+                        ref={register({ required: true })}
+                        name="buttonText"
+                        type="text"
+                        id="buttonText"
+                        className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.buttonText ? "error" : "default"]}`}
+                      />
+                      {errors.buttonText && <Error />}
+                    </div>
+                    {errors.buttonText ? (
+                      <p className="mt-2 text-sm text-red-600" id="button-text-error">
+                        {errors.buttonText?.type === "required" && <>Button label is required</>}
+                      </p>
+                    ) : (
+                      <p className="mt-2 text-sm text-gray-500">(ex: Sign Up)</p>
+                    )}
+                  </div>
+
+                  {/* Button Color */}
+                  <div className="sm:col-span-2">
+                    <label htmlFor="buttonColor" className="block text-sm font-medium text-gray-700">
+                      Button Color*
+                    </label>
+                    <div className="mt-1 flex items-center">
+                      <div className="w-full pr-2">
+                        <select
+                          ref={register}
+                          name="buttonColor"
+                          value={buttonColor}
+                          onChange={(e) => setButtonColor(e.target.value)}
+                          defaultValue={"primary"}
+                          id="buttonColor"
+                          className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
+                        >
+                          <option value={"primary"}>Default</option>
+                          <option value={"blue"}>Blue</option>
+                          <option value={"red"}>Red</option>
+                          <option value={"green"}>Green</option>
+                          <option value={"gray"}>Gray</option>
+                        </select>
+                      </div>
+                      <div>
+                        <div className={`h-5 w-5 ${getButtonColor[buttonColor]} rounded-full`}></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Button Url */}
+                  <div className="sm:col-span-6">
+                    <label htmlFor="buttonLinkUrl" className="block text-sm font-medium text-gray-700">
+                      Button Url*
+                    </label>
+                    <div className="mt-1 relative rounded-md shadow-sm">
+                      <input
+                        ref={register({
+                          required: true,
+                          pattern: regExpUrlPattern,
+                          setValueAs: (value) => value.toLowerCase(),
+                        })}
+                        name="buttonLinkUrl"
+                        type="text"
+                        id="buttonLinkUrl"
+                        className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle[errors.buttonLinkUrl ? "error" : "default"]}`}
+                      />
+                      {errors.buttonLinkUrl && <Error />}
+                    </div>
+                    {errors.buttonLinkUrl ? (
+                      <p className="mt-2 text-sm text-red-600" id="button-link-url-error">
+                        {errors.buttonLinkUrl?.type === "required" && <>Button url is required</>}
+                        {errors.buttonLinkUrl?.type === "pattern" && <>Enter a valid url!</>}
+                      </p>
+                    ) : (
+                      <p className="mt-2 text-sm text-gray-500">(ex: https://docs.google.com/forms/my-google-form-that-i-made)</p>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="pt-5">
           <div className="flex justify-end">
             <button
+              type="button"
+              onClick={() => setShowModal(false)}
+              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+            >
+              Cancel
+            </button>
+            <button
               type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             >
               Save
             </button>

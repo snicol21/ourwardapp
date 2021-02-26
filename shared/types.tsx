@@ -1,3 +1,5 @@
+import { SetStateAction } from "react"
+
 export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
 
 export type IButton = {
@@ -10,11 +12,13 @@ export type IButton = {
 export type IModal =
   | {
       type: "event"
+      setShowModal: React.Dispatch<SetStateAction<boolean>>
       data: IModalEventData
     }
   | {
       type: "event-action"
-      data: {}
+      setShowModal: React.Dispatch<SetStateAction<boolean>>
+      data: IModalEventActionData
     }
 
 export type IModalEventData = {
@@ -26,6 +30,10 @@ export type IModalEventData = {
   duration: number
   location?: string
   details?: string
+}
+
+export type IModalEventActionData = {
+  setShowModal: React.Dispatch<SetStateAction<boolean>>
 }
 
 export type ILink = {

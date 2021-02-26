@@ -3,10 +3,12 @@ import dayjs from "dayjs"
 import relativeTime from "dayjs/plugin/relativeTime"
 import isBetween from "dayjs/plugin/isBetween"
 import advancedFormat from "dayjs/plugin/advancedFormat"
+import isSameOrAfter from "dayjs/plugin/isSameOrAfter"
 
 dayjs.extend(relativeTime)
 dayjs.extend(isBetween)
 dayjs.extend(advancedFormat)
+dayjs.extend(isSameOrAfter)
 
 export type IDateDisplay = {
   dateDisplay: string
@@ -40,4 +42,8 @@ export function getDateDisplay(rawDate: Date, withinDays: number, duration?: num
     isoString: date.toISOString(),
     isWithin: date.isBetween(dayjs(), dayjs().add(withinDays, "day"), "day"),
   }
+}
+
+export function isSameOrAfterToday(rawDate: Date) {
+  return dayjs(rawDate).isSameOrAfter(dayjs(), "date")
 }
