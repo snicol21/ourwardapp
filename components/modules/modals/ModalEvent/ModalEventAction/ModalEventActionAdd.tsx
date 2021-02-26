@@ -2,7 +2,9 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { IModalEventActionData } from "../../../../../shared/types"
 import { isSameOrAfterToday } from "../../../../../shared/utils/date.util"
+import Cropper from "react-easy-crop"
 import Icon from "../../../../elements/icons/Icon"
+import getCroppedImg from "../../../../../shared/utils/image.util"
 
 const regExpUrlPattern = new RegExp(
   /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
@@ -32,25 +34,52 @@ const Error = () => {
 
 const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
   const [hasButton, setHasButton] = useState(false)
+  const [buttonColor, setButtonColor] = useState("primary")
+
   const [hasImage, setHasImage] = useState(false)
   const [image, setImage] = useState(null)
-  const [imageData, setImageData] = useState(null)
-  const [buttonColor, setButtonColor] = useState("primary")
+  const [imageCropped, setImageCropped] = useState(null)
+  const [imageCroppedArea, setImageCroppedArea] = useState(null)
+  const [imageCrop, setImageCrop] = useState({ x: 0, y: 0 })
+  const [imageZoom, setImageZoom] = useState(1)
+  const [showImageCrop, setShowImageCrop] = useState(true)
 
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = (data) => {
+    if (showImageCrop) {
+      onImageSaveCrop()
+    }
     console.log(data)
   }
 
-  const onChangeImage = (e) => {
-    if (e.target.files[0]) {
-      setImage(e.target.files[0])
+  const onImageChange = (e) => {
+    console.log(e)
+    if (e.target.files && e.target.files.length > 0) {
       const reader = new FileReader()
-      reader.addEventListener("load", () => {
-        setImageData(reader.result)
-      })
       reader.readAsDataURL(e.target.files[0])
+      reader.addEventListener("load", () => {
+        setImage(reader.result)
+      })
     }
+  }
+
+  const onImageDelete = () => {
+    setImage(null)
+    setImageCropped(null)
+    setImageCroppedArea(null)
+    setImageCrop({ x: 0, y: 0 })
+    setImageZoom(1)
+    setShowImageCrop(true)
+  }
+
+  const onImageCropComplete = (croppedAreaPercentage, imageCroppedAreaPixels) => {
+    setImageCroppedArea(imageCroppedAreaPixels)
+  }
+
+  async function onImageSaveCrop() {
+    const imageCropped = await getCroppedImg(image, imageCroppedArea)
+    setImageCropped(imageCropped)
+    setShowImageCrop(false)
   }
 
   return (
@@ -255,14 +284,45 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
                   {image ? (
                     <div className="mt-2">
                       <div className="relative w-full pt-1/2 border-2 border-transparent rounded-xl">
-                        <img className="absolute h-full w-full top-0 rounded-xl object-cover object-center" src={imageData} />
-                        <button
-                          type="button"
-                          onClick={() => setImage(null)}
-                          className="absolute top-0 right-3 mt-3 inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
-                        >
-                          <Icon name="trash" className="h-6 w-6" />
-                        </button>
+                        {showImageCrop ? (
+                          <Cropper
+                            image={image}
+                            crop={imageCrop}
+                            zoom={imageZoom}
+                            aspect={2}
+                            onCropChange={setImageCrop}
+                            onZoomChange={setImageZoom}
+                            onCropComplete={onImageCropComplete}
+                          />
+                        ) : (
+                          <img className="absolute h-full w-full top-0 rounded-xl object-cover object-center" src={imageCropped} />
+                        )}
+                        <div className="absolute top-0 right-3 mt-3 space-x-2">
+                          {showImageCrop ? (
+                            <button
+                              type="button"
+                              onClick={() => onImageSaveCrop()}
+                              className="inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            >
+                              <Icon name="check" className="h-6 w-6" />
+                            </button>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => setShowImageCrop(true)}
+                              className="inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                            >
+                              <Icon name="pencil" className="h-6 w-6" />
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={onImageDelete}
+                            className="inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                          >
+                            <Icon name="trash" className="h-6 w-6" />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   ) : (
@@ -293,7 +353,7 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
                                     type="file"
                                     accept="image/*"
                                     className="sr-only"
-                                    onChange={onChangeImage}
+                                    onChange={onImageChange}
                                   />
                                 </label>
                               </div>

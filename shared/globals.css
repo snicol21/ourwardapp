@@ -19,3 +19,21 @@ body {
 input::-webkit-date-and-time-value {
   height: 1.5em;
 }
+
+/* cropper styles */
+.reactEasyCrop_Container {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.reactEasyCrop_CropAreaGrid {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.reactEasyCrop_Image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
