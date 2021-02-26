@@ -7,10 +7,15 @@
   max-width: 998px !important;
 }
 
+.is-scrollLocked {
+  overflow: hidden;
+}
+
+/* fix safari and mobile */
 body {
   -webkit-overflow-scrolling: touch;
 }
 
-.is-scrollLocked {
-  overflow: hidden;
+input::-webkit-date-and-time-value {
+  height: 1.5em;
 }
