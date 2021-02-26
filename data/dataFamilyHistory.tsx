@@ -30,7 +30,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Coloring Pages for Children",
     subtitle: "Activities",
     image: {
-      src: "/images/temple-family-history/coloring-pages.jpg",
+      src: "/images/temple-family-history/coloring-pages.webp",
       alt: "Coloring Pages for Children",
     },
     button: {
@@ -46,7 +46,7 @@ export const dataImageCards: IImageCard[] = [
     title: "All requirements to enter the temple relate to personal holiness.",
     subtitle: "Resource",
     image: {
-      src: "/images/temple-family-history/president-nelson.jpeg",
+      src: "/images/temple-family-history/president-nelson.webp",
       alt: "President Nelson",
     },
     button: {
@@ -62,7 +62,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Unplugged Activities & Scavenger Hunt",
     subtitle: "Activities",
     image: {
-      src: "/images/temple-family-history/scavenger-hunt.jpg",
+      src: "/images/temple-family-history/scavenger-hunt.webp",
       alt: "Scavenger Hunt",
     },
     button: {
@@ -78,7 +78,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Family Search Activities",
     subtitle: "Activities",
     image: {
-      src: "/images/temple-family-history/family-search.jpg",
+      src: "/images/temple-family-history/family-search.webp",
       alt: "Family Search",
     },
     button: {
@@ -97,7 +97,7 @@ export const dataFaceCard: IFaceCard = {
   subtitle: "Temple & Family History Leader",
   images: [
     {
-      src: "/images/temple-family-history/gough.jpg",
+      src: "/images/temple-family-history/gough.webp",
       alt: "Jordan Gough",
       width: 100,
       height: 100,

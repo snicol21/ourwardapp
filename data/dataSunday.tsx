@@ -134,7 +134,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
           },
         },
         image: {
-          src: "/images/image-cards/sacrament.jpeg",
+          src: "/images/image-cards/sacrament.webp",
           alt: "New Move-in",
         },
       },
@@ -151,7 +151,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
           },
         },
         image: {
-          src: "/images/image-cards/sacrament-virtual.jpg",
+          src: "/images/image-cards/sacrament-virtual.webp",
           alt: "New Move-in",
         },
       },
