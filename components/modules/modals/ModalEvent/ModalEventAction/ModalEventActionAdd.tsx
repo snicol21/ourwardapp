@@ -30,7 +30,7 @@ const Error = () => {
   )
 }
 
-const ModalEventActionAdd = ({ setShowModal }: IModalEventActionData) => {
+const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
   const [hasButton, setHasButton] = useState(false)
   const [hasImage, setHasImage] = useState(false)
   const [image, setImage] = useState(null)
@@ -423,7 +423,7 @@ const ModalEventActionAdd = ({ setShowModal }: IModalEventActionData) => {
           <div className="flex justify-end">
             <button
               type="button"
-              onClick={() => setShowModal(false)}
+              onClick={toggleModal}
               className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             >
               Cancel

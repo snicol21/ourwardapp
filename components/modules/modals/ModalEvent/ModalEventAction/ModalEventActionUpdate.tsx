@@ -1,6 +1,6 @@
 import { IModalEventActionData } from "../../../../../shared/types"
 
-const ModalEventActionUpdate = ({ setShowModal }: IModalEventActionData) => {
+const ModalEventActionUpdate = ({ toggleModal }: IModalEventActionData) => {
   return (
     <div className="space-y-8 divide-y divide-gray-200 px-4 py-5 sm:px-6">
       <div className="space-y-8 divide-y divide-gray-200">

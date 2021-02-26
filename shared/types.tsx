@@ -12,12 +12,12 @@ export type IButton = {
 export type IModal =
   | {
       type: "event"
-      setShowModal?: React.Dispatch<SetStateAction<boolean>>
+      toggleModal?: () => void
       data: IModalEventData
     }
   | {
       type: "event-action"
-      setShowModal?: React.Dispatch<SetStateAction<boolean>>
+      toggleModal?: () => void
       data?: IModalEventActionData
     }
 
@@ -33,7 +33,7 @@ export type IModalEventData = {
 }
 
 export type IModalEventActionData = {
-  setShowModal: React.Dispatch<SetStateAction<boolean>>
+  toggleModal: () => void
 }
 
 export type ILink = {

@@ -3,7 +3,7 @@ import { IModal } from "../../../../../shared/types"
 import ModalEventActionAdd from "./ModalEventActionAdd"
 import ModalEventActionUpdate from "./ModalEventActionUpdate"
 
-const ModalEventAction = ({ setShowModal }: IModal) => {
+const ModalEventAction = ({ toggleModal }: IModal) => {
   const [action, setAction] = useState("add")
 
   return (
@@ -32,7 +32,7 @@ const ModalEventAction = ({ setShowModal }: IModal) => {
           </button>
         </nav>
       </div>
-      {action === "add" ? <ModalEventActionAdd setShowModal={setShowModal} /> : <ModalEventActionUpdate setShowModal={setShowModal} />}
+      {action === "add" ? <ModalEventActionAdd toggleModal={toggleModal} /> : <ModalEventActionUpdate toggleModal={toggleModal} />}
     </div>
   )
 }

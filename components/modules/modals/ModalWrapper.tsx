@@ -59,7 +59,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
         leaveTo="opacity-0"
       >
         <div className="absolute z-10 inset-0 bg-gray-600 opacity-75"></div>
-        <button className="absolute z-20 right-2 top-2 text-white cursor-pointer" onClick={() => setShowModal(false)}>
+        <button className="absolute z-20 right-2 top-2 text-white cursor-pointer" onClick={toggleModal}>
           <Icon name="close" className="h-8 w-8" />
         </button>
       </Transition.Child>
@@ -78,7 +78,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               {React.Children.map(children, (child) => {
-                return React.cloneElement(child as React.ReactElement<any>, { setShowModal })
+                return React.cloneElement(child as React.ReactElement<any>, { toggleModal })
               })}
             </Transition.Child>
           </div>
