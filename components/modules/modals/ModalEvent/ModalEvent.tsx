@@ -15,11 +15,11 @@ const ModalEvent = ({ data }: IModal) => {
       <div className="bg-white shadow overflow-hidden">
         <div className="flex justify-between px-4 py-5 sm:px-6">
           <div>
-            <h3 className="text-2xl leading-6 font-semibold text-black">{title}</h3>
+            <h3 className="text-lg sm:text-2xl leading-6 font-semibold text-black">{title}</h3>
             {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
           </div>
           {button?.link && (
-            <PrimaryButton link={button.link} color={button.color}>
+            <PrimaryButton link={button.link} color={button.color} size="sm">
               {button.text}
             </PrimaryButton>
           )}
