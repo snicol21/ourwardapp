@@ -22,7 +22,6 @@ const EventCard = ({ ...card }: IEventCard) => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundAttachment: "cover",
         }}
       ></div>
       <PrimaryButton
