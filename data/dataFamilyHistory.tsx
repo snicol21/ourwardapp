@@ -11,7 +11,7 @@ export const dataHeroCard: IHeroCard = {
     alt: "Temple & Family History",
   },
   button: {
-    text: "Sign Up",
+    text: "Coming Soon!",
     link: {
       url: "https://google.com",
       external: true,
