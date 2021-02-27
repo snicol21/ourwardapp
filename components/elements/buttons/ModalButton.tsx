@@ -2,7 +2,7 @@ import { useState } from "react"
 import { hideBodyScroll } from "../../../shared/utils/document.util"
 import ModalWrapper from "../../modules/modals/ModalWrapper"
 import ModalEvent from "../../modules/modals/ModalEvent/ModalEvent"
-import ModalEventAction from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventAction"
+// import ModalEventAction from "../../modules/modals/ModalEvent/ModalEventAction/ModalEventAction"
 
 const ModalButton = ({ children, styles, disabled, modal }) => {
   const [showModal, setShowModal] = useState(false)
@@ -15,12 +15,12 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
             <ModalEvent {...modal} />
           </ModalWrapper>
         )
-      case "event-action":
-        return (
-          <ModalWrapper {...wrapperProps} closeOnClickOutside={false} className="md:mt-10 w-full sm:max-w-xl md:max-w-3xl xl:max-w-6xl">
-            <ModalEventAction {...modal} />
-          </ModalWrapper>
-        )
+      // case "event-action":
+      //   return (
+      //     <ModalWrapper {...wrapperProps} closeOnClickOutside={false} className="md:mt-10 w-full sm:max-w-xl md:max-w-3xl xl:max-w-6xl">
+      //       <ModalEventAction {...modal} />
+      //     </ModalWrapper>
+      //   )
     }
   }
   const toggleModal = () => {

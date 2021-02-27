@@ -29,7 +29,7 @@ function Home() {
                 <EventCard key={card.title} {...card} />
               ))}
           </div>
-          <div className="flex pt-5 justify-end">
+          {/* <div className="flex pt-5 justify-end">
             <PrimaryButton
               type="light"
               size="sm"
@@ -41,7 +41,7 @@ function Home() {
               <Icon name="pencil" className="h-5 w-5" />
               <span className="pl-2">Add/Update</span>
             </PrimaryButton>
-          </div>
+          </div> */}
         </>
       )}
       {dataFaceCards.filter((card) => !card.hidden).length > 0 && (
