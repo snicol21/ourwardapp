@@ -23,18 +23,63 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Relief Society Birthday Social",
-    date: new Date("March 3, 2021 14:30:00"),
+    title: "Baptism Preview",
+    date: new Date("February 28, 2021 19:00:00"),
+    image: {
+      src: "/images/announcements/baptism-preview.webp",
+    },
     button: {
-      link: {
-        url: "/",
+      modal: {
+        type: "event",
+        data: {
+          title: "Baptism Preview",
+          image: {
+            src: "/images/announcements/baptism-preview.webp",
+            alt: "Bishop",
+          },
+          date: new Date("February 28, 2021 19:00:00"),
+          duration: 60,
+          location: "Maples 3rd Ward",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Welfare Assignment",
+    date: new Date("March 9, 2021 15:00:00"),
+    image: {
+      src: "/images/announcements/welfare.webp",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Welfare Assignment",
+          image: {
+            src: "/images/announcements/welfare.webp",
+            alt: "Bishop",
+          },
+          date: new Date("March 9, 2021 15:00:00"),
+          duration: 120,
+          location: "Maples 3rd Ward",
+          details:
+            "For this welfare assignment food will be prepared for approximately 600 homeless persons each day (from 3:00 - 5:00 PM); however, tasks vary depending on daily needs. Each volunteer will need to wear closed-toed shoes. Aprons and plastic gloves are provided. Youth 12 and older are welcome with adult supervision.\n\nPlease contact Bro. Jason Hardman with any question at 801-613-9833",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://calendly.com/ssr3rdward/welfare",
+              calendly: true,
+            },
+          },
+        },
       },
     },
     hidden: false,
   },
   {
     title: "Bishop Mobile",
-    date: new Date("March 23, 2021 17:00:00"),
+    date: new Date("March 11, 2021 17:00:00"),
     image: {
       src: "/images/announcements/bishop-mobile.webp",
       alt: "Bishop Mobile",
@@ -49,17 +94,9 @@ export const dataInfoCards: IEventCard[] = [
             src: "/images/announcements/bishop-mobile.webp",
             alt: "Bishop",
           },
-          date: new Date("March 23, 2021 17:00:00"),
-          duration: 45,
+          date: new Date("March 11, 2021 17:00:00"),
+          duration: 90,
           location: "Maples 3rd Ward",
-          details:
-            "Valentine's Day is on it's way! And so is the Bishop Mobile! Be on the lookup this Saturday, the 13th. We'll start our valentine distributing trek at 2pm",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "/",
-            },
-          },
         },
       },
     },
