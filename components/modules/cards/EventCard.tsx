@@ -17,7 +17,7 @@ const EventCard = ({ ...card }: IEventCard) => {
     <div
       className="rounded-lg shadow-xl bg-white"
       style={{
-        backgroundImage: "linear-gradient(to right, transparent, white, white, white), url(" + card.image?.src || "https://via.placeholder.com/382" + ")",
+        backgroundImage: "linear-gradient(to right, transparent, white, white, white), url('" + card.image?.src + "')",
         backgroundPosition: "left",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
