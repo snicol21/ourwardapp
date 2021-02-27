@@ -18,7 +18,7 @@ const EventCard = ({ ...card }: IEventCard) => {
       <div
         className="w-24 h-full rounded-l-lg"
         style={{
-          backgroundImage: `url('${card.image?.src}')`,
+          backgroundImage: card.image?.src,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
