@@ -23,7 +23,7 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Baptism Preview",
+    title: "Great to Be Eight",
     date: new Date("February 28, 2021 19:00:00"),
     image: {
       src: "/images/announcements/baptism-preview.png",
@@ -32,14 +32,17 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Baptism Preview",
+          title: "Great to Be Eight",
+          subtitle: "Baptism Preview",
           image: {
             src: "/images/announcements/baptism-preview.png",
             alt: "Bishop",
           },
           date: new Date("February 28, 2021 19:00:00"),
           duration: 60,
-          location: "Maples 3rd Ward",
+          location: "Relief Society Room at the Stake Center (8107 S. 6700 W.)",
+          details:
+            "Please join us for a special meeting about your special day! All children who are turning 8 are invited to attend with their parents. Refreshments will be served.",
           button: {
             text: "Zoom",
             link: {
