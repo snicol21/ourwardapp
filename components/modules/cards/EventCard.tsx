@@ -14,7 +14,7 @@ export type IEventCard = {
 const EventCard = ({ ...card }: IEventCard) => {
   const dateDisplay = getDateDisplay(card.date, 7)
   return (
-    <div className="rounded-lg shadow-xl bg-white flex">
+    <div className="rounded-lg shadow-xl flex">
       <div
         className="w-24 h-full rounded-l-lg"
         style={{
@@ -28,9 +28,9 @@ const EventCard = ({ ...card }: IEventCard) => {
         type="pass-thru"
         link={card.button.link}
         modal={card.button.modal}
-        className="relative w-full px-4 py-5 flex text-left items-center space-x-3"
+        className="relative w-full px-4 py-5 flex text-left items-center space-x-3 bg-white"
       >
-        <div className="flex-1 min-w-0 rounded-lg bg-white">
+        <div className="flex-1 min-w-0 rounded-lg">
           <a href="#" className="focus:outline-none">
             <span className="absolute inset-0" aria-hidden="true"></span>
             <p className="text-black font-semibold text-md md:text-lg pb-1 truncate" title={card.title}>
