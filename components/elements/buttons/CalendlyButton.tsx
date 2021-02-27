@@ -3,7 +3,12 @@ import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/
 
 const CalendlyButton = ({ children, styles, url, disabled }) => {
   return (
-    <button disabled={disabled} type="button" className={styles} onClick={() => openPopupWidget({ url, pageSettings: {} } as PopupWidgetOptions)}>
+    <button
+      disabled={disabled}
+      type="button"
+      className={`${styles} ${disabled ? "disabled:opacity-50" : ""}`}
+      onClick={() => openPopupWidget({ url, pageSettings: {} } as PopupWidgetOptions)}
+    >
       {children}
     </button>
   )

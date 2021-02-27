@@ -5,6 +5,7 @@ export type IButton = {
   color?: IColor
   link?: ILink | ILink[]
   modal?: IModal
+  disabled?: boolean
 }
 
 export type IModal =

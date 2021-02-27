@@ -30,7 +30,7 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
 
   return (
     <>
-      <button disabled={disabled} type="button" className={styles} onClick={toggleModal}>
+      <button disabled={disabled} type="button" className={`${styles} ${disabled ? "disabled:opacity-50" : ""}`} onClick={toggleModal}>
         {children}
       </button>
       <Modal />

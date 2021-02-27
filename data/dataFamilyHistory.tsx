@@ -13,8 +13,10 @@ export const dataHeroCard: IHeroCard = {
   button: {
     text: "Sign Up",
     link: {
-      url: "/temple-family-history",
+      url: "https://google.com",
+      external: true,
     },
+    disabled: true,
   },
   type: "light",
 }
@@ -36,8 +38,8 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View",
       link: {
-        url: "/temple-family-history",
-        external: false,
+        url: "https://www.churchofjesuschrist.org/media/collection/family-history-coloring-pages-images?lang=eng",
+        external: true,
       },
     },
     hidden: false,
@@ -52,8 +54,8 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View",
       link: {
-        url: "/temple-family-history",
-        external: false,
+        url: "https://www.churchofjesuschrist.org/study/general-conference/2019/10/57nelson?lang=eng",
+        external: true,
       },
     },
     hidden: false,
@@ -68,8 +70,8 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View",
       link: {
-        url: "/temple-family-history",
-        external: false,
+        url: "https://www.dropbox.com/sh/10ccx8vk444c6t9/AAC716lY3U172_308G-XCWnpa?dl=0",
+        external: true,
       },
     },
     hidden: false,
@@ -84,8 +86,8 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View",
       link: {
-        url: "/temple-family-history",
-        external: false,
+        url: "https://www.familysearch.org/discovery/",
+        external: true,
       },
     },
     hidden: false,

@@ -33,6 +33,7 @@ const HeroCard = ({ ...card }: IHeroCard) => {
               color={buttonColor}
               link={card.button.link}
               size="lg"
+              disabled={!!card.button.disabled}
               className="mt-5 font-bold md:mt-0"
             >
               {card.button.text}
