@@ -40,6 +40,13 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("February 28, 2021 19:00:00"),
           duration: 60,
           location: "Maples 3rd Ward",
+          button: {
+            text: "Zoom",
+            link: {
+              url: "https://zoom.us/j/97091079133?pwd=ZG9jUFVONFNGYW9rRXV6K3lJVjVUUT09",
+              external: true,
+            },
+          },
         },
       },
     },
