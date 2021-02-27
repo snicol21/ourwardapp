@@ -2,7 +2,7 @@ import ImageCard from "../cards/ImageCard"
 import MiniCard from "../cards/MiniCard"
 import Divider from "../../elements/dividers/Divider"
 import SectionHeader from "../../elements/headers/SectionHeader"
-import { IButtonColor, IImage, IButton } from "../../../shared/types"
+import { IColor, IImage, IButton } from "../../../shared/types"
 
 export type ISchedule = {
   date: IScheduleDate
@@ -17,7 +17,7 @@ export type IScheduleDate = {
 
 export type IScheduleTime = {
   time: string
-  color: IButtonColor
+  color: IColor
   events: IScheduleEvent[]
 }
 

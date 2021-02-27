@@ -1,4 +1,4 @@
-import { IButtonColor, ILink, IModal } from "../../../shared/types"
+import { IColor, ILink, IModal } from "../../../shared/types"
 import CalendlyButton from "./CalendlyButton"
 import LinkButton from "./LinkButton"
 import MenuButton from "./MenuButton"
@@ -6,7 +6,7 @@ import ModalButton from "./ModalButton"
 
 export type IPrimaryButton = {
   children: React.ReactNode
-  color?: IButtonColor
+  color?: IColor
   disabled?: boolean
   link?: ILink | ILink[]
   className?: string

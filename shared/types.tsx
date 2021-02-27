@@ -1,10 +1,8 @@
-import { SetStateAction } from "react"
-
-export type IButtonColor = "primary" | "blue" | "red" | "green" | "gray"
+export type IColor = "primary" | "blue" | "red" | "green" | "gray"
 
 export type IButton = {
   text?: string
-  color?: IButtonColor
+  color?: IColor
   link?: ILink | ILink[]
   modal?: IModal
 }
