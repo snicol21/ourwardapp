@@ -26,7 +26,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Baptism Preview",
     date: new Date("February 28, 2021 19:00:00"),
     image: {
-      src: "/images/announcements/baptism-preview.webp",
+      src: "/images/announcements/baptism-preview.png",
     },
     button: {
       modal: {
@@ -34,7 +34,7 @@ export const dataInfoCards: IEventCard[] = [
         data: {
           title: "Baptism Preview",
           image: {
-            src: "/images/announcements/baptism-preview.webp",
+            src: "/images/announcements/baptism-preview.png",
             alt: "Bishop",
           },
           date: new Date("February 28, 2021 19:00:00"),
@@ -49,7 +49,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Welfare Assignment",
     date: new Date("March 9, 2021 15:00:00"),
     image: {
-      src: "/images/announcements/welfare.webp",
+      src: "/images/announcements/welfare.png",
     },
     button: {
       modal: {
@@ -57,7 +57,7 @@ export const dataInfoCards: IEventCard[] = [
         data: {
           title: "Welfare Assignment",
           image: {
-            src: "/images/announcements/welfare.webp",
+            src: "/images/announcements/welfare.png",
             alt: "Bishop",
           },
           date: new Date("March 9, 2021 15:00:00"),
@@ -81,7 +81,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Bishop Mobile",
     date: new Date("March 11, 2021 17:00:00"),
     image: {
-      src: "/images/announcements/bishop-mobile.webp",
+      src: "/images/announcements/bishop-mobile.png",
       alt: "Bishop Mobile",
     },
     button: {
@@ -91,7 +91,7 @@ export const dataInfoCards: IEventCard[] = [
           title: "Bishop Mobile",
           subtitle: "Ward Activity",
           image: {
-            src: "/images/announcements/bishop-mobile.webp",
+            src: "/images/announcements/bishop-mobile.png",
             alt: "Bishop",
           },
           date: new Date("March 11, 2021 17:00:00"),
