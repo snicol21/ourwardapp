@@ -15,15 +15,9 @@ const EventCard = ({ ...card }: IEventCard) => {
   const dateDisplay = getDateDisplay(card.date, 7)
   return (
     <div className="rounded-lg shadow-xl flex bg-white">
-      <div
-        className="w-24 h-full rounded-l-lg"
-        style={{
-          backgroundImage: `url(${card.image?.src})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <div className="w-24">
+        <img className="h-full object-cover rounded-l-lg" src={card.image?.src} />
+      </div>
       <PrimaryButton
         type="pass-thru"
         link={card.button.link}
