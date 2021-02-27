@@ -66,7 +66,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
         <div ref={modalContent} className={`${className}`}>
-          <div className="pb-12 sm:pb-32">
+          <div className="pb-32">
             <Transition.Child
               id={id}
               className="transform transition-all bg-white text-left shadow-xl sm:overflow-hidden sm:rounded-lg"
