@@ -6,5 +6,9 @@
   },
   "prettier.configPath": ".prettierrc",
   "editor.tabSize": 2,
-  "cSpell.words": ["calendly", "semibold"]
+  "cSpell.words": [
+    "calendly",
+    "firestore",
+    "semibold"
+  ]
 }

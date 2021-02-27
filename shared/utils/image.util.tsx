@@ -49,7 +49,7 @@ export default async function getCroppedImg(imageSrc, pixelCrop, rotation = 0) {
   ctx.putImageData(data, 0 - safeArea / 2 + image.width * 0.5 - pixelCrop.x, 0 - safeArea / 2 + image.height * 0.5 - pixelCrop.y)
 
   // As Base64 string
-  return canvas.toDataURL("image/jpeg")
+  return canvas.toDataURL("image/png")
   // return canvas
 }
 
@@ -79,7 +79,6 @@ export const generateDownload = async (imageSrc, crop) => {
 */
 
 // To convert dataUrl (which we get from our blob) to a a file object
-/*
 export const dataURLtoFile = (dataUrl, fileName) => {
   const arr = dataUrl.split(",")
   const mime = arr[0].match(/:(.*?);/)[1]
@@ -91,4 +90,3 @@ export const dataURLtoFile = (dataUrl, fileName) => {
 
   return new File([u8arr], fileName, { type: mime })
 }
-*/

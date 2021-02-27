@@ -1,10 +1,31 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-import { IModalEventActionData } from "../../../../../shared/types"
+import { IButtonColor, IModalEventActionData } from "../../../../../shared/types"
 import { isSameOrAfterToday } from "../../../../../shared/utils/date.util"
 import Cropper from "react-easy-crop"
 import Icon from "../../../../elements/icons/Icon"
-import getCroppedImg from "../../../../../shared/utils/image.util"
+import getCroppedImg, { dataURLtoFile } from "../../../../../shared/utils/image.util"
+import fire from "../../../../../config/fire-config"
+
+const db = fire.firestore()
+const storage = fire.storage()
+
+export type INewEvent = {
+  title: string
+  subtitle?: string
+  date: Date
+  time: string
+  duration: number
+  location?: string
+  details?: string
+  image?: {
+    name: string
+    url: string
+  }
+  buttonColor?: IButtonColor
+  buttonLinkUrl?: string
+  buttonText?: string
+}
 
 const regExpUrlPattern = new RegExp(
   /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
@@ -33,6 +54,8 @@ const Error = () => {
 }
 
 const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
+  const { register, handleSubmit, errors } = useForm()
+
   const [hasButton, setHasButton] = useState(false)
   const [buttonColor, setButtonColor] = useState("primary")
 
@@ -44,16 +67,26 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
   const [imageZoom, setImageZoom] = useState(1)
   const [showImageCrop, setShowImageCrop] = useState(true)
 
-  const { register, handleSubmit, errors } = useForm()
-  const onSubmit = (data) => {
-    if (showImageCrop) {
+  const onSubmit = async (data: INewEvent) => {
+    if (hasImage && showImageCrop) {
       onImageSaveCrop()
     }
-    console.log(data)
+    if (hasImage && imageCropped) {
+      const file = dataURLtoFile(imageCropped, `${data.title.replace(/[^a-z0-9]/gi, "_").toLowerCase()}.png`)
+      const storageRef = storage.ref()
+      const fileRef = storageRef.child(file.name)
+      await fileRef.put(file)
+      data.image = {
+        name: file.name,
+        url: await fileRef.getDownloadURL(),
+      }
+    }
+    db.collection("events").doc(data.title).set(data)
   }
 
+  const uploadToFirebase = async (data) => {}
+
   const onImageChange = (e) => {
-    console.log(e)
     if (e.target.files && e.target.files.length > 0) {
       const reader = new FileReader()
       reader.readAsDataURL(e.target.files[0])
