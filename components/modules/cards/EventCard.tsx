@@ -3,7 +3,7 @@ import Icon from "../../elements/icons/Icon"
 import { getDateDisplay } from "../../../shared/utils/date.util"
 import { IButton, IImage } from "../../../shared/types"
 
-export type IInfoCard = {
+export type IEventCard = {
   title: string
   date?: Date
   image?: IImage
@@ -11,7 +11,7 @@ export type IInfoCard = {
   hidden?: boolean
 }
 
-const InfoCard = ({ ...card }: IInfoCard) => {
+const EventCard = ({ ...card }: IEventCard) => {
   const dateDisplay = getDateDisplay(card.date, 7)
   return (
     <PrimaryButton
@@ -60,4 +60,4 @@ const InfoCard = ({ ...card }: IInfoCard) => {
   )
 }
 
-export default InfoCard
+export default EventCard

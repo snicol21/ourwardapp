@@ -1,7 +1,7 @@
 import { IFaceCard } from "../components/modules/cards/FaceCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
-import { IInfoCard } from "../components/modules/cards/InfoCard"
+import { IEventCard } from "../components/modules/cards/EventCard"
 import { IMiniCard } from "../components/modules/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
@@ -21,7 +21,7 @@ export const dataSundayMeeting: IHeroCard = {
   type: "dark",
 }
 
-export const dataInfoCards: IInfoCard[] = [
+export const dataInfoCards: IEventCard[] = [
   {
     title: "Relief Society Birthday Social",
     date: new Date("March 3, 2021 14:30:00"),

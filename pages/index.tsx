@@ -2,7 +2,7 @@ import Head from "next/head"
 import Layout from "../components/layouts/Layout"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import HeroCard from "../components/modules/cards/HeroCard"
-import InfoCard, { IInfoCard } from "../components/modules/cards/InfoCard"
+import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
 import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
@@ -25,8 +25,8 @@ function Home() {
           <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden)
-              .map((card: IInfoCard) => (
-                <InfoCard key={card.title} {...card} />
+              .map((card: IEventCard) => (
+                <EventCard key={card.title} {...card} />
               ))}
           </div>
           <div className="flex pt-5 justify-end">

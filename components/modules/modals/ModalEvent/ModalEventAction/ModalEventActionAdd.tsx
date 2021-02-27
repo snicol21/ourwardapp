@@ -68,23 +68,23 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
   const [showImageCrop, setShowImageCrop] = useState(true)
 
   const onSubmit = async (data: INewEvent) => {
+    const dataName = `${data.title.replace(/[^a-z0-9]/gi, "-").toLowerCase()}`
     if (hasImage && showImageCrop) {
-      onImageSaveCrop()
+      await onImageSaveCrop()
     }
     if (hasImage && imageCropped) {
-      const file = dataURLtoFile(imageCropped, `${data.title.replace(/[^a-z0-9]/gi, "_").toLowerCase()}.png`)
+      const file = dataURLtoFile(imageCropped, dataName)
+      const fileName = file.name + "-" + new Date().getTime()
       const storageRef = storage.ref()
-      const fileRef = storageRef.child(file.name)
+      const fileRef = storageRef.child(fileName)
       await fileRef.put(file)
       data.image = {
-        name: file.name,
+        name: fileName,
         url: await fileRef.getDownloadURL(),
       }
     }
-    db.collection("events").doc(data.title).set(data)
+    db.collection("events").doc(dataName).set(data)
   }
-
-  const uploadToFirebase = async (data) => {}
 
   const onImageChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -469,7 +469,6 @@ const ModalEventActionAdd = ({ toggleModal }: IModalEventActionData) => {
                           name="buttonColor"
                           value={buttonColor}
                           onChange={(e) => setButtonColor(e.target.value)}
-                          defaultValue={"primary"}
                           id="buttonColor"
                           className={`shadow-sm block w-full sm:text-sm rounded-md ${getInputStyle["default"]}`}
                         >
