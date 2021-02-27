@@ -15,8 +15,8 @@ const EventCard = ({ ...card }: IEventCard) => {
   const dateDisplay = getDateDisplay(card.date, 7)
   return (
     <div className="rounded-lg shadow-xl flex bg-white">
-      <div className="w-24">
-        <img className="h-full object-cover rounded-l-lg" src={card.image?.src} />
+      <div className="relative w-24">
+        <img className="absolute h-full object-cover rounded-l-lg" src={card.image?.src} />
       </div>
       <PrimaryButton
         type="pass-thru"
