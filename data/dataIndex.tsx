@@ -26,7 +26,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Great to Be Eight",
     date: new Date("February 28, 2021 19:00:00"),
     image: {
-      src: "/images/announcements/baptism-preview.png",
+      src: "/images/events/baptism-preview.png",
     },
     button: {
       modal: {
@@ -35,7 +35,7 @@ export const dataInfoCards: IEventCard[] = [
           title: "Great to Be Eight",
           subtitle: "Baptism Preview",
           image: {
-            src: "/images/announcements/baptism-preview.png",
+            src: "/images/events/baptism-preview.png",
             alt: "Bishop",
           },
           date: new Date("February 28, 2021 19:00:00"),
@@ -56,10 +56,33 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "Young Men Quorum Presidency Orientation",
+    date: new Date("March 7, 2021 19:00:00"),
+    image: {
+      src: "/images/events/priesthood-orientation.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Young Men Quorum Presidency Orientation",
+          image: {
+            src: "/images/events/priesthood-orientation.png",
+          },
+          date: new Date("March 7, 2021 19:00:00"),
+          duration: 60,
+          location: "Relief Society Room",
+          details: "For all young men quorum presidency members and their leaders.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Welfare Assignment",
     date: new Date("March 9, 2021 15:00:00"),
     image: {
-      src: "/images/announcements/welfare.png",
+      src: "/images/events/welfare.png",
     },
     button: {
       modal: {
@@ -67,7 +90,7 @@ export const dataInfoCards: IEventCard[] = [
         data: {
           title: "Welfare Assignment",
           image: {
-            src: "/images/announcements/welfare.png",
+            src: "/images/events/welfare.png",
             alt: "Bishop",
           },
           date: new Date("March 9, 2021 15:00:00"),
@@ -91,8 +114,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Bishop Mobile",
     date: new Date("March 11, 2021 17:00:00"),
     image: {
-      src: "/images/announcements/bishop-mobile.png",
-      alt: "Bishop Mobile",
+      src: "/images/events/bishop-mobile.png",
     },
     button: {
       modal: {
@@ -101,12 +123,67 @@ export const dataInfoCards: IEventCard[] = [
           title: "Bishop Mobile",
           subtitle: "Ward Activity",
           image: {
-            src: "/images/announcements/bishop-mobile.png",
-            alt: "Bishop",
+            src: "/images/events/bishop-mobile.png",
           },
           date: new Date("March 11, 2021 17:00:00"),
           duration: 90,
           location: "Maples 3rd Ward",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Statewide Feed Utah Food Drive",
+    date: new Date("March 20, 2021 9:00:00"),
+    image: {
+      src: "/images/events/food-drive.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Statewide Feed Utah Food Drive",
+          subtitle: "Stake Sponsored Initiative",
+          image: {
+            src: "/images/events/food-drive.png",
+          },
+          date: new Date("March 20, 2021 9:00:00"),
+          duration: 60,
+          location: "Collect from doorsteps",
+          details:
+            "The young women, young men, their adult leaders, and their parents are being asked to help collect non-perishable food donations from the homes within their ward boundaries starting @ 9 am on March 20.\n\nWe believe the drop-off site will be the stake center (Oaks Building) but will be in contact with you before March 20 to confirm that.\n\nThe Primary children ages 8 and older, their leaders, and their parents are invited to distribute door hangers to every home within the ward boundaries the week prior.\n\nThank you for all you do.\nMaples Stake YM Presidency",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Stake Youth Fireside",
+    date: new Date("March 23, 2021 9:00:00"),
+    image: {
+      src: "/images/events/fireside.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Statewide Feed Utah Food Drive",
+          subtitle: "Stake Sponsored Initiative",
+          image: {
+            src: "/images/events/fireside.png",
+          },
+          date: new Date("March 23, 2021 9:00:00"),
+          duration: 60,
+          location: "Chapel",
+          details:
+            "The stake will be holding a stake youth fireside on Tuesday, March 23 @ 7 pm.  We would like your help to create a video montage to show as part of the fireside.\n\nPlease take a video of yourself answering one of the three questions below:\n\n1) How have I heard Him through the pandemic?\n2) How have I kept my testimony strong this last year?\n3) What am I looking forward to this year?\n\nHere are a few tips to make your video successful:\n1) Shoot the video using the back camera whenever possible. Front cameras are usually lower resolution which result in grainy videos when uploaded.\n2) Record in the wide (horizontal) position if possible.\n3) Limit the length of the answers/videos to around 20-30 seconds each to make files easier to send/receive and work with.\n\nHere are two ways to get the videos to the stake:\n1) Upload them to Google Drive using above video link\n2) Text them to Brother Victor Duran at 801-503-8989.\n\nPlease submit/upload your video by Sunday, March 14th.\n\nWe look forward to seeing you on the big screen as part of the fireside!\n\nThanks for your help.",
+          button: {
+            text: "Upload Video",
+            link: {
+              url: "https://drive.google.com/drive/folders/1ORkNWDbNVC9g8eiUr-FzYfKqa1xWyvVM?usp=sharing",
+            },
+          },
         },
       },
     },
