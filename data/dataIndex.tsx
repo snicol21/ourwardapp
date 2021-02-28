@@ -160,7 +160,7 @@ export const dataInfoCards: IEventCard[] = [
   },
   {
     title: "Stake Youth Fireside",
-    date: new Date("March 23, 2021 9:00:00"),
+    date: new Date("March 23, 2021 19:00:00"),
     image: {
       src: "/images/events/fireside.png",
     },
@@ -173,7 +173,7 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/fireside.png",
           },
-          date: new Date("March 23, 2021 9:00:00"),
+          date: new Date("March 23, 2021 19:00:00"),
           duration: 60,
           location: "Chapel",
           details:
