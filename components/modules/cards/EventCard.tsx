@@ -27,11 +27,11 @@ const EventCard = ({ ...card }: IEventCard) => {
         <div className="flex-1 min-w-0 rounded-lg">
           <a href="#responsive" className="focus:outline-none">
             <span className="absolute inset-0" aria-hidden="true"></span>
-            <p className="text-black font-semibold text-md md:text-lg pb-1 truncate" title={card.title}>
+            <p className="text-black font-semibold text-md pb-1 truncate" title={card.title}>
               {card.title}
             </p>
             {card.date && (
-              <div className="text-sm md:text-md text-gray-600 flex flex-wrap leading-6">
+              <div className="text-sm text-gray-600 flex flex-wrap leading-6">
                 <div className="pr-2 flex items-center">
                   <Icon name="calendar" className="h-4 w-4 mr-2 mb-0.5 text-gray-400" />
                   <time dateTime={dateDisplay.isoString}>{dateDisplay.dateDisplay}</time>
