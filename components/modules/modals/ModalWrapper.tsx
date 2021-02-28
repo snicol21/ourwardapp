@@ -2,7 +2,6 @@ import { cloneElement, Dispatch, SetStateAction } from "react"
 import { Transition } from "@headlessui/react"
 import { useEffect, useRef } from "react"
 import Icon from "../../elements/icons/Icon"
-import { hideBodyScroll } from "../../../shared/utils/document.util"
 import React from "react"
 
 export type IModalWrapper = {
@@ -15,10 +14,9 @@ export type IModalWrapper = {
 }
 
 const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowModal, className = "" }: IModalWrapper) => {
-  const modalContent = useRef(null)
+  const targetElement = useRef(null)
 
   const toggleModal = () => {
-    hideBodyScroll(!showModal)
     setShowModal(!showModal)
   }
 
@@ -27,7 +25,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
       return
     }
     const clickHandler = ({ target }) => {
-      if (!showModal || modalContent.current.contains(target)) {
+      if (!showModal || targetElement.current.contains(target)) {
         return
       }
       toggleModal()
@@ -65,7 +63,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
       </Transition.Child>
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
-        <div ref={modalContent} className={`${className}`}>
+        <div ref={targetElement} className={`${className}`}>
           <div className="pb-32">
             <Transition.Child
               id={id}
