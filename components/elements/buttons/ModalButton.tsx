@@ -11,7 +11,7 @@ const ModalButton = ({ children, styles, disabled, modal }) => {
     switch (modal.type) {
       case "event":
         return (
-          <ModalWrapper {...wrapperProps} closeOnClickOutside={true} className="md:mt-10 lg:mt-20 sm:max-w-xl">
+          <ModalWrapper {...wrapperProps} closeOnClickOutside={true} className="w-full md:mt-10 lg:mt-20 sm:max-w-xl">
             <ModalEvent {...modal} />
           </ModalWrapper>
         )
