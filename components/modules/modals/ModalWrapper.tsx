@@ -66,7 +66,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
         <div className={`${className}`}>
-          <div ref={targetElement} className="pb-32">
+          <div className="pb-32">
             <Transition.Child
               id={id}
               className="transform transition-all bg-white text-left shadow-xl sm:overflow-hidden sm:rounded-lg"
@@ -77,9 +77,11 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              {React.Children.map(children, (child) => {
-                return React.cloneElement(child as React.ReactElement<any>, { toggleModal })
-              })}
+              <div ref={targetElement}>
+                {React.Children.map(children, (child) => {
+                  return React.cloneElement(child as React.ReactElement<any>, { toggleModal })
+                })}
+              </div>
             </Transition.Child>
           </div>
         </div>
