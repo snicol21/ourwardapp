@@ -22,7 +22,7 @@ const EventCard = ({ ...card }: IEventCard) => {
         type="pass-thru"
         link={card.button.link}
         modal={card.button.modal}
-        className="relative w-full px-4 py-5 flex text-left items-center space-x-3"
+        className="relative w-full px-4 py-5 flex text-left items-center space-x-3 overflow-hidden"
       >
         <div className="flex-1 min-w-0 rounded-lg">
           <a href="#responsive" className="focus:outline-none">
