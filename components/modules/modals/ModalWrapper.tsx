@@ -15,7 +15,7 @@ export type IModalWrapper = {
 }
 
 const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowModal, className = "" }: IModalWrapper) => {
-  const modalContent = useRef(null)
+  const targetElement = useRef(null)
 
   const toggleModal = () => {
     hideBodyScroll(!showModal)
@@ -27,7 +27,7 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
       return
     }
     const clickHandler = ({ target }) => {
-      if (!showModal || modalContent.current.contains(target)) {
+      if (!showModal || targetElement.current.contains(target)) {
         return
       }
       toggleModal()
@@ -65,8 +65,8 @@ const ModalWrapper = ({ id, children, closeOnClickOutside, showModal, setShowMod
       </Transition.Child>
 
       <div className="z-20 flex justify-center h-screen w-screen overflow-y-auto mt-12">
-        <div ref={modalContent} className={`${className}`}>
-          <div className="pb-32">
+        <div className={`${className}`}>
+          <div ref={targetElement} className="pb-32">
             <Transition.Child
               id={id}
               className="transform transition-all bg-white text-left shadow-xl sm:overflow-hidden sm:rounded-lg"
