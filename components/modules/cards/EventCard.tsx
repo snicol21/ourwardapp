@@ -25,7 +25,7 @@ const EventCard = ({ ...card }: IEventCard) => {
         className="relative w-full px-4 py-5 flex text-left items-center space-x-3"
       >
         <div className="flex-1 min-w-0 rounded-lg">
-          <a href="#" className="focus:outline-none">
+          <a href="#responsive" className="focus:outline-none">
             <span className="absolute inset-0" aria-hidden="true"></span>
             <p className="text-black font-semibold text-md md:text-lg pb-1 truncate" title={card.title}>
               {card.title}
