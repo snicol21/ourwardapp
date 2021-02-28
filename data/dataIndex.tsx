@@ -144,7 +144,7 @@ export const dataInfoCards: IEventCard[] = [
         type: "event",
         data: {
           title: "Statewide Feed Utah Food Drive",
-          subtitle: "Stake Sponsored Initiative",
+          subtitle: "Stake Sponsored",
           image: {
             src: "/images/events/food-drive.png",
           },
@@ -168,8 +168,8 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Statewide Feed Utah Food Drive",
-          subtitle: "Stake Sponsored Initiative",
+          title: "Stake Youth Fireside",
+          subtitle: "Stake Sponsored",
           image: {
             src: "/images/events/fireside.png",
           },
