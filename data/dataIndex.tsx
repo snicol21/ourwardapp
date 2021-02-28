@@ -182,6 +182,7 @@ export const dataInfoCards: IEventCard[] = [
             text: "Upload Video",
             link: {
               url: "https://drive.google.com/drive/folders/1ORkNWDbNVC9g8eiUr-FzYfKqa1xWyvVM?usp=sharing",
+              external: true,
             },
           },
         },
