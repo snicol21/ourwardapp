@@ -23,39 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Great to Be Eight",
-    date: new Date("February 28, 2021 19:00:00"),
-    image: {
-      src: "/images/events/baptism-preview.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Great to Be Eight",
-          subtitle: "Baptism Preview",
-          image: {
-            src: "/images/events/baptism-preview.png",
-            alt: "Bishop",
-          },
-          date: new Date("February 28, 2021 19:00:00"),
-          duration: 60,
-          location: "Relief Society Room at the Stake Center (8107 S. 6700 W.)",
-          details:
-            "Please join us for a special meeting about your special day! All children who are turning 8 are invited to attend with their parents. Refreshments will be served.",
-          button: {
-            text: "Zoom",
-            link: {
-              url: "https://zoom.us/j/97091079133?pwd=ZG9jUFVONFNGYW9rRXV6K3lJVjVUUT09",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Young Men Quorum Presidency Orientation",
     date: new Date("March 7, 2021 19:00:00"),
     image: {
