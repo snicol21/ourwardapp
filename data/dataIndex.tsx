@@ -62,7 +62,7 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("March 9, 2021 15:00:00"),
           duration: 120,
-          location: "Maples 3rd Ward",
+          location: "437 West 200 South, Salt Lake City, UT 84101 - St. Vincent de Paul Dining Room",
           details:
             "For this welfare assignment food will be prepared for approximately 600 homeless persons each day (from 3:00 - 5:00 PM); however, tasks vary depending on daily needs. Each volunteer will need to wear closed-toed shoes. Aprons and plastic gloves are provided. Youth 12 and older are welcome with adult supervision.\n\nPlease contact Bro. Jason Hardman with any question at 801-613-9833",
           button: {
