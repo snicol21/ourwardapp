@@ -3,6 +3,8 @@ import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IEventCard } from "../components/modules/cards/EventCard"
 import { IMiniCard } from "../components/modules/cards/MiniCard"
+import { IFaq } from "../components/elements/sections/FaqSection"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 
 export const dataSundayMeeting: IHeroCard = {
   title: "Sunday Meetings",
@@ -298,5 +300,25 @@ export const dataImageCards: IImageCard[] = [
       },
     },
     hidden: false,
+  },
+]
+
+export const dataFaqs: IFaq[] = [
+  {
+    question: "I did my temple recommend interview with the Bishop, when can I meet with a member of the Stake Presidency?",
+    answer:
+      "Members of the Stake Presidency will be available from 6:30-7:30 PM every Thursday to renew temple recommends on a first come first served basis. If you are unavailable on Thursdays, or unable or uncomfortable meeting in person, please contact Bro. Paul Mardis.",
+  },
+  {
+    question: "Where can I get more information about my calling?",
+    answer: (
+      <div>
+        The church has added a new section called{" "}
+        <PrimaryButton type="link" link={{ url: "https://www.churchofjesuschrist.org/my-home/my-calling?lang=eng", external: true }}>
+          My Calling
+        </PrimaryButton>{" "}
+        which provides a list of education material specifically for the calling(s) found on your profile. Check it out!
+      </div>
+    ),
   },
 ]

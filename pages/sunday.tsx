@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
-import PageHeader from "../components/elements/headers/PageHeader"
+import PageHeader from "../components/elements/sections/PageHeader"
 import Schedule, { IScheduleDate } from "../components/modules/schedules/Schedule"
 import { dataScheduleTimes } from "../data/dataSunday"
 import { getNextDayOfWeek } from "../shared/utils/date.util"

@@ -1,7 +1,7 @@
 import ImageCard from "../cards/ImageCard"
 import MiniCard from "../cards/MiniCard"
 import Divider from "../../elements/dividers/Divider"
-import SectionHeader from "../../elements/headers/SectionHeader"
+import SectionHeader from "../../elements/sections/SectionHeader"
 import { IColor, IImage, IButton } from "../../../shared/types"
 
 export type ISchedule = {

@@ -1,14 +1,15 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
-import SectionHeader from "../components/elements/headers/SectionHeader"
+import SectionHeader from "../components/elements/sections/SectionHeader"
 import HeroCard from "../components/modules/cards/HeroCard"
 import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
 import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
-import PrimaryButton from "../components/elements/buttons/PrimaryButton"
+import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards, dataFaqs } from "../data/dataIndex"
+import FaqSection from "../components/elements/sections/FaqSection"
 import Icon from "../components/elements/icons/Icon"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 
 function Home() {
   return (
@@ -22,14 +23,14 @@ function Home() {
       {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
-          <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
+          <div className="mt-3 grid grid-cols-1 gap-5 pt-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden)
               .map((card: IEventCard) => (
                 <EventCard key={card.title} {...card} />
               ))}
           </div>
-          {/* <div className="flex pt-5 justify-end">
+          {/* <div className="flex justify-end">
             <PrimaryButton
               type="light"
               size="sm"
@@ -47,7 +48,7 @@ function Home() {
       {dataFaceCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Meet with a member of the bishopric" subtitle="Select a time and quickly schedule your appointment." />
-          <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-6 pt-5 sm:grid-cols-2">
             {dataFaceCards
               .filter((card) => !card.hidden)
               .map((card: IFaceCard) => (
@@ -72,7 +73,7 @@ function Home() {
       {dataImageCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Learn what's going on" subtitle="Below are some of the happenings of the ward and ways to become involved." />
-          <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5">
+          <div className="grid grid-cols-1 gap-x-6 pt-5 sm:grid-cols-2">
             {dataImageCards
               .filter((card) => !card.hidden)
               .map((card: IImageCard) => (
@@ -83,6 +84,10 @@ function Home() {
           </div>
         </>
       )}
+      <SectionHeader title="Frequently asked questions" subtitle="Answers to some of the most common questions." />
+      <div className="pt-5">
+        <FaqSection faqs={dataFaqs} />
+      </div>
     </Layout>
   )
 }
