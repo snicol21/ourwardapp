@@ -9,6 +9,7 @@ import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
+import { isSameOrAfterToday } from "../shared/utils/date.util"
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
           <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
           <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
-              .filter((card) => !card.hidden)
+              .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
               .map((card: IEventCard) => (
                 <EventCard key={card.title} {...card} />
               ))}
