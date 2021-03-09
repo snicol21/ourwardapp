@@ -23,29 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Young Men Quorum Presidency Orientation",
-    date: new Date("March 7, 2021 19:00:00"),
-    image: {
-      src: "/images/events/priesthood-orientation.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Young Men Quorum Presidency Orientation",
-          image: {
-            src: "/images/events/priesthood-orientation.png",
-          },
-          date: new Date("March 7, 2021 19:00:00"),
-          duration: 60,
-          location: "Relief Society Room",
-          details: "For all young men quorum presidency members and their leaders.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Welfare Assignment",
     date: new Date("March 9, 2021 15:00:00"),
     image: {
@@ -70,6 +47,37 @@ export const dataInfoCards: IEventCard[] = [
             link: {
               url: "https://calendly.com/ssr3rdward/welfare",
               calendly: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Favorite Things Party",
+    date: new Date("March 9, 2021 19:00:00"),
+    image: {
+      src: "/images/events/favorite-things-small.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Favorite Things Party",
+          subtitle: "Relief Society",
+          image: {
+            src: "/images/events/favorite-things.jpg",
+          },
+          date: new Date("March 9, 2021 19:00:00"),
+          duration: 60,
+          location: "Zoom Meeting",
+          details: "Celebrating the 179th Birthday of the Relief Society!",
+          button: {
+            text: "Zoom",
+            link: {
+              url: "http://virtual-rs.ourwardapp.com",
+              external: true,
             },
           },
         },
