@@ -40,7 +40,7 @@ export function getDateDisplay(rawDate: Date, withinDays: number, duration?: num
     timeRangeDisplay: duration ? `${date.format("h:mm A")} - ${date.add(duration, "minute").format("h:mm A")}` : undefined,
     relativeDisplay: dayjs().to(date, true),
     isoString: date.toISOString(),
-    isWithin: date.isBetween(dayjs(), dayjs().add(withinDays, "day"), "day"),
+    isWithin: date.isBetween(dayjs(), dayjs().add(withinDays, "day"), null, "[]"),
   }
 }
 
