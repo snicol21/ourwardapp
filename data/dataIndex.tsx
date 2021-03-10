@@ -23,69 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Welfare Assignment",
-    date: new Date("March 9, 2021 15:00:00"),
-    image: {
-      src: "/images/events/welfare.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Welfare Assignment",
-          image: {
-            src: "/images/events/welfare.png",
-            alt: "Bishop",
-          },
-          date: new Date("March 9, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South, Salt Lake City, UT 84101 - St. Vincent de Paul Dining Room",
-          details:
-            "For this welfare assignment food will be prepared for approximately 600 homeless persons each day (from 3:00 - 5:00 PM); however, tasks vary depending on daily needs. Each volunteer will need to wear closed-toed shoes. Aprons and plastic gloves are provided. Youth 12 and older are welcome with adult supervision.\n\nPlease contact Bro. Jason Hardman with any question at 801-613-9833",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://calendly.com/ssr3rdward/welfare",
-              calendly: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Favorite Things Party",
-    date: new Date("March 9, 2021 19:00:00"),
-    image: {
-      src: "/images/events/favorite-things-small.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Favorite Things Party",
-          subtitle: "Relief Society",
-          image: {
-            src: "/images/events/favorite-things.jpg",
-          },
-          date: new Date("March 9, 2021 19:00:00"),
-          duration: 60,
-          location: "Zoom Meeting",
-          details: "Celebrating the 179th Birthday of the Relief Society!",
-          button: {
-            text: "Zoom",
-            link: {
-              url: "http://virtual-rs.ourwardapp.com",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Bishop Mobile",
     date: new Date("March 11, 2021 17:00:00"),
     image: {
@@ -103,6 +40,37 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("March 11, 2021 17:00:00"),
           duration: 90,
           location: "Maples 3rd Ward",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Welfare Assignment",
+    date: new Date("March 12, 2021 15:00:00"),
+    image: {
+      src: "/images/events/welfare.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Welfare Assignment",
+          image: {
+            src: "/images/events/welfare.png",
+          },
+          date: new Date("March 12, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South, Salt Lake City, UT 84101 - St. Vincent de Paul Dining Room",
+          details:
+            "For this welfare assignment food will be prepared for approximately 600 homeless persons each day (from 3:00 - 5:00 PM); however, tasks vary depending on daily needs. Each volunteer will need to wear closed-toed shoes. Aprons and plastic gloves are provided. Youth 12 and older are welcome with adult supervision.\n\nPlease contact Bro. Jason Hardman with any question at 801-613-9833",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://calendly.com/ssr3rdward/welfare",
+              calendly: true,
+            },
+          },
         },
       },
     },
