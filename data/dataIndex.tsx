@@ -74,7 +74,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Statewide Feed Utah Food Drive",
