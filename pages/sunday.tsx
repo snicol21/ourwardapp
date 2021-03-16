@@ -21,6 +21,10 @@ function Sunday() {
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </PrimaryButton>
         <Schedule date={nextSunday} times={dataScheduleTimes} />
+        <PrimaryButton type="link" className="mt-20" link={{ url: "/" }}>
+          <Icon name="chevron-left" className="h-5 w-5" />
+          <span className="mr-2 text-sm uppercase font-semibold">Back</span>
+        </PrimaryButton>
       </Layout>
     </>
   )

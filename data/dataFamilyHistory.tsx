@@ -11,12 +11,11 @@ export const dataHeroCard: IHeroCard = {
     alt: "Temple & Family History",
   },
   button: {
-    text: "Coming Soon!",
+    text: "Sign Up",
     link: {
-      url: "https://google.com",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSefHtpIzP1NdESAV6UxJ8St4xB3GxU9cPPsVcAVSqj-E6EcwQ/viewform?usp=sf_link",
       external: true,
     },
-    disabled: true,
   },
   type: "light",
 }

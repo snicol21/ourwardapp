@@ -50,6 +50,10 @@ function TempleAndFamilyHistory() {
             <FaceCard {...Object.assign(dataFaceCard, { className: "col-span-1 sm:col-span-2 sm:col-start-2" })} />
           </div>
         </div>
+        <PrimaryButton type="link" className="mt-20" link={{ url: "/" }}>
+          <Icon name="chevron-left" className="h-5 w-5" />
+          <span className="mr-2 text-sm uppercase font-semibold">Back</span>
+        </PrimaryButton>
       </Layout>
     </>
   )
