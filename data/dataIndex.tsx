@@ -127,7 +127,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 135,
           location: "Oquirrh Mountain Temple",
           details:
-            "Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nReach out to Bro. Jason Hardman if you're interested.",
+            "Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nText Bro. Jason Hardman if you're interested (801-613-9833).",
         },
       },
     },
