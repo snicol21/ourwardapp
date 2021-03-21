@@ -77,31 +77,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Statewide Feed Utah Food Drive",
-    date: new Date("March 20, 2021 9:00:00"),
-    image: {
-      src: "/images/events/food-drive.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Statewide Feed Utah Food Drive",
-          subtitle: "Stake Sponsored",
-          image: {
-            src: "/images/events/food-drive.png",
-          },
-          date: new Date("March 20, 2021 9:00:00"),
-          duration: 60,
-          location: "Collect from doorsteps",
-          details:
-            "The young women, young men, their adult leaders, and their parents are being asked to help collect non-perishable food donations from the homes within their ward boundaries starting @ 9 am on March 20.\n\nWe believe the drop-off site will be the stake center (Oaks Building) but will be in contact with you before March 20 to confirm that.\n\nThe Primary children ages 8 and older, their leaders, and their parents are invited to distribute door hangers to every home within the ward boundaries the week prior.\n\nThank you for all you do.\nMaples Stake YM Presidency",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Stake Youth Fireside",
     date: new Date("March 23, 2021 19:00:00"),
     image: {
@@ -128,6 +103,31 @@ export const dataInfoCards: IEventCard[] = [
               external: true,
             },
           },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Temple Cleaning Assignment",
+    date: new Date("March 30, 2021 21:45:00"),
+    image: {
+      src: "/images/events/oquirrh-temple.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Temple Cleaning Assignment",
+          subtitle: "Service Project",
+          image: {
+            src: "/images/events/oquirrh-temple.png",
+          },
+          date: new Date("March 30, 2021 21:45:00"),
+          duration: 135,
+          location: "Oquirrh Mountain Temple",
+          details:
+            "Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nReach out to Bro. Jason Hardman if you're interested.",
         },
       },
     },
