@@ -125,7 +125,7 @@ export const dataScheduleTimes: IScheduleTime[] = [
         repeat: [1, 2, 3, 4, 5],
         title: "Sacrament",
         subtitle: "In-Person Meeting",
-        paragraph: "45 Min. All Individuals (up to 99 people)",
+        paragraph: "45 Min. All Individuals (up to 150 people)",
         button: {
           text: "Sign Up",
           link: {
