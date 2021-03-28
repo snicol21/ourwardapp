@@ -39,7 +39,9 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("April 8, 2021 17:00:00"),
           duration: 90,
-          location: "Maples 3rd Ward",
+          location: "Watch for us outside your home",
+          details:
+            "Members of the bishopric will be driving around the neighborhoods handing out candy to the primary and youth in the ward. We'll start in the entry roundabout at Serengeti Springs and work through the ward neighborhoods as we usually do.",
         },
       },
     },
