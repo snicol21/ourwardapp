@@ -24,7 +24,7 @@ export const dataSundayMeeting: IHeroCard = {
 export const dataInfoCards: IEventCard[] = [
   {
     title: "Bishop Mobile",
-    date: new Date("March 11, 2021 17:00:00"),
+    date: new Date("April 8, 2021 17:00:00"),
     image: {
       src: "/images/events/bishop-mobile.png",
     },
@@ -37,13 +37,13 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/bishop-mobile.png",
           },
-          date: new Date("March 11, 2021 17:00:00"),
+          date: new Date("April 8, 2021 17:00:00"),
           duration: 90,
           location: "Maples 3rd Ward",
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Welfare Assignment",
@@ -74,42 +74,10 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
-    title: "Stake Youth Fireside",
-    date: new Date("March 23, 2021 19:00:00"),
-    image: {
-      src: "/images/events/fireside.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Stake Youth Fireside",
-          subtitle: "Stake Sponsored",
-          image: {
-            src: "/images/events/fireside.png",
-          },
-          date: new Date("March 23, 2021 19:00:00"),
-          duration: 60,
-          location: "Chapel",
-          details:
-            "The stake will be holding a stake youth fireside on Tuesday, March 23 @ 7 pm.  We would like your help to create a video montage to show as part of the fireside.\n\nPlease take a video of yourself answering one of the three questions below:\n\n1) How have I heard Him through the pandemic?\n2) How have I kept my testimony strong this last year?\n3) What am I looking forward to this year?\n\nHere are a few tips to make your video successful:\n1) Shoot the video using the back camera whenever possible. Front cameras are usually lower resolution which result in grainy videos when uploaded.\n2) Record in the wide (horizontal) position if possible.\n3) Limit the length of the answers/videos to around 20-30 seconds each to make files easier to send/receive and work with.\n\nHere are two ways to get the videos to the stake:\n1) Upload them to Google Drive using above video link\n2) Text them to Brother Victor Duran at 801-503-8989.\n\nPlease submit/upload your video by Sunday, March 14th.\n\nWe look forward to seeing you on the big screen as part of the fireside!\n\nThanks for your help.",
-          button: {
-            text: "Upload Video",
-            link: {
-              url: "https://drive.google.com/drive/folders/1ORkNWDbNVC9g8eiUr-FzYfKqa1xWyvVM?usp=sharing",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Temple Cleaning Assignment",
+    title: "Temple Cleaning Assignment (FILLED)",
     date: new Date("March 30, 2021 21:45:00"),
     image: {
       src: "/images/events/oquirrh-temple.png",
@@ -128,6 +96,86 @@ export const dataInfoCards: IEventCard[] = [
           location: "Oquirrh Mountain Temple",
           details:
             "Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nText Bro. Jason Hardman if you're interested (801-613-9833).",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Special Ward Activity",
+    date: new Date("April 25, 2021 19:00:00"),
+    image: {
+      src: "/images/events/special-activity.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Special Ward Activity",
+          subtitle: "For All Adults",
+          image: {
+            src: "/images/events/special-activity.png",
+          },
+          date: new Date("April 25, 2021 19:00:00"),
+          duration: 60,
+          location: "Ward Building",
+          details: "Please put this on your calendar, you will not want to miss it. More details to come!",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Combined Youth Activity",
+    date: new Date("April 14, 2021 19:00:00"),
+    image: {
+      src: "/images/events/combined-youth.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Special Ward Activity",
+          subtitle: "For All Youth",
+          image: {
+            src: "/images/events/combined-youth.png",
+          },
+          date: new Date("April 14, 2021 19:00:00"),
+          duration: 60,
+          location: "Ward Building",
+          details: "Combined Youth Activity with Patriarch Harris. Sunday dress is appropriate, amazing refreshments will be provided.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "April 2021 General Conference",
+    date: new Date("April 3, 2021 10:00:00"),
+    image: {
+      src: "/images/events/general-conference.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "April 2021 General Conference",
+          subtitle: "Online Event",
+          image: {
+            src: "/images/events/general-conference.png",
+          },
+          date: new Date("April 3, 2021 10:00:00"),
+          duration: 0,
+          location: "Online Event",
+          details:
+            "The global broadcast will originate from the Conference Center in Salt Lake City, Utah, USA. The conference consists of five sessions:\n\nSaturday at 10:00 a.m. mountain daylight time (MDT).\nSaturday at 2:00 p.m. MDT.\nSaturday at 6:00 p.m. MDT. This session is addressed to boys and men ages 11 and up, but everyone is welcome to view it. (In the October 2021 general conference, a similar session will be addressed to girls and women ages 11 and up.)\nSunday at 10:00 a.m. MDT.\nSunday at 2:00 p.m. MDT.",
+          button: {
+            text: "More Details",
+            link: {
+              url: "https://www.churchofjesuschrist.org/events/april-2021-general-conference?lang=eng",
+              external: true,
+            },
+          },
         },
       },
     },

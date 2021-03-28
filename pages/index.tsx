@@ -26,6 +26,7 @@ function Home() {
           <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
+              .sort((a: any, b: any) => a.date - b.date)
               .map((card: IEventCard) => (
                 <EventCard key={card.title} {...card} />
               ))}
