@@ -88,7 +88,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Temple Cleaning Assignment",
+          title: "Temple Cleaning Assignment (FILLED)",
           subtitle: "Service Project",
           image: {
             src: "/images/events/oquirrh-temple.png",
@@ -97,7 +97,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 135,
           location: "Oquirrh Mountain Temple",
           details:
-            "Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nText Bro. Jason Hardman if you're interested (801-613-9833).",
+            "ASSIGNMENT HAS BEEN FILLED. Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nText Bro. Jason Hardman if you're interested (801-613-9833).",
         },
       },
     },
@@ -137,7 +137,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Special Ward Activity",
+          title: "Combined Youth Activity",
           subtitle: "For All Youth",
           image: {
             src: "/images/events/combined-youth.png",
