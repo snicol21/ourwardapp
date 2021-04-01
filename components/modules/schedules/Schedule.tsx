@@ -22,7 +22,7 @@ export type IScheduleTime = {
 }
 
 export type IScheduleEvent = {
-  repeat: number[]
+  repeat?: number[]
   title: string
   subtitle: string
   paragraph: string
@@ -48,7 +48,7 @@ const Schedule = ({ date, times }: ISchedule) => {
             <div className={`inline-flex items-center px-8 py-1 rounded-full text-lg font-semibold ${getColorStyle[time.color]}`}>{time.time}</div>
             <div className={`grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5`}>
               {time.events
-                .filter((event) => event.repeat.includes(date.weekOfTheMonth))
+                .filter((event) => (event.repeat ? event.repeat.includes(date.weekOfTheMonth) : event))
                 .map((event) =>
                   event.image ? (
                     <div key={event.title} className="py-3 w-full">

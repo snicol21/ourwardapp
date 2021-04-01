@@ -20,15 +20,20 @@ export type IDateDisplay = {
   isWithin: boolean
 }
 
-export function getNextDayOfWeek(rawDate: Date, dayOfWeek: 1 | 2 | 3 | 4 | 5 | 6 | 7): IScheduleDate {
+export function getScheduleDate(date: Date) {
+  return {
+    date: date,
+    dateFormatted: dayjs(date).format("dddd, MMMM Do, YYYY"),
+    weekOfTheMonth: Math.ceil(date.getDate() / 7),
+  }
+}
+
+export function getNextSunday(): Date {
+  const rawDate = new Date()
+  const dayOfWeek = 7
   let resultDate = new Date(rawDate.getTime())
   resultDate.setDate(rawDate.getDate() + ((7 + dayOfWeek - rawDate.getDay()) % 7))
-
-  return {
-    date: resultDate,
-    dateFormatted: dayjs(resultDate).format("dddd, MMMM Do, YYYY"),
-    weekOfTheMonth: Math.floor(resultDate.getDate() / 7),
-  }
+  return resultDate
 }
 
 export function getDateDisplay(rawDate: Date, withinDays: number, duration?: number): IDateDisplay {
