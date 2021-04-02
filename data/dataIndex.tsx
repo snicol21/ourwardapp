@@ -24,7 +24,7 @@ export const dataSundayMeeting: IHeroCard = {
 export const dataInfoCards: IEventCard[] = [
   {
     title: "Bishop Mobile",
-    date: new Date("April 8, 2021 17:00:00"),
+    date: new Date("April 15, 2021 17:00:00"),
     image: {
       src: "/images/events/bishop-mobile.png",
     },
@@ -37,7 +37,7 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/bishop-mobile.png",
           },
-          date: new Date("April 8, 2021 17:00:00"),
+          date: new Date("April 15, 2021 17:00:00"),
           duration: 90,
           location: "Watch for us outside your home",
           details:
