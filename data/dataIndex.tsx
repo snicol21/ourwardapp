@@ -79,31 +79,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Temple Cleaning Assignment (FILLED)",
-    date: new Date("March 30, 2021 21:45:00"),
-    image: {
-      src: "/images/events/oquirrh-temple.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Temple Cleaning Assignment (FILLED)",
-          subtitle: "Service Project",
-          image: {
-            src: "/images/events/oquirrh-temple.png",
-          },
-          date: new Date("March 30, 2021 21:45:00"),
-          duration: 135,
-          location: "Oquirrh Mountain Temple",
-          details:
-            "ASSIGNMENT HAS BEEN FILLED. Temple cleaning assignment coming up. 4 endowed volunteers are needed who each hold a current temple recommend.\n\nThey must enter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs.\n\nSunday Best required - white work clothing will be provided.\n\nWear clean, comfortable shoes - slip-on covers will be provided.\n\nBring your own mask to wear.\n\nText Bro. Jason Hardman if you're interested (801-613-9833).",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Special Ward Activity",
     date: new Date("April 25, 2021 19:00:00"),
     image: {
@@ -121,7 +96,8 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("April 25, 2021 19:00:00"),
           duration: 60,
           location: "Oaks Building",
-          details: "We will have a special ward activity on Sunday, April 25th at 7pm for all adults. It will be held in person at the Oaks building (where we meet). We invite all to attend.\n\nIn preparation for this activity, please pay particular attention to General Conference this weekend. Take note of the things that inspire you and come prepared to share your experience and feelings with others.\n\nThis will be an unique and enjoyable evening of inspiration and fellowship. Please plan to attend.",
+          details:
+            "We will have a special ward activity on Sunday, April 25th at 7pm for all adults. It will be held in person at the Oaks building (where we meet). We invite all to attend.\n\nIn preparation for this activity, please pay particular attention to General Conference this weekend. Take note of the things that inspire you and come prepared to share your experience and feelings with others.\n\nThis will be an unique and enjoyable evening of inspiration and fellowship. Please plan to attend.",
         },
       },
     },
@@ -146,38 +122,6 @@ export const dataInfoCards: IEventCard[] = [
           duration: 60,
           location: "Ward Building",
           details: "Combined Youth Activity with Patriarch Harris. Sunday dress is appropriate, amazing refreshments will be provided.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "April 2021 General Conference",
-    date: new Date("April 3, 2021 10:00:00"),
-    image: {
-      src: "/images/events/general-conference.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "April 2021 General Conference",
-          subtitle: "Online Event",
-          image: {
-            src: "/images/events/general-conference.png",
-          },
-          date: new Date("April 3, 2021 10:00:00"),
-          duration: 0,
-          location: "Online Event",
-          details:
-            "The global broadcast will originate from the Conference Center in Salt Lake City, Utah, USA. The conference consists of five sessions:\n\nSaturday at 10:00 a.m. mountain daylight time (MDT).\nSaturday at 2:00 p.m. MDT.\nSaturday at 6:00 p.m. MDT. This session is addressed to boys and men ages 11 and up, but everyone is welcome to view it. (In the October 2021 general conference, a similar session will be addressed to girls and women ages 11 and up.)\nSunday at 10:00 a.m. MDT.\nSunday at 2:00 p.m. MDT.",
-          button: {
-            text: "More Details",
-            link: {
-              url: "https://www.churchofjesuschrist.org/events/april-2021-general-conference?lang=eng",
-              external: true,
-            },
-          },
         },
       },
     },
