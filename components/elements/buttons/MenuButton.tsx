@@ -6,11 +6,11 @@ import { ILink } from "../../../shared/types"
 
 const MenuButton = ({ children, styles, links }) => {
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left z-10">
       <Menu>
         {({ open }) => (
           <>
-            <span className="rounded-md shadow-sm">
+            <span>
               <Menu.Button className={styles}>
                 <span>{children}</span>
                 <Icon name="chevron-down" className="-mr-1 ml-2 h-5 w-5" />
@@ -32,9 +32,9 @@ const MenuButton = ({ children, styles, links }) => {
                 <div className="py-1">
                   {links.map((link: ILink) =>
                     link.calendly ? (
-                      <CalendlyMenuItem key={link.label} label={link.label} url={link.url} />
+                      <CalendlyMenuItem key={link.label.text} label={link.label} url={link.url} />
                     ) : (
-                      <LinkMenuItem key={link.label} label={link.label} url={link.url} external={!!link.external} />
+                      <LinkMenuItem key={link.label.text} label={link.label} url={link.url} external={!!link.external} />
                     )
                   )}
                 </div>
@@ -58,7 +58,7 @@ const CalendlyMenuItem = ({ label, url }) => {
           } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer`}
           onClick={() => openPopupWidget({ url })}
         >
-          {label}
+          {label.text}
         </a>
       )}
     </Menu.Item>
@@ -71,11 +71,11 @@ const LinkMenuItem = ({ label, url, external }) => {
       {({ active }) =>
         external ? (
           <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>
-            {label}
+            {label.text}
           </a>
         ) : (
           <Link href={url}>
-            <a className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>{label}</a>
+            <a className={`text-gray-700 hover:bg-gray-100 hover:text-gray-900 ${styles}`}>{label.text}</a>
           </Link>
         )
       }

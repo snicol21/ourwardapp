@@ -37,7 +37,10 @@ export type IModalEventActionData = {
 
 export type ILink = {
   url: string
-  label?: string
+  label?: {
+    text: string
+    icon?: string
+  }
   external?: boolean
   calendly?: boolean
 }

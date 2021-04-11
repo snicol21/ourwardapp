@@ -49,7 +49,7 @@ export const dataInfoCards: IEventCard[] = [
   },
   {
     title: "Welfare Assignment",
-    date: new Date("March 12, 2021 15:00:00"),
+    date: new Date("April 14, 2021 16:30:00"),
     image: {
       src: "/images/events/welfare.png",
     },
@@ -61,22 +61,15 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/welfare.png",
           },
-          date: new Date("March 12, 2021 15:00:00"),
+          date: new Date("April 14, 2021 16:30:00"),
           duration: 120,
-          location: "437 West 200 South, Salt Lake City, UT 84101 - St. Vincent de Paul Dining Room",
+          location: "242 West Paramount Avenue, Salt Lake City UT, 84115 - Gail Miller Homeless Resource Center",
           details:
-            "For this welfare assignment food will be prepared for approximately 600 homeless persons each day (from 3:00 - 5:00 PM); however, tasks vary depending on daily needs. Each volunteer will need to wear closed-toed shoes. Aprons and plastic gloves are provided. Youth 12 and older are welcome with adult supervision.\n\nPlease contact Bro. Jason Hardman with any question at 801-613-9833",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://calendly.com/ssr3rdward/welfare",
-              calendly: true,
-            },
-          },
+            "Request:\nThree Volunteers\nWednesday, April 14\n4:30 to 7:00 PM\n\nAssignment Details:\nIf you are experiencing COVID symptoms, please stay home, because you will be working around food, please make sure that you are showered and that your clothes are clean\n\nPlease be sure to bring the following items:\n1- Close toed shoes and socks\n2- A shirt with sleeves. The shirt can be long or short sleeved- just no tanktops\n3- A hair tie - for hair that is longer than five inches\n4- A hat - a hair net can be worn instead if you prefer that. Hair nets, beard nets, aprons, and gloves will be provided upon arrival\n\nWhere to park?\nFrom our main entrance you will see a gated area. Since it is gated you will need to use the call box to enter. When you arrive, simply press the call button and let them know that you are here to volunteer. One of our staff will open the gate for you from inside. Once in the parking area, you will follow the road around the building until you see some parking spots. Feel free to park in any open spot.\n\nHow to get inside?\nPlease enter through the front main entrance of the building.\n\nPlease contact Bro. Jason Hardman to sign up or if you have any questions at 801-613-9833",
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Special Ward Activity",
@@ -187,12 +180,12 @@ export const dataMiniCards: IMiniCard[] = [
       link: [
         {
           url: "https://calendly.com/ssr3rdward/temple",
-          label: "Expired less than 6 months",
+          label: { text: "Expired less than 6 months" },
           calendly: true,
         },
         {
           url: "https://calendly.com/ssr3-bishop/temple",
-          label: "Expired 6 months or more",
+          label: { text: "Expired 6 months or more" },
           calendly: true,
         },
       ],
@@ -207,12 +200,12 @@ export const dataMiniCards: IMiniCard[] = [
       link: [
         {
           url: "https://calendly.com/ssr3rdward/youth-interview",
-          label: "Ages 12-15",
+          label: { text: "Ages 12-15" },
           calendly: true,
         },
         {
           url: "https://calendly.com/ssr3-bishop/youth",
-          label: "Ages 16-17",
+          label: { text: "Ages 16-17" },
           calendly: true,
         },
       ],

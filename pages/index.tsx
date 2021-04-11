@@ -12,11 +12,24 @@ import Icon from "../components/elements/icons/Icon"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
 function Home() {
+  // const { user, loading, logout } = {
+  //   user: null,
+  //   loading: false,
+  //   logout: () => {},
+  // }
+  // if (loading) return null
+  // if (!user) return <button>Login</button>
+
   return (
     <Layout>
       <Head>
         <title>Maples 3rd Ward</title>
       </Head>
+      {/* <div className="flex justify-end pt-5">
+        <PrimaryButton size="sm" type="link" link={[{ url: "/sunday", label: { text: "Login" } }]}>
+          Admin
+        </PrimaryButton>
+      </div> */}
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
       </div>
