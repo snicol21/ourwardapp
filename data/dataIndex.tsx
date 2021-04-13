@@ -275,4 +275,22 @@ export const dataImageCards: IImageCard[] = [
     },
     hidden: false,
   },
+  {
+    title: "Opportunities to Serve",
+    subtitle: "Where charity never faileth",
+    paragraph:
+      "View information about all of the upcoming service opportunities this year.",
+    image: {
+      src: "/images/image-cards/service.png",
+      alt: "The Lord's Vinyard",
+    },
+    button: {
+      text: "Service Info",
+      link: {
+        url: "/welfare",
+        calendly: false,
+      },
+    },
+    hidden: false,
+  },
 ]
