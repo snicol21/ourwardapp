@@ -23,6 +23,36 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
+    title: "Relief Society Activity",
+    date: new Date("April 13, 2021 19:00:00"),
+    image: {
+      src: "/images/events/relief-society.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Relief Society Activity",
+          subtitle: "All Adult Women",
+          image: {
+            src: "/images/events/relief-society.png",
+          },
+          date: new Date("April 13, 2021 19:00:00"),
+          duration: 60,
+          location: "Zoom",
+          button: {
+            text: "Join Zoom",
+            link: {
+              url: "http://virtual-rs.ourwardapp.com",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Bishop Mobile",
     date: new Date("April 15, 2021 17:00:00"),
     image: {
