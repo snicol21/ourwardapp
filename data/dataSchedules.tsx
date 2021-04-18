@@ -156,6 +156,28 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
       },
     ],
   },
+  {
+    time: "12:50 PM",
+    color: "primary",
+    events: [
+      {
+        repeat: [1, 2, 3, 4, 5],
+        title: "Primary Singing Time",
+        subtitle: "In-Person Meeting",
+        paragraph: "10 Min. All Primary Children",
+        button: {
+          text: "Optional Live Stream",
+          link: {
+            url: "http://virtual-primary.ourwardapp.com",
+            external: true,
+          },
+        },
+        image: {
+          src: "/images/image-cards/primary-singing-time.png",
+        },
+      },
+    ],
+  },
 ]
 
 export const dataSpecialSchedules: ISchedule[] = [
