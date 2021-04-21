@@ -277,9 +277,8 @@ export const dataImageCards: IImageCard[] = [
   },
   {
     title: "Opportunities to Serve",
-    subtitle: "Where charity never faileth",
-    paragraph:
-      "View information about all of the upcoming service opportunities this year.",
+    subtitle: "Where Charity Never Faileth",
+    paragraph: "View information about all of the upcoming service opportunities this year.",
     image: {
       src: "/images/image-cards/service.png",
       alt: "The Lord's Vinyard",
