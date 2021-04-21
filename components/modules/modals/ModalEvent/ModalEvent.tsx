@@ -19,7 +19,7 @@ const ModalEvent = ({ data }: IModal) => {
             {subtitle && <p className="mt-1 max-w-2xl text-md text-gray-500">{subtitle}</p>}
           </div>
           {button?.link && (
-            <PrimaryButton link={button.link} color={button.color} size="sm">
+            <PrimaryButton link={button.link} color={button.color} size="sm" className="whitespace-nowrap">
               {button.text}
             </PrimaryButton>
           )}

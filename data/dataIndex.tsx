@@ -48,6 +48,37 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
+    title: "Relief Society Ministering Interviews",
+    date: new Date("May 2, 2021 13:15:00"),
+    image: {
+      src: "/images/events/relief-society.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Ministering Interviews",
+          subtitle: "Relief Society",
+          image: {
+            src: "/images/events/relief-society.png",
+          },
+          date: new Date("May 2, 2021 13:15:00"),
+          duration: 195,
+          location: "Relief Society Room",
+          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/yYqJakX5xQo3ux8B7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Vincent De Paul Service",
     date: new Date("April 26, 2021 15:00:00"),
     image: {
@@ -64,7 +95,7 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("April 26, 2021 15:00:00"),
           duration: 120,
-          location: "437 West 200 South, Salt Lake City, UT 84101",
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
           details:
             "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
           button: {
@@ -96,7 +127,7 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("April 29, 2021 15:00:00"),
           duration: 120,
-          location: "437 West 200 South, Salt Lake City, UT 84101",
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
           details:
             "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
           button: {
