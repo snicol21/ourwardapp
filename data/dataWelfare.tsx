@@ -38,7 +38,7 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View All",
       link: {
-        url: "/SaintVincentDePaul",
+        url: "/welfare/saint-vincent-de-paul",
         external: false,
       },
     },
@@ -54,7 +54,7 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View All",
       link: {
-        url: "/GailMiller",
+        url: "/welfare/gail-miller",
         external: false,
       },
     },
@@ -70,7 +70,7 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "View All",
       link: {
-        url: "/DeseretSoap",
+        url: "/welfare/deseret-soap",
         external: false,
       },
     },
