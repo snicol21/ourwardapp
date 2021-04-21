@@ -1,8 +1,5 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
-import { IHeroCard } from "../components/modules/cards/HeroCard"
-import { IEventCard } from "../components/modules/cards/EventCard"
-import { IMiniCard } from "../components/modules/cards/MiniCard"
-import { IBlockQuote } from "../components/elements/headers/BlockQuote"
+import { IHeroCard } from "../../components/modules/cards/HeroCard"
+import { IBlockQuote } from "../../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "Deseret Soap August Assignment",
