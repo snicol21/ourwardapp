@@ -5,9 +5,9 @@ import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "St. Vincent De Paul April Assignment",
-  paragraph: "Monday the 26th or Thusday the 29th, 3-5 PM",
+  paragraph: "Monday the 26th or Thursday the 29th, 3-5 PM",
   image: {
-    src: "/images/events/StVincentDePaulLine.png",
+    src: "/images/welfare/st-vincent-de-paul.png",
     alt: "St Vincent De Paul",
   },
   button: {
@@ -32,7 +32,7 @@ export const dataImageCards: IImageCard[] = [
     title: "St. Vincent De Paul Assignments",
     subtitle: "Feed the Hungry",
     image: {
-      src: "/images/events/StVincentDePaulLine.png",
+      src: "/images/welfare/st-vincent-de-paul.png",
       alt: "St Vincent De Paul",
     },
     button: {
@@ -48,7 +48,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Gail Miller Resource Center Assignments",
     subtitle: "Feed the Hungry",
     image: {
-      src: "/images/events/GailMiller.png",
+      src: "/images/welfare/gail-miller.png",
       alt: "Gail Miller Homeless Resource Center",
     },
     button: {
@@ -64,7 +64,7 @@ export const dataImageCards: IImageCard[] = [
     title: "Deseret Soap Assignment",
     subtitle: "Assist in Making and Packing Soap",
     image: {
-      src: "/images/events/SoapFactory.png",
+      src: "/images/welfare/soap-factory.png",
       alt: "Soap Factory",
     },
     button: {
@@ -83,7 +83,7 @@ export const dataFaceCard: IFaceCard = {
   subtitle: "Welfare Specialist",
   images: [
     {
-      src: "/images/face-cards/JasonHardman.png",
+      src: "/images/face-cards/jason-hardman.png",
       alt: "Jason Hardman",
       width: 100,
       height: 100,
@@ -95,5 +95,4 @@ export const dataFaceCard: IFaceCard = {
       url: "tel:1-801-613-9833",
     },
   },
-  hidden: false,
 }

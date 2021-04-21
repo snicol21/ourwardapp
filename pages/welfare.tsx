@@ -15,9 +15,9 @@ function Welfare() {
   return (
     <>
       <Head>
-        <title>Maples 3rd Ward - Welfare </title>
+        <title>Maples 3rd Ward - Welfare &amp; Service </title>
       </Head>
-      <PageHeader title="Helping Those in Need" subtitle="Giving your time to those in need is giving your time to your Heavenly Father" />
+      <PageHeader title="Welfare &amp; Service" subtitle="Giving your time to those in need is giving your time to your Heavenly Father" />
       <Layout>
         <PrimaryButton type="link" className="absolute top-2 md:top-5" link={{ url: "/" }}>
           <Icon name="chevron-left" className="h-5 w-5" />
