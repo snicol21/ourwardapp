@@ -4,8 +4,8 @@ import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "Temple & Family\xa0History Basket",
-  paragraph: "Sign up for your family to have a turn.",
+  title: "St. Vincent De Paul April Assignment",
+  paragraph: "Monday the 26th or Thusday the 29th, 3-5 PM",
   image: {
     src: "/images/hero-cards/vinyard.png",
     alt: "Temple & Family History",
@@ -13,7 +13,7 @@ export const dataHeroCard: IHeroCard = {
   button: {
     text: "Sign Up",
     link: {
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSefHtpIzP1NdESAV6UxJ8St4xB3GxU9cPPsVcAVSqj-E6EcwQ/viewform?usp=sf_link",
+      url: "https://forms.gle/Wn5sDesnH8e9rvRU7",
       external: true,
     },
   },
@@ -21,9 +21,9 @@ export const dataHeroCard: IHeroCard = {
 }
 
 export const dataBlockQuote: IBlockQuote = {
-  name: "Dale. G Renlund",
-  title: "Quorum of the Twelve Apostles",
-  quote: "Family history and temple work is not only for the dead but blesses the living as well.",
+  name: "King Benjamin",
+  title: "Mosiah 2:17",
+  quote: "And behold, I tell you these things that ye may learn wisdom; that ye may learn that when ye are in the service of your fellow beings ye are only in the service of your God.",
 }
 
 export const dataImageCards: IImageCard[] = [

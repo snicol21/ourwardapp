@@ -31,7 +31,7 @@ function TempleAndFamilyHistory() {
         </div>
         {dataImageCards.filter((card) => !card.hidden).length > 0 && (
           <>
-            <SectionHeader title="Resources" />
+            <SectionHeader title="Up-coming Opportunities" />
             <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5">
               {dataImageCards
                 .filter((card) => !card.hidden)
