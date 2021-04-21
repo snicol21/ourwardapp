@@ -11,7 +11,7 @@ import SectionHeader from "../components/elements/headers/SectionHeader"
 import Divider from "../components/elements/dividers/Divider"
 import FaceCard from "../components/modules/cards/FaceCard"
 
-function TempleAndFamilyHistory() {
+function Welfare() {
   return (
     <>
       <Head>
@@ -23,6 +23,7 @@ function TempleAndFamilyHistory() {
           <Icon name="chevron-left" className="h-5 w-5" />
           <span className="mr-2 text-sm uppercase font-semibold">Back</span>
         </PrimaryButton>
+        <SectionHeader title="Next Opportunity" />
         <div className="pt-16">
           <HeroCard {...dataHeroCard} />
         </div>
@@ -32,7 +33,7 @@ function TempleAndFamilyHistory() {
         {dataImageCards.filter((card) => !card.hidden).length > 0 && (
           <>
             <SectionHeader title="Up-coming Opportunities" />
-            <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 pt-5">
+            <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 pt-5">
               {dataImageCards
                 .filter((card) => !card.hidden)
                 .map((card: IImageCard) => (
@@ -59,4 +60,4 @@ function TempleAndFamilyHistory() {
   )
 }
 
-export default TempleAndFamilyHistory
+export default Welfare

@@ -48,6 +48,70 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
+    title: "Vincent De Paul Service",
+    date: new Date("April 26, 2021 15:00:00"),
+    image: {
+      src: "/images/events/StVincentDePaulLine.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul Service",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/events/StVincentDePaulLine.png",
+          },
+          date: new Date("April 26, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South, Salt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/xdGLQNinPAvwijxs9",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Vincent De Paul Service",
+    date: new Date("April 29, 2021 15:00:00"),
+    image: {
+      src: "/images/events/StVincentDePaulLine.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul Service",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/events/StVincentDePaulLine.png",
+          },
+          date: new Date("April 29, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South, Salt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/xdGLQNinPAvwijxs9",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Building Cleaning",
     date: new Date("April 24, 2021 10:00:00"),
     image: {
@@ -276,7 +340,7 @@ export const dataImageCards: IImageCard[] = [
     hidden: false,
   },
   {
-    title: "Opportunities to Serve",
+    title: "More Opportunities to Serve",
     subtitle: "Where Charity Never Faileth",
     paragraph: "View information about all of the upcoming service opportunities this year.",
     image: {

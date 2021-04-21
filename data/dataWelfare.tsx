@@ -7,8 +7,8 @@ export const dataHeroCard: IHeroCard = {
   title: "St. Vincent De Paul April Assignment",
   paragraph: "Monday the 26th or Thusday the 29th, 3-5 PM",
   image: {
-    src: "/images/hero-cards/vinyard.png",
-    alt: "Temple & Family History",
+    src: "/images/events/StVincentDePaulLine.png",
+    alt: "St Vincent De Paul",
   },
   button: {
     text: "Sign Up",
@@ -29,65 +29,49 @@ export const dataBlockQuote: IBlockQuote = {
 
 export const dataImageCards: IImageCard[] = [
   {
-    title: "Coloring Pages for Children",
-    subtitle: "Activities",
+    title: "St. Vincent De Paul Assignments",
+    subtitle: "Feed the Hungry",
     image: {
-      src: "/images/temple-family-history/coloring-pages.webp",
-      alt: "Coloring Pages for Children",
+      src: "/images/events/StVincentDePaulLine.png",
+      alt: "St Vincent De Paul",
     },
     button: {
-      text: "View",
+      text: "View All",
       link: {
-        url: "https://www.churchofjesuschrist.org/media/collection/family-history-coloring-pages-images?lang=eng",
-        external: true,
+        url: "/SaintVincentDePaul",
+        external: false,
       },
     },
     hidden: false,
   },
   {
-    title: "All requirements to enter the temple relate to personal holiness.",
-    subtitle: "Resource",
+    title: "Gail Miller Resource Center Assignments",
+    subtitle: "Feed the Hungry",
     image: {
-      src: "/images/temple-family-history/president-nelson.webp",
-      alt: "President Nelson",
+      src: "/images/events/GailMiller.png",
+      alt: "Gail Miller Homeless Resource Center",
     },
     button: {
-      text: "View",
+      text: "View All",
       link: {
-        url: "https://www.churchofjesuschrist.org/study/general-conference/2019/10/57nelson?lang=eng",
-        external: true,
+        url: "/GailMiller",
+        external: false,
       },
     },
     hidden: false,
   },
   {
-    title: "Unplugged Activities & Scavenger Hunt",
-    subtitle: "Activities",
+    title: "Deseret Soap Assignment",
+    subtitle: "Assist in Making and Packing Soap",
     image: {
-      src: "/images/temple-family-history/scavenger-hunt.webp",
-      alt: "Scavenger Hunt",
+      src: "/images/events/SoapFactory.png",
+      alt: "Soap Factory",
     },
     button: {
-      text: "View",
+      text: "View All",
       link: {
-        url: "https://www.dropbox.com/sh/10ccx8vk444c6t9/AAC716lY3U172_308G-XCWnpa?dl=0",
-        external: true,
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Family Search Activities",
-    subtitle: "Activities",
-    image: {
-      src: "/images/temple-family-history/family-search.webp",
-      alt: "Family Search",
-    },
-    button: {
-      text: "View",
-      link: {
-        url: "https://www.familysearch.org/discovery/",
-        external: true,
+        url: "/DeseretSoap",
+        external: false,
       },
     },
     hidden: false,
@@ -95,15 +79,21 @@ export const dataImageCards: IImageCard[] = [
 ]
 
 export const dataFaceCard: IFaceCard = {
-  title: "Jordan\xa0Gough",
-  subtitle: "Temple & Family History Leader",
+  title: "Jason\xa0Hardman",
+  subtitle: "Welfare Specialist",
   images: [
     {
-      src: "/images/temple-family-history/gough.webp",
-      alt: "Jordan Gough",
+      src: "/images/face-cards/JasonHardman.png",
+      alt: "Jason Harmdan",
       width: 100,
       height: 100,
     },
   ],
+  button: {
+    text: "801-613-9833",
+    link: {
+      url: "tel:1-801-613-9833",
+    },
+  },
   hidden: false,
 }
