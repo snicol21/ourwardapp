@@ -14,7 +14,7 @@ export const dataHeroCard: IHeroCard = {
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/Wn5sDesnH8e9rvRU7",
+      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
       external: true,
     },
   },
