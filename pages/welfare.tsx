@@ -32,7 +32,7 @@ function Welfare() {
         </div>
         {dataImageCards.filter((card) => !card.hidden).length > 0 && (
           <>
-            <SectionHeader title="Up-coming Opportunities" />
+            <SectionHeader title="Upcoming Opportunities" />
             <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 pt-5">
               {dataImageCards
                 .filter((card) => !card.hidden)
