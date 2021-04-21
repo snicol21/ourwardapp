@@ -84,7 +84,7 @@ export const dataFaceCard: IFaceCard = {
   images: [
     {
       src: "/images/face-cards/JasonHardman.png",
-      alt: "Jason Harmdan",
+      alt: "Jason Hardman",
       width: 100,
       height: 100,
     },
