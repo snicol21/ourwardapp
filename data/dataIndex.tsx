@@ -51,7 +51,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Vincent De Paul Service",
     date: new Date("April 26, 2021 15:00:00"),
     image: {
-      src: "/images/events/StVincentDePaulLine.png",
+      src: "/images/welfare/st-vincent-de-paul.png",
     },
     button: {
       modal: {
@@ -60,7 +60,7 @@ export const dataInfoCards: IEventCard[] = [
           title: "Vincent De Paul Service",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/StVincentDePaulLine.png",
+            src: "/images/welfare/st-vincent-de-paul.png",
           },
           date: new Date("April 26, 2021 15:00:00"),
           duration: 120,
@@ -83,7 +83,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Vincent De Paul Service",
     date: new Date("April 29, 2021 15:00:00"),
     image: {
-      src: "/images/events/StVincentDePaulLine.png",
+      src: "/images/welfare/st-vincent-de-paul.png",
     },
     button: {
       modal: {
@@ -92,7 +92,7 @@ export const dataInfoCards: IEventCard[] = [
           title: "Vincent De Paul Service",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/StVincentDePaulLine.png",
+            src: "/images/welfare/st-vincent-de-paul.png",
           },
           date: new Date("April 29, 2021 15:00:00"),
           duration: 120,
@@ -225,13 +225,13 @@ export const dataFaceCards: IFaceCard[] = [
     subtitle: "Counselor",
     images: [
       {
-        src: "/images/face-cards/first_counselor.webp",
+        src: "/images/face-cards/first-counselor.webp",
         alt: "Bro.\xa0Wheeler",
         width: 100,
         height: 100,
       },
       {
-        src: "/images/face-cards/second_counselor.webp",
+        src: "/images/face-cards/second-counselor.webp",
         alt: "Bro.\xa0Hammon",
         width: 100,
         height: 100,
@@ -340,15 +340,15 @@ export const dataImageCards: IImageCard[] = [
     hidden: false,
   },
   {
-    title: "More Opportunities to Serve",
+    title: "Welfare & Service",
     subtitle: "Where Charity Never Faileth",
     paragraph: "View information about all of the upcoming service opportunities this year.",
     image: {
-      src: "/images/image-cards/service.png",
+      src: "/images/image-cards/welfare-and-service.png",
       alt: "The Lord's Vinyard",
     },
     button: {
-      text: "Service Info",
+      text: "Learn More",
       link: {
         url: "/welfare",
         calendly: false,

@@ -5,7 +5,7 @@ export const dataHeroCard: IHeroCard = {
   title: "Deseret Soap August Assignment",
   paragraph: "Monday the 16th, 12 to 4 PM",
   image: {
-    src: "/images/events/SoapFactory.png",
+    src: "/images/welfare/soap-factory.png",
     alt: "Soap Factory",
   },
   button: {

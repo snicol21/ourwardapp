@@ -54,7 +54,7 @@ const ModalEvent = ({ data }: IModal) => {
             {location && (
               <div className="py-2 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-md font-medium text-gray-500">Location</dt>
-                <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2">{location}</dd>
+                <dd className="mt-1 text-md font-semibold text-gray-900 sm:mt-0 sm:col-span-2 whitespace-pre-wrap">{location}</dd>
               </div>
             )}
             {details && (

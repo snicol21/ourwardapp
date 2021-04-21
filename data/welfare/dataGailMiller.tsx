@@ -6,7 +6,7 @@ export const dataHeroCard: IHeroCard = {
   title: "Gail Miller Homeless Resource Center July Assignment",
   paragraph: "Tuesday the 20th, 3-5 PM",
   image: {
-    src: "/images/events/GailMiller.png",
+    src: "/images/welfare/gail-miller.png",
     alt: "Gail Miller Homeless Resource Center",
   },
   button: {
@@ -23,6 +23,9 @@ export const dataInfoCards: IEventCard[] = [
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 20, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/orange-gradient.png",
+    },
     button: {
       modal: {
         type: "event",
@@ -30,11 +33,11 @@ export const dataInfoCards: IEventCard[] = [
           title: "July Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/GailMiller.png",
+            src: "/images/welfare/gail-miller.png",
           },
           date: new Date("July 20, 2021 16:30:00"),
           duration: 120,
-          location: "242 West Paramount Avenue, Salt Lake City UT, 84115",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
@@ -51,6 +54,9 @@ export const dataInfoCards: IEventCard[] = [
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 23, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/orange-gradient.png",
+    },
     button: {
       modal: {
         type: "event",
@@ -58,11 +64,11 @@ export const dataInfoCards: IEventCard[] = [
           title: "July Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/GailMiller.png",
+            src: "/images/welfare/gail-miller.png",
           },
           date: new Date("July 23, 2021 16:30:00"),
           duration: 120,
-          location: "242 West Paramount Avenue, Salt Lake City UT, 84115",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
@@ -79,6 +85,9 @@ export const dataInfoCards: IEventCard[] = [
   {
     title: "Gail Miller Homeless Resource Center Sep. Assignment",
     date: new Date("September 8, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/orange-gradient.png",
+    },
     button: {
       modal: {
         type: "event",
@@ -86,11 +95,11 @@ export const dataInfoCards: IEventCard[] = [
           title: "September Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/GailMiller.png",
+            src: "/images/welfare/gail-miller.png",
           },
           date: new Date("September 8, 2021 16:30:00"),
           duration: 120,
-          location: "242 West Paramount Avenue, Salt Lake City UT, 84115",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
@@ -107,6 +116,9 @@ export const dataInfoCards: IEventCard[] = [
   {
     title: "Gail Miller Homeless Resource Center Dec. Assignment",
     date: new Date("December 28, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/orange-gradient.png",
+    },
     button: {
       modal: {
         type: "event",
@@ -114,11 +126,11 @@ export const dataInfoCards: IEventCard[] = [
           title: "December Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/GailMiller.png",
+            src: "/images/welfare/gail-miller.png",
           },
           date: new Date("December 28, 2021 16:30:00"),
           duration: 120,
-          location: "242 West Paramount Avenue, Salt Lake City UT, 84115",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
@@ -135,6 +147,9 @@ export const dataInfoCards: IEventCard[] = [
   {
     title: "Gail Miller Homeless Resource Center Dec. Assignment",
     date: new Date("December 31, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/orange-gradient.png",
+    },
     button: {
       modal: {
         type: "event",
@@ -142,11 +157,11 @@ export const dataInfoCards: IEventCard[] = [
           title: "December Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/events/GailMiller.png",
+            src: "/images/welfare/gail-miller.png",
           },
           date: new Date("December 31, 2021 16:30:00"),
           duration: 120,
-          location: "242 West Paramount Avenue, Salt Lake City UT, 84115",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
