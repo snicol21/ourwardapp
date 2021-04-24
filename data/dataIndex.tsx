@@ -143,37 +143,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Building Cleaning",
-    date: new Date("April 24, 2021 10:00:00"),
-    image: {
-      src: "/images/events/cleaning.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Building Cleaning",
-          image: {
-            src: "/images/events/cleaning.png",
-          },
-          date: new Date("April 24, 2021 10:00:00"),
-          duration: 60,
-          location: "Ward Building",
-          details:
-            "We have the opportunity to clean the building. Please sign up and bring your family to help clean the building. Supplies will be provided upon arrival.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://calendly.com/ssr3rdward/cleaning",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Special Youth Devotional",
     date: new Date("April 24, 2021 17:00:00"),
     image: {
