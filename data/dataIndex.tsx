@@ -174,36 +174,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Special Youth Devotional",
-    date: new Date("April 24, 2021 17:00:00"),
-    image: {
-      src: "/images/events/fireside.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Special Youth Devotional",
-          image: {
-            src: "/images/events/fireside.png",
-          },
-          date: new Date("April 24, 2021 17:00:00"),
-          duration: 120,
-          location: "Virtual Event",
-          details: "Speakers will be Elder Rasband, Elder Schmutz, Bishop Causse of the Presiding Bishopric, Elder Kahnlein, and Sis. Eubanks.",
-          button: {
-            text: "Broadcast",
-            link: {
-              url: "https://churchofjesuschrist.org/broadcasts/languages/west-jordan-west-devotional/2021/04",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Special Ward Activity",
     date: new Date("April 25, 2021 19:00:00"),
     image: {
@@ -223,6 +193,13 @@ export const dataInfoCards: IEventCard[] = [
           location: "Oaks Building",
           details:
             "We will have a special ward activity on Sunday, April 25th at 7pm for all adults. It will be held in person at the Oaks building (where we meet). We invite all to attend.\n\nIn preparation for this activity, please pay particular attention to General Conference this weekend. Take note of the things that inspire you and come prepared to share your experience and feelings with others.\n\nThis will be an unique and enjoyable evening of inspiration and fellowship. Please plan to attend.",
+          button: {
+            text: "Optional Broadcast",
+            link: {
+              url: "https://youtu.be/ZPCXg-a6ss8",
+              external: true,
+            },
+          },
         },
       },
     },
