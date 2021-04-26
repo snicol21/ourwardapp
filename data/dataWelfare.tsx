@@ -5,7 +5,7 @@ import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "St. Vincent De Paul April Assignment",
-  paragraph: "Monday the 26th or Thursday the 29th, 3-5 PM",
+  paragraph: "Thursday the 29th, 3-5 PM",
   image: {
     src: "/images/welfare/st-vincent-de-paul.png",
     alt: "St Vincent De Paul",
