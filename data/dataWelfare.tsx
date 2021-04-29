@@ -4,16 +4,16 @@ import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "St. Vincent De Paul April Assignment",
-  paragraph: "Thursday the 29th, 3-5 PM",
+  title: "Gail Miller Homeless Resource Center July Assignment",
+  paragraph: "July 20th and 23rd, 2021 16:30:00",
   image: {
-    src: "/images/welfare/st-vincent-de-paul.png",
-    alt: "St Vincent De Paul",
+    src: "/images/welfare/gail-miller.png",
+    alt: "Gail Miller Homeless Resource Center",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/Wn5sDesnH8e9rvRU7",
+      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
       external: true,
     },
   },

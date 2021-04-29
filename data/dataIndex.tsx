@@ -79,61 +79,59 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Vincent De Paul Service",
-    date: new Date("April 26, 2021 15:00:00"),
+    title: "Gail Miller Homeless Resource Center July Assignment",
+    date: new Date("July 20, 2021 16:30:00"),
     image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
+      src: "/images/welfare/orange-gradient.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "Vincent De Paul Service",
+          title: "July Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
+            src: "/images/welfare/gail-miller.png",
           },
-          date: new Date("April 26, 2021 15:00:00"),
+          date: new Date("July 20, 2021 16:30:00"),
           duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
-          details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
+          details: "See details on sign-up form",
           button: {
             text: "Sign Up",
             link: {
-              url: "https://forms.gle/xdGLQNinPAvwijxs9",
+              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
               external: true,
             },
           },
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
-    title: "Vincent De Paul Service",
-    date: new Date("April 29, 2021 15:00:00"),
+    title: "Gail Miller Homeless Resource Center July Assignment",
+    date: new Date("July 23, 2021 16:30:00"),
     image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
+      src: "/images/welfare/orange-gradient.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "Vincent De Paul Service",
+          title: "July Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
+            src: "/images/welfare/gail-miller.png",
           },
-          date: new Date("April 29, 2021 15:00:00"),
+          date: new Date("July 23, 2021 16:30:00"),
           duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
-          details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
+          details: "See details on sign-up form",
           button: {
             text: "Sign Up",
             link: {
-              url: "https://forms.gle/xdGLQNinPAvwijxs9",
+              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
               external: true,
             },
           },
