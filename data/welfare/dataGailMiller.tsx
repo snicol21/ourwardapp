@@ -4,7 +4,7 @@ import { IBlockQuote } from "../../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "Gail Miller Homeless Resource Center July Assignment",
-  paragraph: "Tuesday the 20th, 3-5 PM",
+  paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
   image: {
     src: "/images/welfare/gail-miller.png",
     alt: "Gail Miller Homeless Resource Center",

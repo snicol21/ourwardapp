@@ -3,8 +3,8 @@ import { IEventCard } from "../../components/modules/cards/EventCard"
 import { IBlockQuote } from "../../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "St. Vincent De Paul April Assignment",
-  paragraph: "Thursday the 29th, 3-5 PM",
+  title: "St. Vincent De Paul July Assignment",
+  paragraph: "Wednesday the 28th, 3-5 PM",
   image: {
     src: "/images/welfare/st-vincent-de-paul.png",
     alt: "St Vincent De Paul",
@@ -12,7 +12,7 @@ export const dataHeroCard: IHeroCard = {
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/Wn5sDesnH8e9rvRU7",
+      url: "https://forms.gle/CSgBwoNDheMsVW597",
       external: true,
     },
   },
