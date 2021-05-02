@@ -82,7 +82,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 20, 2021 16:30:00"),
     image: {
-      src: "/images/welfare/orange-gradient.png",
+      src: "/images/welfare/gail-miller.png",
     },
     button: {
       modal: {
@@ -113,7 +113,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 23, 2021 16:30:00"),
     image: {
-      src: "/images/welfare/orange-gradient.png",
+      src: "/images/welfare/gail-miller.png",
     },
     button: {
       modal: {
