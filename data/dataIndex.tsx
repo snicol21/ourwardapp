@@ -351,13 +351,29 @@ export const dataImageCards: IImageCard[] = [
     paragraph: "View information about all of the upcoming service opportunities this year.",
     image: {
       src: "/images/image-cards/welfare-and-service.png",
-      alt: "The Lord's Vinyard",
+      alt: "The Lord's Vineyard",
     },
     button: {
       text: "Learn More",
       link: {
         url: "/welfare",
         calendly: false,
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Young Women",
+    subtitle: "A Great Work",
+    paragraph: "Find information about what we are doing in our Young Women's group.",
+    image: {
+      src: "https://lh3.googleusercontent.com/Vy1PizwdzooOefYvQxX0HRLZ9sXX0BgKHZJaw9wJ0DwYgInRc6DIOZkhd8uvRuH8a61eIwMEd_hWqwUxHiDFUYk=w16383",
+    },
+    button: {
+      text: "Learn More",
+      link: {
+        url: "https://sites.google.com/view/maples3yw",
+        external: true,
       },
     },
     hidden: false,
