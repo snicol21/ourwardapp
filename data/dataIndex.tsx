@@ -367,7 +367,7 @@ export const dataImageCards: IImageCard[] = [
     subtitle: "A Great Work",
     paragraph: "Find information about what we are doing in our Young Women's group.",
     image: {
-      src: "https://lh3.googleusercontent.com/Vy1PizwdzooOefYvQxX0HRLZ9sXX0BgKHZJaw9wJ0DwYgInRc6DIOZkhd8uvRuH8a61eIwMEd_hWqwUxHiDFUYk=w16383",
+      src: "/images/young-women/background.jpg",
     },
     button: {
       text: "Learn More",
