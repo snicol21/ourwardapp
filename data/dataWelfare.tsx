@@ -3,17 +3,34 @@ import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
+// export const dataHeroCard: IHeroCard = {
+//   title: "Gail Miller Homeless Resource Center July Assignment",
+//   paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
+//   image: {
+//     src: "/images/welfare/gail-miller.png",
+//     alt: "Gail Miller Homeless Resource Center",
+//   },
+//   button: {
+//     text: "Sign Up",
+//     link: {
+//       url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+//       external: true,
+//     },
+//   },
+//   type: "light",
+// }
+
 export const dataHeroCard: IHeroCard = {
-  title: "Gail Miller Homeless Resource Center July Assignment",
-  paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
+  title: "American Red Cross Blood Drive",
+  paragraph: "Thursday the 20th of May, 3:00-8:00 PM. Cultural Hall of the Maples Building, 6592 South Haven Maple Drive",
   image: {
-    src: "/images/welfare/gail-miller.png",
-    alt: "Gail Miller Homeless Resource Center",
+    src: "/images/welfare/arc-give-save.png",
+    alt: "Give Blood - Save Life",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+      url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
       external: true,
     },
   },

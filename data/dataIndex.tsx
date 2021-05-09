@@ -133,6 +133,37 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "American Red Cross Blood Drive",
+    date: new Date("May 20, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/arc-cross.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "American Red Cross Blood Drive",
+          subtitle: "Give Blood - Save Life",
+          image: {
+            src: "/images/welfare/arc-give-save-wide.png",
+          },
+          date: new Date("May 20, 2021 15:00:00"),
+          duration: 300,
+          location: "Maples Building\n6592 South Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
+          details: "Just click \"Sign Up\", then click \"SEE TIMES\" from ARC's website. As since the beginning of the pandemic, the need is great!",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Building Cleaning",
     date: new Date("April 24, 2021 10:00:00"),
     image: {
