@@ -48,8 +48,8 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Relief Society Ministering Interviews",
-    date: new Date("May 2, 2021 13:15:00"),
+    title: "Fiesta & Friendship Dinner",
+    date: new Date("May 11, 2021 19:00:00"),
     image: {
       src: "/images/events/relief-society.png",
     },
@@ -57,22 +57,14 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Ministering Interviews",
-          subtitle: "Relief Society",
+          title: "Fiesta & Friendship Dinner",
+          subtitle: "Relief Society Activity",
           image: {
             src: "/images/events/relief-society.png",
           },
-          date: new Date("May 2, 2021 13:15:00"),
-          duration: 195,
-          location: "Relief Society Room",
-          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/yYqJakX5xQo3ux8B7",
-              external: true,
-            },
-          },
+          date: new Date("May 11, 2021 19:00:00"),
+          duration: 120,
+          location: "Ward Building",
         },
       },
     },
