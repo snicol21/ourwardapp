@@ -48,29 +48,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Fiesta & Friendship Dinner",
-    date: new Date("May 11, 2021 19:00:00"),
-    image: {
-      src: "/images/events/relief-society.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Fiesta & Friendship Dinner",
-          subtitle: "Relief Society Activity",
-          image: {
-            src: "/images/events/relief-society.png",
-          },
-          date: new Date("May 11, 2021 19:00:00"),
-          duration: 120,
-          location: "Ward Building",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 20, 2021 16:30:00"),
     image: {
