@@ -45,7 +45,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
