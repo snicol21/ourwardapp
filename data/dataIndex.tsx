@@ -48,7 +48,7 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Ward Barbecue 🌭🥗🍪",
+    title: "Ward Barbecue 🌭",
     date: new Date("May 29, 2021 18:00:00"),
     image: {
       src: "/images/events/barbecue.png",
@@ -57,7 +57,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Ward Barbecue 🌭🥗🍪",
+          title: "Ward Barbecue 🌭",
           subtitle: "At the Farm 🐎",
           image: {
             src: "/images/events/barbecue.png",
