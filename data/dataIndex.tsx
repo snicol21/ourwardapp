@@ -48,6 +48,39 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
+    title: "Ward Barbecue 🌭🥗🍪",
+    date: new Date("May 29, 2021 18:00:00"),
+    image: {
+      src: "/images/events/barbecue.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Ward Barbecue 🌭🥗🍪",
+          subtitle: "At the Farm 🐎",
+          image: {
+            src: "/images/events/barbecue.png",
+          },
+          date: new Date("May 29, 2021 18:00:00"),
+          duration: 120,
+          location: "June & Lynne's Farm at 6417 W 7800 S",
+          details:
+            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. So come grab some food and drinks and have a good time.\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\n\nWe invite all those with musical talent to bring instruments and share your music throughout the evening 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
+          button: {
+            text: "Food Sign Up",
+            color: "green",
+            link: {
+              url: "https://forms.gle/WSHhBSHGX2YLPHh6A",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 20, 2021 16:30:00"),
     image: {
@@ -127,7 +160,7 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("May 20, 2021 15:00:00"),
           duration: 300,
           location: "Maples Building\n6592 South Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: "Just click \"Sign Up\", then click \"SEE TIMES\" from ARC's website. As since the beginning of the pandemic, the need is great!",
+          details: 'Just click "Sign Up", then click "SEE TIMES" from ARC\'s website. As since the beginning of the pandemic, the need is great!',
           button: {
             text: "Sign Up",
             link: {
