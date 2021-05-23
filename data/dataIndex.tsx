@@ -81,6 +81,37 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "Relief Society Ministering Interviews",
+    date: new Date("June 13, 2021 14:30:00"),
+    image: {
+      src: "/images/events/relief-society.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Ministering Interviews",
+          subtitle: "Relief Society",
+          image: {
+            src: "/images/events/relief-society.png",
+          },
+          date: new Date("June 13, 2021 14:30:00"),
+          duration: 120,
+          location: "Relief Society Room",
+          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/a7pURbJ6AXEuSh7E6",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 20, 2021 16:30:00"),
     image: {
