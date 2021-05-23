@@ -26,7 +26,7 @@ export type IScheduleEvent = {
   title: string
   subtitle: string
   paragraph: string
-  button: IButton
+  button?: IButton
   image?: IImage
 }
 
@@ -57,7 +57,7 @@ const Schedule = ({ date, times }: ISchedule) => {
                         subtitle={event.subtitle}
                         paragraph={event.paragraph}
                         image={event.image}
-                        button={{ ...event.button, color: time.color }}
+                        button={event.button ? { ...event.button, color: time.color } : null}
                       />
                     </div>
                   ) : (

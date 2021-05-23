@@ -126,14 +126,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
         repeat: [1, 2, 3, 4, 5],
         title: "Sacrament",
         subtitle: "In-Person Meeting",
-        paragraph: "45 Min. All Individuals (up to 150 people)",
-        button: {
-          text: "Sign Up",
-          link: {
-            url: "https://calendly.com/ssr3rdward/sacrament",
-            calendly: true,
-          },
-        },
+        paragraph: "All Individuals",
         image: {
           src: "/images/image-cards/sacrament.webp",
         },

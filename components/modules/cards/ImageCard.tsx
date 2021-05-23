@@ -6,12 +6,12 @@ export type IImageCard = {
   subtitle: string
   paragraph?: string
   image: IImage
-  button: IButton
+  button?: IButton
   hidden?: boolean
 }
 
 const ImageCard = ({ ...card }: IImageCard) => {
-  const buttonColor = card.button.color ? card.button.color : "primary"
+  const buttonColor = card.button && card.button.color ? card.button.color : "primary"
   return (
     <>
       <div className="flex flex-col rounded-lg shadow-xl h-full overflow-hidden">
@@ -26,11 +26,13 @@ const ImageCard = ({ ...card }: IImageCard) => {
               {card.paragraph && <p className="mt-3 text-base text-gray-500">{card.paragraph}</p>}
             </a>
           </div>
-          <div className="pt-6 text-center md:text-left">
-            <PrimaryButton type="dark" color={buttonColor} link={card.button.link}>
-              {card.button.text}
-            </PrimaryButton>
-          </div>
+          {card.button && (
+            <div className="pt-6 text-center md:text-left">
+              <PrimaryButton type="dark" color={buttonColor} link={card.button.link}>
+                {card.button.text}
+              </PrimaryButton>
+            </div>
+          )}
         </div>
       </div>
     </>
