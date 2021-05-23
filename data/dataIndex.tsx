@@ -66,7 +66,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 120,
           location: "June & Lynne's Farm at 6417 W 7800 S",
           details:
-            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. So come grab some food and drinks and have a good time.\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\n\nWe invite all those with musical talent to bring instruments and share your music throughout the evening 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
+            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. So come Bring camp chairs or blankets to sit on and join us for fun, food and friendship!\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\nBring your guitar, violin, cello, drums, horns and/or keyboard for impromptu musical entertainment 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
           button: {
             text: "Food Sign Up",
             color: "green",
