@@ -48,7 +48,83 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Ward Barbecue 🌭",
+    title: "Spanish Member Devotional",
+    date: new Date("May 23, 2021 19:30:00"),
+    image: {
+      src: "/images/events/devotional.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Spanish Member Devotional",
+          subtitle: "All Spanish Members",
+          image: {
+            src: "/images/events/devotional.png",
+          },
+          date: new Date("May 23, 2021 19:30:00"),
+          duration: 60,
+          location: "West Jordan Utah Westbrook Stake Center (4113 W 6200 S West Jordan) or via Zoom",
+          button: {
+            text: "Zoom",
+            link: {
+              url: "https://zoom.us/j/94011796547",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Fathers and Son’s Camp",
+    date: new Date("June 4, 2021 16:00:00"),
+    image: {
+      src: "/images/events/father-and-sons.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Fathers and Son’s Aaronic Priesthood Commemoration Camp",
+          subtitle: "All Fathers and Sons",
+          image: {
+            src: "/images/events/father-and-sons.png",
+          },
+          date: new Date("June 4, 2021 16:00:00"),
+          duration: 0,
+          location: "More details to come...",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Supporting Children and Youth Broadcast",
+    date: new Date("June 6, 2021 16:00:00"),
+    image: {
+      src: "/images/events/fireside.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Supporting Children and Youth: A Broadcast for Parents and Leaders",
+          subtitle: "Parents and Leaders",
+          image: {
+            src: "/images/events/fireside.png",
+          },
+          date: new Date("June 6, 2021 16:00:00"),
+          duration: 60,
+          location: "More details to come...",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Get To Know You Barbecue 🌭",
     date: new Date("May 29, 2021 18:00:00"),
     image: {
       src: "/images/events/barbecue.png",
@@ -57,7 +133,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Ward Barbecue 🌭",
+          title: "Get To Know You Barbecue 🌭",
           subtitle: "At the Farm 🐎",
           image: {
             src: "/images/events/barbecue.png",
@@ -66,7 +142,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 120,
           location: "June & Lynne's Farm at 6417 W 7800 S",
           details:
-            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. So come Bring camp chairs or blankets to sit on and join us for fun, food and friendship!\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\nBring your guitar, violin, cello, drums, horns and/or keyboard for impromptu musical entertainment 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
+            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. Bring camp chairs or blankets to sit on and join us for fun, food and friendship!\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\nBring your guitar, violin, cello, drums, horns and/or keyboard for impromptu musical entertainment 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
           button: {
             text: "Food Sign Up",
             color: "green",
