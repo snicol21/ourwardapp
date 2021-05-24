@@ -48,36 +48,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Spanish Member Devotional",
-    date: new Date("May 23, 2021 19:30:00"),
-    image: {
-      src: "/images/events/devotional.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Spanish Member Devotional",
-          subtitle: "All Spanish Members",
-          image: {
-            src: "/images/events/devotional.png",
-          },
-          date: new Date("May 23, 2021 19:30:00"),
-          duration: 60,
-          location: "West Jordan Utah Westbrook Stake Center (4113 W 6200 S West Jordan) or via Zoom",
-          button: {
-            text: "Zoom",
-            link: {
-              url: "https://zoom.us/j/94011796547",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Fathers and Son’s Camp",
     date: new Date("June 4, 2021 16:00:00"),
     image: {
