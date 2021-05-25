@@ -64,7 +64,9 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("June 4, 2021 16:00:00"),
           duration: 0,
-          location: "More details to come...",
+          location: "South of Leamington, UT\n39°29'42.0\" N 112°14'35.6\" W",
+          details:
+            "Guys, we're all sons and many of us are fathers so we're all invited to the Maples Third Ward Aaronic Priesthood Commemoration Father and Son campout on June 4 & 5. We will meet any time after 4pm at our usual camp area south of Leamington, UT.\n\nBring dinner or eat on the way. There are fire rings for cooking. Breakfast will be provided by the Bishopric.\n\nAs usual, if it is safe, (kids are behaving and weather permitting) we will finish our day on Saturday target shooting so bring your guns.\n\nIf you are a father without sons, join us! If you are a son without a father to bring you, contact your minster or member of the bishopric and we will arrange a ride a place for you to camp!\n\nSee you there!\n\nYou can find us here:\n39°29'42.0\" N 112°14'35.6\" W\n\nOr follow these directions:\nI-15 South to Nephi\nExit 228 (UT 28), turn right toward I-15 business/Main Street\nTurn right at 100 N/UT 132\nTurn left on UT 125/300 E/Silver Maple Rd\nTurn left onto Leamington Pass Rd\nTurn left on FR 710\nTurn right at FR 2623\nTurn at first right into camp area.",
         },
       },
     },
