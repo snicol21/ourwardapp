@@ -96,39 +96,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Get To Know You Barbecue 🌭",
-    date: new Date("May 29, 2021 18:00:00"),
-    image: {
-      src: "/images/events/barbecue.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Get To Know You Barbecue 🌭",
-          subtitle: "At the Farm 🐎",
-          image: {
-            src: "/images/events/barbecue.png",
-          },
-          date: new Date("May 29, 2021 18:00:00"),
-          duration: 120,
-          location: "June & Lynne's Farm at 6417 W 7800 S",
-          details:
-            "We are having a ward barbecue at June & Lynn's Farm 👩‍🌾, which is located at 6417 W 7800 S (just north-east of the Loneview homes in our neighborhood).\n\nEveryone is invited to attend. Bring camp chairs or blankets to sit on and join us for fun, food and friendship!\n\nThe Ward will provide hot dogs 🌭 and drink 🥤and those attending are encouraged to SIGN UP and bring a salad 🥗, chips 🍟, or desserts 🍪.\nBring your guitar, violin, cello, drums, horns and/or keyboard for impromptu musical entertainment 🪕.\n\nJune and Lynne are excited to share their farm with us and have a good evening 🌄.\n\nSee you there 🙌!\n-Maples 3rd Ward Bishopric",
-          button: {
-            text: "Food Sign Up",
-            color: "green",
-            link: {
-              url: "https://forms.gle/WSHhBSHGX2YLPHh6A",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Relief Society Ministering Interviews",
     date: new Date("June 13, 2021 14:30:00"),
     image: {
