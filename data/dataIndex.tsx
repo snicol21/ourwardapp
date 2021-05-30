@@ -89,7 +89,16 @@ export const dataInfoCards: IEventCard[] = [
           },
           date: new Date("June 6, 2021 16:00:00"),
           duration: 60,
-          location: "More details to come...",
+          location: "Church Broadcast",
+          details:
+            "President M. Russell Ballard, acting president of the Quorum of the Twelve Apostles of The Church of Jesus Christ of Latter-day Saints, Elder Quentin L. Cook of the Quorum of the Twelve Apostles and General Officers will talk about opportunities to bless youth and children as areas come out of the pandemic.",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://newsroom.churchofjesuschrist.org/event/supporting-children-and-youth-broadcast-for-parents-and-leaders",
+              external: true,
+            },
+          },
         },
       },
     },
