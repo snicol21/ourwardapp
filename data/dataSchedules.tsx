@@ -182,9 +182,9 @@ export const dataSpecialSchedules: ISchedule[] = [
         color: "red",
         events: [
           {
-            title: "Ward Mission Message",
+            title: "Combined Youth & Adults",
             subtitle: "Zoom Meeting",
-            paragraph: "30 Min. Combined Youth & Adults",
+            paragraph: "30 Min. Ward Mission Message",
             button: {
               text: "Join Meeting",
               link: {
