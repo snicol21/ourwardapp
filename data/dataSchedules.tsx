@@ -173,4 +173,81 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
   },
 ]
 
-export const dataSpecialSchedules: ISchedule[] = []
+export const dataSpecialSchedules: ISchedule[] = [
+  {
+    date: getScheduleDate(new Date("May 30, 2021")),
+    times: [
+      {
+        time: "11:00 AM",
+        color: "red",
+        events: [
+          {
+            title: "Ward Mission Message",
+            subtitle: "Zoom Meeting",
+            paragraph: "30 Min. Combined Youth & Adults",
+            button: {
+              text: "Join Meeting",
+              link: {
+                url: "http://virtual-gospel.ourwardapp.com",
+                external: true,
+              },
+            },
+          },
+        ],
+      },
+      {
+        time: "12:00 PM",
+        color: "green",
+        events: [
+          {
+            repeat: [1, 2, 3, 4, 5],
+            title: "Sacrament",
+            subtitle: "In-Person Meeting",
+            paragraph: "All Individuals",
+            image: {
+              src: "/images/image-cards/sacrament.webp",
+            },
+          },
+          {
+            repeat: [1, 2, 3, 4, 5],
+            title: "Sacrament Live Stream",
+            subtitle: "YouTube Live Stream",
+            paragraph: "30 Min. All Individuals",
+            button: {
+              text: "Join Live Stream",
+              link: {
+                url: "http://virtual-sacrament.ourwardapp.com",
+                external: true,
+              },
+            },
+            image: {
+              src: "/images/image-cards/sacrament-virtual.webp",
+            },
+          },
+        ],
+      },
+      {
+        time: "12:50 PM",
+        color: "primary",
+        events: [
+          {
+            repeat: [1, 2, 3, 4, 5],
+            title: "Primary Singing Time",
+            subtitle: "In-Person Meeting",
+            paragraph: "10 Min. All Primary Children",
+            button: {
+              text: "Optional Live Stream",
+              link: {
+                url: "http://virtual-primary.ourwardapp.com",
+                external: true,
+              },
+            },
+            image: {
+              src: "/images/image-cards/primary-singing-time.png",
+            },
+          },
+        ],
+      },
+    ],
+  },
+]
