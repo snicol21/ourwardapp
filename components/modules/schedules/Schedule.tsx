@@ -62,7 +62,12 @@ const Schedule = ({ date, times }: ISchedule) => {
                     </div>
                   ) : (
                     <div key={event.title} className="py-3 w-full">
-                      <MiniCard title={event.title} subtitle={event.subtitle} paragraph={event.paragraph} button={{ ...event.button, color: time.color }} />
+                      <MiniCard
+                        title={event.title}
+                        subtitle={event.subtitle}
+                        paragraph={event.paragraph}
+                        button={event.button ? { ...event.button, color: time.color } : null}
+                      />
                     </div>
                   )
                 )}
