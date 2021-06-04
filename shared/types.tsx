@@ -51,3 +51,17 @@ export type IImage = {
   width?: number
   height?: number
 }
+
+export type ISheetyEvent = {
+  title: string
+  subtitle?: string
+  date: string
+  time: string
+  duration: number
+  location: string
+  imageUrl: string
+  buttonText?: string
+  buttonUrl?: string
+  hidden?: boolean
+  details?: string
+}

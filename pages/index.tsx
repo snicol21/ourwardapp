@@ -6,30 +6,55 @@ import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
 import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
-import PrimaryButton from "../components/elements/buttons/PrimaryButton"
-import Icon from "../components/elements/icons/Icon"
+import { dataSundayMeeting, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
+import { ISheetyEvent } from "../shared/types"
 
-function Home() {
-  // const { user, loading, logout } = {
-  //   user: null,
-  //   loading: false,
-  //   logout: () => {},
-  // }
-  // if (loading) return null
-  // if (!user) return <button>Login</button>
+function Home({ data }: { data: { events: ISheetyEvent[] } }) {
+  let dataInfoCards: IEventCard[] = []
+  if (data.events) {
+    dataInfoCards = data.events.map((e) => {
+      return {
+        title: e.title,
+        date: new Date(`${e.date} ${e.time}`),
+        image: {
+          src: e.imageUrl,
+        },
+        button: {
+          modal: {
+            type: "event",
+            data: {
+              title: e.title,
+              subtitle: e.subtitle,
+              image: {
+                src: e.imageUrl,
+              },
+              date: new Date(`${e.date} ${e.time}`),
+              duration: e.duration,
+              location: e.location,
+              details: e.details,
+              button: e.buttonText
+                ? {
+                    text: e.buttonText,
+                    link: {
+                      url: e.buttonUrl,
+                      external: true,
+                    },
+                  }
+                : null,
+            },
+          },
+        },
+        hidden: e.hidden ? e.hidden : false,
+      }
+    })
+  }
 
   return (
     <Layout>
       <Head>
         <title>Maples 3rd Ward</title>
       </Head>
-      {/* <div className="flex justify-end pt-5">
-        <PrimaryButton size="sm" type="link" link={[{ url: "/sunday", label: { text: "Login" } }]}>
-          Admin
-        </PrimaryButton>
-      </div> */}
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
       </div>
@@ -41,22 +66,9 @@ function Home() {
               .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
               .sort((a: any, b: any) => a.date - b.date)
               .map((card: IEventCard) => (
-                <EventCard key={card.title} {...card} />
+                <EventCard key={`${card.title}${card.date}`} {...card} />
               ))}
           </div>
-          {/* <div className="flex pt-5 justify-end">
-            <PrimaryButton
-              type="light"
-              size="sm"
-              color="gray"
-              modal={{
-                type: "event-action",
-              }}
-            >
-              <Icon name="pencil" className="h-5 w-5" />
-              <span className="pl-2">Add/Update</span>
-            </PrimaryButton>
-          </div> */}
         </>
       )}
       {dataFaceCards.filter((card) => !card.hidden).length > 0 && (
@@ -100,6 +112,15 @@ function Home() {
       )}
     </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://api.sheety.co/62c9e91944aea5ff47ee1e4776d4cc2a/ourwardapp/events`)
+  const data = await res.json()
+
+  // Pass data to the page via props
+  return { props: { data } }
 }
 
 export default Home
