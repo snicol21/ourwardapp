@@ -51,7 +51,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Supporting Children and Youth Broadcast",
     date: new Date("June 6, 2021 16:00:00"),
     image: {
-      src: "/images/events/fireside.png",
+      src: "/images/events/supporting-children-and-youth.png",
     },
     button: {
       modal: {
@@ -60,7 +60,7 @@ export const dataInfoCards: IEventCard[] = [
           title: "Supporting Children and Youth: A Broadcast for Parents and Leaders",
           subtitle: "Parents and Leaders",
           image: {
-            src: "/images/events/fireside.png",
+            src: "/images/events/supporting-children-and-youth.png",
           },
           date: new Date("June 6, 2021 16:00:00"),
           duration: 60,
@@ -105,6 +105,31 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "Stake YM Camp Parent Meeting",
+    date: new Date("June 10, 2021 19:00:00"),
+    image: {
+      src: "/images/events/stake-ym-parent-mtg.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Stake YM Camp Parent Meeting",
+          subtitle: "Parents of YM attending Stake YM Camp",
+          image: {
+            src: "/images/events/stake-ym-parent-mtg.png",
+          },
+          date: new Date("June 10, 2021 19:00:00"),
+          duration: 30,
+          location: "At the Church and Zoom",
+          details:
+            "Thursday (6/10/2021) @ 7 pm in the Oaks Building is a parent meeting for all the parents of YM planning to attend the stake YM camp July 21-23 at Camp Hunt.  There will be a virtual option as well for those who aren’t able to attend in person. That link will be sent out soon.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Relief Society Ministering Interviews",
     date: new Date("June 13, 2021 14:30:00"),
     image: {
@@ -130,6 +155,62 @@ export const dataInfoCards: IEventCard[] = [
               external: true,
             },
           },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Single Adult Face to Face",
+    date: new Date("June 13, 2021 16:00:00"),
+    image: {
+      src: "/images/events/face-to-face.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Single Adult Face to Face",
+          subtitle: "Single adults ages 31 and older",
+          image: {
+            src: "/images/events/face-to-face.png",
+          },
+          date: new Date("June 13, 2021 16:00:00"),
+          duration: 60,
+          location: "Church Broadcast",
+          details:
+            "Elder Neil L. Andersen of the Quorum of the Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and President Jean B. Bingham and Sister Sharon Eubank of the Relief Society General Presidency will host a Face to Face event for single adults ages 31 and older on June 13, 2021.",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://newsroom.churchofjesuschrist.org/event/face-to-face-for-single-adults",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Seminary Graduation",
+    date: new Date("June 13, 2021 18:00:00"),
+    image: {
+      src: "/images/events/seminary-graduation.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Seminary Graduation",
+          subtitle: "Single adults ages 31 and older",
+          image: {
+            src: "/images/events/seminary-graduation.png",
+          },
+          date: new Date("June 13, 2021 18:00:00"),
+          duration: 60,
+          location: "At the Church",
+          details: "Seminary graduation is Sunday, June 13 at 6:00pm in this building. Sunday dress requested.",
         },
       },
     },
