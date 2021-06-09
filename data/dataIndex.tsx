@@ -91,7 +91,14 @@ export const dataInfoCards: IEventCard[] = [
           duration: 30,
           location: "At the Church and Zoom",
           details:
-            "Thursday (6/10/2021) @ 7 pm in the Oaks Building is a parent meeting for all the parents of YM planning to attend the stake YM camp July 21-23 at Camp Hunt.  There will be a virtual option as well for those who aren’t able to attend in person. That link will be sent out soon.",
+            "Thursday (6/10/2021) @ 7 pm in the Oaks Building is a parent meeting for all the parents of YM planning to attend the stake YM camp July 21-23 at Camp Hunt.  There will be a virtual option as well for those who aren’t able to attend in person.",
+          button: {
+            text: "Zoom",
+            link: {
+              url: "https://zoom.us/j/91463277123?pwd=TFg4K0JHZHZvNVpGb0d2bVpaeG5Ydz09 ",
+              external: true,
+            },
+          },
         },
       },
     },
@@ -171,14 +178,21 @@ export const dataInfoCards: IEventCard[] = [
         type: "event",
         data: {
           title: "Seminary Graduation",
-          subtitle: "Single adults ages 31 and older",
+          subtitle: "All Seminary Graduates & Parents",
           image: {
             src: "/images/events/seminary-graduation.png",
           },
           date: new Date("June 13, 2021 18:00:00"),
           duration: 60,
-          location: "At the Church",
-          details: "Seminary graduation is Sunday, June 13 at 6:00pm in this building. Sunday dress requested.",
+          location: "At the Church or Broadcast",
+          details: "Seminary graduation is Sunday, June 13 at 6:00pm in this building or on Zoom. Sunday dress requested.",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://youtu.be/pEbPM7oabxw",
+              external: true,
+            },
+          },
         },
       },
     },
