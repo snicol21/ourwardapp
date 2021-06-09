@@ -48,31 +48,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Relief Society Activity",
-    date: new Date("June 8, 2021 19:00:00"),
-    image: {
-      src: "/images/events/rs-summer-time.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Relief Society Activity",
-          subtitle: "All Relief Society",
-          image: {
-            src: "/images/events/rs-summer-time.jpg",
-          },
-          date: new Date("June 8, 2021 19:00:00"),
-          duration: 90,
-          location: "At the Church",
-          details:
-            "We are going to be sharing ideas for fun summer activities and having a professional come and demonstrate how to pick and cut fresh fruit . Fruit with yummy dips, sweet bread, and lemonade will  be served!",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Stake YM Camp Parent Meeting",
     date: new Date("June 10, 2021 19:00:00"),
     image: {
