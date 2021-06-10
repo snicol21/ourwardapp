@@ -15,22 +15,6 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
           src: "/images/image-cards/sacrament.webp",
         },
       },
-      {
-        repeat: [1, 2, 3, 4, 5],
-        title: "Sacrament Live Stream",
-        subtitle: "YouTube Live Stream",
-        paragraph: "30 Min. All Individuals",
-        button: {
-          text: "Join Live Stream",
-          link: {
-            url: "http://virtual-sacrament.ourwardapp.com",
-            external: true,
-          },
-        },
-        image: {
-          src: "/images/image-cards/sacrament-virtual.webp",
-        },
-      },
     ],
   },
   {
