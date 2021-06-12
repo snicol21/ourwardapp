@@ -48,38 +48,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Stake YM Camp Parent Meeting",
-    date: new Date("June 10, 2021 19:00:00"),
-    image: {
-      src: "/images/events/stake-ym-parent-mtg.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Stake YM Camp Parent Meeting",
-          subtitle: "Parents of YM attending Stake YM Camp",
-          image: {
-            src: "/images/events/stake-ym-parent-mtg.png",
-          },
-          date: new Date("June 10, 2021 19:00:00"),
-          duration: 30,
-          location: "At the Church and Zoom",
-          details:
-            "Thursday (6/10/2021) @ 7 pm in the Oaks Building is a parent meeting for all the parents of YM planning to attend the stake YM camp July 21-23 at Camp Hunt.  There will be a virtual option as well for those who aren’t able to attend in person.",
-          button: {
-            text: "Zoom",
-            link: {
-              url: "https://zoom.us/j/91463277123?pwd=TFg4K0JHZHZvNVpGb0d2bVpaeG5Ydz09 ",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Relief Society Ministering Interviews",
     date: new Date("June 13, 2021 14:30:00"),
     image: {
