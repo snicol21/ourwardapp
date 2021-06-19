@@ -18,6 +18,7 @@ export type IDateDisplay = {
   relativeDisplay: string
   isoString: string
   isWithin: boolean
+  isOver: boolean
 }
 
 export function getScheduleDate(date: Date) {
@@ -43,9 +44,10 @@ export function getDateDisplay(rawDate: Date, withinDays: number, duration?: num
     dateFullDisplay: date.format("dddd, MMMM Do, YYYY"),
     timeDisplay: date.format("h:mm A"),
     timeRangeDisplay: duration ? `${date.format("h:mm A")} - ${date.add(duration, "minute").format("h:mm A")}` : undefined,
-    relativeDisplay: dayjs().to(date, true),
+    relativeDisplay: dayjs(date).fromNow(false),
     isoString: date.toISOString(),
     isWithin: date.isBetween(dayjs(), dayjs().add(withinDays, "day"), null, "[]"),
+    isOver: dayjs(date).diff(dayjs(), "hour") < 0,
   }
 }
 

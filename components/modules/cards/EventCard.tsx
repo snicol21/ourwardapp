@@ -41,7 +41,7 @@ const EventCard = ({ ...card }: IEventCard) => {
                   <time dateTime={dateDisplay.isoString}>{dateDisplay.timeDisplay}</time>
                   <span
                     className={`inline-flex items-center ml-2 px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                      dateDisplay.isWithin ? "bg-green-100 text-green-800" : "bg-primary-100 text-primary-800"
+                      dateDisplay.isOver ? "bg-red-100 text-red-800" : dateDisplay.isWithin ? "bg-green-100 text-green-800" : "bg-primary-100 text-primary-800"
                     }`}
                   >
                     {dateDisplay.relativeDisplay}
