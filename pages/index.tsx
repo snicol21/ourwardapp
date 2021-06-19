@@ -12,24 +12,11 @@ import Icon from "../components/elements/icons/Icon"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
 function Home() {
-  // const { user, loading, logout } = {
-  //   user: null,
-  //   loading: false,
-  //   logout: () => {},
-  // }
-  // if (loading) return null
-  // if (!user) return <button>Login</button>
-
   return (
     <Layout>
       <Head>
         <title>Maples 3rd Ward</title>
       </Head>
-      {/* <div className="flex justify-end pt-5">
-        <PrimaryButton size="sm" type="link" link={[{ url: "/sunday", label: { text: "Login" } }]}>
-          Admin
-        </PrimaryButton>
-      </div> */}
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
       </div>
@@ -41,22 +28,9 @@ function Home() {
               .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
               .sort((a: any, b: any) => a.date - b.date)
               .map((card: IEventCard) => (
-                <EventCard key={card.title} {...card} />
+                <EventCard key={`${card.title}${card.date}`} {...card} />
               ))}
           </div>
-          {/* <div className="flex pt-5 justify-end">
-            <PrimaryButton
-              type="light"
-              size="sm"
-              color="gray"
-              modal={{
-                type: "event-action",
-              }}
-            >
-              <Icon name="pencil" className="h-5 w-5" />
-              <span className="pl-2">Add/Update</span>
-            </PrimaryButton>
-          </div> */}
         </>
       )}
       {dataFaceCards.filter((card) => !card.hidden).length > 0 && (

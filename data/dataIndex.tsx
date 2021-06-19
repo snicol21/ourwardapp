@@ -45,7 +45,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Relief Society Ministering Interviews",
@@ -76,70 +76,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
-  },
-  {
-    title: "Single Adult Face to Face",
-    date: new Date("June 13, 2021 16:00:00"),
-    image: {
-      src: "/images/events/face-to-face.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Single Adult Face to Face",
-          subtitle: "Single adults ages 31 and older",
-          image: {
-            src: "/images/events/face-to-face.png",
-          },
-          date: new Date("June 13, 2021 16:00:00"),
-          duration: 60,
-          location: "Church Broadcast",
-          details:
-            "Elder Neil L. Andersen of the Quorum of the Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and President Jean B. Bingham and Sister Sharon Eubank of the Relief Society General Presidency will host a Face to Face event for single adults ages 31 and older on June 13, 2021.",
-          button: {
-            text: "Broadcast",
-            link: {
-              url: "https://newsroom.churchofjesuschrist.org/event/face-to-face-for-single-adults",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Seminary Graduation",
-    date: new Date("June 13, 2021 18:00:00"),
-    image: {
-      src: "/images/events/seminary-graduation.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Seminary Graduation",
-          subtitle: "All Seminary Graduates & Parents",
-          image: {
-            src: "/images/events/seminary-graduation.png",
-          },
-          date: new Date("June 13, 2021 18:00:00"),
-          duration: 60,
-          location: "At the Church or Broadcast",
-          details: "Seminary graduation is Sunday, June 13 at 6:00pm in this building or on Zoom. Sunday dress requested.",
-          button: {
-            text: "Broadcast",
-            link: {
-              url: "https://youtu.be/pEbPM7oabxw",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
@@ -264,38 +201,6 @@ export const dataInfoCards: IEventCard[] = [
       },
     },
     hidden: true,
-  },
-  {
-    title: "Special Ward Activity",
-    date: new Date("April 25, 2021 19:00:00"),
-    image: {
-      src: "/images/events/special-activity.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Special Ward Activity",
-          subtitle: "For All Adults",
-          image: {
-            src: "/images/events/special-activity.png",
-          },
-          date: new Date("April 25, 2021 19:00:00"),
-          duration: 60,
-          location: "Oaks Building",
-          details:
-            "We will have a special ward activity on Sunday, April 25th at 7pm for all adults. It will be held in person at the Oaks building (where we meet). We invite all to attend.\n\nIn preparation for this activity, please pay particular attention to General Conference this weekend. Take note of the things that inspire you and come prepared to share your experience and feelings with others.\n\nThis will be an unique and enjoyable evening of inspiration and fellowship. Please plan to attend.",
-          button: {
-            text: "Optional Broadcast",
-            link: {
-              url: "https://youtu.be/ZPCXg-a6ss8",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
   },
 ]
 
