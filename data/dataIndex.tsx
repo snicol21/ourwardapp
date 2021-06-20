@@ -202,6 +202,37 @@ export const dataInfoCards: IEventCard[] = [
     },
     hidden: true,
   },
+  {
+    title: "Youth Conference Registration",
+    date: new Date("August 5, 2021 19:00:00"),
+    image: {
+      src: "/images/events/supporting-children-and-youth.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Youth Conference Registration",
+          image: {
+            src: "/images/events/supporting-children-and-youth.png",
+          },
+          date: new Date("August 5, 2021 19:00:00"),
+          duration: 2940,
+          location: "Ward Building",
+          details:
+            "Join us for Youth Conference August 5-8 \nTentative Schedule:\nThursday 7pm - 9pm\nFriday 9:30 am - 9pm\nSaturday 10:30 am - 8 pm",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://docs.google.com/forms/d/e/1FAIpQLSe0jrytdc8DlWg4jsZYhi5a2iPBvDdPIYygz9hUhcTvUx7MvA/viewform",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
 ]
 
 export const dataFaceCards: IFaceCard[] = [
