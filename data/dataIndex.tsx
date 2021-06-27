@@ -237,7 +237,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Youth Conference Registration",
     date: new Date("August 5, 2021 19:00:00"),
     image: {
-      src: "/images/events/supporting-children-and-youth.png",
+      src: "/images/Youth-Conference/M3W_YouthConf_Image-2.png",
     },
     button: {
       modal: {
@@ -435,6 +435,23 @@ export const dataImageCards: IImageCard[] = [
       link: {
         url: "https://sites.google.com/view/maples3yw",
         external: true,
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Youth Conference",
+    subtitle: "By Small and Simple Things...",
+    paragraph: "All youth ages 11 - 18 are invited to Maples 3rd Ward Youth Conference - Thursday August 5 thru Saturday August 7th.",
+    image: {
+      src: "/images/Youth-Conference/M3W_YouthConf_Image-2.png",
+      alt: "Small and Simple Things",
+    },
+    button: {
+      text: "Learn More",
+      link: {
+        url: "/Youth-Conference",
+        calendly: false,
       },
     },
     hidden: false,
