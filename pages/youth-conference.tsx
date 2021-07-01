@@ -51,7 +51,7 @@ function YouthConference() {
                 <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">Service Project Donations</h2>
                 <div className="mt-6 text-gray-500 space-y-6">
                   <p className="text-lg">
-                    Student weekend kits are sent home int he backpacks of insecure children in our community. The pack contains enough food for four meals and
+                    Student weekend kits are sent home in the backpacks of insecure children in our community. The pack contains enough food for four meals and
                     several snacks.
                   </p>
                   <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">What you can donate:</h3>
