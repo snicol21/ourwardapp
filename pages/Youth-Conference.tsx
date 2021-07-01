@@ -4,8 +4,7 @@ import PageHeader from "../components/elements/headers/PageHeader"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
 import HeroCard from "../components/modules/cards/HeroCard"
-import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataHeroCard, dataImageCards, dataFaceCards } from "../data/dataYouthConference"
+import { dataHeroCard, dataFaceCards } from "../data/dataYouthConference"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import Divider from "../components/elements/dividers/Divider"
 import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
@@ -16,7 +15,7 @@ function YouthConference() {
       <Head>
         <title>Youth Conference</title>
       </Head>
-      <PageHeader title="Youth Conference" subtitle="August 5 - 7 2021 - a few days that could change your life." />
+      <PageHeader title="Youth Conference" subtitle="August 5—7 2021" />
       <Layout>
         <PrimaryButton type="link" className="absolute top-2 md:top-5" link={{ url: "/" }}>
           <Icon name="chevron-left" className="h-5 w-5" />
@@ -25,20 +24,60 @@ function YouthConference() {
         <div className="pt-16">
           <HeroCard {...dataHeroCard} />
         </div>
-        {dataImageCards.filter((card) => !card.hidden).length > 0 && (
-          <>
-            <SectionHeader title="Service\xa0Project Donations" />
-            <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 pt-5">
-              {dataImageCards
-                .filter((card) => !card.hidden)
-                .map((card: IImageCard) => (
-                  <div key={card.title} className="py-3 w-full">
-                    <ImageCard {...card} />
-                  </div>
-                ))}
+        <div className="pt-16">
+          <Divider />
+          <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+            <div className="mt-5 relative sm:py-16 lg:py-0">
+              <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                <div className="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"></div>
+                <svg className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392">
+                  <defs>
+                    <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
+                    </pattern>
+                  </defs>
+                  <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
+                </svg>
+              </div>
+              <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+                <div className="relative pt-64 pb-10 overflow-hidden">
+                  <img className="absolute inset-0 h-full w-full object-cover rounded-2xl" src="/images/youth-conference/M3W_YouthConf_Donate.png" alt="" />
+                </div>
+              </div>
             </div>
-          </>
-        )}
+
+            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+              <div className="pt-12 sm:pt-16 lg:pt-20">
+                <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">Service Project Donations</h2>
+                <div className="mt-6 text-gray-500 space-y-6">
+                  <p className="text-lg">
+                    Student weekend kits are sent home int he backpacks of insecure children in our community. The pack contains enough food for four meals and
+                    several snacks.
+                  </p>
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">What you can donate:</h3>
+                  <ul className="list-inside list-disc space-y-3">
+                    <li>Individual size microwaveable meals (Easy Mac, ravioli, spaghetti and meatballs)</li>
+                    <li>Fruit cup/squeeze pouch or applesauce</li>
+                    <li>Shelf stable pudding cup</li>
+                    <li>Juice boxes or pouches</li>
+                    <li>Instance oatmeal</li>
+                    <li>Individual sized peanut butter crackers or cheese crackers</li>
+                    <li>Granola bars (no peanuts)</li>
+                    <li>Gallon ziploc bags</li>
+                  </ul>
+                  <div className="relative py-5 overflow-hidden">
+                    <img className="h-full w-full rounded-2xl" src="/images/youth-conference/M3W_YouthConf_Food.png" alt="" />
+                  </div>
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Where to take donation:</h3>
+                  <p className="text-lg">
+                    Items can be dropped off at the Gough's (7867&#160;S.&#160;Highlandpoint&#160;Way) or dropped off at the clerks office on Sundays during the
+                    month of July.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="pt-16">
           <Divider />
           <SectionHeader title="Contact" />
