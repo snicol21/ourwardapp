@@ -105,4 +105,5 @@ export const dataFaceCard: IContactCard = {
     },
   ],
   hidden: false,
+  soft: true,
 }

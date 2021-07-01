@@ -112,4 +112,5 @@ export const dataFaceCard: IContactCard = {
       url: "tel:1-801-613-9833",
     },
   },
+  soft: true,
 }
