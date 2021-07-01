@@ -5,12 +5,12 @@ import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
 import HeroCard from "../components/modules/cards/HeroCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataHeroCard, dataBlockQuote, dataImageCards, dataFaceCard } from "../data/dataYouthConference.tsx"
+import { dataHeroCard, dataImageCards, dataFaceCard } from "../data/dataYouthConference"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import Divider from "../components/elements/dividers/Divider"
 import FaceCard from "../components/modules/cards/FaceCard"
 
-function YouthConf() {
+function YouthConference() {
   return (
     <>
       <Head>
@@ -55,4 +55,4 @@ function YouthConf() {
   )
 }
 
-export default YouthConf
+export default YouthConference

@@ -1,5 +1,4 @@
 import { IScheduleTime, ISchedule } from "../components/modules/schedules/Schedule"
-import { getScheduleDate } from "../shared/utils/date.util"
 
 export const dataSundayScheduleTimes: IScheduleTime[] = [
   {

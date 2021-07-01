@@ -7,8 +7,6 @@ import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
-import PrimaryButton from "../components/elements/buttons/PrimaryButton"
-import Icon from "../components/elements/icons/Icon"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
 function Home() {

@@ -3,22 +3,22 @@ import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
- export const dataHeroCard: IHeroCard = {
-   title: "Gail Miller Homeless Resource Center July Assignment",
-   paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
-   image: {
-     src: "/images/welfare/gail-miller.png",
-     alt: "Gail Miller Homeless Resource Center",
-   },
-   button: {
-     text: "Sign Up",
-     link: {
-       url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
-       external: true,
-     },
-   },
-   type: "light",
- }
+export const dataHeroCard: IHeroCard = {
+  title: "Gail Miller Homeless Resource Center July Assignment",
+  paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
+  image: {
+    src: "/images/welfare/gail-miller.png",
+    alt: "Gail Miller Homeless Resource Center",
+  },
+  button: {
+    text: "Sign Up",
+    link: {
+      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+      external: true,
+    },
+  },
+  type: "light",
+}
 
 //export const dataHeroCard: IHeroCard = {
 //  title: "American Red Cross Blood Drive",
