@@ -1,4 +1,4 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IEventCard } from "../components/modules/cards/EventCard"
@@ -158,7 +158,8 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("July 28, 2021 15:00:00"),
           duration: 120,
           location: "437 West 200 South\nSalt Lake City, UT 84101",
-          details: "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
           button: {
             text: "Sign Up",
             link: {
@@ -237,7 +238,7 @@ export const dataInfoCards: IEventCard[] = [
     title: "Youth Conference Registration",
     date: new Date("August 5, 2021 19:00:00"),
     image: {
-      src: "/images/events/supporting-children-and-youth.png",
+      src: "/images/youth-conference/M3W_YouthConf_Image-2.png",
     },
     button: {
       modal: {
@@ -250,8 +251,7 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("August 5, 2021 19:00:00"),
           duration: 2940,
           location: "Ward Building",
-          details:
-            "Join us for Youth Conference August 5-8 \nTentative Schedule:\nThursday 7pm - 9pm\nFriday 9:30 am - 9pm\nSaturday 10:30 am - 8 pm",
+          details: "Join us for Youth Conference August 5-8 \nTentative Schedule:\nThursday 7pm - 9pm\nFriday 9:30 am - 9pm\nSaturday 10:30 am - 8 pm",
           button: {
             text: "Sign Up",
             link: {
@@ -266,7 +266,7 @@ export const dataInfoCards: IEventCard[] = [
   },
 ]
 
-export const dataFaceCards: IFaceCard[] = [
+export const dataFaceCards: IContactCard[] = [
   {
     title: "Bishop\xa0Harman",
     subtitle: "Bishop",
@@ -435,6 +435,23 @@ export const dataImageCards: IImageCard[] = [
       link: {
         url: "https://sites.google.com/view/maples3yw",
         external: true,
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Youth Conference",
+    subtitle: "By Small and Simple Things...",
+    paragraph: "All youth ages 11 - 18 are invited to Maples 3rd Ward Youth Conference - Thursday August 5 thru Saturday August 7th.",
+    image: {
+      src: "/images/youth-conference/M3W_YouthConf_Image-2.png",
+      alt: "Small and Simple Things",
+    },
+    button: {
+      text: "Learn More",
+      link: {
+        url: "/youth-conference",
+        calendly: false,
       },
     },
     hidden: false,

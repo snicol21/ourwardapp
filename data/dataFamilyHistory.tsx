@@ -1,4 +1,4 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
@@ -93,7 +93,7 @@ export const dataImageCards: IImageCard[] = [
   },
 ]
 
-export const dataFaceCard: IFaceCard = {
+export const dataFaceCard: IContactCard = {
   title: "Jordan\xa0Gough",
   subtitle: "Temple & Family History Leader",
   images: [
@@ -105,4 +105,5 @@ export const dataFaceCard: IFaceCard = {
     },
   ],
   hidden: false,
+  soft: true,
 }

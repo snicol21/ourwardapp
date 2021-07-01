@@ -1,24 +1,24 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
- export const dataHeroCard: IHeroCard = {
-   title: "Gail Miller Homeless Resource Center July Assignment",
-   paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
-   image: {
-     src: "/images/welfare/gail-miller.png",
-     alt: "Gail Miller Homeless Resource Center",
-   },
-   button: {
-     text: "Sign Up",
-     link: {
-       url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
-       external: true,
-     },
-   },
-   type: "light",
- }
+export const dataHeroCard: IHeroCard = {
+  title: "Gail Miller Homeless Resource Center July Assignment",
+  paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
+  image: {
+    src: "/images/welfare/gail-miller.png",
+    alt: "Gail Miller Homeless Resource Center",
+  },
+  button: {
+    text: "Sign Up",
+    link: {
+      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+      external: true,
+    },
+  },
+  type: "light",
+}
 
 //export const dataHeroCard: IHeroCard = {
 //  title: "American Red Cross Blood Drive",
@@ -95,7 +95,7 @@ export const dataImageCards: IImageCard[] = [
   },
 ]
 
-export const dataFaceCard: IFaceCard = {
+export const dataFaceCard: IContactCard = {
   title: "Jason\xa0Hardman",
   subtitle: "Welfare Specialist",
   images: [
@@ -112,4 +112,5 @@ export const dataFaceCard: IFaceCard = {
       url: "tel:1-801-613-9833",
     },
   },
+  soft: true,
 }
