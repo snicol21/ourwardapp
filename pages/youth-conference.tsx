@@ -70,8 +70,8 @@ function YouthConference() {
                   </div>
                   <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Where to take donation:</h3>
                   <p className="text-lg">
-                    Items can be dropped off at the Gough's (7867&#160;S.&#160;Highlandpoint&#160;Way) or dropped off at the clerks office on Sundays during the
-                    month of July.
+                    Items can be dropped off at the Gough&apos;s (7867&#160;S.&#160;Highlandpoint&#160;Way) or dropped off at the clerks office on Sundays
+                    during the month of July.
                   </p>
                 </div>
               </div>

@@ -70,7 +70,7 @@ const LinkMenuItem = ({ label, url, external }) => {
     <Menu.Item>
       {({ active }) =>
         external ? (
-          <a href={url} target="_blank" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>
+          <a href={url} target="_blank" rel="noreferrer" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>
             {label.text}
           </a>
         ) : (

@@ -16,7 +16,7 @@ const EventCard = ({ ...card }: IEventCard) => {
   return (
     <div className="rounded-lg shadow-xl flex bg-white">
       <div className="relative w-24">
-        <img className="absolute h-full object-cover rounded-l-lg" src={card.image?.src} />
+        <img className="absolute h-full object-cover rounded-l-lg" src={card.image?.src} alt={card.image?.alt} />
       </div>
       <PrimaryButton
         type="pass-thru"
