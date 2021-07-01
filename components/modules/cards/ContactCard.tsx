@@ -8,6 +8,7 @@ export type IContactCard = {
   images?: IImage[]
   button?: IButton
   hidden?: boolean
+  soft?: boolean
 }
 
 const ContactCard = ({ ...card }: IContactCard) => {
@@ -21,15 +22,15 @@ const ContactCard = ({ ...card }: IContactCard) => {
               <img
                 key={image.src}
                 style={{ height: image.height, width: image.width }}
-                className="relative inline-block rounded-full ring-2 ring-primary"
+                className={`relative inline-block rounded-full ring-2 ${card.soft ? "ring-gray-400" : "ring-primary"}`}
                 src={image.src}
                 alt={image.alt || ""}
               />
             ))}
           </div>
         )}
-        <div className="text-primary font-semibold">{card.subtitle}</div>
-        <h3 className="text-2xl text-center font-bold">{card.title}</h3>
+        <div className={`${card.soft ? "text-gray-400" : "text-primary"} font-semibold`}>{card.subtitle}</div>
+        <h3 className={`${card.soft ? "text-xl text-center" : "text-2xl text-center"} font-bold`}>{card.title}</h3>
       </div>
       {card.button && (
         <div className="pt-5">
