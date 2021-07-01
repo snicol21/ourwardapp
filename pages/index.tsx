@@ -3,7 +3,7 @@ import Layout from "../components/layouts/Layout"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import HeroCard from "../components/modules/cards/HeroCard"
 import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
-import FaceCard, { IFaceCard } from "../components/modules/cards/FaceCard"
+import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
@@ -37,9 +37,9 @@ function Home() {
           <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2">
             {dataFaceCards
               .filter((card) => !card.hidden)
-              .map((card: IFaceCard) => (
+              .map((card: IContactCard) => (
                 <div key={card.title} className="py-3 w-full">
-                  <FaceCard {...Object.assign(card, { className: "col-span-1" })} />
+                  <ContactCard {...Object.assign(card, { className: "col-span-1" })} />
                 </div>
               ))}
           </div>

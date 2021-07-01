@@ -1,4 +1,4 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IEventCard } from "../components/modules/cards/EventCard"
@@ -266,7 +266,7 @@ export const dataInfoCards: IEventCard[] = [
   },
 ]
 
-export const dataFaceCards: IFaceCard[] = [
+export const dataFaceCards: IContactCard[] = [
   {
     title: "Bishop\xa0Harman",
     subtitle: "Bishop",

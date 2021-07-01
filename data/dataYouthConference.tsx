@@ -1,9 +1,9 @@
-import { IFaceCard } from "../components/modules/cards/FaceCard"
+import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 
 export const dataHeroCard: IHeroCard = {
-  title: "Youth Conference\nSign Up",
+  title: "Youth Conference Sign\xa0Up",
   paragraph: "All youth ages 11 - 18",
   image: {
     src: "/images/youth-conference/M3W_YouthConf_Image-1.png",
@@ -29,15 +29,13 @@ export const dataImageCards: IImageCard[] = [
   },
 ]
 
-export const dataFaceCard: IFaceCard = {
-  title: "Danielle\xa0Gough",
-  subtitle: "Youth Conference Committee",
-  images: [
-    {
-      src: "",
-      alt: "",
-      width: 0,
-      height: 0,
-    },
-  ],
-}
+export const dataFaceCards: IContactCard[] = [
+  {
+    title: "Danielle\xa0Gough",
+    subtitle: "Youth Conference Committee",
+  },
+  {
+    title: "Jordan\xa0Gough",
+    subtitle: "Youth Conference Committee",
+  },
+]

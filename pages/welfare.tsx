@@ -9,7 +9,7 @@ import BlockQuote from "../components/elements/headers/BlockQuote"
 import { dataHeroCard, dataBlockQuote, dataImageCards, dataFaceCard } from "../data/dataWelfare"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import Divider from "../components/elements/dividers/Divider"
-import FaceCard from "../components/modules/cards/FaceCard"
+import ContactCard from "../components/modules/cards/ContactCard"
 
 function Welfare() {
   return (
@@ -48,7 +48,7 @@ function Welfare() {
           <Divider />
           <SectionHeader title="Contact" />
           <div className="grid grid-cols-1 sm:grid-cols-4 pt-10">
-            <FaceCard {...Object.assign(dataFaceCard, { className: "col-span-1 sm:col-span-2 sm:col-start-2" })} />
+            <ContactCard {...Object.assign(dataFaceCard, { className: "col-span-1 sm:col-span-2 sm:col-start-2" })} />
           </div>
         </div>
         <PrimaryButton type="link" className="mt-20" link={{ url: "/" }}>

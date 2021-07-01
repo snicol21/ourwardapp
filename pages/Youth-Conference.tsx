@@ -5,10 +5,10 @@ import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
 import HeroCard from "../components/modules/cards/HeroCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataHeroCard, dataImageCards, dataFaceCard } from "../data/dataYouthConference"
+import { dataHeroCard, dataImageCards, dataFaceCards } from "../data/dataYouthConference"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import Divider from "../components/elements/dividers/Divider"
-import FaceCard from "../components/modules/cards/FaceCard"
+import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 
 function YouthConference() {
   return (
@@ -27,7 +27,7 @@ function YouthConference() {
         </div>
         {dataImageCards.filter((card) => !card.hidden).length > 0 && (
           <>
-            <SectionHeader title="Service Project Donations" />
+            <SectionHeader title="Service\xa0Project Donations" />
             <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 pt-5">
               {dataImageCards
                 .filter((card) => !card.hidden)
@@ -42,8 +42,14 @@ function YouthConference() {
         <div className="pt-16">
           <Divider />
           <SectionHeader title="Contact" />
-          <div className="grid grid-cols-1 sm:grid-cols-4 pt-10">
-            <FaceCard {...Object.assign(dataFaceCard, { className: "col-span-1 sm:col-span-2 sm:col-start-2" })} />
+          <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 mt-5">
+            {dataFaceCards
+              .filter((card) => !card.hidden)
+              .map((card: IContactCard) => (
+                <div key={card.title} className="py-3 w-full">
+                  <ContactCard {...Object.assign(card, { className: "col-span-1" })} />
+                </div>
+              ))}
           </div>
         </div>
         <PrimaryButton type="link" className="mt-20" link={{ url: "/" }}>
