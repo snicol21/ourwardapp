@@ -1,5 +1,5 @@
 import { openPopupWidget } from "react-calendly"
-import { PopupWidgetOptions } from "react-calendly/typings/components/PopupText/PopupText"
+import { Props } from "react-calendly/typings/components/PopupWidget/PopupWidget"
 
 const CalendlyButton = ({ children, styles, url, disabled }) => {
   return (
@@ -7,7 +7,7 @@ const CalendlyButton = ({ children, styles, url, disabled }) => {
       disabled={disabled}
       type="button"
       className={`${styles} ${disabled ? "disabled:opacity-50" : ""}`}
-      onClick={() => openPopupWidget({ url, pageSettings: {} } as PopupWidgetOptions)}
+      onClick={() => openPopupWidget({ url, pageSettings: {} } as Props)}
     >
       {children}
     </button>
