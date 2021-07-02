@@ -440,6 +440,23 @@ export const dataImageCards: IImageCard[] = [
     hidden: false,
   },
   {
+    title: "Ward Mission",
+    subtitle: "Inspire and Invite Others to Come Unto Christ",
+    paragraph: "Find out how to help members and friends of other faiths embrace the restored gospel.",
+    image: {
+      src: "/images/ward-mission/ward-mission.png",
+      alt: "Come Unto Christ",
+    },
+    button: {
+      text: "Learn More",
+      link: {
+        url: "/ward-mission",
+        calendly: false,
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Youth Conference",
     subtitle: "By Small and Simple Things...",
     paragraph: "All youth ages 11 - 18 are invited to Maples 3rd Ward Youth Conference - Thursday August 5 thru Saturday August 7th.",
