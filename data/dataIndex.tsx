@@ -226,35 +226,35 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "American Red Cross Blood Drive",
-    date: new Date("May 20, 2021 15:00:00"),
+    title: "ARUP Blood Drive",
+    date: new Date("July 22, 2021 15:00:00"),
     image: {
-      src: "/images/welfare/arc-cross.png",
+      src: "/images/welfare/arup-donate4life.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "American Red Cross Blood Drive",
-          subtitle: "Give Blood - Save Life",
+          title: "ARUP Blood Drive",
+          subtitle: "Give local - Save local",
           image: {
-            src: "/images/welfare/arc-give-save-wide.png",
+            src: "/images/welfare/arup-flag-local.png",
           },
-          date: new Date("May 20, 2021 15:00:00"),
-          duration: 300,
-          location: "Maples Building\n6592 South Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: 'Just click "Sign Up", then click "SEE TIMES" from ARC\'s website. As since the beginning of the pandemic, the need is great!',
+          date: new Date("July 22, 2021 15:00:00"),
+          duration: 240,
+          location: "Sunset Ridge Stake Center\n8107 South 6700 West\nWest Jordan, UT 84081\nin the Cultural Hall",
+          details: 'Just click "Sign Up", then click "Schedule" from ARUP\'s website. The need for blood never takes a vacation!',
           button: {
             text: "Sign Up",
             link: {
-              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+              url: "https://arupbloodservices.org/index.cfm?group=op&expand=16642&zc=84084",
               external: true,
             },
           },
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Building Cleaning",
