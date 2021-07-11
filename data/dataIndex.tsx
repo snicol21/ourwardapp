@@ -23,6 +23,35 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
   {
+    title: "Funeral for Lynne Rasband",
+    date: new Date("July 12, 2021 11:00:00"),
+    image: {
+      src: "/images/events/funeral.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Funeral for Lynne Rasband",
+          image: {
+            src: "/images/events/funeral.png",
+          },
+          date: new Date("July 12, 2021 11:00:00"),
+          duration: 60,
+          location: "At the church or via broadcast",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://youtu.be/DAOMT8TysjI",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Bishop Mobile",
     date: new Date("July 15, 2021 17:00:00"),
     image: {
