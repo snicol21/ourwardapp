@@ -258,7 +258,7 @@ export const dataInfoCards: IEventCard[] = [
   },
   {
     title: "Building Cleaning",
-    date: new Date("April 24, 2021 10:00:00"),
+    date: new Date("July 17, 2021 10:00:00"),
     image: {
       src: "/images/events/cleaning.png",
     },
@@ -270,7 +270,7 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/cleaning.png",
           },
-          date: new Date("April 24, 2021 10:00:00"),
+          date: new Date("July 17, 2021 10:00:00"),
           duration: 60,
           location: "Ward Building",
           details:
@@ -285,7 +285,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Youth Conference Registration",
