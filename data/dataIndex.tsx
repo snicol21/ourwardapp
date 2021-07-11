@@ -24,7 +24,7 @@ export const dataSundayMeeting: IHeroCard = {
 export const dataInfoCards: IEventCard[] = [
   {
     title: "Bishop Mobile",
-    date: new Date("June 17, 2021 17:00:00"),
+    date: new Date("July 15, 2021 17:00:00"),
     image: {
       src: "/images/events/bishop-mobile.png",
     },
@@ -37,7 +37,7 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/bishop-mobile.png",
           },
-          date: new Date("June 17, 2021 17:00:00"),
+          date: new Date("July 15, 2021 17:00:00"),
           duration: 90,
           location: "Watch for us outside your home",
           details:
@@ -45,7 +45,31 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: true,
+    hidden: false,
+  },
+  {
+    title: "Neighborhood & Ward Pizza Party",
+    date: new Date("July 30, 2021 18:00:00"),
+    image: {
+      src: "/images/events/pizza-party.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Neighborhood & Ward Pizza Party",
+          subtitle: "Ward Activity",
+          image: {
+            src: "/images/events/pizza-party.png",
+          },
+          date: new Date("July 30, 2021 18:00:00"),
+          duration: 120,
+          location: "Copperton Park\n8700 10305 S, Copperton, UT",
+          details: "Invite your neighbors. Bring a dessert or side to share.",
+        },
+      },
+    },
+    hidden: false,
   },
   {
     title: "Relief Society Ministering Interviews",
