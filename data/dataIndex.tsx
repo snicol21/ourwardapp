@@ -45,7 +45,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Neighborhood & Ward Pizza Party",
