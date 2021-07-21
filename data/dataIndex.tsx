@@ -103,35 +103,28 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Gail Miller Homeless Resource Center July Assignment",
-    date: new Date("July 20, 2021 16:30:00"),
+    title: "Discussion on Mental Health and Self Care",
+    date: new Date("August 10, 2021 19:00:00"),
     image: {
-      src: "/images/welfare/gail-miller.png",
+      src: "/images/events/relief-society-smore.jpg",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "July Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
+          title: "Discussion on Mental Health and Self Care",
+          subtitle: "Relief Society",
           image: {
-            src: "/images/welfare/gail-miller.png",
+            src: "/images/events/relief-society-smore.jpg",
           },
-          date: new Date("July 20, 2021 16:30:00"),
+          date: new Date("August 10, 2021 19:00:00"),
           duration: 120,
-          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
-              external: true,
-            },
-          },
+          location: "Stake Center Pavilion",
+          details: "Join is for a discussion on mental health and self care with therapist Autumn Kelly. Please bring a camp chair if you have one.",
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
