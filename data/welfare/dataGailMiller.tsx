@@ -20,37 +20,7 @@ export const dataHeroCard: IHeroCard = {
 }
 
 export const dataInfoCards: IEventCard[] = [
-  {
-    title: "Gail Miller Homeless Resource Center July Assignment",
-    date: new Date("July 20, 2021 16:30:00"),
-    image: {
-      src: "/images/welfare/orange-gradient.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "July Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/gail-miller.png",
-          },
-          date: new Date("July 20, 2021 16:30:00"),
-          duration: 120,
-          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
+
   {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 23, 2021 16:30:00"),
