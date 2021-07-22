@@ -120,7 +120,7 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("August 10, 2021 19:00:00"),
           duration: 120,
           location: "Stake Center Pavilion",
-          details: "Join is for a discussion on mental health and self care with therapist Autumn Kelly. Please bring a camp chair if you have one.",
+          details: "Join us for a discussion on mental health and self care with therapist Autumn Kelly. Please bring a camp chair if you have one.",
         },
       },
     },
