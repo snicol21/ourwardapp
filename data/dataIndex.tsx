@@ -155,6 +155,37 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
+    hidden: true,
+  },
+  {
+    title: "Deseret Soap Factory August Assignment",
+    date: new Date("August 16, 2021 12:00:00"),
+    image: {
+      src: "/images/welfare/soap-factory.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "August Assignment",
+          subtitle: "Help make and package soap",
+          image: {
+            src: "/images/welfare/soap-factory-landscape.jpg",
+          },
+          date: new Date("August 16, 2021 12:00:00"),
+          duration: 240,
+          location: "3602 S 7200 W, Magna, UT 84044",
+          details: "See details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/S1QxmgjiLxbs9sRs8",
+              external: true,
+            },
+          },
+        },
+      },
+    },
     hidden: false,
   },
   {
