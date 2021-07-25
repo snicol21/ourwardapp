@@ -39,6 +39,21 @@ function StVincent() {
             </div>
           </>
         )}
+        <SectionHeader title="Volunteer Info" />
+        <div className="pt-16">
+          <h2>Address:</h2>
+          <p>437 West 200 South</p>
+          <p>Salt Lake City, UT 84115</p>
+          <br></br>
+          <ul>
+            <li>- Parking is available in the fenced lot east of the building</li>
+            <li>- Enter at the south door (blue) adjacent to the parking lot</li>
+            <li>- Youth 12 and older are welcome with adult supervision</li>
+            <li>- Closed toe shoes are required (health code)</li>
+            <li>- Aprons and plastic gloves are provided</li>
+            <li>- Valuables should be left at home or otherwise secured. No problems have been reported, but this precaution should be considered</li>
+          </ul>
+        </div>
         <div className="pt-16">
           <BlockQuote {...dataBlockQuote} />
         </div>

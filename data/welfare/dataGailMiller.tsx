@@ -3,8 +3,8 @@ import { IEventCard } from "../../components/modules/cards/EventCard"
 import { IBlockQuote } from "../../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "Gail Miller Homeless Resource Center July Assignment",
-  paragraph: "Tuesday the 20th or Friday the 23rd, 4:30-6:30 PM",
+  title: "Gail Miller Homeless Resource Center September Assignment",
+  paragraph: "Wednesday the 8th, 4:30-6:30 PM",
   image: {
     src: "/images/welfare/gail-miller.png",
     alt: "Gail Miller Homeless Resource Center",
@@ -12,7 +12,7 @@ export const dataHeroCard: IHeroCard = {
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+      url: "https://forms.gle/txSJvcFEwubXVzGZ7",
       external: true,
     },
   },
@@ -21,37 +21,6 @@ export const dataHeroCard: IHeroCard = {
 
 export const dataInfoCards: IEventCard[] = [
 
-  {
-    title: "Gail Miller Homeless Resource Center July Assignment",
-    date: new Date("July 23, 2021 16:30:00"),
-    image: {
-      src: "/images/welfare/orange-gradient.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "July Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/gail-miller.png",
-          },
-          date: new Date("July 23, 2021 16:30:00"),
-          duration: 120,
-          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
   {
     title: "Gail Miller Homeless Resource Center Sep. Assignment",
     date: new Date("September 8, 2021 16:30:00"),

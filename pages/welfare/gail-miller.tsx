@@ -42,6 +42,32 @@ function GailMiller() {
             </div>
           </>
         )}
+        <SectionHeader title="Volunteer Info" />
+        <div className="pt-16">
+          <h2>Address:</h2>
+          <p>242 West Paramount Avenue</p>
+          <p>Salt Lake City, UT 84115</p>
+          <br></br>
+          <ul>
+            <li>- If you are experiencing COVID symptoms, please stay home.</li>
+            <li>- Because you&#39;ll be working around food, please make sure that you&#39;re showered and that your clothes are clean</li>
+            <li>- Please be sure to bring the following items:</li>
+            <ol>
+              <li>1) Close toed shoes and socks</li>
+              <li>2) A shirt with sleeves, no tank-tops</li>
+              <li>3) A hair tie for hair that is longer than five inches</li>
+              <li>4) A hat if you don&#39;t want to wear a hairnet</li>
+            </ol>
+            <li>- Hair nets, beard nets, aprons, and gloves will be provided upon arrival.</li>
+          </ul>
+          <br></br>
+          <h2>Where to Park?</h2>
+          <ul>
+            <li>- Press the call button at the gate to have a staff member open the gate</li>
+            <li>- Let them know that you are here to volunteer</li>
+            <li>- Once in the parking area, follow the road around the building and park in any open spot</li>
+          </ul>
+        </div>
         <div className="pt-16">
           <BlockQuote {...dataBlockQuote} />
         </div>
