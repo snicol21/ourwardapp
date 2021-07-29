@@ -4,16 +4,16 @@ import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "St. Vincent De Paul July Assignment",
-  paragraph: "Wednesday the 28th, 3-5 PM",
+  title: "Deseret Soap August Assignment",
+  paragraph: "Monday the 16th, 12 to 4 PM",
   image: {
-    src: "/images/welfare/st-vincent-de-paul.png",
-    alt: "St Vincent De Paul",
+    src: "/images/welfare/soap-factory.png",
+    alt: "Soap Factory",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/CSgBwoNDheMsVW597",
+      url: "https://forms.gle/rY162as5r21Q5YJj8",
       external: true,
     },
   },
