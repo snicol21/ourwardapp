@@ -42,7 +42,7 @@ function GailMiller() {
             </div>
           </>
         )}
-        <SectionHeader title="Volunteer Info" />
+        <SectionHeader title="Volunteer Info" subtitle="Reach out to Jason Hardman with any questions" />
         <div className="pt-16">
           <h2>Address:</h2>
           <p>242 West Paramount Avenue</p>

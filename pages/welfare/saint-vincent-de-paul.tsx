@@ -39,15 +39,15 @@ function StVincent() {
             </div>
           </>
         )}
-        <SectionHeader title="Volunteer Info" />
+        <SectionHeader title="Volunteer Info" subtitle='Reach out to Jason Hardman with any questions'/>
         <div className="pt-16">
           <h2>Address:</h2>
           <p>437 West 200 South</p>
           <p>Salt Lake City, UT 84115</p>
           <br></br>
           <ul>
-            <li>- Parking is available in the fenced lot east of the building</li>
-            <li>- Enter at the south door (blue) adjacent to the parking lot</li>
+            <li>- Parking is available in the fenced lot east of the building (the gate is on the north on 200 South)</li>
+            <li>- Enter at the south-most door (blue) on the east side of the building, adjacent to the parking lot</li>
             <li>- Youth 12 and older are welcome with adult supervision</li>
             <li>- Closed toe shoes are required (health code)</li>
             <li>- Aprons and plastic gloves are provided</li>
