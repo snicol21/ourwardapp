@@ -48,30 +48,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Neighborhood & Ward Pizza Party",
-    date: new Date("July 30, 2021 18:00:00"),
-    image: {
-      src: "/images/events/pizza-party.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Neighborhood & Ward Pizza Party",
-          subtitle: "Ward Activity",
-          image: {
-            src: "/images/events/pizza-party.png",
-          },
-          date: new Date("July 30, 2021 18:00:00"),
-          duration: 120,
-          location: "Copperton Park\n8700 10305 S, Copperton, UT",
-          details: "Invite your neighbors. Bring a dessert or side to share.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Relief Society Ministering Interviews",
     date: new Date("June 13, 2021 14:30:00"),
     image: {
@@ -280,34 +256,17 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
-    title: "Youth Conference Registration",
+    title: "Youth Conference",
     date: new Date("August 5, 2021 19:00:00"),
     image: {
       src: "/images/youth-conference/M3W_YouthConf_Image-2.png",
     },
     button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Youth Conference Registration",
-          image: {
-            src: "/images/events/supporting-children-and-youth.png",
-          },
-          date: new Date("August 5, 2021 19:00:00"),
-          duration: 2940,
-          location: "Ward Building",
-          details: "Join us for Youth Conference August 5-8 \nTentative Schedule:\nThursday 7pm - 9pm\nFriday 9:30 am - 9pm\nSaturday 10:30 am - 8 pm",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://docs.google.com/forms/d/e/1FAIpQLSe0jrytdc8DlWg4jsZYhi5a2iPBvDdPIYygz9hUhcTvUx7MvA/viewform",
-              external: true,
-            },
-          },
-        },
+      link: {
+        url: "/youth-conference",
       },
     },
     hidden: false,

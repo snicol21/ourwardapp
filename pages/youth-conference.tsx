@@ -30,6 +30,58 @@ function YouthConference() {
             <div className="mt-5 relative sm:py-16 lg:py-0">
               <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
                 <div className="relative pt-64 pb-10 overflow-hidden">
+                  <img
+                    className="absolute inset-0 h-full w-full object-cover rounded-2xl"
+                    src="/images/youth-conference/M3W-youthconference-agenda.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+              <div className="pt-12 sm:pt-16 lg:pt-20">
+                <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">Agenda</h2>
+                <div className="mt-6 text-gray-500 space-y-6">
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Thursday, August 5th</h3>
+                  <ul className="list-inside list-disc space-y-3">
+                    <li>7:00 PM</li>
+                    <li>Oaks East Park - 6129 W 8200 S, West Jordan (across the street from Fox Hollow Elementary)</li>
+                    <li>Treats &amp; yard Games</li>
+                  </ul>
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Friday, August 6th</h3>
+                  <ul className="list-inside list-disc space-y-3">
+                    <li>9:30 AM until 8:30 or 9:00 PM</li>
+                    <li>“Ball Park Building” 8834 Duck Ridge Way, West Jordan</li>
+                    <li>Breakfast, Lunch, Dinner &amp; snacks will be provided</li>
+                    <li>We will have reusable water bottles for everyone to use for Friday &amp; Saturday.</li>
+                    <li>Outside activity in the morning for about an hour, wear sunscreen and comfortable clothes</li>
+                  </ul>
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Saturday, August 7th</h3>
+                  <ul className="list-inside list-disc space-y-3">
+                    <li>10:00 AM until 6 or 6:30 PM</li>
+                    <li>“Ball Park Building” 8834 Duck Ridge Way, West Jordan</li>
+                    <li>Lunch and morning and evening snacks will be provided</li>
+                    <li>Please remember to bring back your water bottle!</li>
+                    <li>Yoga outside at 10 am. Bring a beach towel, wear comfortable clothes, and sunscreen</li>
+                    <li>Water fight outside at the end of the day before we go home. (you’ll be needing that beach towel from yoga!)</li>
+                  </ul>
+                  <h3 className="text-xl text-gray-900 font-extrabold tracking-tight sm:text-2xl">Sunday, August 8th</h3>
+                  <ul className="list-inside list-disc space-y-3">
+                    <li>7:00 PM</li>
+                    <li>Our ward building in the Relief Society Room</li>
+                    <li>Testimony Meeting &amp; dessert</li>
+                    <li>Sunday best please</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Divider className="pt-16" />
+          <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+            <div className="mt-5 relative sm:py-16 lg:py-0">
+              <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+                <div className="relative pt-64 pb-10 overflow-hidden">
                   <img className="absolute inset-0 h-full w-full object-cover rounded-2xl" src="/images/youth-conference/M3W_YouthConf_Donate.png" alt="" />
                 </div>
               </div>
