@@ -293,7 +293,7 @@ export const dataInfoCards: IEventCard[] = [
         url: "/youth-conference",
       },
     },
-    hidden: false,
+    hidden: true,
   },
 ]
 
