@@ -260,7 +260,7 @@ export const dataInfoCards: IEventCard[] = [
   },
   {
     title: "BYU-Pathway Fireside",
-    date: new Date("August 8, 2021 17:00:00"),
+    date: new Date("August 15, 2021 18:30:00"),
     image: {
       src: "/images/events/byu-pathways.png",
     },
@@ -272,11 +272,11 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/events/byu-pathways.png",
           },
-          date: new Date("August 8, 2021 17:00:00"),
+          date: new Date("August 15, 2021 18:30:00"),
           duration: 60,
-          location: "Salt Lake Hunter West Stake Center\n2811 S 6400 W",
+          location: "Webinar for YSA",
           details:
-            'There will be series of Pathway firesides according to the schedule below. These are great opportunities to help find the "hidden many" that would benefit from BYU-Pathway. The firesides are very informative, timely, and spiritual. The schedule will go as follows:\n\nSunday, 8/8 - In-person - 5:00 p.m. at the Salt Lake Hunter West Stake Center, 2811 S 6400 W in West Valley City. There will also be a table set up in the cultural hall to ask questions or gather more info.\n\nSunday, 8/8 - Webinar in Spanish – 6:00 p.m. (request link from Spencer Nicol)\n\nSunday, 8/15 - Webinar for YSAs – 6:30 p.m. (request link from Spencer Nicol).',
+            'There will be series of Pathway firesides according to the schedule below. The firesides are very informative, timely, and spiritual. The schedule will go as follows:\n\nSunday, 8/15 - Webinar for YSAs – 6:30 p.m. (request link from Spencer Nicol).',
         },
       },
     },
