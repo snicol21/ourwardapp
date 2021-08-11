@@ -79,30 +79,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Discussion on Mental Health and Self Care",
-    date: new Date("August 10, 2021 19:00:00"),
-    image: {
-      src: "/images/events/relief-society-smore.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Discussion on Mental Health and Self Care",
-          subtitle: "Relief Society",
-          image: {
-            src: "/images/events/relief-society-smore.jpg",
-          },
-          date: new Date("August 10, 2021 19:00:00"),
-          duration: 120,
-          location: "Stake Center Pavilion",
-          details: "Join us for a discussion on mental health and self care with therapist Autumn Kelly. Please bring a camp chair if you have one.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 23, 2021 16:30:00"),
     image: {
