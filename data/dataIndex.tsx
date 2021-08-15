@@ -474,21 +474,4 @@ export const dataImageCards: IImageCard[] = [
     },
     hidden: false,
   },
-  {
-    title: "Youth Conference",
-    subtitle: "By Small and Simple Things...",
-    paragraph: "All youth ages 11 - 18 are invited to Maples 3rd Ward Youth Conference - Thursday August 5 thru Saturday August 7th.",
-    image: {
-      src: "/images/youth-conference/M3W_YouthConf_Image-2.png",
-      alt: "Small and Simple Things",
-    },
-    button: {
-      text: "Learn More",
-      link: {
-        url: "/youth-conference",
-        calendly: false,
-      },
-    },
-    hidden: false,
-  },
 ]
