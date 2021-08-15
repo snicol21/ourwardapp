@@ -252,24 +252,35 @@ export const dataInfoCards: IEventCard[] = [
           duration: 60,
           location: "Webinar for YSA",
           details:
-            'There will be series of Pathway firesides according to the schedule below. The firesides are very informative, timely, and spiritual. The schedule will go as follows:\n\nSunday, 8/15 - Webinar for YSAs – 6:30 p.m. (request link from Spencer Nicol).',
+            "There will be series of Pathway firesides according to the schedule below. The firesides are very informative, timely, and spiritual. The schedule will go as follows:\n\nSunday, 8/15 - Webinar for YSAs – 6:30 p.m. (request link from Spencer Nicol).",
         },
       },
     },
     hidden: false,
   },
   {
-    title: "Youth Conference",
-    date: new Date("August 5, 2021 19:00:00"),
+    title: "9/11 National Day Of Service",
+    date: new Date("September 11, 2021 9:00:00"),
     image: {
-      src: "/images/youth-conference/M3W_YouthConf_Image-2.png",
+      src: "/images/events/day-of-service.png",
     },
     button: {
-      link: {
-        url: "/youth-conference",
+      modal: {
+        type: "event",
+        data: {
+          title: "9/11 National Day Of Service",
+          image: {
+            src: "/images/events/day-of-service.png",
+          },
+          date: new Date("September 11, 2021 9:00:00"),
+          duration: 180,
+          location: "Church Building",
+          details:
+            "Our stake & community has the opportunity to participate in the 20th Anniversary of 9/11 National Day of Service.\n\nOur ward and neighborhood is in charge of gathering 3800 packages of pens. Donations for pens can be dropped off by the clerks office.\n\nWe will be assembling the kits on Saturday, September 11th from 9:00 to 12:00 noon in the church building you attend (more information to come at a later date).  We would love for families and neighbors to come help assemble the kits.  Lifting Hands International will provide the boxes for us to store the kits, but we will need some manpower and trucks to help take the boxes to their warehouse in American Fork.  If you could help by having a truck or two (or trailer) per ward and some people to help drive them that would be appreciated.  We expect to have about 200 boxes (33 per ward) to transport.\n\nThank you so much for helping in this great opportunity to come together and to serve.  We know this is an ambitious request but with faith and love we know Heavenly Father will provide a way and this will be a great project to be a part of.",
+        },
       },
     },
-    hidden: true,
+    hidden: false,
   },
 ]
 
