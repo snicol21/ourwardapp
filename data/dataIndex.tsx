@@ -138,7 +138,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Vincent De Paul Service July Assignment",
@@ -256,7 +256,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "9/11 National Day Of Service",
