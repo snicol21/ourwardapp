@@ -235,28 +235,96 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "BYU-Pathway Fireside",
-    date: new Date("August 15, 2021 18:30:00"),
+    title: "Stake Conference - Adult Session",
+    date: new Date("August 21, 2021 18:00:00"),
     image: {
-      src: "/images/events/byu-pathways.png",
+      src: "/images/events/stake-conference.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "BYU-Pathway Fireside",
+          title: "Stake Conference - Adult Session",
+          subtitle: "All adults",
           image: {
-            src: "/images/events/byu-pathways.png",
+            src: "/images/events/stake-conference.png",
           },
-          date: new Date("August 15, 2021 18:30:00"),
+          date: new Date("August 21, 2021 18:00:00"),
           duration: 60,
-          location: "Webinar for YSA",
-          details:
-            "There will be series of Pathway firesides according to the schedule below. The firesides are very informative, timely, and spiritual. The schedule will go as follows:\n\nSunday, 8/15 - Webinar for YSAs – 6:30 p.m. (request link from Spencer Nicol).",
+          location: "Oaks Building (8137 S. Echo View Dr.)",
+          button: {
+            text: "Program",
+            link: {
+              url: "https://drive.google.com/file/d/1H5p6WgkmkovdMYX_gal2Pw_m73ryM9IF/view?usp=sharing",
+              external: true,
+            },
+          },
         },
       },
     },
-    hidden: true,
+    hidden: false,
+  },
+  {
+    title: "Stake Conference - Leadership Session",
+    date: new Date("August 22, 2021 07:00:00"),
+    image: {
+      src: "/images/events/stake-conference.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Stake Conference - Leadership Session",
+          subtitle: "All Leadership",
+          image: {
+            src: "/images/events/stake-conference.png",
+          },
+          date: new Date("August 22, 2021 07:00:00"),
+          duration: 60,
+          location: "Oaks Building (8137 S. Echo View Dr.)",
+          details:
+            "Stake Presidency, Stake Council, stake organization presidencies, bishoprics, ward adult organization presidencies (Relief Society, Elders Quorum, YW, Primary, Sunday School), Ward Mission Leaders, Stake and Ward Temple and Family History Leaders) *presidencies including secretaries",
+          button: {
+            text: "Program",
+            link: {
+              url: "https://drive.google.com/file/d/1dQgGKAjjhYY14G8ocmVG8nzaEHO6NK4D/view?usp=sharing",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Stake Conference - General Session",
+    date: new Date("August 22, 2021 10:00:00"),
+    image: {
+      src: "/images/events/stake-conference.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Stake Conference - Adult Session",
+          subtitle: "Everyone",
+          image: {
+            src: "/images/events/stake-conference.png",
+          },
+          date: new Date("August 22, 2021 10:00:00"),
+          duration: 60,
+          location: "Oaks Building (8137 S. Echo View Dr.)",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://youtu.be/rPsTTZF_lHE",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
   },
   {
     title: "9/11 National Day Of Service",
