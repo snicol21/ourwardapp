@@ -235,36 +235,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Stake Conference - Adult Session",
-    date: new Date("August 21, 2021 18:00:00"),
-    image: {
-      src: "/images/events/stake-conference.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Stake Conference - Adult Session",
-          subtitle: "All adults",
-          image: {
-            src: "/images/events/stake-conference.png",
-          },
-          date: new Date("August 21, 2021 18:00:00"),
-          duration: 60,
-          location: "Oaks Building (8137 S. Echo View Dr.)",
-          button: {
-            text: "Program",
-            link: {
-              url: "https://drive.google.com/file/d/1H5p6WgkmkovdMYX_gal2Pw_m73ryM9IF/view?usp=sharing",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Stake Conference - Leadership Session",
     date: new Date("August 22, 2021 07:00:00"),
     image: {
