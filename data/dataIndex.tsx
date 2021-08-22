@@ -235,36 +235,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
-    title: "Stake Conference - General Session",
-    date: new Date("August 22, 2021 10:00:00"),
-    image: {
-      src: "/images/events/stake-conference.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Stake Conference - General Session",
-          subtitle: "Everyone",
-          image: {
-            src: "/images/events/stake-conference.png",
-          },
-          date: new Date("August 22, 2021 10:00:00"),
-          duration: 60,
-          location: "Oaks Building (8137 S. Echo View Dr.)",
-          button: {
-            text: "Broadcast",
-            link: {
-              url: "https://youtu.be/rPsTTZF_lHE",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "9/11 National Day Of Service",
     date: new Date("September 11, 2021 9:00:00"),
     image: {
