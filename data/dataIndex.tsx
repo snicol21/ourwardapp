@@ -79,6 +79,38 @@ export const dataInfoCards: IEventCard[] = [
     hidden: true,
   },
   {
+    title: "Face to Face with Elder and Sister Bednar",
+    date: new Date("September 12, 2021 16:00:00"),
+    image: {
+      src: "/images/events/face-to-face-bednar.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Face to Face with Elder and Sister Bednar",
+          subtitle: "Young Adults",
+          image: {
+            src: "/images/events/face-to-face-bednar.png",
+          },
+          date: new Date("September 12, 2021 16:00:00"),
+          duration: 60,
+          location: "Broadcast",
+          details:
+            'Elder David A. Bednar of the Quorum of the Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and Sister Susan Bednar will be the featured guests at a Face to Face for young adults on September 12, 2021, titled "Ask, Seek, Knock"',
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "Gail Miller Homeless Resource Center July Assignment",
     date: new Date("July 23, 2021 16:30:00"),
     image: {
