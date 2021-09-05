@@ -4,16 +4,16 @@ import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "Deseret Soap August Assignment",
-  paragraph: "Monday the 16th, 12 to 4 PM",
+  title: "Gail Miller Homeless Resource Center September Assignment",
+  paragraph: "Tuesday the 7th, 4:30-6:30 PM",
   image: {
-    src: "/images/welfare/soap-factory.png",
-    alt: "Soap Factory",
+    src: "/images/welfare/gail-miller.png",
+    alt: "Gail Miller Homeless Resource Center",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/rY162as5r21Q5YJj8",
+      url: "https://forms.gle/txSJvcFEwubXVzGZ7",
       external: true,
     },
   },

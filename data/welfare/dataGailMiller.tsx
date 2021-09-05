@@ -4,7 +4,7 @@ import { IBlockQuote } from "../../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
   title: "Gail Miller Homeless Resource Center September Assignment",
-  paragraph: "Wednesday the 8th, 4:30-6:30 PM",
+  paragraph: "Tuesday the 7th, 4:30-6:30 PM",
   image: {
     src: "/images/welfare/gail-miller.png",
     alt: "Gail Miller Homeless Resource Center",
@@ -23,7 +23,7 @@ export const dataInfoCards: IEventCard[] = [
 
   {
     title: "Gail Miller Homeless Resource Center Sep. Assignment",
-    date: new Date("September 8, 2021 16:30:00"),
+    date: new Date("September 7, 2021 16:30:00"),
     image: {
       src: "/images/welfare/orange-gradient.png",
     },
@@ -36,7 +36,7 @@ export const dataInfoCards: IEventCard[] = [
           image: {
             src: "/images/welfare/gail-miller.png",
           },
-          date: new Date("September 8, 2021 16:30:00"),
+          date: new Date("September 7, 2021 16:30:00"),
           duration: 120,
           location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
