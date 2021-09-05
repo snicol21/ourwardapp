@@ -111,8 +111,8 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Gail Miller Homeless Resource Center July Assignment",
-    date: new Date("July 23, 2021 16:30:00"),
+    title: "Gail Miller Homeless Resource Center Sept. Assignment",
+    date: new Date("September 7, 2021 16:30:00"),
     image: {
       src: "/images/welfare/gail-miller.png",
     },
@@ -120,26 +120,26 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "July Assignment",
+          title: "September Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
             src: "/images/welfare/gail-miller.png",
           },
-          date: new Date("July 23, 2021 16:30:00"),
+          date: new Date("September 7, 2021 16:30:00"),
           duration: 120,
           location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
           details: "See details on sign-up form",
           button: {
             text: "Sign Up",
             link: {
-              url: "https://forms.gle/TdcMZRM6fd2QwcNp7",
+              url: "https://forms.gle/txSJvcFEwubXVzGZ7",
               external: true,
             },
           },
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Deseret Soap Factory August Assignment",
