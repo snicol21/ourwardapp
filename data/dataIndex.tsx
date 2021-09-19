@@ -21,87 +21,32 @@ export const dataSundayMeeting: IHeroCard = {
   type: "dark",
 }
 
+/* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Bishop Mobile",
-    date: new Date("July 15, 2021 17:00:00"),
+    title: "October 2021 General Conference",
+    date: new Date("October 2, 2021 10:00:00"),
     image: {
-      src: "/images/events/bishop-mobile.png",
+      src: "/images/events/general-conference.jpg",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "Bishop Mobile",
-          subtitle: "Ward Activity",
+          title: "October 2021 General Conference",
+          subtitle: "Everyone",
           image: {
-            src: "/images/events/bishop-mobile.png",
+            src: "/images/events/general-conference.jpg",
           },
-          date: new Date("July 15, 2021 17:00:00"),
-          duration: 90,
-          location: "Watch for us outside your home",
-          details:
-            "Members of the bishopric will be driving around the neighborhoods handing out candy to the primary and youth in the ward. We'll start in the entry roundabout at Serengeti Springs and work through the ward neighborhoods as we usually do.",
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Relief Society Ministering Interviews",
-    date: new Date("June 13, 2021 14:30:00"),
-    image: {
-      src: "/images/events/relief-society.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Ministering Interviews",
-          subtitle: "Relief Society",
-          image: {
-            src: "/images/events/relief-society.png",
-          },
-          date: new Date("June 13, 2021 14:30:00"),
+          date: new Date("October 2, 2021 14:30:00"),
           duration: 120,
-          location: "Relief Society Room",
-          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/a7pURbJ6AXEuSh7E6",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Face to Face with Elder and Sister Bednar",
-    date: new Date("September 12, 2021 16:00:00"),
-    image: {
-      src: "/images/events/face-to-face-bednar.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Face to Face with Elder and Sister Bednar",
-          subtitle: "Young Adults",
-          image: {
-            src: "/images/events/face-to-face-bednar.png",
-          },
-          date: new Date("September 12, 2021 16:00:00"),
-          duration: 60,
-          location: "Broadcast",
+          location: "General Broadcast",
           details:
-            'Elder David A. Bednar of the Quorum of the Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and Sister Susan Bednar will be the featured guests at a Face to Face for young adults on September 12, 2021, titled "Ask, Seek, Knock"',
+            "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints happening October 2–3, 2021. Join with millions worldwide to hear messages about the Savior Jesus Christ from living prophets and apostles.\n\nThe general conference global broadcast will originate from the Conference Center in Salt Lake City, Utah, USA. The conference consists of the following five sessions. The sessions at the Conference Center will not be open to the public.\n\nSaturday, October 2, at 10 a.m. mountain daylight time (MDT).\nSaturday, October 2, at 2 p.m. MDT.\nSaturday, October 2, at 6 p.m. MDT.\nSunday, October 3, at 10 a.m. MDT.\nSunday, October, at 2 p.m. MDT.",
           button: {
-            text: "Broadcast",
+            text: "More Details",
             link: {
-              url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+              url: "https://newsroom.churchofjesuschrist.org/event/october-2021-general-conference",
               external: true,
             },
           },
@@ -111,180 +56,32 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Gail Miller Homeless Resource Center Sept. Assignment",
-    date: new Date("September 7, 2021 16:30:00"),
+    title: "Tithing Settlement",
+    date: new Date("October 17, 2021 00:00:00"),
     image: {
-      src: "/images/welfare/gail-miller.png",
+      src: "/images/events/tithing-settlement.jpg",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "September Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
+          title: "Tithing Settlement",
+          subtitle: "More details to come",
           image: {
-            src: "/images/welfare/gail-miller.png",
+            src: "/images/events/tithing-settlement.jpg",
           },
-          date: new Date("September 7, 2021 16:30:00"),
-          duration: 120,
-          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/txSJvcFEwubXVzGZ7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Deseret Soap Factory August Assignment",
-    date: new Date("August 16, 2021 12:00:00"),
-    image: {
-      src: "/images/welfare/soap-factory.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "August Assignment",
-          subtitle: "Help make and package soap",
-          image: {
-            src: "/images/welfare/soap-factory-landscape.jpg",
-          },
-          date: new Date("August 16, 2021 12:00:00"),
-          duration: 240,
-          location: "3602 S 7200 W, Magna, UT 84044",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/S1QxmgjiLxbs9sRs8",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Vincent De Paul Service July Assignment",
-    date: new Date("July 28, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Vincent De Paul July Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
-          },
-          date: new Date("July 28, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          date: new Date("October 17, 2021 00:00:00"),
+          duration: 0,
+          location: "Bishop's Office",
           details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/CSgBwoNDheMsVW597",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "ARUP Blood Drive",
-    date: new Date("July 22, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/arup-donate4life.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "ARUP Blood Drive",
-          subtitle: "Give local - Save local",
-          image: {
-            src: "/images/welfare/arup-flag-local.png",
-          },
-          date: new Date("July 22, 2021 15:00:00"),
-          duration: 240,
-          location: "Sunset Ridge Stake Center\n8107 South 6700 West\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: 'Just click "Sign Up", then click "Schedule" from ARUP\'s website. The need for blood never takes a vacation!',
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://arupbloodservices.org/index.cfm?group=op&expand=16642&zc=84084",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Building Cleaning",
-    date: new Date("July 31, 2021 10:00:00"),
-    image: {
-      src: "/images/events/cleaning.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Building Cleaning",
-          image: {
-            src: "/images/events/cleaning.png",
-          },
-          date: new Date("July 31, 2021 10:00:00"),
-          duration: 60,
-          location: "Ward Building",
-          details:
-            "We have the opportunity to clean the building. Please sign up and bring your family to help clean the building. Supplies will be provided upon arrival.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://calendly.com/ssr3rdward/cleaning",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "9/11 National Day Of Service",
-    date: new Date("September 11, 2021 9:00:00"),
-    image: {
-      src: "/images/events/day-of-service.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "9/11 National Day Of Service",
-          image: {
-            src: "/images/events/day-of-service.png",
-          },
-          date: new Date("September 11, 2021 9:00:00"),
-          duration: 180,
-          location: "Church Building",
-          details:
-            "Our stake & community has the opportunity to participate in the 20th Anniversary of 9/11 National Day of Service.\n\nOur ward and neighborhood is in charge of gathering 3800 packages of pens. Donations for pens can be dropped off by the clerks office.\n\nWe will be assembling the kits on Saturday, September 11th from 9:00 to 12:00 noon in the church building you attend (more information to come at a later date).  We would love for families and neighbors to come help assemble the kits.  Lifting Hands International will provide the boxes for us to store the kits, but we will need some manpower and trucks to help take the boxes to their warehouse in American Fork.  If you could help by having a truck or two (or trailer) per ward and some people to help drive them that would be appreciated.  We expect to have about 200 boxes (33 per ward) to transport.\n\nThank you so much for helping in this great opportunity to come together and to serve.  We know this is an ambitious request but with faith and love we know Heavenly Father will provide a way and this will be a great project to be a part of.",
+            "Tithing settlement is an opportunity for each ward member to meet with the bishop to make sure his or her donations records are correct and to declare to the bishop his or her tithing status. It gives the bishop an opportunity to discuss with families the principle of tithing, encourage a generous fast offering, and discuss other financial and spiritual matters.",
+          // button: {
+          //   text: "More Details",
+          //   link: {
+          //     url: "https://newsroom.churchofjesuschrist.org/event/october-2021-general-conference",
+          //     external: true,
+          //   },
+          // },
         },
       },
     },
@@ -483,3 +280,218 @@ export const dataImageCards: IImageCard[] = [
     hidden: false,
   },
 ]
+
+/*
+  {
+    title: "Bishop Mobile",
+    date: new Date("July 15, 2021 17:00:00"),
+    image: {
+      src: "/images/events/bishop-mobile.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Bishop Mobile",
+          subtitle: "Ward Activity",
+          image: {
+            src: "/images/events/bishop-mobile.png",
+          },
+          date: new Date("July 15, 2021 17:00:00"),
+          duration: 90,
+          location: "Watch for us outside your home",
+          details:
+            "Members of the bishopric will be driving around the neighborhoods handing out candy to the primary and youth in the ward. We'll start in the entry roundabout at Serengeti Springs and work through the ward neighborhoods as we usually do.",
+        },
+      },
+    },
+    hidden: true,
+  },
+  {
+    title: "Relief Society Ministering Interviews",
+    date: new Date("June 13, 2021 14:30:00"),
+    image: {
+      src: "/images/events/relief-society.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Ministering Interviews",
+          subtitle: "Relief Society",
+          image: {
+            src: "/images/events/relief-society.png",
+          },
+          date: new Date("June 13, 2021 14:30:00"),
+          duration: 120,
+          location: "Relief Society Room",
+          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/a7pURbJ6AXEuSh7E6",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  }
+  {
+    title: "Gail Miller Homeless Resource Center Sept. Assignment",
+    date: new Date("September 7, 2021 16:30:00"),
+    image: {
+      src: "/images/welfare/gail-miller.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "September Assignment",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/welfare/gail-miller.png",
+          },
+          date: new Date("September 7, 2021 16:30:00"),
+          duration: 120,
+          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
+          details: "See details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/txSJvcFEwubXVzGZ7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  },
+  {
+    title: "Deseret Soap Factory August Assignment",
+    date: new Date("August 16, 2021 12:00:00"),
+    image: {
+      src: "/images/welfare/soap-factory.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "August Assignment",
+          subtitle: "Help make and package soap",
+          image: {
+            src: "/images/welfare/soap-factory-landscape.jpg",
+          },
+          date: new Date("August 16, 2021 12:00:00"),
+          duration: 240,
+          location: "3602 S 7200 W, Magna, UT 84044",
+          details: "See details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/S1QxmgjiLxbs9sRs8",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  },
+  {
+    title: "Vincent De Paul Service July Assignment",
+    date: new Date("July 28, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/st-vincent-de-paul.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul July Assignment",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/welfare/st-vincent-de-paul.png",
+          },
+          date: new Date("July 28, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/CSgBwoNDheMsVW597",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  },
+  {
+    title: "ARUP Blood Drive",
+    date: new Date("July 22, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/arup-donate4life.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "ARUP Blood Drive",
+          subtitle: "Give local - Save local",
+          image: {
+            src: "/images/welfare/arup-flag-local.png",
+          },
+          date: new Date("July 22, 2021 15:00:00"),
+          duration: 240,
+          location: "Sunset Ridge Stake Center\n8107 South 6700 West\nWest Jordan, UT 84081\nin the Cultural Hall",
+          details: 'Just click "Sign Up", then click "Schedule" from ARUP\'s website. The need for blood never takes a vacation!',
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://arupbloodservices.org/index.cfm?group=op&expand=16642&zc=84084",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  },
+  {
+    title: "Building Cleaning",
+    date: new Date("July 31, 2021 10:00:00"),
+    image: {
+      src: "/images/events/cleaning.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Building Cleaning",
+          image: {
+            src: "/images/events/cleaning.png",
+          },
+          date: new Date("July 31, 2021 10:00:00"),
+          duration: 60,
+          location: "Ward Building",
+          details:
+            "We have the opportunity to clean the building. Please sign up and bring your family to help clean the building. Supplies will be provided upon arrival.",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://calendly.com/ssr3rdward/cleaning",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: true,
+  },
+*/
