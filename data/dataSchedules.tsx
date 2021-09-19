@@ -81,25 +81,67 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
 
 export const dataSpecialSchedules: ISchedule[] = [
   {
-    date: getScheduleDate(new Date("August 21, 2021")),
+    date: getScheduleDate(new Date("October 2, 2021")),
     times: [
+      {
+        time: "10:00 AM",
+        color: "green",
+        events: [
+          {
+            title: "Saturday Morning Session",
+            subtitle: "April General Conference",
+            paragraph: "2 Hours - Everyone",
+            button: {
+              text: "Join Broadcast",
+              link: {
+                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                external: true,
+              },
+            },
+            image: {
+              src: "/images/events/general-conference.jpg",
+            },
+          },
+        ],
+      },
+      {
+        time: "2:00 PM",
+        color: "green",
+        events: [
+          {
+            title: "Saturday Afternoon Session",
+            subtitle: "April General Conference",
+            paragraph: "2 Hours - Everyone",
+            button: {
+              text: "Join Broadcast",
+              link: {
+                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                external: true,
+              },
+            },
+            image: {
+              src: "/images/events/general-conference.jpg",
+            },
+          },
+        ],
+      },
       {
         time: "6:00 PM",
         color: "blue",
         events: [
           {
-            title: "Adult Session",
-            subtitle: "Stake Conference",
-            paragraph: "Oaks Building (8137 S. Echo View Dr.)",
+            title: "Saturday Evening Session",
+            subtitle: "April General Conference",
+            paragraph: "2 Hours - Everyone",
             button: {
-              text: "Program",
+              text: "Join Broadcast",
               link: {
-                url: "https://drive.google.com/file/d/1H5p6WgkmkovdMYX_gal2Pw_m73ryM9IF/view?usp=sharing",
+                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/stake-conference.png",
+              src: "/images/events/general-conference.jpg",
             },
           },
         ],
@@ -107,46 +149,46 @@ export const dataSpecialSchedules: ISchedule[] = [
     ],
   },
   {
-    date: getScheduleDate(new Date("August 22, 2021")),
+    date: getScheduleDate(new Date("October 3, 2021")),
     times: [
-      {
-        time: "7:00 AM",
-        color: "green",
-        events: [
-          {
-            title: "Leadership Session",
-            subtitle: "Stake Conference",
-            paragraph: "Oaks Building (8137 S. Echo View Dr.)",
-            button: {
-              text: "Program",
-              link: {
-                url: "https://drive.google.com/file/d/1dQgGKAjjhYY14G8ocmVG8nzaEHO6NK4D/view?usp=sharing",
-                external: true,
-              },
-            },
-            image: {
-              src: "/images/events/stake-conference.png",
-            },
-          },
-        ],
-      },
       {
         time: "10:00 AM",
         color: "green",
         events: [
           {
-            title: "General Session",
-            subtitle: "Stake Conference",
-            paragraph: "Oaks Building (8137 S. Echo View Dr.) or Join the Broadcast",
+            title: "Sunday Morning Session",
+            subtitle: "April General Conference",
+            paragraph: "2 Hours - Everyone",
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://youtu.be/rPsTTZF_lHE",
+                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/stake-conference.png",
+              src: "/images/events/general-conference.jpg",
+            },
+          },
+        ],
+      },
+      {
+        time: "2:00 PM",
+        color: "green",
+        events: [
+          {
+            title: "Sunday Afternoon Session",
+            subtitle: "April General Conference",
+            paragraph: "2 Hours - Everyone",
+            button: {
+              text: "Join Broadcast",
+              link: {
+                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                external: true,
+              },
+            },
+            image: {
+              src: "/images/events/general-conference.jpg",
             },
           },
         ],
