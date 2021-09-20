@@ -87,6 +87,37 @@ export const dataInfoCards: IEventCard[] = [
     },
     hidden: false,
   },
+  {
+    title: "American Red Cross Blood Drive",
+    date: new Date("October 7, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/arc-cross.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "American Red Cross Blood Drive",
+          subtitle: "Give blood - Save lives",
+          image: {
+            src: "/images/welfare/arc-give-save-wide.png",
+          },
+          date: new Date("October 7, 2021 15:00:00"),
+          duration: 300,
+          location: "Maples Building\n6592 West Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
+          details: 'To donate please click "Sign Up" above, then "SEE TIMES" to schedule an appointment',
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
 ]
 
 export const dataFaceCards: IContactCard[] = [
