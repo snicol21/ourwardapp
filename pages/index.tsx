@@ -23,7 +23,7 @@ function Home() {
         <>
           <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
           <div className="pt-5">
-            <div className="bg-green-50 shadow sm:rounded-lg border-2 border-green-500">
+            <div className="bg-green-50 shadow rounded-lg border-2 border-green-500">
               <div className="px-4 py-5 sm:p-6">
                 <div className="sm:flex sm:items-start sm:justify-between">
                   <div>
