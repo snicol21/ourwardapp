@@ -56,38 +56,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Tithing Settlement",
-    date: new Date("October 17, 2021 00:00:00"),
-    image: {
-      src: "/images/events/tithing-settlement.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Tithing Settlement",
-          subtitle: "More details to come",
-          image: {
-            src: "/images/events/tithing-settlement.jpg",
-          },
-          date: new Date("October 17, 2021 00:00:00"),
-          duration: 0,
-          location: "Bishop's Office",
-          details:
-            "Tithing settlement is an opportunity for each ward member to meet with the bishop to make sure his or her donations records are correct and to declare to the bishop his or her tithing status. It gives the bishop an opportunity to discuss with families the principle of tithing, encourage a generous fast offering, and discuss other financial and spiritual matters.",
-          // button: {
-          //   text: "More Details",
-          //   link: {
-          //     url: "https://newsroom.churchofjesuschrist.org/event/october-2021-general-conference",
-          //     external: true,
-          //   },
-          // },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "American Red Cross Blood Drive",
     date: new Date("October 7, 2021 15:00:00"),
     image: {

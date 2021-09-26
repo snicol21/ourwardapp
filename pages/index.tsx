@@ -6,6 +6,7 @@ import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
 import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
+import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
@@ -21,7 +22,39 @@ function Home() {
       {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
-          <div className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
+          <div className="pt-5">
+            <div className="bg-green-50 shadow sm:rounded-lg border-2 border-green-500">
+              <div className="px-4 py-5 sm:p-6">
+                <div className="sm:flex sm:items-start sm:justify-between">
+                  <div>
+                    <h3 className="text-lg leading-6 font-bold text-gray-900">Tithing Settlement</h3>
+                    <div className="mt-2 max-w-xl text-sm text-gray-600">
+                      <p>October 15th - December 31st</p>
+                    </div>
+                  </div>
+                  <div className="mt-5 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+                    <PrimaryButton
+                      type="dark"
+                      color="green"
+                      link={{
+                        url: "https://calendly.com/ssr3-bishop/tithing",
+                        calendly: true,
+                      }}
+                    >
+                      Schedule
+                    </PrimaryButton>
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 mt-3 text-base p-5 rounded-xl">
+                  <p>
+                    Please schedule a time for your family. Tithing settlement is an opportunity for each ward member to meet with the bishop, to make sure his
+                    or her donations records are correct, and to declare to the bishop his or her tithing status.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-7 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
               .sort((a: any, b: any) => a.date - b.date)
