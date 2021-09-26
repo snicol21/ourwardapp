@@ -7,6 +7,7 @@ import ContactCard, { IContactCard } from "../components/modules/cards/ContactCa
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
+import Icon from "../components/elements/icons/Icon"
 import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
@@ -28,8 +29,9 @@ function Home() {
                 <div className="sm:flex sm:items-start sm:justify-between">
                   <div>
                     <h3 className="text-lg leading-6 font-bold text-gray-900">Tithing Settlement</h3>
-                    <div className="mt-2 max-w-xl text-sm text-gray-600">
-                      <p>October 15th - December 31st</p>
+                    <div className="mt-1 pr-2 flex items-center">
+                      <Icon name="calendar" className="h-4 w-4 mr-2 mb-0.5 text-gray-400" />
+                      <time>October 15th - December 31st</time>
                     </div>
                   </div>
                   <div className="mt-5 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">

@@ -56,6 +56,30 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "Building Cleaning (A-E)",
+    date: new Date("October 2, 2021 8:30:00"),
+    image: {
+      src: "/images/events/cleaning.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Building Cleaning",
+          subtitle: "Family last names A-E",
+          image: {
+            src: "/images/events/cleaning.png",
+          },
+          date: new Date("October 2, 2021 8:30:00"),
+          duration: 60,
+          location: "Ward Building",
+          details: "We have the opportunity to clean the building. Please watch your phone for text reminders from Bro. Nicol.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "American Red Cross Blood Drive",
     date: new Date("October 7, 2021 15:00:00"),
     image: {
