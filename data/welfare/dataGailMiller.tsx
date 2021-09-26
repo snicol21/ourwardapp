@@ -20,8 +20,6 @@ export const dataHeroCard: IHeroCard = {
 }
 
 export const dataInfoCards: IEventCard[] = [
-
-
   {
     title: "Gail Miller Homeless Resource Center Dec. Assignment",
     date: new Date("December 28, 2021 16:30:00"),

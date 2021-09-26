@@ -39,7 +39,7 @@ function StVincent() {
             </div>
           </>
         )}
-        <SectionHeader title="Volunteer Info" subtitle='Reach out to Jason Hardman with any questions'/>
+        <SectionHeader title="Volunteer Info" subtitle="Reach out to Jason Hardman with any questions" />
         <div className="pt-16">
           <h2>Address:</h2>
           <p>437 West 200 South</p>
