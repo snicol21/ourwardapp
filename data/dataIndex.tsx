@@ -24,62 +24,6 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "October 2021 General Conference",
-    date: new Date("October 2, 2021 10:00:00"),
-    image: {
-      src: "/images/events/general-conference.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "October 2021 General Conference",
-          subtitle: "Everyone",
-          image: {
-            src: "/images/events/general-conference.jpg",
-          },
-          date: new Date("October 2, 2021 14:30:00"),
-          duration: 120,
-          location: "General Broadcast",
-          details:
-            "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints happening October 2–3, 2021. Join with millions worldwide to hear messages about the Savior Jesus Christ from living prophets and apostles.\n\nThe general conference global broadcast will originate from the Conference Center in Salt Lake City, Utah, USA. The conference consists of the following five sessions. The sessions at the Conference Center will not be open to the public.\n\nSaturday, October 2, at 10 a.m. mountain daylight time (MDT).\nSaturday, October 2, at 2 p.m. MDT.\nSaturday, October 2, at 6 p.m. MDT.\nSunday, October 3, at 10 a.m. MDT.\nSunday, October, at 2 p.m. MDT.",
-          button: {
-            text: "More Details",
-            link: {
-              url: "https://newsroom.churchofjesuschrist.org/event/october-2021-general-conference",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Building Cleaning (A-E)",
-    date: new Date("October 2, 2021 8:30:00"),
-    image: {
-      src: "/images/events/cleaning.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Building Cleaning",
-          subtitle: "Family last names A-E",
-          image: {
-            src: "/images/events/cleaning.png",
-          },
-          date: new Date("October 2, 2021 8:30:00"),
-          duration: 60,
-          location: "Ward Building",
-          details: "We have the opportunity to clean the building. Please watch your phone for text reminders from Bro. Nicol.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "American Red Cross Blood Drive",
     date: new Date("October 7, 2021 15:00:00"),
     image: {
