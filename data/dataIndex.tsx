@@ -24,31 +24,74 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "American Red Cross Blood Drive",
-    date: new Date("October 7, 2021 15:00:00"),
+    title: "Neighborhood Halloween Party",
+    date: new Date("October 23, 2021 16:00:00"),
     image: {
-      src: "/images/welfare/arc-cross.png",
+      src: "/images/events/trunk-or-treat.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "American Red Cross Blood Drive",
-          subtitle: "Give blood - Save lives",
+          title: "Neighborhood Halloween Party",
+          subtitle: "Activities, Trunk or Treat, Chili Cook-off",
           image: {
-            src: "/images/welfare/arc-give-save-wide.png",
+            src: "/images/events/trunk-or-treat.png",
           },
-          date: new Date("October 7, 2021 15:00:00"),
+          date: new Date("October 23, 2021 16:00:00"),
           duration: 300,
-          location: "Maples Building\n6592 West Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: 'To donate please click "Sign Up" above, then "SEE TIMES" to schedule an appointment',
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
-              external: true,
-            },
+          location: "At the church building",
+          details: "More details coming...",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Youth Tri-Stake Dance Halloween Dance",
+    date: new Date("October 29, 2021 19:30:00"),
+    image: {
+      src: "/images/events/stake-dance.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Youth Tri-Stake Dance Halloween Dance",
+          subtitle: "Sunset Ridge, Maples, & Sycamores Stakes",
+          image: {
+            src: "/images/events/stake-dance.png",
           },
+          date: new Date("October 29, 2021 19:30:00"),
+          duration: 180,
+          location: "8107 S 6700 W, West Jordan, UT",
+          details:
+            "All youth ages 14+ can get a dance card from a member of the bishopric.\n\nCasual/costume dress. Must be dressed according to FSY standards. Refreshments are provided\n\nNO costume masks, full face pain, or weapons.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Latino Resources Event",
+    date: new Date("October 16, 2021 15:00:00"),
+    image: {
+      src: "https://images.pexels.com/photos/1251842/pexels-photo-1251842.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Latino Resources Event",
+          subtitle: "Presentación de Recursos",
+          image: {
+            src: "https://images.pexels.com/photos/1251842/pexels-photo-1251842.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          },
+          date: new Date("October 16, 2021 15:00:00"),
+          duration: 300,
+          location: "4640 W 5015 S Kearns, UT 84118",
+          details:
+            "This will be the first mission-wide Resources event that we have done of this potential scale. This event will include resources for the Spanish-speaking community such as Medical and Dental help, Education opportunities, Legal and Immigration help, a vaccine clinic for COVID-19 and much more.",
         },
       },
     },
@@ -460,5 +503,36 @@ export const dataImageCards: IImageCard[] = [
       },
     },
     hidden: true,
+  },
+  {
+    title: "American Red Cross Blood Drive",
+    date: new Date("October 7, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/arc-cross.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "American Red Cross Blood Drive",
+          subtitle: "Give blood - Save lives",
+          image: {
+            src: "/images/welfare/arc-give-save-wide.png",
+          },
+          date: new Date("October 7, 2021 15:00:00"),
+          duration: 300,
+          location: "Maples Building\n6592 West Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
+          details: 'To donate please click "Sign Up" above, then "SEE TIMES" to schedule an appointment',
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
   },
 */
