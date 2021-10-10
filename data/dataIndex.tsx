@@ -97,6 +97,70 @@ export const dataInfoCards: IEventCard[] = [
     },
     hidden: false,
   },
+  {
+    title: "Vincent De Paul Service July Assignment",
+    date: new Date("November 8, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/st-vincent-de-paul.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul July Assignment",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/welfare/st-vincent-de-paul.png",
+          },
+          date: new Date("November 8, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Vincent De Paul Service November Assignment",
+    date: new Date("November 11, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/st-vincent-de-paul.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul Service",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/welfare/st-vincent-de-paul.png",
+          },
+          date: new Date("November 11, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
 ]
 
 export const dataFaceCards: IContactCard[] = [
@@ -402,38 +466,6 @@ export const dataImageCards: IImageCard[] = [
             text: "Sign Up",
             link: {
               url: "https://forms.gle/S1QxmgjiLxbs9sRs8",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Vincent De Paul Service July Assignment",
-    date: new Date("July 28, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Vincent De Paul July Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
-          },
-          date: new Date("July 28, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
-          details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/CSgBwoNDheMsVW597",
               external: true,
             },
           },
