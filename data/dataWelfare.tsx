@@ -3,39 +3,39 @@ import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
-//export const dataHeroCard: IHeroCard = {
-//  title: "Gail Miller Homeless Resource Center September Assignment",
-//  paragraph: "Tuesday the 7th, 4:30-6:30 PM",
-//  image: {
-//    src: "/images/welfare/gail-miller.png",
-//    alt: "Gail Miller Homeless Resource Center",
-//  },
-//  button: {
-//    text: "Sign Up",
-//    link: {
-//      url: "https://forms.gle/txSJvcFEwubXVzGZ7",
-//      external: true,
-//    },
-//  },
-//  type: "light",
-//}
-
 export const dataHeroCard: IHeroCard = {
-  title: "American Red Cross Blood Drive",
-  paragraph: "Thursday the 7th of October, 3:00-8:00 PM. Cultural Hall of the Maples Building, 6592 South Haven Maple Drive",
+  title: "St. Vincent De Paul November Assignment",
+  paragraph: "Monday the 8th or Thursday the 11th, 3-5 PM",
   image: {
-    src: "/images/welfare/arc-give-save.png",
-    alt: "Give Blood - Save Life",
+    src: "/images/welfare/st-vincent-de-paul.png",
+    alt: "St Vincent De Paul",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+      url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
       external: true,
     },
   },
   type: "light",
 }
+
+//export const dataHeroCard: IHeroCard = {
+//  title: "American Red Cross Blood Drive",
+//  paragraph: "Thursday the 7th of October, 3:00-8:00 PM. Cultural Hall of the Maples Building, 6592 South Haven Maple Drive",
+//  image: {
+//    src: "/images/welfare/arc-give-save.png",
+//    alt: "Give Blood - Save Life",
+//  },
+//  button: {
+//    text: "Sign Up",
+//    link: {
+//      url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
+//      external: true,
+//    },
+//  },
+//  type: "light",
+//}
 
 export const dataBlockQuote: IBlockQuote = {
   name: "King Benjamin",
