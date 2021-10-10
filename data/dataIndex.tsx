@@ -98,7 +98,7 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Vincent De Paul Service July Assignment",
+    title: "Vincent De Paul Service November Assignment",
     date: new Date("November 8, 2021 15:00:00"),
     image: {
       src: "/images/welfare/st-vincent-de-paul.png",
@@ -107,7 +107,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Vincent De Paul July Assignment",
+          title: "Vincent De Paul November Assignment",
           subtitle: "Help Prepare Food for Those in Need",
           image: {
             src: "/images/welfare/st-vincent-de-paul.png",
