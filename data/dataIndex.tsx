@@ -48,7 +48,7 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Youth Tri-Stake Dance Halloween Dance",
+    title: "Youth Tri-Stake Halloween Dance",
     date: new Date("October 29, 2021 19:30:00"),
     image: {
       src: "/images/events/stake-dance.png",
@@ -57,7 +57,7 @@ export const dataInfoCards: IEventCard[] = [
       modal: {
         type: "event",
         data: {
-          title: "Youth Tri-Stake Dance Halloween Dance",
+          title: "Youth Tri-Stake Halloween Dance",
           subtitle: "Sunset Ridge, Maples, & Sycamores Stakes",
           image: {
             src: "/images/events/stake-dance.png",
