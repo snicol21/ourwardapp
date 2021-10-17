@@ -73,31 +73,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "Latino Resources Event",
-    date: new Date("October 16, 2021 15:00:00"),
-    image: {
-      src: "https://images.pexels.com/photos/1251842/pexels-photo-1251842.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Latino Resources Event",
-          subtitle: "Presentación de Recursos",
-          image: {
-            src: "https://images.pexels.com/photos/1251842/pexels-photo-1251842.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          },
-          date: new Date("October 16, 2021 15:00:00"),
-          duration: 300,
-          location: "4640 W 5015 S Kearns, UT 84118",
-          details:
-            "This will be the first mission-wide Resources event that we have done of this potential scale. This event will include resources for the Spanish-speaking community such as Medical and Dental help, Education opportunities, Legal and Immigration help, a vaccine clinic for COVID-19 and much more.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Vincent De Paul Service November Assignment",
     date: new Date("November 8, 2021 15:00:00"),
     image: {
