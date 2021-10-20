@@ -41,7 +41,16 @@ export const dataInfoCards: IEventCard[] = [
           date: new Date("October 23, 2021 16:00:00"),
           duration: 300,
           location: "At the church building",
-          details: "Come and join the fun!\n\nThere will be a bunch of fun games and activities for the kids including prizes for the best costume and trunk decorations. There will be a trunk or treat outside in the parking lot and a chili cook off inside.\n\nEveryone can participate in the chili cook off so bring your best recipe. We are also asking people to bring other food items such as cornbread, rolls, cheese, and sour cream!\n\nWe hope to see you all there!!",
+          details:
+            "Come and join the fun!\n\nThere will be a bunch of fun games and activities for the kids including prizes for the best costume and trunk decorations. There will be a trunk or treat outside in the parking lot and a chili cook off inside.\n\nEveryone can participate in the chili cook off so bring your best recipe. We are also asking people to bring other food items such as cornbread, rolls, cheese, and sour cream!\n\nWe hope to see you all there!!",
+          button: {
+            text: "Food Sign-Up",
+            color: "red",
+            link: {
+              url: "https://forms.gle/WsVKmfWe8gdgQwGD6",
+              external: true,
+            },
+          },
         },
       },
     },
