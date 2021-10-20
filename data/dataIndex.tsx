@@ -42,7 +42,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 300,
           location: "At the church building",
           details:
-            "Come and join the fun!\n\nThere will be a bunch of fun games and activities for the kids including prizes for the best costume and trunk decorations. There will be a trunk or treat outside in the parking lot and a chili cook off inside.\n\nEveryone can participate in the chili cook off so bring your best recipe. We are also asking people to bring other food items such as cornbread, rolls, cheese, and sour cream!\n\nWe hope to see you all there!!",
+            "Don't miss the Halloween EXTRAVAGANZA this Saturday starting at 4pm.\n\nActivities include a chili cook-off, trunk or treat, carnival games for the little ghouls, photo booth, dinner, awards for costumes, decorated cars, pumpkin carving and oh, so much more!!\n\nWe are still in need of people to sign up for some food items to bring (mainly chili, salad, and rolls/cornbread) so please click the sign-button above!\n\nChange your travel plans, be in town for a party so amazing you'll be terrified to miss it!!\n\nHope to see you all there!!",
           button: {
             text: "Food Sign-Up",
             color: "red",
