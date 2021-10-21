@@ -39,7 +39,7 @@ export const dataInfoCards: IEventCard[] = [
             src: "/images/events/trunk-or-treat.png",
           },
           date: new Date("October 23, 2021 16:00:00"),
-          duration: 300,
+          duration: 210,
           location: "At the church building",
           details:
             "Don't miss the Halloween EXTRAVAGANZA this Saturday starting at 4pm.\n\nActivities include a chili cook-off, trunk or treat, carnival games for the little ghouls, photo booth, dinner, awards for costumes, decorated cars, pumpkin carving and oh, so much more!!\n\nRough schedule:\n(4-5pm) Halloween Activities for children\n(5-6pm) Trunk or Treat\n(6-7:30pm) Chili Dinner\n\nWe are still in need of people to sign up for some food items to bring (mainly chili, salad, and rolls/cornbread) so please click the sign-button above!\n\nChange your travel plans, be in town for a party so amazing you'll be terrified to miss it!!\n\nHope to see you all there!!",
