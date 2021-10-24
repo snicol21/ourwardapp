@@ -24,39 +24,6 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Neighborhood Halloween Party",
-    date: new Date("October 23, 2021 16:00:00"),
-    image: {
-      src: "/images/events/trunk-or-treat.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Neighborhood Halloween Party",
-          subtitle: "Activities, Trunk or Treat, Chili Cook-off",
-          image: {
-            src: "/images/events/trunk-or-treat.png",
-          },
-          date: new Date("October 23, 2021 16:00:00"),
-          duration: 210,
-          location: "At the church building",
-          details:
-            "Don't miss the Halloween EXTRAVAGANZA this Saturday starting at 4pm.\n\nActivities include a chili cook-off, trunk or treat, carnival games for the little ghouls, photo booth, dinner, awards for costumes, decorated cars, pumpkin carving and oh, so much more!!\n\nRough schedule:\n(4-5pm) Halloween Activities for children\n(5-6pm) Trunk or Treat\n(6-7:30pm) Chili Dinner\n\nWe are still in need of people to sign up for some food items to bring (mainly chili, salad, and rolls/cornbread) so please click the sign-button above!\n\nChange your travel plans, be in town for a party so amazing you'll be terrified to miss it!!\n\nHope to see you all there!!",
-          button: {
-            text: "Food Sign-Up",
-            color: "red",
-            link: {
-              url: "https://forms.gle/WsVKmfWe8gdgQwGD6",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Youth Tri-Stake Halloween Dance",
     date: new Date("October 29, 2021 19:30:00"),
     image: {
