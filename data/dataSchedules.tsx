@@ -59,13 +59,13 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
       },
       {
         repeat: [5],
-        title: "Youth - Help with Primary",
+        title: "Youth - Special Message",
         subtitle: "In-Person Meeting",
         paragraph: "60 Min. All Youth",
       },
       {
         repeat: [5],
-        title: "Adults - Bishopric Message",
+        title: "Adults - Special Message",
         subtitle: "In-Person Meeting",
         paragraph: "60 Min. All Adults",
       },
