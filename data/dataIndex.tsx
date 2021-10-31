@@ -24,31 +24,6 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Youth Tri-Stake Halloween Dance",
-    date: new Date("October 29, 2021 19:30:00"),
-    image: {
-      src: "/images/events/stake-dance.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Youth Tri-Stake Halloween Dance",
-          subtitle: "Sunset Ridge, Maples, & Sycamores Stakes",
-          image: {
-            src: "/images/events/stake-dance.png",
-          },
-          date: new Date("October 29, 2021 19:30:00"),
-          duration: 180,
-          location: "8107 S 6700 W, West Jordan, UT",
-          details:
-            "All youth ages 14+ can get a dance card from a member of the bishopric.\n\nCasual/costume dress. Must be dressed according to FSY standards. Refreshments are provided\n\nNO costume masks, full face pain, or weapons.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Vincent De Paul Service November Assignment",
     date: new Date("November 8, 2021 15:00:00"),
     image: {
