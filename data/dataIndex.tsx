@@ -87,6 +87,115 @@ export const dataInfoCards: IEventCard[] = [
     },
     hidden: false,
   },
+  {
+    title: "Stake General Priesthood Meeting",
+    date: new Date("November 14, 2021 07:30:00"),
+    image: {
+      src: "/images/events/stake-priesthood.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Stake General Priesthood Meeting",
+          subtitle: "All Priesthood Holders",
+          image: {
+            src: "/images/events/stake-priesthood.jpg",
+          },
+          date: new Date("November 14, 2021 07:30:00"),
+          duration: 120,
+          location: "Ward Building",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Young Adult Devotional with Elder Holland",
+    date: new Date("November 14, 2021 19:00:00"),
+    image: {
+      src: "/images/events/adult-devotional.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Young Adult Devotional with Elder Holland",
+          subtitle: "Young Adults",
+          image: {
+            src: "/images/events/adult-devotional.jpg",
+          },
+          date: new Date("November 14, 2021 19:00:00"),
+          duration: 60,
+          location: "In-Person: Jordan Institute building\nBroadcast: South Jordan Stake Center\nBroadcast: Midas Creek Stake Center\n**see details**",
+          details: "A devotional with Elder Holland for Young Adults will be held at the Jordan Institute building on Nov 14th @7pm.\n\nTickets are required for in person attendance, but it will be broadcast from the Midas Creek Stake Center (3200 West 10860 South) and the South Jordan Stake Center (2450 West 10400 South) for those without tickets."
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Light of the Nations",
+    date: new Date("November 20, 2021 19:00:00"),
+    image: {
+      src: "/images/events/light-of-nations.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Light of the Nations",
+          subtitle: "Broadcast",
+          image: {
+            src: "/images/events/light-of-nations.jpg",
+          },
+          date: new Date("November 20, 2021 19:00:00"),
+          duration: 60,
+          location: "Broadcast",
+          details: "The 2021 Luz de Las Naciones (Light of the Nations) — a showcase of Latino cultures from across the world — will be broadcast on November 20, 2021.\n\nThis year's theme is \"Una Luz Para Todos\" (A Light for Everyone). The event will feature a cast of hundreds of Latino dancers, singers and other performers who are Latter-day Saints and friends of the faith. This year's event will be entirely virtual.\n\nView the pre-recorded broadcast on the Church's Live Broadcast page and YouTube beginning on Saturday, November 20, at 7 p.m. Mountain Daylight Time.",
+          button: {
+            text: "Broadcoast",
+            link: {
+              url: "https://newsroom.churchofjesuschrist.org/event/2021-luz-de-las-naciones-una-luz-para-todos",
+              external: true,
+            },
+          },      
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "The First Presidency Christmas Devotional",
+    date: new Date("December 5, 2021 18:00:00"),
+    image: {
+      src: "/images/events/christmas-devotional.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "The First Presidency Christmas Devotional",
+          subtitle: "Broadcast",
+          image: {
+            src: "/images/events/christmas-devotional.jpg",
+          },
+          date: new Date("December 5, 2021 18:00:00"),
+          duration: 60,
+          location: "Broadcast",
+          details: "The First Presidency invites members of The Church of Jesus Christ of Latter-day Saints, their families and friends to participate in the First Presidency’s Christmas devotional broadcast on December 5, 2021.\n\nThe program will include Christmas messages by General Authorities and General Officers of the Church. Music will be provided by The Tabernacle Choir and Orchestra at Temple Square.",
+          button: {
+            text: "Broadcoast",
+            link: {
+              url: "https://newsroom.churchofjesuschrist.org/event/2021-first-presidency-christmas-devotional",
+              external: true,
+            },
+          },      
+        },
+      },
+    },
+    hidden: false,
+  },
 ]
 
 export const dataFaceCards: IContactCard[] = [
