@@ -108,7 +108,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Young Adult Devotional with Elder Holland",
@@ -132,7 +132,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Light of the Nations",
