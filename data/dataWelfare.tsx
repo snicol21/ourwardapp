@@ -79,7 +79,7 @@ export const dataImageCards: IImageCard[] = [
   },
   {
     title: "December Temple Cleaning Assignments",
-    subtitle: "Clenliness is next to Godliness",
+    subtitle: "Cleanliness is next to Godliness",
     image: {
       src: "/images/welfare/oquirrh_temple_wide.png",
       alt: "Oquirrh Mount Temple",
