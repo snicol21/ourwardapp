@@ -4,16 +4,16 @@ import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
 export const dataHeroCard: IHeroCard = {
-  title: "St. Vincent De Paul November Assignment",
-  paragraph: "Monday the 8th or Thursday the 11th, 3-5 PM",
+  title: "December Temple Cleaning Assignments",
+  paragraph: "Tuesday the 28th or Wednesday the 29th, 9:45 PM - 12 AM",
   image: {
-    src: "/images/welfare/st-vincent-de-paul.png",
-    alt: "St Vincent De Paul",
+    src: "/images/welfare/oquirrh_temple_wide.png",
+    alt: "Oquirrh Mountain Temple",
   },
   button: {
     text: "Sign Up",
     link: {
-      url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+      url: "https://forms.gle/16P88HKnxGmH3fNB7",
       external: true,
     },
   },
@@ -59,7 +59,7 @@ export const dataImageCards: IImageCard[] = [
         external: false,
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Gail Miller Resource Center Assignments",
@@ -73,6 +73,22 @@ export const dataImageCards: IImageCard[] = [
       link: {
         url: "/welfare/gail-miller",
         external: false,
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "December Temple Cleaning Assignments",
+    subtitle: "Clenliness is next to Godliness",
+    image: {
+      src: "/images/welfare/oquirrh_temple_wide.png",
+      alt: "Oquirrh Mount Temple",
+    },
+    button: {
+      text: "Sign Up",
+      link: {
+        url: "https://forms.gle/16P88HKnxGmH3fNB7",
+        external: true,
       },
     },
     hidden: false,
