@@ -24,68 +24,68 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "Vincent De Paul Service November Assignment",
-    date: new Date("November 8, 2021 15:00:00"),
+    title: "December Temple Cleaning Assignment",
+    date: new Date("December 28, 2021 21:45:00"),
     image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
+      src: "/images/welfare/oquirrh_temple_wide.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "Vincent De Paul November Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
+          title: "December Temple Cleaning",
+          subtitle: "Cleanliness is next to Godliness",
           image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
+            src: "/images/welfare/oquirrh_temple_wide.png",
           },
-          date: new Date("November 8, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          date: new Date("December 28, 2021 21:45:00"),
+          duration: 135,
+          location: "11022 S 4000 W\nSouth Jordan UT 84009-5797\nhttps://goo.gl/maps/R49vubxna6Y8oLRu8",
           details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+            "- Must be endowed\n- Must hold a current temple recommend\n- Sunday Best required\n- White work clothing will be provided\n- Wear clean, comfortable shoes\n- Slip-on covers will be provided\n- Bring your own mask to wear\n\nEnter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs",
           button: {
             text: "Sign Up",
             link: {
-              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+              url: "https://forms.gle/16P88HKnxGmH3fNB7",
               external: true,
             },
           },
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
-    title: "Vincent De Paul Service November Assignment",
-    date: new Date("November 11, 2021 15:00:00"),
+    title: "December Temple Cleaning Assignment",
+    date: new Date("December 29, 2021 21:45:00"),
     image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
+      src: "/images/welfare/oquirrh_temple_wide.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "Vincent De Paul Service",
-          subtitle: "Help Prepare Food for Those in Need",
+          title: "December Temple Cleaning",
+          subtitle: "Cleanliness is next to Godliness",
           image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
+            src: "/images/welfare/oquirrh_temple_wide.png",
           },
-          date: new Date("November 11, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          date: new Date("December 29, 2021 21:45:00"),
+          duration: 135,
+          location: "11022 S 4000 W\nSouth Jordan UT 84009-5797\nhttps://goo.gl/maps/R49vubxna6Y8oLRu8",
           details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+            "- Must be endowed\n- Must hold a current temple recommend\n- Sunday Best required\n- White work clothing will be provided\n- Wear clean, comfortable shoes\n- Slip-on covers will be provided\n- Bring your own mask to wear\n\nEnter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs",
           button: {
             text: "Sign Up",
             link: {
-              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+              url: "https://forms.gle/16P88HKnxGmH3fNB7",
               external: true,
             },
           },
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
     title: "Stake General Priesthood Meeting",
@@ -159,7 +159,7 @@ export const dataInfoCards: IEventCard[] = [
               url: "https://newsroom.churchofjesuschrist.org/event/2021-luz-de-las-naciones-una-luz-para-todos",
               external: true,
             },
-          },      
+          },
         },
       },
     },
@@ -190,7 +190,7 @@ export const dataInfoCards: IEventCard[] = [
               url: "https://newsroom.churchofjesuschrist.org/event/2021-first-presidency-christmas-devotional",
               external: true,
             },
-          },      
+          },
         },
       },
     },
@@ -391,6 +391,38 @@ export const dataImageCards: IImageCard[] = [
 ]
 
 /*
+  {
+    title: "Vincent De Paul Service November Assignment",
+    date: new Date("November 8, 2021 15:00:00"),
+    image: {
+      src: "/images/welfare/st-vincent-de-paul.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Vincent De Paul November Assignment",
+          subtitle: "Help Prepare Food for Those in Need",
+          image: {
+            src: "/images/welfare/st-vincent-de-paul.png",
+          },
+          date: new Date("November 8, 2021 15:00:00"),
+          duration: 120,
+          location: "437 West 200 South\nSalt Lake City, UT 84101",
+          details:
+            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
   {
     title: "Bishop Mobile",
     date: new Date("July 15, 2021 17:00:00"),
