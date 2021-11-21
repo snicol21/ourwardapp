@@ -56,6 +56,38 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
+    title: "December Temple Cleaning Assignment",
+    date: new Date("December 29, 2021 21:45:00"),
+    image: {
+      src: "/images/welfare/oquirrh_temple_wide.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "December Temple Cleaning",
+          subtitle: "Cleanliness is next to Godliness",
+          image: {
+            src: "/images/welfare/oquirrh_temple_wide.png",
+          },
+          date: new Date("December 29, 2021 21:45:00"),
+          duration: 135,
+          location: "11022 S 4000 W\nSouth Jordan UT 84009-5797\nhttps://goo.gl/maps/R49vubxna6Y8oLRu8",
+          details:
+            "- Must be endowed\n- Must hold a current temple recommend\n- Sunday Best required\n- White work clothing will be provided\n- Wear clean, comfortable shoes\n- Slip-on covers will be provided\n- Bring your own mask to wear\n\nEnter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs",
+          button: {
+            text: "Sign Up",
+            link: {
+              url: "https://forms.gle/16P88HKnxGmH3fNB7",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "The First Presidency Christmas Devotional",
     date: new Date("December 5, 2021 18:00:00"),
     image: {
@@ -81,6 +113,53 @@ export const dataInfoCards: IEventCard[] = [
               external: true,
             },
           },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Christmas Party Extravaganza",
+    date: new Date("December 18, 2021 17:00:00"),
+    image: {
+      src: "/images/events/christmas-party.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Christmas Party Extravaganza",
+          subtitle: "Night at the North Pole",
+          image: {
+            src: "/images/events/christmas-party.jpg",
+          },
+          date: new Date("December 18, 2021 17:00:00"),
+          duration: 210,
+          location: "Stake Center (8107 South 6700 West)",
+          details: "Maples 3rd Ward Christmas Extravaganza - Night at the North Pole!!\n\nSaturday, December 18th at 5:00pm at the Stake Center (8107 South 6700 West).\n\nBring your whole family and join us for dinner, treats, activities, Santa, and a lip sync battle.",
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
+    title: "Stake Combined Youth Activity",
+    date: new Date("December 1, 2021 19:00:00"),
+    image: {
+      src: "/images/events/stake-youth-activity.jpg",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "Stake Combined Youth Activity",
+          image: {
+            src: "/images/events/stake-youth-activity.jpg",
+          },
+          date: new Date("December 1, 2021 19:00:00"),
+          duration: 90,
+          location: "Oaks Building",
+          details: "This will be service-focused with three different activities for the youth to participate in:\n\n- Tiny Tim's Cars (sanding and painting wooden toys that will be given to children throughout the world),\n- Writing letters to soldiers, missionaries, and police officers for Christmas\n- Making \"plarn\" (plastic yarn made from strips of plastic bags) used to make mats for those in need\n\nThe stake will provide hot chocolate and cookies as refreshments.",
         },
       },
     },
