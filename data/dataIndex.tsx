@@ -24,6 +24,37 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
+    title: "A Christmas on Temple Square Virtual Concert",
+    date: new Date("November 28, 2021 18:00:00"),
+    image: {
+      src: "/images/events/witness-of-christ-devotional.png",
+    },
+    button: {
+      modal: {
+        type: "event",
+        data: {
+          title: "A Christmas on Temple Square Virtual Concert",
+          subtitle: "Church Broadcoast",
+          image: {
+            src: "/images/events/witness-of-christ-devotional.png",
+          },
+          date: new Date("November 28, 2021 18:00:00"),
+          duration: 50,
+          location: "Church Broadcoast",
+          details: "A Christmas on Temple Square Virtual Concert\n\nA 50-minute celebration of Christ's birth and divinity, featuring thought-provoking messages and new arrangements of favorite carols.",
+          button: {
+            text: "Broadcast",
+            link: {
+              url: "https://www.churchofjesuschrist.org/events/templesquare/temple-square-virtual-christmas-concert-2021?lang=eng",
+              external: true,
+            },
+          },
+        },
+      },
+    },
+    hidden: false,
+  },
+  {
     title: "December Temple Cleaning Assignment",
     date: new Date("December 28, 2021 21:45:00"),
     image: {
