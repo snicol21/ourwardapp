@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
 import Icon from "../../elements/icons/Icon"
 import { getDateDisplay } from "../../../shared/utils/date.util"
@@ -16,7 +17,7 @@ const EventCard = ({ ...card }: IEventCard) => {
   return (
     <div className="rounded-lg shadow-xl flex bg-white">
       <div className="relative w-24">
-        <img className="absolute h-full object-cover rounded-l-lg" src={card.image?.src} alt={card.image?.alt} />
+        <Image className="rounded-l-lg" src={card.image?.src} alt={card.image?.alt} layout="fill" objectFit="cover" />
       </div>
       <PrimaryButton
         type="pass-thru"
