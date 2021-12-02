@@ -24,37 +24,6 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "A Christmas on Temple Square Virtual Concert",
-    date: new Date("November 28, 2021 18:00:00"),
-    image: {
-      src: "/images/events/witness-of-christ-devotional.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "A Christmas on Temple Square Virtual Concert",
-          subtitle: "Church Broadcoast",
-          image: {
-            src: "/images/events/witness-of-christ-devotional.png",
-          },
-          date: new Date("November 28, 2021 18:00:00"),
-          duration: 50,
-          location: "Church Broadcoast",
-          details: "A Christmas on Temple Square Virtual Concert\n\nA 50-minute celebration of Christ's birth and divinity, featuring thought-provoking messages and new arrangements of favorite carols.",
-          button: {
-            text: "Broadcast",
-            link: {
-              url: "https://www.churchofjesuschrist.org/events/templesquare/temple-square-virtual-christmas-concert-2021?lang=eng",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "December Temple Cleaning Assignment",
     date: new Date("December 28, 2021 21:45:00"),
     image: {
@@ -168,29 +137,6 @@ export const dataInfoCards: IEventCard[] = [
           duration: 210,
           location: "Stake Center (8107 South 6700 West)",
           details: "Maples 3rd Ward Christmas Extravaganza - Night at the North Pole!!\n\nSaturday, December 18th at 5:00pm at the Stake Center (8107 South 6700 West).\n\nBring your whole family and join us for dinner, treats, activities, Santa, and a lip sync battle.",
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Stake Combined Youth Activity",
-    date: new Date("December 1, 2021 19:00:00"),
-    image: {
-      src: "/images/events/stake-youth-activity.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Stake Combined Youth Activity",
-          image: {
-            src: "/images/events/stake-youth-activity.jpg",
-          },
-          date: new Date("December 1, 2021 19:00:00"),
-          duration: 90,
-          location: "Oaks Building",
-          details: "This will be service-focused with three different activities for the youth to participate in:\n\n- Tiny Tim's Cars (sanding and painting wooden toys that will be given to children throughout the world),\n- Writing letters to soldiers, missionaries, and police officers for Christmas\n- Making \"plarn\" (plastic yarn made from strips of plastic bags) used to make mats for those in need\n\nThe stake will provide hot chocolate and cookies as refreshments.",
         },
       },
     },
