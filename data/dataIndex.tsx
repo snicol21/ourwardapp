@@ -115,12 +115,12 @@ export const dataInfoCards: IEventCard[] = [
 
 export const dataFaceCards: IContactCard[] = [
   {
-    title: "Bishop\xa0Harman",
+    title: "Bishop\xa0Budge",
     subtitle: "Bishop",
     images: [
       {
         src: "/images/face-cards/bishop.webp",
-        alt: "Bishop\xa0Harman",
+        alt: "Bishop\xa0Budge",
         width: 100,
         height: 100,
       },
@@ -135,18 +135,18 @@ export const dataFaceCards: IContactCard[] = [
     hidden: false,
   },
   {
-    title: "Bro.\xa0Wheeler or Bro.\xa0Hammon",
+    title: "Bro.\xa0Nichols or Bro.\xa0Smith",
     subtitle: "Counselor",
     images: [
       {
         src: "/images/face-cards/first-counselor.webp",
-        alt: "Bro.\xa0Wheeler",
+        alt: "Bro.\xa0Nichols",
         width: 100,
         height: 100,
       },
       {
         src: "/images/face-cards/second-counselor.webp",
-        alt: "Bro.\xa0Hammon",
+        alt: "Bro.\xa0Smith",
         width: 100,
         height: 100,
       },
