@@ -119,7 +119,7 @@ export const dataFaceCards: IContactCard[] = [
     subtitle: "Bishop",
     images: [
       {
-        src: "/images/face-cards/bishop.webp",
+        src: "/images/face-cards/bishop.jpg",
         alt: "Bishop\xa0Budge",
         width: 100,
         height: 100,
@@ -139,13 +139,13 @@ export const dataFaceCards: IContactCard[] = [
     subtitle: "Counselor",
     images: [
       {
-        src: "/images/face-cards/first-counselor.webp",
+        src: "/images/face-cards/first-counselor.jpg",
         alt: "Bro.\xa0Nichols",
         width: 100,
         height: 100,
       },
       {
-        src: "/images/face-cards/second-counselor.webp",
+        src: "/images/face-cards/second-counselor.jpg",
         alt: "Bro.\xa0Smith",
         width: 100,
         height: 100,
