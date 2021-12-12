@@ -88,37 +88,6 @@ export const dataInfoCards: IEventCard[] = [
     hidden: false,
   },
   {
-    title: "The First Presidency Christmas Devotional",
-    date: new Date("December 5, 2021 18:00:00"),
-    image: {
-      src: "/images/events/christmas-devotional.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "The First Presidency Christmas Devotional",
-          subtitle: "Broadcast",
-          image: {
-            src: "/images/events/christmas-devotional.jpg",
-          },
-          date: new Date("December 5, 2021 18:00:00"),
-          duration: 60,
-          location: "Broadcast",
-          details: "The First Presidency invites members of The Church of Jesus Christ of Latter-day Saints, their families and friends to participate in the First Presidency’s Christmas devotional broadcast on December 5, 2021.\n\nThe program will include Christmas messages by General Authorities and General Officers of the Church. Music will be provided by The Tabernacle Choir and Orchestra at Temple Square.",
-          button: {
-            text: "Broadcoast",
-            link: {
-              url: "https://newsroom.churchofjesuschrist.org/event/2021-first-presidency-christmas-devotional",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
     title: "Christmas Party Extravaganza",
     date: new Date("December 18, 2021 17:00:00"),
     image: {
