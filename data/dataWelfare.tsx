@@ -1,5 +1,5 @@
 import { IContactCard } from "../components/modules/cards/ContactCard"
-//import { IHeroCard } from "../components/modules/cards/HeroCard"
+import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
