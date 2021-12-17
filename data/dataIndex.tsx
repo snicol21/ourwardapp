@@ -53,7 +53,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "December Temple Cleaning Assignment",
@@ -85,7 +85,7 @@ export const dataInfoCards: IEventCard[] = [
         },
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Christmas Party Extravaganza",

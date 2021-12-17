@@ -1,5 +1,5 @@
 import { IContactCard } from "../components/modules/cards/ContactCard"
-import { IHeroCard } from "../components/modules/cards/HeroCard"
+//import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
 
@@ -11,11 +11,11 @@ export const dataHeroCard: IHeroCard = {
     alt: "Oquirrh Mountain Temple",
   },
   button: {
-    text: "Sign Up",
-    link: {
-      url: "https://forms.gle/16P88HKnxGmH3fNB7",
-      external: true,
-    },
+    text: "All Spots Filled",
+    //link: {
+    //  url: "https://forms.gle/16P88HKnxGmH3fNB7",
+    //  external: true,
+    //},
   },
   type: "light",
 }
@@ -75,7 +75,7 @@ export const dataImageCards: IImageCard[] = [
         external: false,
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "December Temple Cleaning Assignments",
@@ -91,7 +91,7 @@ export const dataImageCards: IImageCard[] = [
         external: true,
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Deseret Soap Assignment",
