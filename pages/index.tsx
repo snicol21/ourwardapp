@@ -23,7 +23,7 @@ function Home() {
       {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
         <>
           <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
-          <div className="pt-5">
+          {/* <div className="pt-5">
             <div className="bg-green-50 shadow-xl rounded-lg border-2 border-green-500">
               <div className="px-4 py-5 sm:p-6">
                 <div className="sm:flex sm:items-start sm:justify-between">
@@ -55,7 +55,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="mt-7 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
             {dataInfoCards
               .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
