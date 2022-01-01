@@ -3,7 +3,7 @@ import { getScheduleDate } from "../shared/utils/date.util"
 
 export const dataSundayScheduleTimes: IScheduleTime[] = [
   {
-    time: "12:00 PM",
+    time: "9:00 AM",
     color: "green",
     events: [
       {
@@ -18,7 +18,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
     ],
   },
   {
-    time: "1:00 PM",
+    time: "10:00 AM",
     color: "blue",
     events: [
       {
