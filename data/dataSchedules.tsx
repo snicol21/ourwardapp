@@ -19,7 +19,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
         repeat: [1, 2, 3, 4, 5],
         title: "Sacrament Live Stream",
         subtitle: "YouTube Live Stream",
-        paragraph: "30 Min. All Individuals",
+        paragraph: "60 Min. All Individuals",
         button: {
           text: "Join Live Stream",
           link: {
