@@ -24,88 +24,48 @@ export const dataSundayMeeting: IHeroCard = {
 /* move inactive events to the commented out section at the bottom */
 export const dataInfoCards: IEventCard[] = [
   {
-    title: "December Temple Cleaning Assignment",
-    date: new Date("December 28, 2021 21:45:00"),
+    title: "Building Cleaning (N-Z)",
+    date: new Date("January 15, 2022 9:00:00"),
     image: {
-      src: "/images/welfare/oquirrh_temple_wide.png",
+      src: "/images/events/cleaning.png",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "December Temple Cleaning",
-          subtitle: "Cleanliness is next to Godliness",
+          title: "Building Cleaning (N-Z)",
           image: {
-            src: "/images/welfare/oquirrh_temple_wide.png",
+            src: "/images/events/cleaning.png",
           },
-          date: new Date("December 28, 2021 21:45:00"),
-          duration: 135,
-          location: "11022 S 4000 W\nSouth Jordan UT 84009-5797\nhttps://goo.gl/maps/R49vubxna6Y8oLRu8",
+          date: new Date("January 15, 2022 9:00:00"),
+          duration: 60,
+          location: "Ward Building",
           details:
-            "- Must be endowed\n- Must hold a current temple recommend\n- Sunday Best required\n- White work clothing will be provided\n- Wear clean, comfortable shoes\n- Slip-on covers will be provided\n- Bring your own mask to wear\n\nEnter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/16P88HKnxGmH3fNB7",
-              external: true,
-            },
-          },
+            "Our ward has the opportunity to clean the church building.\n\nWe are asking that families with the last names between N-Z show up to help out.\n\nThank you so much for your willingness to serve.",
         },
       },
     },
-    hidden: true,
+    hidden: false,
   },
   {
-    title: "December Temple Cleaning Assignment",
-    date: new Date("December 29, 2021 21:45:00"),
+    title: "Ward Temple Night (SESSION FULL)",
+    date: new Date("January 18, 2022 18:00:00"),
     image: {
-      src: "/images/welfare/oquirrh_temple_wide.png",
+      src: "/images/events/temple.webp",
     },
     button: {
       modal: {
         type: "event",
         data: {
-          title: "December Temple Cleaning",
-          subtitle: "Cleanliness is next to Godliness",
+          title: "Ward Temple Night (SESSION FULL)",
           image: {
-            src: "/images/welfare/oquirrh_temple_wide.png",
+            src: "/images/events/temple.webp",
           },
-          date: new Date("December 29, 2021 21:45:00"),
-          duration: 135,
-          location: "11022 S 4000 W\nSouth Jordan UT 84009-5797\nhttps://goo.gl/maps/R49vubxna6Y8oLRu8",
+          date: new Date("January 18, 2022 18:00:00"),
+          duration: 60,
+          location: "Oquirrh Mountain Temple",
           details:
-            "- Must be endowed\n- Must hold a current temple recommend\n- Sunday Best required\n- White work clothing will be provided\n- Wear clean, comfortable shoes\n- Slip-on covers will be provided\n- Bring your own mask to wear\n\nEnter the temple through the west doors (baptistery entrance) at 9:45 PM as a group and report to the baptistery chapel downstairs",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/16P88HKnxGmH3fNB7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Christmas Party Extravaganza",
-    date: new Date("December 18, 2021 17:00:00"),
-    image: {
-      src: "/images/events/christmas-party.jpg",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Christmas Party Extravaganza",
-          subtitle: "Night at the North Pole",
-          image: {
-            src: "/images/events/christmas-party.jpg",
-          },
-          date: new Date("December 18, 2021 17:00:00"),
-          duration: 210,
-          location: "Stake Center (8107 South 6700 West)",
-          details: "Maples 3rd Ward Christmas Extravaganza - Night at the North Pole!!\n\nSaturday, December 18th at 5:00pm at the Stake Center (8107 South 6700 West).\n\nBring your whole family and join us for dinner, treats, activities, Santa, and a lip sync battle.",
+            "Ward temple night will be held on January 18. Spots at the Oquirh Mountain Temple are full, but Jordan River has availability. Please attend when and where you can.",
         },
       },
     },
@@ -479,37 +439,6 @@ export const dataImageCards: IImageCard[] = [
             text: "Sign Up",
             link: {
               url: "https://arupbloodservices.org/index.cfm?group=op&expand=16642&zc=84084",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Building Cleaning",
-    date: new Date("July 31, 2021 10:00:00"),
-    image: {
-      src: "/images/events/cleaning.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Building Cleaning",
-          image: {
-            src: "/images/events/cleaning.png",
-          },
-          date: new Date("July 31, 2021 10:00:00"),
-          duration: 60,
-          location: "Ward Building",
-          details:
-            "We have the opportunity to clean the building. Please sign up and bring your family to help clean the building. Supplies will be provided upon arrival.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://calendly.com/ssr3rdward/cleaning",
               external: true,
             },
           },
