@@ -65,7 +65,7 @@ export const dataInfoCards: IEventCard[] = [
           duration: 60,
           location: "Oquirrh Mountain Temple",
           details:
-            "Ward temple night will be held on January 18. Spots at the Oquirh Mountain Temple are full, but Jordan River has availability. Please attend when and where you can.",
+            "Ward temple night will be held on January 18 (for the 6, 7, or 8pm sessions). Spots at the Oquirh Mountain Temple are FULL, but Jordan River has availability. Please attend when and where you can.",
         },
       },
     },
