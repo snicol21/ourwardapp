@@ -1,7 +1,7 @@
 import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
-import { IEventCard } from "../components/modules/cards/EventCard"
+import { IAnnouncement } from "../components/modules/announcements/Announcement"
 import { IMiniCard } from "../components/modules/cards/MiniCard"
 
 export const dataSundayMeeting: IHeroCard = {
@@ -21,55 +21,46 @@ export const dataSundayMeeting: IHeroCard = {
   type: "dark",
 }
 
-/* move inactive events to the commented out section at the bottom */
-export const dataInfoCards: IEventCard[] = [
+export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Building Cleaning (N-Z)",
-    date: new Date("January 15, 2022 9:00:00"),
-    image: {
-      src: "/images/events/cleaning.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Building Cleaning (N-Z)",
-          image: {
-            src: "/images/events/cleaning.png",
-          },
-          date: new Date("January 15, 2022 9:00:00"),
-          duration: 60,
-          location: "Ward Building",
-          details:
-            "Our ward has the opportunity to clean the church building.\n\nWe are asking that families with the last names between N-Z show up to help out.\n\nThank you so much for your willingness to serve.",
-        },
-      },
-    },
-    hidden: false,
+    date: new Date("January 22, 2022 9:00:00"),
+    title: "Building Cleaning",
+    description: "We are assigned to clean the building in January. Those with last names starting with A-M please help clean this Saturday at 9:00am",
   },
   {
-    title: "Ward Temple Night (SESSION FULL)",
     date: new Date("January 18, 2022 18:00:00"),
-    image: {
-      src: "/images/events/temple.webp",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Ward Temple Night (SESSION FULL)",
-          image: {
-            src: "/images/events/temple.webp",
-          },
-          date: new Date("January 18, 2022 18:00:00"),
-          duration: 60,
-          location: "Oquirrh Mountain Temple",
-          details:
-            "Ward temple night will be held on January 18 (for the 6, 7, or 8pm sessions). Spots at the Oquirh Mountain Temple are FULL, but Jordan River has availability. Please attend when and where you can.",
-        },
-      },
-    },
-    hidden: false,
+    title: "Ward Temple Night",
+    description: "Reminder of ward temple night on January 18. Please attend when and where you can.",
+  },
+  {
+    date: new Date("January 23, 2022 16:00:00"),
+    title: "Stake Temple Preparation",
+    description:
+      "The stake temple preparation class is on the 4th Sunday of each month at 4pm in this building. This is for any high school seniors up to 24 years of age.",
+  },
+  {
+    date: new Date("January 16, 2022 16:00:00"),
+    title: "Priesthood Ordinations",
+    description:
+      "We will ordain new Deacons, Teachers and Priests to their offices and set apart presidencies this evening (Jan 16) at 4pm in the Relief Society room. We will set up appointments with any YM unable to attend.",
+  },
+  {
+    date: new Date("January 21, 2022 19:00:00"),
+    title: "46+ Singles Dinner",
+    description:
+      "Friday, January 21st at 7pm, there will be a 46+ Singles dinner followed by a guest speaker - World Famous Artist, Eric Dowdle.  Please note the new location - 8585 S 4800 W, West Jordan.",
+  },
+  {
+    date: new Date("January 24, 2022 18:00:00"),
+    title: "Stake Trek Kickoff Devotional",
+    description:
+      "Next Sunday (Jan 24) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm.",
+  },
+  {
+    date: new Date("February 5, 2022 18:00:00"),
+    title: "Stake Conference",
+    description:
+      "Stake conference will be Saturday, February 5th, at 6pm for the adult session. The general session will be Sunday, February 6th, at 10am. The presiding authority will be Elder Berne S. Broadbent of the 5th Quorum of the Seventy. All sessions will be held at the Oaks Building (8137 S. Echo View Dr.). Links will be available on the stake website http://www.maplesstake.org.",
   },
 ]
 
@@ -264,218 +255,3 @@ export const dataImageCards: IImageCard[] = [
     hidden: false,
   },
 ]
-
-/*
-  {
-    title: "Vincent De Paul Service November Assignment",
-    date: new Date("November 8, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/st-vincent-de-paul.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Vincent De Paul November Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/st-vincent-de-paul.png",
-          },
-          date: new Date("November 8, 2021 15:00:00"),
-          duration: 120,
-          location: "437 West 200 South\nSalt Lake City, UT 84101",
-          details:
-            "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/KSffXLbqhyrNWDhJ7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-  {
-    title: "Bishop Mobile",
-    date: new Date("July 15, 2021 17:00:00"),
-    image: {
-      src: "/images/events/bishop-mobile.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Bishop Mobile",
-          subtitle: "Ward Activity",
-          image: {
-            src: "/images/events/bishop-mobile.png",
-          },
-          date: new Date("July 15, 2021 17:00:00"),
-          duration: 90,
-          location: "Watch for us outside your home",
-          details:
-            "Members of the bishopric will be driving around the neighborhoods handing out candy to the primary and youth in the ward. We'll start in the entry roundabout at Serengeti Springs and work through the ward neighborhoods as we usually do.",
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Relief Society Ministering Interviews",
-    date: new Date("June 13, 2021 14:30:00"),
-    image: {
-      src: "/images/events/relief-society.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "Ministering Interviews",
-          subtitle: "Relief Society",
-          image: {
-            src: "/images/events/relief-society.png",
-          },
-          date: new Date("June 13, 2021 14:30:00"),
-          duration: 120,
-          location: "Relief Society Room",
-          details: "Please sign-up for a time to come and visit with one of the members of the Relief Society Presidency to see how ministering is going.",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/a7pURbJ6AXEuSh7E6",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  }
-  {
-    title: "Gail Miller Homeless Resource Center Sept. Assignment",
-    date: new Date("September 7, 2021 16:30:00"),
-    image: {
-      src: "/images/welfare/gail-miller.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "September Assignment",
-          subtitle: "Help Prepare Food for Those in Need",
-          image: {
-            src: "/images/welfare/gail-miller.png",
-          },
-          date: new Date("September 7, 2021 16:30:00"),
-          duration: 120,
-          location: "242 West Paramount Avenue\nSalt Lake City UT, 84115",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/txSJvcFEwubXVzGZ7",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "Deseret Soap Factory August Assignment",
-    date: new Date("August 16, 2021 12:00:00"),
-    image: {
-      src: "/images/welfare/soap-factory.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "August Assignment",
-          subtitle: "Help make and package soap",
-          image: {
-            src: "/images/welfare/soap-factory-landscape.jpg",
-          },
-          date: new Date("August 16, 2021 12:00:00"),
-          duration: 240,
-          location: "3602 S 7200 W, Magna, UT 84044",
-          details: "See details on sign-up form",
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://forms.gle/S1QxmgjiLxbs9sRs8",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "ARUP Blood Drive",
-    date: new Date("July 22, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/arup-donate4life.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "ARUP Blood Drive",
-          subtitle: "Give local - Save local",
-          image: {
-            src: "/images/welfare/arup-flag-local.png",
-          },
-          date: new Date("July 22, 2021 15:00:00"),
-          duration: 240,
-          location: "Sunset Ridge Stake Center\n8107 South 6700 West\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: 'Just click "Sign Up", then click "Schedule" from ARUP\'s website. The need for blood never takes a vacation!',
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://arupbloodservices.org/index.cfm?group=op&expand=16642&zc=84084",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: true,
-  },
-  {
-    title: "American Red Cross Blood Drive",
-    date: new Date("October 7, 2021 15:00:00"),
-    image: {
-      src: "/images/welfare/arc-cross.png",
-    },
-    button: {
-      modal: {
-        type: "event",
-        data: {
-          title: "American Red Cross Blood Drive",
-          subtitle: "Give blood - Save lives",
-          image: {
-            src: "/images/welfare/arc-give-save-wide.png",
-          },
-          date: new Date("October 7, 2021 15:00:00"),
-          duration: 300,
-          location: "Maples Building\n6592 West Haven Maple Drive\nWest Jordan, UT 84081\nin the Cultural Hall",
-          details: 'To donate please click "Sign Up" above, then "SEE TIMES" to schedule an appointment',
-          button: {
-            text: "Sign Up",
-            link: {
-              url: "https://www.redcrossblood.org/give.html/drive-results?zipSponsor=maples",
-              external: true,
-            },
-          },
-        },
-      },
-    },
-    hidden: false,
-  },
-*/

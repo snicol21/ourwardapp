@@ -2,13 +2,11 @@ import Head from "next/head"
 import Layout from "../components/layouts/Layout"
 import SectionHeader from "../components/elements/headers/SectionHeader"
 import HeroCard from "../components/modules/cards/HeroCard"
-import EventCard, { IEventCard } from "../components/modules/cards/EventCard"
+import Announcement, { IAnnouncement } from "../components/modules/announcements/Announcement"
 import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import PrimaryButton from "../components/elements/buttons/PrimaryButton"
-import Icon from "../components/elements/icons/Icon"
-import { dataSundayMeeting, dataInfoCards, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
+import { dataSundayMeeting, dataAnnouncements, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import { isSameOrAfterToday } from "../shared/utils/date.util"
 
 function Home() {
@@ -20,9 +18,9 @@ function Home() {
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
       </div>
-      {dataInfoCards.filter((card) => !card.hidden).length > 0 && (
+      {dataAnnouncements.length > 0 && (
         <>
-          <SectionHeader title="Upcoming Events" subtitle="Find out more details of some of the upcoming events and activities." />
+          <SectionHeader title="Announcements" subtitle="Find out more details of some of the upcoming events and activities." />
           {/* <div className="pt-5">
             <div className="bg-green-50 shadow-xl rounded-lg border-2 border-green-500">
               <div className="px-4 py-5 sm:p-6">
@@ -56,13 +54,17 @@ function Home() {
               </div>
             </div>
           </div> */}
-          <div className="mt-7 grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
-            {dataInfoCards
-              .filter((card) => !card.hidden && isSameOrAfterToday(card.date))
-              .sort((a: any, b: any) => a.date - b.date)
-              .map((card: IEventCard) => (
-                <EventCard key={`${card.title}${card.date}`} {...card} />
-              ))}
+          <div className="mt-7 bg-white rounded-lg shadow-xl">
+            <div className="p-10 relative max-w-lg mx-auto lg:max-w-7xl">
+              <div className="grid gap-6 lg:grid-cols-2">
+                {dataAnnouncements
+                  .filter((announcement) => isSameOrAfterToday(announcement.date))
+                  .sort((a: any, b: any) => a.date - b.date)
+                  .map((announcement: IAnnouncement) => (
+                    <Announcement key={`${announcement.title}${announcement.date}`} {...announcement} />
+                  ))}
+              </div>
+            </div>
           </div>
         </>
       )}

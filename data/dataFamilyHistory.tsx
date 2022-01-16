@@ -1,24 +1,6 @@
 import { IContactCard } from "../components/modules/cards/ContactCard"
-import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IBlockQuote } from "../components/elements/headers/BlockQuote"
-
-export const dataHeroCard: IHeroCard = {
-  title: "Temple & Family\xa0History Basket",
-  paragraph: "Sign up for your family to have a turn.",
-  image: {
-    src: "/images/image-cards/temple-and-family-history.webp",
-    alt: "Temple & Family History",
-  },
-  button: {
-    text: "Sign Up",
-    link: {
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSefHtpIzP1NdESAV6UxJ8St4xB3GxU9cPPsVcAVSqj-E6EcwQ/viewform?usp=sf_link",
-      external: true,
-    },
-  },
-  type: "light",
-}
 
 export const dataBlockQuote: IBlockQuote = {
   name: "Dale. G Renlund",
@@ -94,16 +76,8 @@ export const dataImageCards: IImageCard[] = [
 ]
 
 export const dataFaceCard: IContactCard = {
-  title: "Jordan\xa0Gough",
+  title: "John\xa0Joost",
   subtitle: "Temple & Family History Leader",
-  images: [
-    {
-      src: "/images/temple-family-history/gough.webp",
-      alt: "Jordan Gough",
-      width: 100,
-      height: 100,
-    },
-  ],
   hidden: false,
   soft: true,
 }
