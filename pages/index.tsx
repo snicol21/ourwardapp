@@ -55,7 +55,7 @@ function Home() {
             </div>
           </div> */}
           <div className="mt-7 bg-white rounded-lg shadow-xl">
-            <div className="p-10 relative max-w-lg mx-auto lg:max-w-7xl">
+            <div className="p-4 relative max-w-lg mx-auto lg:max-w-7xl lg:p-10">
               <div className="grid gap-6 lg:grid-cols-2">
                 {dataAnnouncements
                   .filter((announcement) => isSameOrAfterToday(announcement.date))

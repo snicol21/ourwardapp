@@ -33,18 +33,18 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
     <div key={announcement.title}>
       <div className="block">
         <div className="text-base font-semibold text-black">{announcement.title}</div>
-        <div className="mt-2 text-sm text-gray-500 flex">
+        <div className="mt-2 text-xs text-gray-500 flex flex-wrap">
           <div className="pr-2 flex items-center">
-            <Icon name="calendar" className="h-4 w-4 mr-2 mb-0.5" />
+            <Icon name="calendar" className="h-3 w-3 mr-1" />
             <time dateTime={dateDisplay.isoString}>{dateDisplay.dateDisplay}</time>
           </div>
           <div className="pr-2 flex items-center">
-            <Icon name="clock" className="h-4 w-4 mr-2 mb-0.5" />
+            <Icon name="clock" className="h-3 w-3 mr-1" />
             <time dateTime={dateDisplay.isoString}>{dateDisplay.timeDisplay}</time>
           </div>
           {dateDisplay.isWithin && (
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-              {dateDisplay.relativeDisplay}
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <small>{dateDisplay.relativeDisplay}</small>
             </span>
           )}
         </div>
