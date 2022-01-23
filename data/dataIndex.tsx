@@ -51,10 +51,10 @@ export const dataAnnouncements: IAnnouncement[] = [
       "Friday, January 21st at 7pm, there will be a 46+ Singles dinner followed by a guest speaker - World Famous Artist, Eric Dowdle.  Please note the new location - 8585 S 4800 W, West Jordan.",
   },
   {
-    date: new Date("January 24, 2022 18:00:00"),
+    date: new Date("January 23, 2022 18:00:00"),
     title: "Stake Trek Kickoff Devotional",
     description:
-      "Next Sunday (Jan 24) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm.",
+      "Sunday (Jan 23) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm.",
   },
   {
     date: new Date("February 5, 2022 18:00:00"),
