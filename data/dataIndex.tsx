@@ -23,38 +23,21 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    date: new Date("January 22, 2022 9:00:00"),
-    title: "Building Cleaning",
-    description: "We are assigned to clean the building in January. Those with last names starting with A-M please help clean this Saturday at 9:00am",
-  },
-  {
-    date: new Date("January 18, 2022 18:00:00"),
-    title: "Ward Temple Night",
-    description: "Reminder of ward temple night on January 18. Please attend when and where you can.",
-  },
-  {
     date: new Date("January 23, 2022 16:00:00"),
     title: "Stake Temple Preparation",
     description:
       "The stake temple preparation class is on the 4th Sunday of each month at 4pm in this building. This is for any high school seniors up to 24 years of age.",
   },
   {
-    date: new Date("January 16, 2022 16:00:00"),
-    title: "Priesthood Ordinations",
-    description:
-      "We will ordain new Deacons, Teachers and Priests to their offices and set apart presidencies this evening (Jan 16) at 4pm in the Relief Society room. We will set up appointments with any YM unable to attend.",
-  },
-  {
-    date: new Date("January 21, 2022 19:00:00"),
-    title: "46+ Singles Dinner",
-    description:
-      "Friday, January 21st at 7pm, there will be a 46+ Singles dinner followed by a guest speaker - World Famous Artist, Eric Dowdle.  Please note the new location - 8585 S 4800 W, West Jordan.",
-  },
-  {
     date: new Date("January 23, 2022 18:00:00"),
     title: "Stake Trek Kickoff Devotional",
     description:
-      "Sunday (Jan 23) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm.",
+      "Sunday (Jan 23) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm. Remote link available at http://www.maplesstake.org",
+  },
+  {
+    date: new Date("January 29, 2022 9:00:00"),
+    title: "Building Cleaning",
+    description: "We are assigned to clean the building in January. Those with last names starting with N-Z please help clean this Saturday at 9:00am",
   },
   {
     date: new Date("February 5, 2022 18:00:00"),
@@ -62,6 +45,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     description:
       "Stake conference will be Saturday, February 5th, at 6pm for the adult session. The general session will be Sunday, February 6th, at 10am. The presiding authority will be Elder Berne S. Broadbent of the 5th Quorum of the Seventy. All sessions will be held at the Oaks Building (8137 S. Echo View Dr.). Links will be available on the stake website http://www.maplesstake.org.",
   },
+  {
+    date: new Date("January 30, 2022 18:00:00"),
+    title: "Oakcrest Girls Camp Kick Off",
+    description: "Next Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel." 
+  }
 ]
 
 export const dataFaceCards: IContactCard[] = [
