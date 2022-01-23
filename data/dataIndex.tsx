@@ -46,6 +46,16 @@ export const dataAnnouncements: IAnnouncement[] = [
       "Stake conference will be Saturday, February 5th, at 6pm for the adult session. The general session will be Sunday, February 6th, at 10am. The presiding authority will be Elder Berne S. Broadbent of the 5th Quorum of the Seventy. All sessions will be held at the Oaks Building (8137 S. Echo View Dr.). Links will be available on the stake website http://www.maplesstake.org.",
   },
   {
+    date: new Date("January 6, 2022 19:00:00"),
+    title: "Relief Society Activity",
+    description: "Relief Society activity Wednesday, January 26th, 7 pm in our building cultural hall. We are combining with the 4th and 6th wards to listen to a speaker and enjoy refreshments. Casual dress. A Zoom link will be available on the Relief Society Linktree."
+  },
+  {
+    date: new Date("February 6, 2022 19:00:00"),
+    title: "Stake LGBTQ+ Support Group",
+    description: 'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.'
+  },
+  {
     date: new Date("January 30, 2022 18:00:00"),
     title: "Oakcrest Girls Camp Kick Off",
     description: "Next Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel." 
