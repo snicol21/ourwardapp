@@ -7,7 +7,7 @@ import ContactCard, { IContactCard } from "../components/modules/cards/ContactCa
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataAnnouncements, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
-import { isSameOrAfterToday } from "../shared/utils/date.util"
+import { filterAndSortAnnouncements } from "../shared/utils/filter-announcement.util"
 
 function Home() {
   return (
@@ -57,12 +57,9 @@ function Home() {
           <div className="mt-7 bg-white rounded-lg shadow-xl">
             <div className="p-4 relative max-w-lg mx-auto lg:max-w-7xl lg:p-10">
               <div className="grid gap-6 lg:grid-cols-2">
-                {dataAnnouncements
-                  .filter((announcement) => isSameOrAfterToday(announcement.date))
-                  .sort((a: any, b: any) => a.date - b.date)
-                  .map((announcement: IAnnouncement) => (
-                    <Announcement key={`${announcement.title}${announcement.date}`} {...announcement} />
-                  ))}
+                {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement, index: number) => (
+                  <Announcement key={`${announcement.title}${index}`} {...announcement} />
+                ))}
               </div>
             </div>
           </div>

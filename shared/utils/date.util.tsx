@@ -1,4 +1,3 @@
-import { IScheduleDate } from "../../components/modules/schedules/Schedule"
 import dayjs from "dayjs"
 import relativeTime from "dayjs/plugin/relativeTime"
 import isBetween from "dayjs/plugin/isBetween"
@@ -51,6 +50,10 @@ export function getDateDisplay(rawDate: Date, withinDays: number, duration?: num
   }
 }
 
-export function isSameOrAfterToday(rawDate: Date) {
+export function isSameOrAfterToday(rawDate: Date): boolean {
   return dayjs(rawDate).isSameOrAfter(dayjs(), "date")
+}
+
+export function isBeforeNow(rawDate: Date, addHours: number = 0): boolean {
+  return dayjs(rawDate).add(addHours, "hour").isBefore(dayjs())
 }
