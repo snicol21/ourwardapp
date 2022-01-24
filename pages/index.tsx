@@ -7,7 +7,7 @@ import ContactCard, { IContactCard } from "../components/modules/cards/ContactCa
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { dataSundayMeeting, dataAnnouncements, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
-import { filterAndSortAnnouncements } from "../shared/utils/filter-announcement.util"
+import { filterAndSortAnnouncements, generateAnnouncementKey } from "../shared/utils/announcement.util"
 
 function Home() {
   return (
@@ -57,8 +57,8 @@ function Home() {
           <div className="mt-7 bg-white rounded-lg shadow-xl">
             <div className="p-4 relative max-w-lg mx-auto lg:max-w-7xl lg:p-10">
               <div className="grid gap-6 lg:grid-cols-2">
-                {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement, index: number) => (
-                  <Announcement key={`${announcement.title}${index}`} {...announcement} />
+                {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement) => (
+                  <Announcement key={generateAnnouncementKey(announcement)} {...announcement} />
                 ))}
               </div>
             </div>

@@ -1,5 +1,5 @@
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
-import { getDateDisplay, IDateDisplay } from "../../../shared/utils/date.util"
+import { getDateDisplay } from "../../../shared/utils/date.util"
 import { IButton } from "../../../shared/types"
 import Linkify from "linkify-react"
 import Icon from "../../elements/icons/Icon"
@@ -36,7 +36,7 @@ const options = {
 const renderDate = (date: Date, subTitle?: string) => {
   const dateDisplay = getDateDisplay(date, 7)
   return (
-    <div className="mt-2 text-xs">
+    <div key={`${date.toISOString()}${subTitle ? "-" + subTitle : ""}`} className="mt-2 text-xs">
       {subTitle && <span className="mr-2 font-semibold text-black">{subTitle}</span>}
       <div key={dateDisplay.isoString} className="flex flex-wrap text-gray-500">
         <div className="pr-2 flex items-center">
@@ -56,15 +56,14 @@ const renderDate = (date: Date, subTitle?: string) => {
     </div>
   )
 }
-const renderSubDate = (subDate: SubDate) => renderDate(subDate.date, subDate.subTitle)
 
 const Announcement = ({ ...announcement }: IAnnouncement) => {
   return (
-    <div key={announcement.title}>
+    <div>
       <div className="block">
         <div className="text-base font-semibold text-black">{announcement.title}</div>
         {announcement.date && !announcement.dates && renderDate(announcement.date)}
-        {announcement.dates && announcement.dates.map((subDate) => renderSubDate(subDate))}
+        {announcement.dates && announcement.dates.map((subDate) => renderDate(subDate.date, subDate.subTitle))}
         {announcement.description && (
           <Linkify tagName="p" options={options} className="mt-2 text-sm text-gray-500">
             {announcement.description}
