@@ -23,20 +23,9 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Stake Temple Preparation",
-    date: new Date("January 23, 2022 16:00:00"),
-    description:
-      "The stake temple preparation class is on the 4th Sunday of each month at 4pm in this building. This is for any high school seniors up to 24 years of age.",
-  },
-  {
-    title: "Stake Trek Kickoff Devotional",
-    date: new Date("January 23, 2022 18:00:00"),
-    description:
-      "Sunday (Jan 23) is our Stake Trek Kickoff Devotional for youth who will be 14 years old (or older) in 2022. Youth, parents, youth leaders and trek leaders including Ma’s and Pa’s are encouraged to attend this devotional at 6pm. Remote link available at http://www.maplesstake.org",
-  },
-  {
     title: "Relief Society Activity",
     date: new Date("January 26, 2022 19:00:00"),
+    location: "Cultural Hall",
     description:
       "Relief Society activity Wednesday, January 26th, 7 pm in our building cultural hall. We are combining with the 4th and 6th wards to listen to a speaker and enjoy refreshments. Casual dress. A Zoom link will be available on the Relief Society Linktree.",
   },
@@ -48,6 +37,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   {
     title: "Oakcrest Girls Camp Kick Off",
     date: new Date("January 30, 2022 18:00:00"),
+    location: "Chapel",
     description:
       "Next Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel.",
   },
@@ -73,6 +63,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   {
     title: "Stake LGBTQ+ Support Group",
     date: new Date("February 6, 2022 19:00:00"),
+    location: "Ward Building",
     description:
       'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
   },

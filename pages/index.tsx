@@ -54,11 +54,13 @@ function Home() {
               </div>
             </div>
           </div> */}
-          <div className="mt-7 bg-white rounded-lg shadow-xl">
-            <div className="p-4 relative max-w-lg mx-auto lg:max-w-7xl lg:p-10">
-              <div className="grid gap-6 lg:grid-cols-2">
+          <div className="mt-7">
+            <div className="relative max-w-xl mx-auto lg:max-w-7xl">
+              <div className="grid gap-4 lg:grid-cols-2">
                 {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement) => (
-                  <Announcement key={generateAnnouncementKey(announcement)} {...announcement} />
+                  <div key={generateAnnouncementKey(announcement)} className="p-4 bg-white rounded-lg shadow-xl lg:p-8">
+                    <Announcement {...announcement} />
+                  </div>
                 ))}
               </div>
             </div>
