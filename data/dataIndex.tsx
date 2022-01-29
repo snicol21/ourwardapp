@@ -39,7 +39,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("January 30, 2022 18:00:00"),
     location: "Chapel",
     description:
-      "Next Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel.",
+      "Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel.",
   },
   {
     title: "Stake Conference",
