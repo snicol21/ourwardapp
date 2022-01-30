@@ -23,18 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Relief Society Activity",
-    date: new Date("January 26, 2022 19:00:00"),
-    location: "Cultural Hall",
-    description:
-      "Relief Society activity Wednesday, January 26th, 7 pm in our building cultural hall. We are combining with the 4th and 6th wards to listen to a speaker and enjoy refreshments. Casual dress. A Zoom link will be available on the Relief Society Linktree.",
-  },
-  {
-    title: "Building Cleaning",
-    date: new Date("January 29, 2022 9:00:00"),
-    description: "We are assigned to clean the building in January. Those with last names starting with N-Z please help clean this Saturday at 9:00am",
-  },
-  {
     title: "Oakcrest Girls Camp Kick Off",
     date: new Date("January 30, 2022 18:00:00"),
     location: "Chapel",
