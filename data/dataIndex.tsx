@@ -56,6 +56,11 @@ export const dataAnnouncements: IAnnouncement[] = [
       'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
   },
   {
+    title: "Young Men's Stake Basketball",
+    date: new Date("February 12, 2022 8:00:00"),
+    description: "We are putting together baskteball teams for Young Men's basketball. Games will begin on Saturday, February 12th. Have your young men voice their interest in their quorum groups."
+  },
+  {
     title: "Self-Reliance Kick-off Devotional",
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
