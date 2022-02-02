@@ -23,7 +23,7 @@ const ImageCard = ({ ...card }: IImageCard) => {
             <div className="text-primary font-semibold">{card.subtitle}</div>
             <div className="block mt-2">
               <p className="text-xl font-semibold text-gray-900">{card.title}</p>
-              {card.paragraph && <p className="mt-3 text-base text-gray-500">{card.paragraph}</p>}
+              {card.paragraph && <p className="mt-3 text-base text-gray-500 whitespace-pre-wrap">{card.paragraph}</p>}
             </div>
           </div>
           {card.button && (
