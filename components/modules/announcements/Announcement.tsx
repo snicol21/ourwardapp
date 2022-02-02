@@ -38,8 +38,8 @@ const renderDate = (date: Date, subTitle?: string) => {
   const dateDisplay = getDateDisplay(date, 7)
   return (
     <div key={`${date.toISOString()}${subTitle ? "-" + subTitle : ""}`} className="flex flex-col mt-2 text-xs">
-      {subTitle && <span className="mr-2 font-semibold text-black">{subTitle}</span>}
-      <div key={dateDisplay.isoString} className="flex flex-wrap text-gray-500">
+      <span className={`mr-2 font-semibold text-black ${!subTitle && "hidden"}`}>{subTitle}</span>
+      <div key={dateDisplay.isoString} className="inline-flex flex-wrap text-gray-500">
         <div className="pr-2 flex items-center">
           <Icon name="calendar" className="h-3 w-3 mr-1" />
           <time dateTime={dateDisplay.isoString}>{dateDisplay.dateDisplay}</time>
