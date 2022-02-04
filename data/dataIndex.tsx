@@ -50,7 +50,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   },
   {
     title: "Stake LGBTQ+ Support Group",
-    date: new Date("February 6, 2022 19:00:00"),
+    date: new Date("February 1, 2022 19:00:00"),
     location: "Ward Building",
     description:
       'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
