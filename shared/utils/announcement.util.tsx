@@ -8,11 +8,11 @@ export function filterAndSortAnnouncements(announcements: IAnnouncement[]) {
 
   for (let i = 0; i < announcements.length; i++) {
     if (announcements[i].dates?.length) {
-      for (let j = announcements[i].dates.length; j >= 0; j--) {
+      for (let j = announcements[i].dates?.length; j >= 0; j--) {
         if (isBeforeNow(announcements[i].dates[j]?.date, keepForHoursFromStart)) announcements[i].dates.splice(j, 1)
       }
       announcements[i].dates.sort((a: any, b: any) => a.date - b.date)
-      announcements[i].date = announcements[i].dates[0].date
+      announcements[i].date = announcements[i].dates[0]?.date
       if (announcements[i].dates.length) filteredAnnouncements.push(announcements[i])
     } else if (announcements[i].date) {
       if (!isBeforeNow(announcements[i].date, keepForHoursFromStart)) {
@@ -26,12 +26,12 @@ export function filterAndSortAnnouncements(announcements: IAnnouncement[]) {
 }
 
 export function generateAnnouncementKey(announcement: IAnnouncement) {
-  if (announcement.date && !announcement.dates) {
-    return `${announcement.title}-${announcement.date.toISOString()}`
+  if (announcement?.date && !announcement?.dates) {
+    return `${announcement.title}-${announcement.date?.toISOString()}`
   } else if (announcement.dates) {
     const subDateKeys: string[] = []
     for (let i = 0; i < announcement.dates.length; i++) {
-      subDateKeys.push(`${announcement.dates[i].date.toISOString()}-${announcement.dates[i].subTitle}`)
+      subDateKeys.push(`${announcement.dates[i]?.date.toISOString()}-${announcement.dates[i]?.subTitle}`)
     }
     return `${announcement.title}-${subDateKeys.join("-")}`
   }
