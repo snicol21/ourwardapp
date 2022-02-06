@@ -139,7 +139,7 @@ export const dataSpecialSchedules: ISchedule[] = [
         color: "red",
         events: [
           {
-            title: "Saturday Leadership Session (In-Person)",
+            title: "Sunday Leadership Session (In-Person)",
             subtitle: "Maples Stake Conference",
             paragraph:
               "60 Min. - Leadership\nStake and ward council members, their counselors & secretaries, and the priest quorum 1st assistant and oldest YW class president\n\n8137 Echo View Dr, West Jordan, UT 84081",
@@ -148,7 +148,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
           {
-            title: "Saturday Leadership Session (Live Stream)",
+            title: "Sunday Leadership Session (Live Stream)",
             subtitle: "Maples Stake Conference",
             paragraph:
               "60 Min. - Leadership\nStake and ward council members, their counselors & secretaries, and the priest quorum 1st assistant and oldest YW class president",
@@ -170,7 +170,7 @@ export const dataSpecialSchedules: ISchedule[] = [
         color: "primary",
         events: [
           {
-            title: "Saturday General Session (In-Person)",
+            title: "Sunday General Session (In-Person)",
             subtitle: "Maples Stake Conference",
             paragraph: "2 Hrs. - Everyone\n\n8137 Echo View Dr, West Jordan, UT 84081",
             image: {
@@ -178,7 +178,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
           {
-            title: "Saturday General Session (Live Stream)",
+            title: "Sunday General Session (Live Stream)",
             subtitle: "Maples Stake Conference",
             paragraph: "2 Hrs. - Everyone",
             button: {
