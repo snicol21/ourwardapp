@@ -23,13 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Oakcrest Girls Camp Kick Off",
-    date: new Date("January 30, 2022 18:00:00"),
-    location: "Chapel",
-    description:
-      "Sunday, January 30th, the Stake will hold the Oakcrest Girls Camp Kick Off meeting for all Young Women who will be finishing the 7th grade this year, and their parents.  Important paperwork and information will be given at this meeting.  We ask that you wear Sunday Dress as we will meet here in the Chapel.",
-  },
-  {
     title: "Stake Conference",
     dates: [
       {
@@ -49,13 +42,6 @@ export const dataAnnouncements: IAnnouncement[] = [
       "Stake conference will be Saturday, February 5th, at 6pm for the adult session. The general session will be Sunday, February 6th, at 10am. The presiding authority will be Elder Berne S. Broadbent of the 5th Quorum of the Seventy. All sessions will be held at the Oaks Building (8137 S. Echo View Dr.). Links will be available on the stake website http://www.maplesstake.org.",
   },
   {
-    title: "Stake LGBTQ+ Support Group",
-    date: new Date("February 1, 2022 19:00:00"),
-    location: "Ward Building",
-    description:
-      'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
-  },
-  {
     title: "Young Men's Stake Basketball",
     date: new Date("February 12, 2022 8:00:00"),
     description: "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website."
@@ -65,6 +51,15 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
   },
+  /*
+  {
+    title: "Stake LGBTQ+ Support Group",
+    date: new Date("February 1, 2022 19:00:00"),
+    location: "Ward Building",
+    description:
+      'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
+  },
+  */
 ]
 
 export const dataFaceCards: IContactCard[] = [
