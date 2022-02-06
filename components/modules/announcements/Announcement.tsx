@@ -1,6 +1,6 @@
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
 import { getDateDisplay } from "../../../shared/utils/date.util"
-import { IButton } from "../../../shared/types"
+import { IButton, ILink } from "../../../shared/types"
 import Linkify from "linkify-react"
 import Icon from "../../elements/icons/Icon"
 
@@ -13,7 +13,10 @@ export type IAnnouncement = {
   title: string
   date?: Date
   dates?: SubDate[]
-  location?: string
+  location?: {
+    address: string
+    link?: string
+  }
   description?: string
   button?: IButton
 }
@@ -65,21 +68,26 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
         <div className="text-base font-semibold text-black">{announcement.title}</div>
         {announcement.date && !announcement.dates && renderDate(announcement.date)}
         {announcement.dates && announcement.dates.map((subDate) => renderDate(subDate.date, subDate.subTitle))}
-        {announcement.location && (
-          <div className="mt-1 flex items-center text-xs text-gray-500">
-            <Icon name="location-marker" className="h-3 w-3 mr-1" />
-            <div>{announcement.location}</div>
-          </div>
-        )}
         {announcement.description && (
           <Linkify tagName="p" options={options} className="mt-2 text-sm text-gray-500">
             {announcement.description}
           </Linkify>
         )}
       </div>
-      <div>
+      {announcement.location && (
+        <div className="mt-2 flex items-center text-xs text-gray-500">
+          <Icon name="location-marker" className="h-3 w-3 mr-1" />
+          {announcement.location.link && (
+            <PrimaryButton type="link" link={{ url: announcement.location?.link, external: true }} className="text-left whitespace-pre sm:whitespace-nowrap">
+              {announcement.location.address}
+            </PrimaryButton>
+          )}
+          {!announcement.location.link && <div>{announcement.location.address}</div>}
+        </div>
+      )}
+      <div className="mt-2 flex justify-end">
         {announcement.button && (
-          <PrimaryButton type="link" color="blue" link={announcement.button.link} modal={announcement.button.modal}>
+          <PrimaryButton size="sm" color="green" link={announcement.button.link} modal={announcement.button.modal}>
             <span className="font-normal">{announcement.button.text}</span>
           </PrimaryButton>
         )}

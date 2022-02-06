@@ -11,7 +11,7 @@ export type IPrimaryButton = {
   link?: ILink | ILink[]
   className?: string
   type?: "dark" | "light" | "link" | "pass-thru"
-  size?: "sm" | "md" | "lg"
+  size?: "xs" | "sm" | "md" | "lg"
   modal?: IModal
 }
 
@@ -40,9 +40,10 @@ const getColor = {
 }
 
 const getSize = {
-  sm: "px-6 py-1 lg:py-2",
-  md: "px-12 py-2 lg:py-3",
-  lg: "px-16 py-3 lg:py-4",
+  xs: "text-xs px-6 py-1 lg:py-2",
+  sm: "text-sm px-6 py-1 lg:py-2",
+  md: "text-base px-12 py-2 lg:py-3",
+  lg: "text-lg px-16 py-3 lg:py-4",
 }
 
 const PrimaryButton = ({
@@ -55,7 +56,7 @@ const PrimaryButton = ({
   size = "md",
   modal = undefined,
 }: IPrimaryButton) => {
-  const baseStyles = `${className} font-medium focus:outline-none border border-transparent rounded-md inline-flex items-center text-base`
+  const baseStyles = `${className} font-medium focus:outline-none border border-transparent rounded-md inline-flex items-center`
   let styles: string
   switch (type) {
     case "light":

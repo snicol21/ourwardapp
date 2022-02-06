@@ -23,23 +23,24 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Stake Conference",
+    title: "St. Vincent De Paul's Welfare Assignment",
     dates: [
-      {
-        subTitle: "Adult Session",
-        date: new Date("February 5, 2022 18:00:00"),
-      },
-      {
-        subTitle: "Leadership Session",
-        date: new Date("February 6, 2022 7:30:00"),
-      },
-      {
-        subTitle: "General Session",
-        date: new Date("February 6, 2022 10:00:00"),
-      },
+      { date: new Date("February 7, 2022 15:00:00") },
+      { date: new Date("February 8, 2022 15:00:00") },
+      { date: new Date("February 9, 2022 15:00:00") },
+      { date: new Date("February 10, 2022 15:00:00") },
+      { date: new Date("February 11, 2022 15:00:00") },
     ],
+    location: { address: "437 West 200 South\nSalt Lake City, UT 84101", link: "https://goo.gl/maps/qLy1vPfyudiyG6yu8" },
     description:
-      "Stake conference will be Saturday, February 5th, at 6pm for the adult session. The general session will be Sunday, February 6th, at 10am. The presiding authority will be Elder Berne S. Broadbent of the 5th Quorum of the Seventy. All sessions will be held at the Oaks Building (8137 S. Echo View Dr.). Links will be available on the stake website http://www.maplesstake.org.",
+      "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
+    button: {
+      text: "Sign Up",
+      link: {
+        url: "https://forms.gle/wa1AMKGAHHXasxXu6",
+        external: true,
+      },
+    },
   },
   {
     title: "Young Men's Stake Basketball",
@@ -52,15 +53,13 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
   },
-  /*
   {
     title: "Stake LGBTQ+ Support Group",
-    date: new Date("February 1, 2022 19:00:00"),
-    location: "Ward Building",
+    date: new Date("February 7, 2022 19:00:00"),
+    location: { address: "Ward Building" },
     description:
       'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
   },
-  */
 ]
 
 export const dataFaceCards: IContactCard[] = [

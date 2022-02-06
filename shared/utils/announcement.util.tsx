@@ -3,7 +3,7 @@ import { isBeforeNow } from "./date.util"
 
 const keepForHoursFromStart = 2
 
-export function filterAndSortAnnouncements(announcements: IAnnouncement[]) {
+export function filterAndSortAnnouncements(announcements: IAnnouncement[]): IAnnouncement[] {
   const filteredAnnouncements: IAnnouncement[] = []
 
   for (let i = 0; i < announcements.length; i++) {
