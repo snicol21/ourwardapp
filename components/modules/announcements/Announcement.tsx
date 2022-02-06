@@ -78,7 +78,12 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
         <div className="mt-2 flex items-center text-xs text-gray-500">
           <Icon name="location-marker" className="h-3 w-3 mr-1" />
           {announcement.location.link && (
-            <PrimaryButton type="link" link={{ url: announcement.location?.link, external: true }} className="text-left whitespace-pre sm:whitespace-nowrap">
+            <PrimaryButton
+              color="blue"
+              type="link"
+              link={{ url: announcement.location?.link, external: true }}
+              className="text-left whitespace-pre sm:whitespace-nowrap"
+            >
               {announcement.location.address}
             </PrimaryButton>
           )}
