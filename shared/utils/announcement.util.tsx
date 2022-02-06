@@ -26,15 +26,14 @@ export function filterAndSortAnnouncements(announcements: IAnnouncement[]) {
 }
 
 export function generateAnnouncementKey(announcement: IAnnouncement) {
-  if (announcement.dates) {
+  if (announcement.date && !announcement.dates) {
+    return `${announcement.title}-${announcement.date.toISOString()}`
+  } else if (announcement.dates) {
     const subDateKeys: string[] = []
     for (let i = 0; i < announcement.dates.length; i++) {
       subDateKeys.push(`${announcement.dates[i].date.toISOString()}-${announcement.dates[i].subTitle}`)
     }
     return `${announcement.title}-${subDateKeys.join("-")}`
-  }
-  if (announcement.date) {
-    return `${announcement.title}-${announcement.date.toISOString()}`
   }
   return announcement.title
 }
