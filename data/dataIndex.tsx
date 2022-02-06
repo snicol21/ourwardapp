@@ -53,13 +53,13 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
   },
-  {
-    title: "Stake LGBTQ+ Support Group",
-    date: new Date("February 7, 2022 19:00:00"),
-    location: { address: "Ward Building" },
-    description:
-      'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
-  },
+  // {
+  //   title: "Stake LGBTQ+ Support Group",
+  //   date: new Date("February 7, 2022 19:00:00"),
+  //   location: { address: "Ward Building" },
+  //   description:
+  //     'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
+  // },
 ]
 
 export const dataFaceCards: IContactCard[] = [
