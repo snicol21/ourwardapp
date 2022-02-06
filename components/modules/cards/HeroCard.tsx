@@ -20,7 +20,7 @@ const HeroCard = ({ ...card }: IHeroCard) => {
   return (
     <div className={`relative text-center sm:text-left rounded-lg shadow-xl ${getColor[card.type][0]}`}>
       <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-        <img className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg" src={card.image.src} alt={card.image.alt || ""} />
+        <img className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-r-none" src={card.image.src} alt={card.image.alt || ""} />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
