@@ -44,7 +44,8 @@ export const dataAnnouncements: IAnnouncement[] = [
   {
     title: "Young Men's Stake Basketball",
     date: new Date("February 12, 2022 8:00:00"),
-    description: "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website."
+    description:
+      "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website.",
   },
   {
     title: "Self-Reliance Kick-off Devotional",
