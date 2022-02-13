@@ -29,6 +29,11 @@ export const dataAnnouncements: IAnnouncement[] = [
       "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website.",
   },
   {
+    title: "Prospective Missionary Devotional",
+    date: new Date("February 23, 2022 19:00:00"),
+    description: "We are pleased to announce that Elder Marcus B. Nash, Executive Director of the Missionary Department, will be speaking at this event. Prospective missionaries may participate live and in person at the BYU Wilkinson Center Ballroom or via broadcast. Details and the broadcast link are available at https://religion.byu.edu/missionarydevotional"
+  },
+  {
     title: "Mix & Mingle Activity for Adults",
     date: new Date("February 26, 2022 18:00:00"),
     description: "There is a Mix & Mingle activity for all adults. Please join us in the cultural hall for fun and games. We are asking that individuals with last names A-L to bring a dozen finger appetizers and M-Z to bring a dozen finger desserts to share."
