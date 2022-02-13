@@ -23,30 +23,15 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "St. Vincent De Paul's Welfare Assignment",
-    dates: [
-      { date: new Date("February 7, 2022 15:00:00") },
-      { date: new Date("February 8, 2022 15:00:00") },
-      { date: new Date("February 9, 2022 15:00:00") },
-      { date: new Date("February 10, 2022 15:00:00") },
-      { date: new Date("February 11, 2022 15:00:00") },
-    ],
-    location: { address: "437 West 200 South\nSalt Lake City, UT 84101", link: "https://goo.gl/maps/qLy1vPfyudiyG6yu8" },
-    description:
-      "Parking available in fenced lot east of building\n\nYouth 12 and older welcome with adult supervision\n\nAprons and plastic gloves provided\n\nAdditional details on sign-up form",
-    button: {
-      text: "Sign Up",
-      link: {
-        url: "https://forms.gle/wa1AMKGAHHXasxXu6",
-        external: true,
-      },
-    },
-  },
-  {
     title: "Young Men's Stake Basketball",
     date: new Date("February 19, 2022 8:00:00"),
     description:
       "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website.",
+  },
+  {
+    title: "Mix & Mingle Activity for Adults",
+    date: new Date("February 26, 2022 18:00:00"),
+    description: "There is a Mix & Mingle activity for all adults. Please join us in the cultural hall for fun and games. We are asking that individuals with last names A-L to bring a dozen finger appetizers and M-Z to bring a dozen finger desserts to share."
   },
   {
     title: "Self-Reliance Kick-off Devotional",
