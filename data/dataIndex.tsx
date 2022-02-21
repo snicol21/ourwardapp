@@ -36,6 +36,22 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Self-Reliance Kick-off Devotional",
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
+  },
+  {
+    title: "Deseret Bakery Welfare Assignment",
+    date: new Date("March 9, 2022 09:00:00"),
+    description: "Please come and serve at the Deseret Bakery from 9:00 AM - 1:00 PM on March 9th. Please see the signup for more details.",
+    location: {
+      address: "780 W 800 S, Salt Lake City, UT 84104",
+      link: "https://maps.app.goo.gl/sx7jp9gbKmMMP9eM6"
+    },
+    button: {
+      text: "Sign Up",
+      link: {
+        url: "https://forms.gle/MqYL5LaA37pxXqB76",
+        external: true
+      }
+    }
   }
 ]
 
