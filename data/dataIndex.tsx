@@ -23,12 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Young Men's Stake Basketball",
-    date: new Date("February 19, 2022 8:00:00"),
-    description:
-      "Young Men's Stake Basketball will begin Saturday, February 12th at 8:00 AM. Each young man wanting to participate will need a permission slip that can be found on the church website.",
-  },
-  {
     title: "Prospective Missionary Devotional",
     date: new Date("February 23, 2022 19:00:00"),
     description: "We are pleased to announce that Elder Marcus B. Nash, Executive Director of the Missionary Department, will be speaking at this event. Prospective missionaries may participate live and in person at the BYU Wilkinson Center Ballroom or via broadcast. Details and the broadcast link are available at https://religion.byu.edu/missionarydevotional"
@@ -42,14 +36,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Self-Reliance Kick-off Devotional",
     date: new Date("February 27, 2022 18:00:00"),
     description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
-  },
-  // {
-  //   title: "Stake LGBTQ+ Support Group",
-  //   date: new Date("February 7, 2022 19:00:00"),
-  //   location: { address: "Ward Building" },
-  //   description:
-  //     'Stake LGBTQ+ support group is Sunday, February 6th at 7 pm at our building. Special guest speaker: Ben Schilaty; co-host of "Questions from the Closet" podcast.',
-  // },
+  }
 ]
 
 export const dataFaceCards: IContactCard[] = [
