@@ -87,7 +87,7 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
               {announcement.location.address}
             </PrimaryButton>
           )}
-          {!announcement.location.link && <div>{announcement.location.address}</div>}
+          {!announcement.location.link && <div className="text-xs">{announcement.location.address}</div>}
         </div>
       )}
       <div className="mt-2 flex justify-end">
