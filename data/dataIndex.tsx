@@ -23,21 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Prospective Missionary Devotional",
-    date: new Date("February 23, 2022 19:00:00"),
-    description: "We are pleased to announce that Elder Marcus B. Nash, Executive Director of the Missionary Department, will be speaking at this event. Prospective missionaries may participate live and in person at the BYU Wilkinson Center Ballroom or via broadcast. Details and the broadcast link are available at https://religion.byu.edu/missionarydevotional"
-  },
-  {
-    title: "Mix & Mingle Activity for Adults",
-    date: new Date("February 26, 2022 18:00:00"),
-    description: "There is a Mix & Mingle activity for all adults. Please join us in the cultural hall for fun and games. We are asking that individuals with last names A-L to bring a dozen finger appetizers and M-Z to bring a dozen finger desserts to share."
-  },
-  {
-    title: "Self-Reliance Kick-off Devotional",
-    date: new Date("February 27, 2022 18:00:00"),
-    description: "More details can be found at http://maplesstake.org as well as a form to sign up.",
-  },
-  {
     title: "Deseret Bakery Welfare Assignment",
     date: new Date("March 9, 2022 09:00:00"),
     description: "Please come and serve at the Deseret Bakery from 9:00 AM - 1:00 PM on March 9th. Volunteers must be at least 16 years old. Please wear pants and closed toed shoes. Volunteers will be helping to make bread for this assignment.",
@@ -52,6 +37,11 @@ export const dataAnnouncements: IAnnouncement[] = [
         external: true
       }
     }
+  },
+  {
+    title: "Youth Fireside",
+    date: new Date("March 27, 2022 18:00:00"),
+    description:"All Youth Turning Ages 12-18 this year at the church building."
   }
 ]
 
