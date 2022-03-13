@@ -32,6 +32,31 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Youth Fireside",
     date: new Date("March 27, 2022 18:00:00"),
     description:"All Youth Turning Ages 12-18 this year at the church building."
+  },
+  {
+    title: "April General Conference",
+    dates: [
+      {
+        date: new Date("April 2, 2022 10:00:00"),
+        subTitle: "Morning Session"
+      },
+      {
+        date: new Date("April 2, 2022 14:00:00"),
+        subTitle: "Afternoon Session"
+      },
+      {
+        date: new Date("April 2, 2022 18:00:00"),
+        subTitle: "Evening Session"
+      },
+      {
+        date: new Date("April 3, 2022 10:00:00"),
+        subTitle: "Morning Session"
+      },
+      {
+        date: new Date("April 3, 2022 14:00:00"),
+        subTitle: "Afternoon Session"
+      }
+    ]
   }
 ]
 
