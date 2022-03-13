@@ -38,23 +38,23 @@ export const dataAnnouncements: IAnnouncement[] = [
     dates: [
       {
         date: new Date("April 2, 2022 10:00:00"),
-        subTitle: "Morning Session"
+        subTitle: "Saturday Morning Session"
       },
       {
         date: new Date("April 2, 2022 14:00:00"),
-        subTitle: "Afternoon Session"
+        subTitle: "Saturday Afternoon Session"
       },
       {
         date: new Date("April 2, 2022 18:00:00"),
-        subTitle: "Evening Session"
+        subTitle: "Saturday Evening Session"
       },
       {
         date: new Date("April 3, 2022 10:00:00"),
-        subTitle: "Morning Session"
+        subTitle: "Sunday Morning Session"
       },
       {
         date: new Date("April 3, 2022 14:00:00"),
-        subTitle: "Afternoon Session"
+        subTitle: "Sunday Afternoon Session"
       }
     ]
   }
