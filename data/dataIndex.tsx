@@ -50,7 +50,14 @@ export const dataAnnouncements: IAnnouncement[] = [
         date: new Date("April 3, 2022 14:00:00"),
         subTitle: "Sunday Afternoon Session"
       }
-    ]
+    ],
+    description: "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints. This global, religious broadcast aims to help individuals strengthen their personal relationships with Jesus Christ to experience the peace, hope, and joy that come through following Him. Join with millions worldwide to hear inspiring messages from living prophets and apostles."
+    button: {
+      text: "More info",
+      link: {
+        url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference"
+      },
+    },
   }
 ]
 
