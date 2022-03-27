@@ -63,6 +63,10 @@ export const dataAnnouncements: IAnnouncement[] = [
         external: true
       },
     }
+  },
+  {
+    title: "Ward Relief Society Activity",
+    date: new Date("April 12, 2022 19:00:00")
   }
 ]
 
