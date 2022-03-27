@@ -40,7 +40,7 @@ export const dataAnnouncements: IAnnouncement[] = [
       },
       {
         date: new Date("April 2, 2022 18:00:00"),
-        subTitle: "Saturday Evening Session"
+        subTitle: "Saturday Women & Young Women Session"
       },
       {
         date: new Date("April 3, 2022 10:00:00"),
