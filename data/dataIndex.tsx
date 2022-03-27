@@ -23,15 +23,9 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Maples Stake Women's Conference",
-    date: new Date("March 26, 2022 9:00:00"),
-    location: { address: "Oaks Building 8137 S Echo Dr." },
-    description: "Casual Dress. Come enjoy an uplifting morning with sisters, great food, and choice of 3 mini classes on the following topics: Joy in the Journey, Temple & Family History, Organization & Decluttering, Mental & Emotional Wellness, Protective Factors for Families and Hair Care & Styles."
-  },
-  {
     title: "Youth Fireside",
     date: new Date("March 27, 2022 18:00:00"),
-    description:"All Youth Turning Ages 12-18 this year at the church building."
+    description:"All Youth Turning Ages 12-18 this year. The Teachers and Priests along with YW of the same age will be meeting at the Weight's home.  The Deacons and youngest class of YW will be at Mike Smith's home."
   },
   {
     title: "April General Conference",
