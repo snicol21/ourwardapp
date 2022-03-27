@@ -22,6 +22,10 @@ export const dataSundayMeeting: IHeroCard = {
 }
 
 export const dataAnnouncements: IAnnouncement[] = [
+  { 
+    title: "Ward Choir Practice",
+    date: new Date("March 27, 2022 14:00:00")
+  },
   {
     title: "Youth Fireside",
     date: new Date("March 27, 2022 18:00:00"),
