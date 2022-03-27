@@ -57,7 +57,8 @@ export const dataAnnouncements: IAnnouncement[] = [
       link: {
         url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference"
       },
-    },
+      external: true
+    }
   }
 ]
 
