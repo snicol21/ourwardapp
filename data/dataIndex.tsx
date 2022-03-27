@@ -55,9 +55,9 @@ export const dataAnnouncements: IAnnouncement[] = [
     button: {
       text: "More info",
       link: {
-        url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference"
+        url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
+        external: true
       },
-      external: true
     }
   }
 ]
