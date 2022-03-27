@@ -51,7 +51,7 @@ export const dataAnnouncements: IAnnouncement[] = [
         subTitle: "Sunday Afternoon Session"
       }
     ],
-    description: "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints. This global, religious broadcast aims to help individuals strengthen their personal relationships with Jesus Christ to experience the peace, hope, and joy that come through following Him. Join with millions worldwide to hear inspiring messages from living prophets and apostles."
+    description: "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints. This global, religious broadcast aims to help individuals strengthen their personal relationships with Jesus Christ to experience the peace, hope, and joy that come through following Him. Join with millions worldwide to hear inspiring messages from living prophets and apostles.",
     button: {
       text: "More info",
       link: {
