@@ -24,12 +24,8 @@ export const dataSundayMeeting: IHeroCard = {
 export const dataAnnouncements: IAnnouncement[] = [
   { 
     title: "Ward Choir Practice",
-    date: new Date("March 27, 2022 14:00:00")
-  },
-  {
-    title: "Youth Fireside",
-    date: new Date("March 27, 2022 18:00:00"),
-    description:"All Youth Turning Ages 12-18 this year. The Teachers and Priests along with YW of the same age will be meeting at the Weight's home.  The Deacons and youngest class of YW will be at Mike Smith's home."
+    date: new Date("March 30, 2022 19:00:00"),
+    description: "We invite you to come participate in our ward choir! We meet in the primary room of our church building. Please come help us prepare for our Easter sacrament meeting."
   },
   {
     title: "April General Conference",
