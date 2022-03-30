@@ -97,6 +97,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
 ]
 
 export const dataSpecialSchedules: ISchedule[] = [
+  /*
   {
     date: getScheduleDate(new Date("February 5, 2022")),
     times: [
@@ -131,6 +132,8 @@ export const dataSpecialSchedules: ISchedule[] = [
       },
     ],
   },
+  */
+  /*
   {
     date: getScheduleDate(new Date("February 6, 2022")),
     times: [
@@ -196,8 +199,9 @@ export const dataSpecialSchedules: ISchedule[] = [
       },
     ],
   },
+  */
   {
-    date: getScheduleDate(new Date("October 2, 2021")),
+    date: getScheduleDate(new Date("April 2, 2022")),
     times: [
       {
         time: "10:00 AM",
@@ -210,12 +214,12 @@ export const dataSpecialSchedules: ISchedule[] = [
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/general-conference.jpg",
+              src: "https://newsroom.churchofjesuschrist.org/media/960x540/painting-prophet-post-hero-10000x10000.jpeg",
             },
           },
         ],
@@ -231,33 +235,33 @@ export const dataSpecialSchedules: ISchedule[] = [
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/general-conference.jpg",
+              src: "https://newsroom.churchofjesuschrist.org/media/960x540/painting-prophet-post-hero-10000x10000.jpeg",
             },
           },
         ],
       },
       {
         time: "6:00 PM",
-        color: "blue",
+        color: "red",
         events: [
           {
-            title: "Saturday Evening Session",
+            title: "Saturday Evening Women's Session",
             subtitle: "April General Conference",
-            paragraph: "2 Hours - Everyone",
+            paragraph: "2 Hours - All Women & Young Women",
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/general-conference.jpg",
+              src: "https://newsroom.churchofjesuschrist.org/media/960x540/painting-prophet-post-hero-10000x10000.jpeg",
             },
           },
         ],
@@ -265,7 +269,7 @@ export const dataSpecialSchedules: ISchedule[] = [
     ],
   },
   {
-    date: getScheduleDate(new Date("October 3, 2021")),
+    date: getScheduleDate(new Date("April 3, 2022")),
     times: [
       {
         time: "10:00 AM",
@@ -278,12 +282,12 @@ export const dataSpecialSchedules: ISchedule[] = [
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/general-conference.jpg",
+              src: "https://newsroom.churchofjesuschrist.org/media/960x540/painting-prophet-post-hero-10000x10000.jpeg",
             },
           },
         ],
@@ -299,12 +303,12 @@ export const dataSpecialSchedules: ISchedule[] = [
             button: {
               text: "Join Broadcast",
               link: {
-                url: "https://www.churchofjesuschrist.org/broadcasts?lang=eng",
+                url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
                 external: true,
               },
             },
             image: {
-              src: "/images/events/general-conference.jpg",
+              src: "https://newsroom.churchofjesuschrist.org/media/960x540/painting-prophet-post-hero-10000x10000.jpeg",
             },
           },
         ],
