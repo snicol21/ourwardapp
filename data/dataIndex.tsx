@@ -23,9 +23,8 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   { 
-    title: "Ward Choir Practice",
-    date: new Date("March 30, 2022 19:00:00"),
-    description: "We invite you to come participate in our ward choir! We meet in the primary room of our church building. Please come help us prepare for our Easter sacrament meeting."
+    title: "Funeral Service for Bill Beck",
+    date: new Date("April 4, 2022 10:00:00")
   },
   {
     title: "April General Conference",
