@@ -24,7 +24,14 @@ export const dataSundayMeeting: IHeroCard = {
 export const dataAnnouncements: IAnnouncement[] = [
   { 
     title: "Funeral Service for Bill Beck",
-    date: new Date("April 4, 2022 10:00:00")
+    date: new Date("April 4, 2022 10:00:00"),
+    button: {
+      text: "Broadcast",
+      link: {
+        url: "https://youtu.be/dOAdze9TqhI",
+        external: true
+      },
+    }
   },
   {
     title: "April General Conference",
