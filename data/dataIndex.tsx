@@ -25,6 +25,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   { 
     title: "Funeral Service for Bill Beck",
     date: new Date("April 4, 2022 10:00:00"),
+    description: "We invite those of you who wish to pay respects to participate with the family in the celebration of Bill’s life.",
     button: {
       text: "Broadcast",
       link: {
