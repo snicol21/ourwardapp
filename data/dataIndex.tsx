@@ -22,55 +22,17 @@ export const dataSundayMeeting: IHeroCard = {
 }
 
 export const dataAnnouncements: IAnnouncement[] = [
-  { 
-    title: "Funeral Service for Bill Beck",
-    date: new Date("April 4, 2022 10:00:00"),
-    description: "We invite those of you who wish to pay respects to participate with the family in the celebration of Bill’s life.",
-    button: {
-      text: "Broadcast",
-      link: {
-        url: "https://youtu.be/dOAdze9TqhI",
-        external: true
-      },
-    }
-  },
   {
-    title: "April General Conference",
-    dates: [
-      {
-        date: new Date("April 2, 2022 10:00:00"),
-        subTitle: "Saturday Morning Session"
-      },
-      {
-        date: new Date("April 2, 2022 14:00:00"),
-        subTitle: "Saturday Afternoon Session"
-      },
-      {
-        date: new Date("April 2, 2022 18:00:00"),
-        subTitle: "Saturday Womens Session"
-      },
-      {
-        date: new Date("April 3, 2022 10:00:00"),
-        subTitle: "Sunday Morning Session"
-      },
-      {
-        date: new Date("April 3, 2022 14:00:00"),
-        subTitle: "Sunday Afternoon Session"
-      }
-    ],
-    description: "We welcome you to participate in the general conference of The Church of Jesus Christ of Latter-day Saints. This global, religious broadcast aims to help individuals strengthen their personal relationships with Jesus Christ to experience the peace, hope, and joy that come through following Him. Join with millions worldwide to hear inspiring messages from living prophets and apostles.",
-    button: {
-      text: "More info",
-      link: {
-        url: "https://newsroom.churchofjesuschrist.org/event/april-2022-general-conference",
-        external: true
-      },
-    }
+    title: "Building Cleaning (A-M)",
+    date: new Date("April 9, 2022 9:00:00"),
+    description:
+      "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-M to help with this service opportunity. Bring the whole family and show up ready to help.",
+    location: { address: "Ward Building" },
   },
   {
     title: "Ward Relief Society Activity",
-    date: new Date("April 12, 2022 19:00:00")
-  }
+    date: new Date("April 12, 2022 19:00:00"),
+  },
 ]
 
 export const dataFaceCards: IContactCard[] = [
