@@ -23,11 +23,9 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Building Cleaning (A-M)",
-    date: new Date("April 9, 2022 9:00:00"),
-    description:
-      "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-M to help with this service opportunity. Bring the whole family and show up ready to help.",
-    location: { address: "Ward Building" },
+    title: "Ward Choir Practice",
+    date: new Date("April 10, 2022 11:30:00"),
+    location: { address: "June's home" }
   },
   {
     title: "Ward Relief Society Activity",
