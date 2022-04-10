@@ -25,6 +25,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   {
     title: "Ward Choir Practice",
     date: new Date("April 10, 2022 11:30:00"),
+    description: "Please come help the Ward Choir prepare for our special Easter Sacrament progoram.",
     location: { address: "June's home" }
   },
   {
