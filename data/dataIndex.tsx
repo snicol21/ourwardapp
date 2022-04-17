@@ -29,9 +29,9 @@ export const dataAnnouncements: IAnnouncement[] = [
     location: { address: "June Christianson home" }
   },
   {
-    title: "Building Cleanup (N-Z)",
-    date: new Date("April 16, 2022 9:30:00"),
-    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names N-Z to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
+    title: "Building Cleanup (A-M)",
+    date: new Date("April 23, 2022 9:30:00"),
+    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-M to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
     location: { address: "Our ward building" }
   },
   {
@@ -39,11 +39,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("April 23, 2022 8:00:00"),
     description: "Our Stake has been asked to help the city of West Jordan in planting 60 trees in parks and surrounding areas within each of your ward's boundaries. Holes will be pre-dug by the City. City Parks staff will be there to demonstrate how to plant and stake the trees and then we will disperse into smaller groups to plant the trees in specific planting sites. Each of your ward's will be planting approximately 20 trees that morning. Thank you for your help with assisting the City of West Jordan in making our City a more beautiful place!",
     location: { address: "Meet at Broadmeadow Park (Fall Oaks Drive//W 8170 S)"}
-  },
-  {
-    title: "Ward Relief Society Activity",
-    date: new Date("April 12, 2022 19:00:00"),
-  },
+  }
 ]
 
 export const dataFaceCards: IContactCard[] = [
