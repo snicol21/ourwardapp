@@ -30,7 +30,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   },
   {
     title: "Building Cleanup (A-M)",
-    date: new Date("April 23, 2022 9:30:00"),
+    date: new Date("April 23, 2022 9:00:00"),
     description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-M to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
     location: { address: "Our ward building" }
   },
