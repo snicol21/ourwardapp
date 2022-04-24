@@ -23,6 +23,18 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
+    title: "Building Cleanup (N-Z)",
+    date: new Date("April 30, 2022 9:00:00"),
+    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names N-Z to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
+    location: { address: "Our ward building" }
+  },
+  {
+    title: "Community Preparedness Fair",
+    date: new Date("May 14, 2022 10:00:00"),
+    description: "Coming up on Saturday, May 14th, we have a Community Preparedness Fair which will be held from 10am until 1pm at the Highland Trail just North of the Sunset Ridge Stake Center.  Please mark it on your calendars and keep an eye out for additional information that will be announced in various organizations.",
+    location: { address: "Highland Trail (North of the Sunset Ridge Stake Center)" }
+  },
+  {
     title: "Young Adult Devotional with Pres. & Sis. Nelson",
     date: new Date("May 15, 2022 14:00:00"),
     description: "The Lord's prophet of the Church of Jesus Christ of Latter Day Saints, President Russel M. Nelson and Sister Wendy W. Nelson will be speaking at the Worldwide Devotional for young adults form the Conference Center.",
