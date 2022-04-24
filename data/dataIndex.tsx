@@ -23,22 +23,16 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Ward Choir Practice",
-    date: new Date("April 10, 2022 11:30:00"),
-    description: "Please come help the Ward Choir prepare for our special Easter Sacrament progoram.",
-    location: { address: "June Christianson home" }
-  },
-  {
-    title: "Building Cleanup (A-M)",
-    date: new Date("April 23, 2022 9:00:00"),
-    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-M to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
-    location: { address: "Our ward building" }
-  },
-  {
-    title: "Stake Tree Planting Service Project",
-    date: new Date("April 23, 2022 8:00:00"),
-    description: "Our Stake has been asked to help the city of West Jordan in planting 60 trees in parks and surrounding areas within each of your ward's boundaries. Holes will be pre-dug by the City. City Parks staff will be there to demonstrate how to plant and stake the trees and then we will disperse into smaller groups to plant the trees in specific planting sites. Each of your ward's will be planting approximately 20 trees that morning. Thank you for your help with assisting the City of West Jordan in making our City a more beautiful place!",
-    location: { address: "Meet at Broadmeadow Park (Fall Oaks Drive//W 8170 S)"}
+    title: "Young Adult Devotional with Pres. & Sis. Nelson",
+    date: new Date("May 15, 2022 14:00:00"),
+    description: "The Lord's prophet of the Church of Jesus Christ of Latter Day Saints, President Russel M. Nelson and Sister Wendy W. Nelson will be speaking at the Worldwide Devotional for young adults form the Conference Center.",
+    button: {
+      text: "Broadcast",
+      link: {
+        url: "https://newsroom.churchofjesuschrist.org/event/worldwide-devotional-for-young-adults-may-2022",
+        external: true
+      }
+    }
   }
 ]
 
