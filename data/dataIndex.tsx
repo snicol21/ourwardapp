@@ -30,6 +30,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     location: { address: "Our ward building" },
   },
   {
+    title: "Youth Temple Walk",
+    date: new Date("May 4, 2022 18:00:00"),
+    description: "For all Youth. Meet at the church at 6pm. Bring weather appropriate clothing. We will be walking from the Oquirrh Mountain Temple to the Jordan River Temple."
+  },
+  {
     title: "Stake Blood Drive",
     date: new Date("May 13, 2022 15:00:00"),
     description:
@@ -60,6 +65,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Youth Float Activity",
     date: new Date("June 1, 2022 19:00:00"),
     description: "For all youth, come and it will be a bunch of fun!"
+  },
+  {
+    title: "Worldwide Broadcast on Sharing the Gospel",
+    date: new Date("June 25, 2022 18:00:00"),
+    description: "All ward council members, stake council members, and participants in ward missionary coordination meetings are invited to attend a special broadcast on June 25, 2022, focused on sharing the gospel of Jesus Christ."
   }
 ]
 
