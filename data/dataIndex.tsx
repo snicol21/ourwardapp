@@ -23,13 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Building Cleanup (N-Z)",
-    date: new Date("April 30, 2022 9:00:00"),
-    description:
-      "Our ward is responsible for cleaning the church building this month. We are asking for families with last names N-Z to help with this service opportunity. Your help is greatly need and the more hands we have, the quicker the cleaning will go. Thanks you for your service.",
-    location: { address: "Our ward building" },
-  },
-  {
     title: "Youth Temple Walk",
     date: new Date("May 4, 2022 18:00:00"),
     description: "For all Youth. Meet at the church at 6pm. Bring weather appropriate clothing. We will be walking from the Oquirrh Mountain Temple to the Jordan River Temple."
@@ -62,9 +55,26 @@ export const dataAnnouncements: IAnnouncement[] = [
     },
   },
   {
+    title: "Relief Society Activity",
+    date: new Date("May 17, 2022 18:45:00"),
+    description: "Come socialize with other sisters and help prepare the stake float. Meet at the church at 6:45pm.",
+    location: { address: "5769 Feulner Park Cir", link: "https://goo.gl/maps/yLDWZvSrzXRPVkKv9" }
+  },
+  {
+    title: "Ward Temple Day",
+    date: new Date("May 21, 2022"),
+    description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing."
+  },
+  {
+    title: "Stake Temple Preparation Class",
+    date: new Date("May 22, 2022 16:00:00"),
+    description: "The stake temple preparation class is on the 4th Sunday of each month in this building. This is for any high school seniors up to 24 years of age."
+  },
+  {
     title: "Youth Float Activity",
     date: new Date("June 1, 2022 19:00:00"),
-    description: "For all youth, come and it will be a bunch of fun!"
+    description: "For all youth, come and help prepare the stake float. Meet at the church to carpool or meet us at: 5769 Feulner Park Cir, West Jordan",
+    location: { address: "5769 Feulner Park Cir", link: "https://goo.gl/maps/yLDWZvSrzXRPVkKv9" }
   },
   {
     title: "Worldwide Broadcast on Sharing the Gospel",
