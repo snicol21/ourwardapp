@@ -45,7 +45,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   },
   {
     title: "Young Adult Devotional with Pres. & Sis. Nelson",
-    date: new Date("May 15, 2022 14:00:00"),
+    date: new Date("May 15, 2022 18:00:00"),
     description:
       "The Lord's prophet of the Church of Jesus Christ of Latter Day Saints, President Russel M. Nelson and Sister Wendy W. Nelson will be speaking at the Worldwide Devotional for young adults form the Conference Center.",
     button: {
