@@ -56,6 +56,11 @@ export const dataAnnouncements: IAnnouncement[] = [
       },
     },
   },
+  {
+    title: "Youth Float Activity",
+    date: new Date("June 1, 2022 19:00:00"),
+    description: "For all youth, come and it will be a bunch of fun!"
+  }
 ]
 
 export const dataFaceCards: IContactCard[] = [
