@@ -71,6 +71,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     description: "The stake temple preparation class is on the 4th Sunday of each month in this building. This is for any high school seniors up to 24 years of age."
   },
   {
+    title: "Aaronic Priesthood Restoration Commemoration Campout",
+    date: new Date("May 28, 2022 16:00:00"),
+    description: "Friday-Saturday Campout. More details to come."
+  },
+  {
     title: "Youth Float Activity",
     date: new Date("June 1, 2022 19:00:00"),
     description: "For all youth, come and help prepare the stake float. Meet at the church to carpool or meet us at: 5769 Feulner Park Cir, West Jordan",
@@ -80,6 +85,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Worldwide Broadcast on Sharing the Gospel",
     date: new Date("June 25, 2022 18:00:00"),
     description: "All ward council members, stake council members, and participants in ward missionary coordination meetings are invited to attend a special broadcast on June 25, 2022, focused on sharing the gospel of Jesus Christ."
+  },
+  {
+    title: "Party in the Park",
+    date: new Date("July 16, 2022 18:00:00"),
+    description: "Annual ward activity at the Copperton Park. More details to come."
   }
 ]
 
