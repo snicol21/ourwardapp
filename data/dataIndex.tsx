@@ -72,7 +72,7 @@ export const dataAnnouncements: IAnnouncement[] = [
   },
   {
     title: "Aaronic Priesthood Restoration Commemoration Campout",
-    date: new Date("May 28, 2022 16:00:00"),
+    date: new Date("May 27, 2022 16:00:00"),
     description: "Friday-Saturday Campout. More details to come."
   },
   {
