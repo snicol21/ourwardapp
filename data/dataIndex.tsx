@@ -23,11 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Youth Temple Walk",
-    date: new Date("May 4, 2022 18:00:00"),
-    description: "For all Youth. Meet at the church at 6pm. Bring weather appropriate clothing. We will be walking from the Oquirrh Mountain Temple to the Jordan River Temple."
-  },
-  {
     title: "Stake Blood Drive",
     date: new Date("May 13, 2022 15:00:00"),
     description:
