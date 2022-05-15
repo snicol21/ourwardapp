@@ -23,7 +23,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
         button: {
           text: "Join Live Stream",
           link: {
-            url: "http://sacrament.ourwardapp.com",
+            url: "https://youtu.be/zWy5ha07Ftc",
             external: true,
           },
         },
