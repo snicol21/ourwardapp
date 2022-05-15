@@ -23,20 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Stake Blood Drive",
-    date: new Date("May 13, 2022 15:00:00"),
-    description:
-      'Please schedule an appointment time by logging onto redcrossblood.org and enter the Sponsor Code "Maples" or call 1-800-733-2767. Thanks for all your help in donation blood.',
-    location: { address: "6592 W Haven Maple Drive", link: "https://goo.gl/maps/ywA6mHJZR6H264hh8" },
-  },
-  {
-    title: "Community Preparedness Fair",
-    date: new Date("May 14, 2022 10:00:00"),
-    description:
-      "Coming up on Saturday, May 14th, we have a Community Preparedness Fair which will be held from 10am until 1pm at the Highland Trail just North of the Sunset Ridge Stake Center.  Please mark it on your calendars and keep an eye out for additional information that will be announced in various organizations.",
-    location: { address: "Highland Trail (North of the Sunset Ridge Stake Center)" },
-  },
-  {
     title: "Young Adult Devotional with Pres. & Sis. Nelson",
     date: new Date("May 15, 2022 18:00:00"),
     description:
