@@ -212,7 +212,7 @@ export const dataImageCards: IImageCard[] = [
         calendly: false,
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Welfare & Service",
@@ -229,7 +229,7 @@ export const dataImageCards: IImageCard[] = [
         calendly: false,
       },
     },
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Young Women",
@@ -262,6 +262,6 @@ export const dataImageCards: IImageCard[] = [
         calendly: false,
       },
     },
-    hidden: false,
+    hidden: true,
   },
 ]
