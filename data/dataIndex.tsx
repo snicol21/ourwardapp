@@ -23,25 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Young Adult Devotional with Pres. & Sis. Nelson",
-    date: new Date("May 15, 2022 18:00:00"),
-    description:
-      "The Lord's prophet of the Church of Jesus Christ of Latter Day Saints, President Russel M. Nelson and Sister Wendy W. Nelson will be speaking at the Worldwide Devotional for young adults form the Conference Center.",
-    button: {
-      text: "Broadcast",
-      link: {
-        url: "https://newsroom.churchofjesuschrist.org/event/worldwide-devotional-for-young-adults-may-2022",
-        external: true,
-      },
-    },
-  },
-  {
-    title: "Relief Society Activity",
-    date: new Date("May 17, 2022 18:45:00"),
-    description: "Come socialize with other sisters and help prepare the stake float. Meet at the church at 6:45pm.",
-    location: { address: "5769 Feulner Park Cir", link: "https://goo.gl/maps/yLDWZvSrzXRPVkKv9" }
-  },
-  {
     title: "Ward Temple Day",
     date: new Date("May 21, 2022"),
     description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing."
