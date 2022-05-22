@@ -35,7 +35,8 @@ export const dataAnnouncements: IAnnouncement[] = [
   {
     title: "Aaronic Priesthood Restoration Commemoration Campout",
     date: new Date("May 27, 2022 16:00:00"),
-    description: "Friday-Saturday Campout. More details to come."
+    description: "Fathers, bring your sons and daughters to the Maples Third Ward Aaronic Priesthood Commemoration Campout on May 27 & 28. We will meet any time after 4pm at our usual camp area south of Leamington, UT.\n\nBring dinner or eat on the way. There are fire rings for cooking. Breakfast will be provided by the Bishopric.\n\nAs usual, if it is safe, (kids are behaving and weather permitting) we will finish our day on Saturday target shooting so bring your guns.\n\nSee you there!\n\nYou can find us here:\n39°29'42.0\" N 112°14'35.6\" W.",
+    location: { address: "Camp area south of Leamington, UT", link: "https://goo.gl/maps/TgSV6DsGbA8ydT7K8" }
   },
   {
     title: "Youth Float Activity",
