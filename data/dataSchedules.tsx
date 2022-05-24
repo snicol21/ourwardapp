@@ -23,7 +23,7 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
         button: {
           text: "Join Live Stream",
           link: {
-            url: "https://youtu.be/E-19SfKa_Vs",
+            url: "https://youtu.be/E5E3w2rv8J0",
             external: true,
           },
         },
