@@ -23,31 +23,30 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Ward Temple Day",
-    date: new Date("May 21, 2022"),
-    description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing."
-  },
-  {
-    title: "Stake Temple Preparation Class",
-    date: new Date("May 22, 2022 16:00:00"),
-    description: "The stake temple preparation class is on the 4th Sunday of each month in this building. This is for any high school seniors up to 24 years of age."
-  },
-  {
-    title: "Aaronic Priesthood Restoration Commemoration Campout",
-    date: new Date("May 27, 2022 16:00:00"),
-    description: "Fathers, bring your sons and daughters to the Maples Third Ward Aaronic Priesthood Commemoration Campout on May 27 & 28. We will meet any time after 4pm at our usual camp area south of Leamington, UT.\n\nBring dinner or eat on the way. There are fire rings for cooking. Breakfast will be provided by the Bishopric.\n\nAs usual, if it is safe, (kids are behaving and weather permitting) we will finish our day on Saturday target shooting so bring your guns.\n\nSee you there!\n\nYou can find us here:\n39°29'42.0\" N 112°14'35.6\" W.",
-    location: { address: "Camp area south of Leamington, UT", link: "https://goo.gl/maps/TgSV6DsGbA8ydT7K8" }
-  },
-  {
     title: "Youth Float Activity",
     date: new Date("June 1, 2022 19:00:00"),
     description: "For all youth, come and help prepare the stake float. Meet at the church to carpool or meet us at: 5769 Feulner Park Cir, West Jordan",
     location: { address: "5769 Feulner Park Cir", link: "https://goo.gl/maps/yLDWZvSrzXRPVkKv9" }
   },
   {
+    title: "Seminary Graduation",
+    date: new Date("June 5, 2022 18:00:00"),
+    description: "Seminary Graduation Sunday, here at our church building."
+  },
+  {
+    title: "Ward Temple Day",
+    date: new Date("June 18, 2022"),
+    description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: July 16, August 20, September 17."
+  },
+  {
     title: "Worldwide Broadcast on Sharing the Gospel",
     date: new Date("June 25, 2022 18:00:00"),
     description: "All ward council members, stake council members, and participants in ward missionary coordination meetings are invited to attend a special broadcast on June 25, 2022, focused on sharing the gospel of Jesus Christ."
+  },
+  {
+    title: "Stake Temple Preparation Class",
+    date: new Date("June 26, 2022 16:00:00"),
+    description: "The stake temple preparation class is on the 4th Sunday of each month in this building. This is for any high school seniors up to 24 years of age."
   },
   {
     title: "Party in the Park",
