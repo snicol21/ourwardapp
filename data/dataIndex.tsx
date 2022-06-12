@@ -23,17 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Youth Float Activity",
-    date: new Date("June 1, 2022 19:00:00"),
-    description: "For all youth, come and help prepare the stake float. Meet at the church to carpool or meet us at: 5769 Feulner Park Cir, West Jordan",
-    location: { address: "5769 Feulner Park Cir", link: "https://goo.gl/maps/yLDWZvSrzXRPVkKv9" }
-  },
-  {
-    title: "Seminary Graduation",
-    date: new Date("June 5, 2022 18:00:00"),
-    description: "Seminary Graduation Sunday, here at our church building."
-  },
-  {
     title: "Ward Temple Day",
     date: new Date("June 18, 2022"),
     description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: July 16, August 20, September 17."
