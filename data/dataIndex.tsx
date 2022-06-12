@@ -41,6 +41,11 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Party in the Park",
     date: new Date("July 16, 2022 18:00:00"),
     description: "Annual ward activity at the Copperton Park. More details to come."
+  },
+  {
+    title: "Friend to Friend: \"Temples Are the House of the Lord\"",
+    date: new Date("July 30, 2022 10:00:00"),
+    description: "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m."
   }
 ]
 
