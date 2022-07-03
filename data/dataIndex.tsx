@@ -28,6 +28,12 @@ export const dataAnnouncements: IAnnouncement[] = [
     description: "Annual ward activity at the Copperton Park. More details to come."
   },
   {
+    title: "Youth Fundraiser - Car Wash/Auction",
+    date: new Date("July 13, 2022 18:00:00"),
+    location: {address: "Church Building"},
+    description: "The Youth will be doing a carwash and auction of donated items. If you would like to donate items (baked goods, services, gift baskets, etc) please contact Kara Hardman, 801-615-3536 or any of the other youth leaders."
+  },
+  {
     title: "Ward Temple Day",
     date: new Date("July 16, 2022"),
     description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: August 20, September 17, October 15."
