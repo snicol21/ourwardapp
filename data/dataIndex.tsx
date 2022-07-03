@@ -23,15 +23,16 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Party in the Park",
-    date: new Date("July 16, 2022 18:00:00"),
-    description: "Annual ward activity at the Copperton Park. More details to come."
-  },
-  {
     title: "Youth Fundraiser - Car Wash/Auction",
     date: new Date("July 13, 2022 18:00:00"),
     location: {address: "Church Building"},
     description: "The Youth will be doing a carwash and auction of donated items to raise funds to help pay for upcoming activities. If you would like to donate items (baked goods, services, gift baskets, etc) please contact Kara Hardman, 801-615-3536 or any of the other youth leaders."
+  },
+  {
+    title: "Party in the Park",
+    date: new Date("July 16, 2022 18:00:00"),
+    description: "Join us for our sixth annual Party in the Park in Copperton. We have reserved the pavilion for the day. Pack up your camp chairs and your family for food and fun. Dinner (hamburgers and hotdogs) will be served at 6pm but you can bring your family for games and the amazing playground anytime you're ready!\n\nThis is the best setting and activity to meet the ward and build friendships.\n\nBe sure to sign up to bring a side dish or dessert to show off your amazing culinary skills.\n\nSee you there!",
+    location: {address: "Copperton Park (8700 10305 S, Copperton, UT)"}
   },
   {
     title: "Ward Temple Day",
