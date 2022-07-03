@@ -23,24 +23,19 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Ward Temple Day",
-    date: new Date("June 18, 2022"),
-    description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: July 16, August 20, September 17."
-  },
-  {
-    title: "Worldwide Broadcast on Sharing the Gospel",
-    date: new Date("June 25, 2022 18:00:00"),
-    description: "All ward council members, stake council members, and participants in ward missionary coordination meetings are invited to attend a special broadcast on June 25, 2022, focused on sharing the gospel of Jesus Christ."
-  },
-  {
-    title: "Stake Temple Preparation Class",
-    date: new Date("June 26, 2022 16:00:00"),
-    description: "The stake temple preparation class is on the 4th Sunday of each month in this building. This is for any high school seniors up to 24 years of age."
-  },
-  {
     title: "Party in the Park",
     date: new Date("July 16, 2022 18:00:00"),
     description: "Annual ward activity at the Copperton Park. More details to come."
+  },
+  {
+    title: "Ward Temple Day",
+    date: new Date("July 16, 2022"),
+    description: "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: August 20, September 17, October 15."
+  },
+  {
+    title: "Stake Temple Preparation Class",
+    date: new Date("July 24, 2022"),
+    description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age."
   },
   {
     title: "Friend to Friend: \"Temples Are the House of the Lord\"",
