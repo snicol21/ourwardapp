@@ -31,7 +31,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Youth Fundraiser - Car Wash/Auction",
     date: new Date("July 13, 2022 18:00:00"),
     location: {address: "Church Building"},
-    description: "The Youth will be doing a carwash and auction of donated items. If you would like to donate items (baked goods, services, gift baskets, etc) please contact Kara Hardman, 801-615-3536 or any of the other youth leaders."
+    description: "The Youth will be doing a carwash and auction of donated items to raise funds to help pay for upcoming activities. If you would like to donate items (baked goods, services, gift baskets, etc) please contact Kara Hardman, 801-615-3536 or any of the other youth leaders."
   },
   {
     title: "Ward Temple Day",
