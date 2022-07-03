@@ -32,7 +32,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: "Party in the Park",
     date: new Date("July 16, 2022 18:00:00"),
     description: "Join us for our sixth annual Party in the Park in Copperton. We have reserved the pavilion for the day. Pack up your camp chairs and your family for food and fun. Dinner (hamburgers and hotdogs) will be served at 6pm but you can bring your family for games and the amazing playground anytime you're ready!\n\nThis is the best setting and activity to meet the ward and build friendships.\n\nBe sure to sign up to bring a side dish or dessert to show off your amazing culinary skills.\n\nSee you there!",
-    location: {address: "Copperton Park (8700 10305 S, Copperton, UT)", link: {"https://goo.gl/maps/nSygPhy1yjMjmAmS8"}}
+    location: {address: "Copperton Park (8700 W 10305 S, Copperton, UT)", link: "https://goo.gl/maps/nSygPhy1yjMjmAmS8"}
   },
   {
     title: "Ward Temple Day",
