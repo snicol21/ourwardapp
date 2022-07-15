@@ -222,7 +222,7 @@ export const dataImageCards: IImageCard[] = [
     button: {
       text: "Learn More",
       link: {
-        url: "https://sites.google.com/view/maples3rdrs/home",
+        url: "https://sites.google.com/view/maples3rdrs",
         external: true,
       },
     },
