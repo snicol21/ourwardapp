@@ -23,9 +23,24 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
+    title: "Building Cleaning (A-L)",
+    date: new Date("July 23, 2022 9:00:00"),
+    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-L to help with this service opportunity. Bring the whole family and show up ready to help."
+  },
+  {
+    title: "Pioneer Day Parade",
+    date: new Date("July 23, 2022 9:00:00"),
+    description: "Saturday marks the 175th anniversary of Pioneer Day. Our Stake has put together a beautiful float for the parade which is set to begin at 9am in downtown Salt Lake City."
+  },
+  {
     title: "Stake Temple Preparation Class",
     date: new Date("July 24, 2022"),
     description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age.",
+  },
+  {
+    title: "Stake Blood Drive",
+    date: new Date("July 28, 2022 15:00:00"),
+    description: "Our next Stake Blood Drive is coming up. It will be Thursday July 28th from 3-7pm at the Maples Building 6592 West Haven Maple Drive, in the Cultural Hall. To sign up to donate please go to www.arupbloodservices.org and enter R306 to schedule an appointment.",
   },
   {
     title: 'Friend to Friend: "Temples Are the House of the Lord"',
