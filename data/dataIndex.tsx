@@ -23,26 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Youth Fundraiser - Car Wash/Auction",
-    date: new Date("July 13, 2022 18:00:00"),
-    location: { address: "Church Building" },
-    description:
-      "The Youth will be doing a carwash and auction of donated items to raise funds to help pay for upcoming activities. If you would like to donate items (baked goods, services, gift baskets, etc) please contact Kara Hardman, 801-615-3536 or any of the other youth leaders.",
-  },
-  {
-    title: "Party in the Park",
-    date: new Date("July 16, 2022 18:00:00"),
-    description:
-      "Join us for our sixth annual Party in the Park in Copperton. We have reserved the pavilion for the day. Pack up your camp chairs and your family for food and fun. Dinner (hamburgers and hotdogs) will be served at 6pm but you can bring your family for games and the amazing playground anytime you're ready!\n\nThis is the best setting and activity to meet the ward and build friendships.\n\nBe sure to sign up to bring a side dish or dessert to show off your amazing culinary skills.\n\nSee you there!",
-    location: { address: "Copperton Park (8700 W 10305 S, Copperton, UT)", link: "https://goo.gl/maps/nSygPhy1yjMjmAmS8" },
-  },
-  {
-    title: "Ward Temple Day",
-    date: new Date("July 16, 2022"),
-    description:
-      "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: August 20, September 17, October 15.",
-  },
-  {
     title: "Stake Temple Preparation Class",
     date: new Date("July 24, 2022"),
     description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age.",
@@ -52,6 +32,12 @@ export const dataAnnouncements: IAnnouncement[] = [
     date: new Date("July 30, 2022 10:00:00"),
     description:
       "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m.",
+  },
+  {
+    title: "Ward Temple Day",
+    date: new Date("August 20, 2022"),
+    description:
+      "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: September 17, October 15, and November 19.",
   },
 ]
 
