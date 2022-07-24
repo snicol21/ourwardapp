@@ -23,16 +23,6 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Building Cleaning (A-L)",
-    date: new Date("July 23, 2022 9:00:00"),
-    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names A-L to help with this service opportunity. Bring the whole family and show up ready to help."
-  },
-  {
-    title: "Pioneer Day Parade",
-    date: new Date("July 23, 2022 9:00:00"),
-    description: "Saturday marks the 175th anniversary of Pioneer Day. Our Stake has put together a beautiful float for the parade which is set to begin at 9am in downtown Salt Lake City."
-  },
-  {
     title: "Stake Temple Preparation Class",
     date: new Date("July 24, 2022"),
     description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age.",
@@ -43,10 +33,15 @@ export const dataAnnouncements: IAnnouncement[] = [
     description: "Our next Stake Blood Drive is coming up. It will be Thursday July 28th from 3-7pm at the Maples Building 6592 West Haven Maple Drive, in the Cultural Hall. To sign up to donate please go to www.arupbloodservices.org and enter R306 to schedule an appointment.",
   },
   {
+    title: "Building Cleaning (M-Z)",
+    date: new Date("July 30, 2022 9:00:00"),
+    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names M-Z to help with this service opportunity. Bring the whole family and show up ready to help."
+  },
+  {
     title: 'Friend to Friend: "Temples Are the House of the Lord"',
     date: new Date("July 30, 2022 10:00:00"),
     description:
-      "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m.",
+      "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m. More details can be found here: https://newsroom.churchofjesuschrist.org/event/friend-to-friend-temples-are-the-house-of-the-lord",
   },
   {
     title: "Ward Temple Day",
