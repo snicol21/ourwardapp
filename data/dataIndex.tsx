@@ -41,7 +41,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     title: 'Friend to Friend: "Temples Are the House of the Lord"',
     date: new Date("July 30, 2022 10:00:00"),
     description:
-      "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m. More details can be found here: https://newsroom.churchofjesuschrist.org/event/friend-to-friend-temples-are-the-house-of-the-lord",
+      "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m.",
   },
   {
     title: "Ward Temple Day",
