@@ -23,31 +23,15 @@ export const dataSundayMeeting: IHeroCard = {
 
 export const dataAnnouncements: IAnnouncement[] = [
   {
-    title: "Stake Temple Preparation Class",
-    date: new Date("July 24, 2022"),
-    description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age.",
-  },
-  {
-    title: "Stake Blood Drive",
-    date: new Date("July 28, 2022 15:00:00"),
-    description: "Our next Stake Blood Drive is coming up. It will be Thursday July 28th from 3-7pm at the Maples Building 6592 West Haven Maple Drive, in the Cultural Hall. To sign up to donate please go to www.arupbloodservices.org and enter R306 to schedule an appointment.",
-  },
-  {
-    title: "Building Cleaning (M-Z)",
-    date: new Date("July 30, 2022 9:00:00"),
-    description: "Our ward is responsible for cleaning the church building this month. We are asking for families with last names M-Z to help with this service opportunity. Bring the whole family and show up ready to help."
-  },
-  {
-    title: 'Friend to Friend: "Temples Are the House of the Lord"',
-    date: new Date("July 30, 2022 10:00:00"),
-    description:
-      "Children, parents, and Primary teachers are invited to watch a new Friend to Friend episode that will be made available July 30, 2022 at 10:00 a.m.",
-  },
-  {
     title: "Ward Temple Day",
     date: new Date("August 20, 2022"),
     description:
       "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: September 17, October 15, and November 19.",
+  },
+  {
+    title: "Stake Temple Preparation Class",
+    date: new Date("August 28, 2022"),
+    description: "The stake temple preparation class is on the 4th Sunday of each month in our building for any high school seniors up to 24 years of age.",
   },
 ]
 
