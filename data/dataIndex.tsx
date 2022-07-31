@@ -28,6 +28,25 @@ export const dataAnnouncements: IAnnouncement[] = [
     description:
       "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: September 17, October 15, and November 19.",
   },
+ {
+    title: "Stake Conference",
+    dates: [
+      {
+        subTitle: "Adult Session",
+        date: new Date("August 20, 2022 18:00:00"),
+      },
+      {
+        subTitle: "Leadership Session",
+        date: new Date("August 21, 2022 7:00:00"),
+      },
+      {
+        subTitle: "General Session",
+        date: new Date("August 21, 2022 10:00:00"),
+      },
+    ],
+    description:
+      "Stake Conference sessions will be as follows: The Adult Session will be on Saturday August 20th from 6:00pm to 7:30pm. The Leadership Session will be on Sunday August 21st at 7:00am to 8:30am. The General Session will be on Sunday August 21st at 10:00am to 12:00pm. All sessions will originate from the Maples Building (6592 W. Haven Maple Dr.). All are invited to attend in person. There will be a broadcast for the general session with the link available soon on the stake website (www.maplesstake.org).",
+  },
   {
     title: "Stake Temple Preparation Class",
     date: new Date("August 28, 2022"),
