@@ -97,9 +97,8 @@ export const dataSundayScheduleTimes: IScheduleTime[] = [
 ]
 
 export const dataSpecialSchedules: ISchedule[] = [
-  /*
   {
-    date: getScheduleDate(new Date("February 5, 2022")),
+    date: getScheduleDate(new Date("August 20, 2022")),
     times: [
       {
         time: "6:00 PM",
@@ -108,7 +107,7 @@ export const dataSpecialSchedules: ISchedule[] = [
           {
             title: "Saturday Adult Session (In-Person)",
             subtitle: "Maples Stake Conference",
-            paragraph: "60 Min. - All Adults\n\n8137 Echo View Dr, West Jordan, UT 84081",
+            paragraph: "60 Min. - All Adults\n\n6592 W. Haven Maple Dr., West Jordan, UT 84081",
             image: {
               src: "https://assets.ldscdn.org/ee/52/ee5282bb18248f61866b05ccb48931a69f046e6f/pictures_of_jesus_with_a_child.jpeg",
             },
@@ -117,6 +116,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             title: "Saturday Adult Session (Live Stream)",
             subtitle: "Maples Stake Conference",
             paragraph: "60 Min. - All Adults",
+            /*
             button: {
               text: "Join Broadcast",
               link: {
@@ -124,6 +124,7 @@ export const dataSpecialSchedules: ISchedule[] = [
                 external: true,
               },
             },
+            */
             image: {
               src: "https://assets.ldscdn.org/ee/52/ee5282bb18248f61866b05ccb48931a69f046e6f/pictures_of_jesus_with_a_child.jpeg",
             },
@@ -132,20 +133,18 @@ export const dataSpecialSchedules: ISchedule[] = [
       },
     ],
   },
-  */
-  /*
   {
-    date: getScheduleDate(new Date("February 6, 2022")),
+    date: getScheduleDate(new Date("August 21, 2022")),
     times: [
       {
-        time: "7:30 AM",
+        time: "7:00 AM",
         color: "red",
         events: [
           {
             title: "Leadership Session (In-Person)",
             subtitle: "Maples Stake Conference",
             paragraph:
-              "60 Min. - Leadership\nStake and ward council members, their counselors & secretaries, and the priest quorum 1st assistant and oldest YW class president\n\n8137 Echo View Dr, West Jordan, UT 84081",
+              "60 Min. - Leadership\nStake and ward council members, their counselors & secretaries, and the priest quorum 1st assistant and oldest YW class president\n\n6592 W. Haven Maple Dr., West Jordan, UT 84081",
             image: {
               src: "https://assets.ldscdn.org/73/9f/739fda296913c3dc2370fb242e8c378a5f30f8c31047568/bible_videos_jesus_resurrected_fishing.jpeg",
             },
@@ -155,6 +154,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             subtitle: "Maples Stake Conference",
             paragraph:
               "60 Min. - Leadership\nStake and ward council members, their counselors & secretaries, and the priest quorum 1st assistant and oldest YW class president",
+            /*
             button: {
               text: "Join Broadcast",
               link: {
@@ -162,6 +162,7 @@ export const dataSpecialSchedules: ISchedule[] = [
                 external: true,
               },
             },
+            */
             image: {
               src: "https://assets.ldscdn.org/73/9f/739fda296913c3dc2370fb242e8c378a5f30f8c31047568/bible_videos_jesus_resurrected_fishing.jpeg",
             },
@@ -175,7 +176,7 @@ export const dataSpecialSchedules: ISchedule[] = [
           {
             title: "General Session (In-Person)",
             subtitle: "Maples Stake Conference",
-            paragraph: "2 Hrs. - Everyone\n\n8137 Echo View Dr, West Jordan, UT 84081",
+            paragraph: "2 Hrs. - Everyone\n\n6592 W. Haven Maple Dr., West Jordan, UT 84081",
             image: {
               src: "https://assets.ldscdn.org/ee/52/ee5282bb18248f61866b05ccb48931a69f046e6f/pictures_of_jesus_with_a_child.jpeg",
             },
@@ -184,6 +185,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             title: "General Session (Live Stream)",
             subtitle: "Maples Stake Conference",
             paragraph: "2 Hrs. - Everyone",
+            /*
             button: {
               text: "Join Broadcast",
               link: {
@@ -191,6 +193,7 @@ export const dataSpecialSchedules: ISchedule[] = [
                 external: true,
               },
             },
+            */
             image: {
               src: "https://assets.ldscdn.org/ee/52/ee5282bb18248f61866b05ccb48931a69f046e6f/pictures_of_jesus_with_a_child.jpeg",
             },
@@ -199,7 +202,7 @@ export const dataSpecialSchedules: ISchedule[] = [
       },
     ],
   },
-  */
+  /*
   {
     date: getScheduleDate(new Date("April 2, 2022")),
     times: [
@@ -315,4 +318,5 @@ export const dataSpecialSchedules: ISchedule[] = [
       },
     ],
   },
+  */  
 ]
