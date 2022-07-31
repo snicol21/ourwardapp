@@ -28,7 +28,7 @@ export const dataAnnouncements: IAnnouncement[] = [
     description:
       "Please join in serving in the temple on the 3rd Saturday of each month for our Maples 3rd Ward temple day. Make an appointment online for a time/ordinance of your choosing. Upcoming dates: September 17, October 15, and November 19.",
   },
- {
+  {
     title: "Stake Conference",
     dates: [
       {
