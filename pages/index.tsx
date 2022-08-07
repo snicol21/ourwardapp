@@ -6,10 +6,18 @@ import Announcement, { IAnnouncement } from "../components/modules/announcements
 import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
-import { dataSundayMeeting, dataAnnouncements, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
+import { dataSundayMeeting, dataFaceCards, dataMiniCards, dataImageCards } from "../data/dataIndex"
 import { filterAndSortAnnouncements, generateAnnouncementKey } from "../shared/utils/announcement.util"
+import { announcementsRequest, convertAnnouncements, IAnnouncementResponse } from "../services/announcement.service"
 
-function Home() {
+export const getServerSideProps = async (context) => {
+  const announcementsResponse = await fetch(announcementsRequest)
+  const announcementsData: IAnnouncementResponse[] = await announcementsResponse.json()
+  return { props: { announcements: announcementsData } }
+}
+
+function Home({ announcements }) {
+  const dataAnnouncements: IAnnouncement[] = convertAnnouncements(announcements)
   return (
     <Layout>
       <Head>
