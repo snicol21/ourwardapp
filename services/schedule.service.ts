@@ -1,18 +1,12 @@
 import { IScheduleTime } from "../components/modules/schedules/Schedule"
+import { config } from "../config"
 
-const apiUrl = "https://api.latterdayward.com/api"
-const apiWard = "maples3rd"
-const headers = {
-  headers: {
-    "x-api-key": process.env.LATTER_DAY_API_TOKEN,
-    "Content-Type": "application/json",
-  },
-}
+const { apiUrl, apiWard, apiHeaders } = config
 
 /**
  * SCHEDULES
  */
-export const schedulesRequest = new Request(`${apiUrl}/schedule/${apiWard}`, headers)
+export const schedulesRequest = new Request(`${apiUrl}/schedule/${apiWard}`, apiHeaders)
 
 export const convertSchedule = (schedule: IScheduleResponse): IScheduleTime => {
   return {

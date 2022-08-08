@@ -1,18 +1,12 @@
 import { IAnnouncement } from "../components/modules/announcements/Announcement"
+import { config } from "../config"
 
-const apiUrl = "https://api.latterdayward.com/api"
-const apiWard = "maples3rd"
-const headers = {
-  headers: {
-    "x-api-key": process.env.LATTER_DAY_API_TOKEN,
-    "Content-Type": "application/json",
-  },
-}
+const { apiUrl, apiWard, apiHeaders } = config
 
 /**
  * ANNOUNCEMENTS
  */
-export const announcementsRequest = new Request(`${apiUrl}/announcement/${apiWard}`, headers)
+export const announcementsRequest = new Request(`${apiUrl}/announcement/${apiWard}`, apiHeaders)
 
 export const convertAnnouncement = (announcement: IAnnouncementResponse): IAnnouncement => {
   return {

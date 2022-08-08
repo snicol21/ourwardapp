@@ -2,20 +2,14 @@ import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
 import { IMiniCard } from "../components/modules/cards/MiniCard"
+import { config } from "../config"
 
-const apiUrl = "https://api.latterdayward.com/api"
-const apiWard = "maples3rd"
-const headers = {
-  headers: {
-    "x-api-key": process.env.LATTER_DAY_API_TOKEN,
-    "Content-Type": "application/json",
-  },
-}
+const { apiUrl, apiWard, apiHeaders } = config
 
 /**
  * MINI CARDS
  */
-export const miniCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/mini-card`, headers)
+export const miniCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/mini-card`, apiHeaders)
 export const convertMiniCard = (miniCard: IDataCardResponse): IMiniCard => {
   return {
     title: miniCard?.title,
@@ -54,7 +48,7 @@ export const convertMiniCards = (miniCards: IDataCardResponse[]): IMiniCard[] =>
 /**
  * FACE CARDS
  */
-export const faceCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/face-card`, headers)
+export const faceCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/face-card`, apiHeaders)
 export const convertFaceCard = (faceCard: IDataCardResponse): IContactCard => {
   // NOTE: face card is a mini-card plus an image array and paragraph (so we can grab the mini-card conversion and add the images)
   return {
@@ -78,7 +72,7 @@ export const convertFaceCards = (faceCards: IDataCardResponse[]): IContactCard[]
 /**
  * IMAGE CARDS
  */
-export const imageCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/image-card`, headers)
+export const imageCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/image-card`, apiHeaders)
 export const convertImageCard = (imageCard: IDataCardResponse): IImageCard => {
   // NOTE: image card is a mini-card plus an image and paragraph (so we can grab the mini-card conversion and add the image)
   return {
@@ -98,9 +92,10 @@ export const convertImageCards = (imageCards: IDataCardResponse[]): IImageCard[]
 
 /**
  * HERO CARD
+ * these are intended to exist one per page
  *
  */
-export const heroCardsRequest = (type: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/hero-card-${type}`, headers)
+export const heroCardRequest = (id: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/${id}`, apiHeaders)
 export const convertHeroCard = (heroCard: IDataCardResponse, color: "dark" | "light"): IHeroCard => {
   // NOTE: hero card is a mini-card plus an image and a type (so we can grab the mini-card conversion and add the image)
   return {
