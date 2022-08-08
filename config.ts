@@ -1,6 +1,6 @@
 export const config = {
-  apiUrl: "https://api.latterdayward.com/api",
-  apiWard: "maples3rd",
+  apiUrl: process.env.LATTER_DAY_API_URL,
+  apiWard: process.env.LATTER_DAY_API_WARD,
   apiHeaders: {
     headers: {
       "x-api-key": process.env.LATTER_DAY_API_TOKEN,
@@ -9,7 +9,7 @@ export const config = {
   },
   pages: {
     index: {
-      heroCardId: "62f09489fdb487701d190e75",
+      heroCardId: process.env.LATTER_DAY_HERO_CARD,
     },
   },
 }
