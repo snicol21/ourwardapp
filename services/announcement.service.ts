@@ -6,7 +6,7 @@ const { apiUrl, apiWard, apiHeaders } = config
 /**
  * REQUESTS
  */
-export const announcementsRequest = new Request(`${apiUrl}/announcement/${apiWard}`, apiHeaders)
+export const announcementsByTypeRequest = (type: string) => new Request(`${apiUrl}/announcement/${apiWard}/find/by-type/${type}`, apiHeaders)
 
 /**
  * CONVERTER - ANNOUNCEMENTS
