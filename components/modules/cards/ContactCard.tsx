@@ -7,7 +7,6 @@ export type IContactCard = {
   className?: string
   images?: IImage[]
   button?: IButton
-  hidden?: boolean
   soft?: boolean
 }
 

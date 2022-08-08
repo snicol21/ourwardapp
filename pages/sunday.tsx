@@ -1,13 +1,24 @@
 import Head from "next/head"
 import Layout from "../components/layouts/Layout"
 import PageHeader from "../components/elements/headers/PageHeader"
-import Schedule, { ISchedule } from "../components/modules/schedules/Schedule"
-import { dataSundayScheduleTimes, dataSpecialSchedules } from "../data/dataSchedules"
+import Schedule, { ISchedule, IScheduleTime } from "../components/modules/schedules/Schedule"
+import { dataSpecialSchedules } from "../data/dataSchedules"
 import { getScheduleDate, getNextSunday, isSameOrAfterToday } from "../shared/utils/date.util"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
+import { convertSchedules, schedulesRequest } from "../services/schedule.service"
 
-function Sunday() {
+export const getServerSideProps = async (context) => {
+  const schedules = await fetch(schedulesRequest)
+  return {
+    props: {
+      schedules: await schedules.json(),
+    },
+  }
+}
+
+function Sunday({ schedules }) {
+  const dataSundayScheduleTimes: IScheduleTime[] = convertSchedules(schedules)
   const sundaySchedule: ISchedule = {
     date: getScheduleDate(getNextSunday()),
     times: dataSundayScheduleTimes,

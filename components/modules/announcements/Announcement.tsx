@@ -1,6 +1,6 @@
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
 import { getDateDisplay } from "../../../shared/utils/date.util"
-import { IButton, ILink } from "../../../shared/types"
+import { IButton } from "../../../shared/types"
 import Linkify from "linkify-react"
 import Icon from "../../elements/icons/Icon"
 
