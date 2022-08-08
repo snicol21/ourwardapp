@@ -29,6 +29,11 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+# Dev env file
+.env.development
+
+# Prod env file
+.env.production
 
 # vercel
 .vercel
@@ -37,3 +42,6 @@ yarn-error.log*
 .netlify
 config/fire-config.js
 next.config.js
+
+# For us intellij users
+.idea/
