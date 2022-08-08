@@ -13,25 +13,23 @@ import {
   convertFaceCards,
   convertMiniCards,
   convertImageCards,
-  faceCardsRequest,
-  miniCardsRequest,
-  imageCardsRequest,
-  heroCardRequest,
+  dataCardsByTypeRequest,
+  dataCardByIdRequest,
 } from "../services/data-card.service"
 import { config } from "../config"
 
 export const getServerSideProps = async (context) => {
-  const [heroCard, announcements, faceCards, miniCards, imageCards] = await Promise.all([
-    fetch(heroCardRequest(config.pages.index.heroCardId)),
+  const [announcements, heroCard, faceCards, miniCards, imageCards] = await Promise.all([
     fetch(announcementsRequest),
-    fetch(faceCardsRequest),
-    fetch(miniCardsRequest),
-    fetch(imageCardsRequest),
+    fetch(dataCardByIdRequest(config.pages.index.heroCardId)),
+    fetch(dataCardsByTypeRequest("face-card")),
+    fetch(dataCardsByTypeRequest("mini-card")),
+    fetch(dataCardsByTypeRequest("image-card")),
   ])
   return {
     props: {
-      heroCard: await heroCard.json(),
       announcements: await announcements.json(),
+      heroCard: await heroCard.json(),
       faceCards: await faceCards.json(),
       miniCards: await miniCards.json(),
       imageCards: await imageCards.json(),
@@ -39,7 +37,7 @@ export const getServerSideProps = async (context) => {
   }
 }
 
-function Home({ heroCard, announcements, faceCards, miniCards, imageCards }) {
+function Home({ announcements, heroCard, faceCards, miniCards, imageCards }) {
   const dataSundayMeeting: IHeroCard = convertHeroCard(heroCard, "dark")
   const dataAnnouncements: IAnnouncement[] = convertAnnouncements(announcements)
   const dataFaceCards: IContactCard[] = convertFaceCards(faceCards)

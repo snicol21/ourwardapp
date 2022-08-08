@@ -4,10 +4,13 @@ import { config } from "../config"
 const { apiUrl, apiWard, apiHeaders } = config
 
 /**
- * ANNOUNCEMENTS
+ * REQUESTS
  */
 export const announcementsRequest = new Request(`${apiUrl}/announcement/${apiWard}`, apiHeaders)
 
+/**
+ * CONVERTER - ANNOUNCEMENTS
+ */
 export const convertAnnouncement = (announcement: IAnnouncementResponse): IAnnouncement => {
   return {
     title: announcement?.title,
@@ -21,7 +24,6 @@ export const convertAnnouncement = (announcement: IAnnouncementResponse): IAnnou
     ...(announcement?.location?.address && { location: announcement.location }),
   }
 }
-
 export const convertAnnouncements = (announcements: IAnnouncementResponse[]): IAnnouncement[] => {
   return announcements.filter((announcement) => announcement.active).map((announcement) => convertAnnouncement(announcement))
 }

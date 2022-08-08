@@ -7,9 +7,14 @@ import { config } from "../config"
 const { apiUrl, apiWard, apiHeaders } = config
 
 /**
- * MINI CARDS
+ * REQUESTS
  */
-export const miniCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/mini-card`, apiHeaders)
+export const dataCardsByTypeRequest = (type: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/${type}`, apiHeaders)
+export const dataCardByIdRequest = (id: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/${id}`, apiHeaders)
+
+/**
+ * CONVERTER - MINI CARDS
+ */
 export const convertMiniCard = (miniCard: IDataCardResponse): IMiniCard => {
   return {
     title: miniCard?.title,
@@ -46,9 +51,8 @@ export const convertMiniCards = (miniCards: IDataCardResponse[]): IMiniCard[] =>
 }
 
 /**
- * FACE CARDS
+ * CONVERTER - FACE CARDS
  */
-export const faceCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/face-card`, apiHeaders)
 export const convertFaceCard = (faceCard: IDataCardResponse): IContactCard => {
   // NOTE: face card is a mini-card plus an image array and paragraph (so we can grab the mini-card conversion and add the images)
   return {
@@ -70,9 +74,8 @@ export const convertFaceCards = (faceCards: IDataCardResponse[]): IContactCard[]
 }
 
 /**
- * IMAGE CARDS
+ * CONVERTER - IMAGE CARDS
  */
-export const imageCardsRequest = new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/image-card`, apiHeaders)
 export const convertImageCard = (imageCard: IDataCardResponse): IImageCard => {
   // NOTE: image card is a mini-card plus an image and paragraph (so we can grab the mini-card conversion and add the image)
   return {
@@ -91,11 +94,10 @@ export const convertImageCards = (imageCards: IDataCardResponse[]): IImageCard[]
 }
 
 /**
- * HERO CARD
+ * CONVERTER - HERO CARD
  * these are intended to exist one per page
  *
  */
-export const heroCardRequest = (id: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/${id}`, apiHeaders)
 export const convertHeroCard = (heroCard: IDataCardResponse, color: "dark" | "light"): IHeroCard => {
   // NOTE: hero card is a mini-card plus an image and a type (so we can grab the mini-card conversion and add the image)
   return {

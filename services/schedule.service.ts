@@ -4,10 +4,13 @@ import { config } from "../config"
 const { apiUrl, apiWard, apiHeaders } = config
 
 /**
- * SCHEDULES
+ * REQUESTS
  */
 export const schedulesRequest = new Request(`${apiUrl}/schedule/${apiWard}`, apiHeaders)
 
+/**
+ * CONVERTER - SCHEDULES
+ */
 export const convertSchedule = (schedule: IScheduleResponse): IScheduleTime => {
   return {
     time: schedule.time,
@@ -42,7 +45,6 @@ export const convertSchedule = (schedule: IScheduleResponse): IScheduleTime => {
     }),
   }
 }
-
 export const convertSchedules = (schedules: IScheduleResponse[]): IScheduleTime[] => {
   return schedules.map((schedule) => convertSchedule(schedule))
 }
