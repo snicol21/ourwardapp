@@ -12,4 +12,7 @@ export const config = {
       heroCardId: process.env.LATTER_DAY_HERO_CARD,
     },
   },
+  httpHeaders: {
+    "Cache-Control": "public, s-maxage=10, stale-while-revalidate=59",
+  },
 }
