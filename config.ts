@@ -12,4 +12,7 @@ export const config = {
       heroCardId: "62f09489fdb487701d190e75",
     },
   },
+  httpHeaders: {
+    "Cache-Control": "public, s-maxage=10, stale-while-revalidate=59",
+  },
 }

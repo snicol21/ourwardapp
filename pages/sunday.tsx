@@ -4,11 +4,13 @@ import PageHeader from "../components/elements/headers/PageHeader"
 import Schedule, { ISchedule, IScheduleTime } from "../components/modules/schedules/Schedule"
 import { dataSpecialSchedules } from "../data/dataSchedules"
 import { getScheduleDate, getNextSunday, isSameOrAfterToday } from "../shared/utils/date.util"
+import { setHttpHeaders } from "../shared/utils/httpHeader.util"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
 import { convertSchedules, schedulesRequest } from "../services/schedule.service"
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async ({ req, res }) => {
+  setHttpHeaders(res)
   const schedules = await fetch(schedulesRequest)
   return {
     props: {
