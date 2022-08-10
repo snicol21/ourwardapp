@@ -7,6 +7,7 @@ import ContactCard, { IContactCard } from "../components/modules/cards/ContactCa
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
 import { filterAndSortAnnouncements, generateAnnouncementKey } from "../shared/utils/announcement.util"
+import { setHttpHeaders } from "../shared/utils/httpHeader.util"
 import { announcementsByTypeRequest, convertAnnouncements } from "../services/announcement.service"
 import {
   convertHeroCard,
@@ -18,7 +19,8 @@ import {
 } from "../services/data-card.service"
 import { config } from "../config"
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async ({ req, res }) => {
+  setHttpHeaders(res)
   const [announcements, heroCard, faceCards, miniCards, imageCards] = await Promise.all([
     fetch(announcementsByTypeRequest("ward")),
     fetch(dataCardByIdRequest(config.pages.index.heroCardId)),
