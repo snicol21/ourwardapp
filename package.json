@@ -15,6 +15,7 @@
     "linkify-react": "^3.0.4",
     "linkifyjs": "^3.0.5",
     "next": "^12.2.4",
+    "nextjs-progressbar": "^0.0.14",
     "react": "^17.0.2",
     "react-calendly": "^2.2.3",
     "react-dom": "^17.0.2"

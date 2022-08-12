@@ -1,3 +1,4 @@
+import { IBannerCard } from "../components/modules/cards/BannerCard"
 import { IContactCard } from "../components/modules/cards/ContactCard"
 import { IHeroCard } from "../components/modules/cards/HeroCard"
 import { IImageCard } from "../components/modules/cards/ImageCard"
@@ -9,8 +10,7 @@ const { apiUrl, apiWard, apiHeaders } = config
 /**
  * REQUESTS
  */
-export const dataCardsByTypeRequest = (type: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/by-type/${type}`, apiHeaders)
-export const dataCardByIdRequest = (id: string) => new Request(`${apiUrl}/datacard/${apiWard}/find/${id}`, apiHeaders)
+export const dataCardsRequest = () => new Request(`${apiUrl}/datacard/${apiWard}`, apiHeaders)
 
 /**
  * CONVERTER - MINI CARDS
@@ -19,6 +19,7 @@ export const convertMiniCard = (miniCard: IDataCardResponse): IMiniCard => {
   return {
     title: miniCard?.title,
     subtitle: miniCard?.subtitle,
+    ...(miniCard?.paragraph && { paragraph: miniCard.paragraph }),
     ...(miniCard?.button && {
       button: {
         text: miniCard?.button?.text,
@@ -71,6 +72,19 @@ export const convertFaceCard = (faceCard: IDataCardResponse): IContactCard => {
 }
 export const convertFaceCards = (faceCards: IDataCardResponse[]): IContactCard[] => {
   return faceCards.filter((faceCard) => faceCard.active).map((faceCard) => convertFaceCard(faceCard))
+}
+
+/**
+ * CONVERTER - BANNER CARDS
+ */
+export const convertBannerCard = (faceCard: IDataCardResponse): IBannerCard => {
+  // NOTE: banner card is the same as a mini-card (so we can grab the mini-card conversion and add the images)
+  return {
+    ...convertMiniCard(faceCard),
+  }
+}
+export const convertBannerCards = (bannerCards: IDataCardResponse[]): IContactCard[] => {
+  return bannerCards.filter((bannerCard) => bannerCard.active).map((bannerCard) => convertBannerCard(bannerCard))
 }
 
 /**
