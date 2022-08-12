@@ -9,7 +9,7 @@ export const config = {
   },
   pages: {
     index: {
-      heroCardId: process.env.LATTER_DAY_HERO_CARD,
+      heroCardId: process.env.NEXT_PUBLIC_LATTER_DAY_HERO_CARD,
     },
   },
   httpHeaders: {
