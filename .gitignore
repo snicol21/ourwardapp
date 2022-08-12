@@ -36,4 +36,4 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 config/fire-config.js
-next.config.js
+.env
