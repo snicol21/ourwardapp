@@ -1,15 +1,15 @@
 export const config = {
-  apiUrl: process.env.LATTER_DAY_API_URL,
-  apiWard: process.env.LATTER_DAY_API_WARD,
+  apiUrl: process.env.API_URL,
+  apiWard: process.env.API_WARD,
   apiHeaders: {
     headers: {
-      "x-api-key": process.env.LATTER_DAY_API_TOKEN,
+      "x-api-key": process.env.API_TOKEN,
       "Content-Type": "application/json",
     },
   },
   pages: {
     index: {
-      heroCardId: process.env.NEXT_PUBLIC_LATTER_DAY_HERO_CARD,
+      heroCardId: process.env.API_HERO_CARD,
     },
   },
   httpHeaders: {
