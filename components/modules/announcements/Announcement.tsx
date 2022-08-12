@@ -69,7 +69,7 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
         {announcement.date && !announcement.dates && renderDate(announcement.date)}
         {announcement.dates && announcement.dates.map((subDate) => renderDate(subDate.date, subDate.subTitle))}
         {announcement.description && (
-          <Linkify tagName="p" options={options} className="mt-2 text-sm text-gray-500">
+          <Linkify tagName="p" options={options} className="mt-2 text-sm text-gray-500 whitespace-pre-line">
             {announcement.description}
           </Linkify>
         )}
