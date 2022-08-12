@@ -32,7 +32,7 @@ function Sunday({ schedules }) {
   return (
     <>
       <Head>
-        <title>Maples 3rd Ward - Sunday Meetings</title>
+        <title>Maples 6th Ward - Sunday Meetings</title>
       </Head>
       <PageHeader title="Sunday Meetings" subtitle="Below is a list of scheduled events this upcoming Sunday" />
       <Layout>

@@ -34,7 +34,7 @@ function Home({ announcements, dataCards }) {
   return (
     <Layout>
       <Head>
-        <title>Maples 3rd Ward</title>
+        <title>Maples 6th Ward</title>
       </Head>
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
@@ -89,7 +89,7 @@ function Home({ announcements, dataCards }) {
       )}
       {dataImageCards.length > 0 && (
         <>
-          <SectionHeader title="Learn what's going on" subtitle="Below are some of the happenings of the ward and ways to become involved." />
+          <SectionHeader title="Church Resources" subtitle="Below are some additional resources for the Church of Jesus Christ of Latter Day Saints." />
           <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 pt-5">
             {dataImageCards.map((card: IImageCard) => (
               <div key={card.title} className="py-3 w-full">
