@@ -44,3 +44,4 @@ config/fire-config.js
 
 # For us intellij users
 .idea/
+.env
