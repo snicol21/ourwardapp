@@ -6,45 +6,31 @@ import Announcement, { IAnnouncement } from "../components/modules/announcements
 import ContactCard, { IContactCard } from "../components/modules/cards/ContactCard"
 import MiniCard, { IMiniCard } from "../components/modules/cards/MiniCard"
 import ImageCard, { IImageCard } from "../components/modules/cards/ImageCard"
+import BannerCard, { IBannerCard } from "../components/modules/cards/BannerCard"
 import { filterAndSortAnnouncements, generateAnnouncementKey } from "../shared/utils/announcement.util"
-import { setHttpHeaders } from "../shared/utils/httpHeader.util"
+import { filterByType, filterById, setHttpHeaders } from "../shared/utils/api.util"
 import { announcementsByTypeRequest, convertAnnouncements } from "../services/announcement.service"
-import {
-  convertHeroCard,
-  convertFaceCards,
-  convertMiniCards,
-  convertImageCards,
-  dataCardsByTypeRequest,
-  dataCardByIdRequest,
-} from "../services/data-card.service"
+import { convertHeroCard, convertFaceCards, convertMiniCards, convertImageCards, dataCardsRequest, convertBannerCards } from "../services/data-card.service"
 import { config } from "../config"
 
 export const getServerSideProps = async ({ req, res }) => {
   setHttpHeaders(res)
-  const [announcements, heroCard, faceCards, miniCards, imageCards] = await Promise.all([
-    fetch(announcementsByTypeRequest("ward")),
-    fetch(dataCardByIdRequest(config.pages.index.heroCardId)),
-    fetch(dataCardsByTypeRequest("face-card")),
-    fetch(dataCardsByTypeRequest("mini-card")),
-    fetch(dataCardsByTypeRequest("image-card")),
-  ])
+  const [announcements, dataCards] = await Promise.all([fetch(announcementsByTypeRequest("ward")), fetch(dataCardsRequest())])
   return {
     props: {
       announcements: await announcements.json(),
-      heroCard: await heroCard.json(),
-      faceCards: await faceCards.json(),
-      miniCards: await miniCards.json(),
-      imageCards: await imageCards.json(),
+      dataCards: await dataCards.json(),
     },
   }
 }
 
-function Home({ announcements, heroCard, faceCards, miniCards, imageCards }) {
-  const dataSundayMeeting: IHeroCard = convertHeroCard(heroCard, "dark")
+function Home({ announcements, dataCards }) {
   const dataAnnouncements: IAnnouncement[] = convertAnnouncements(announcements)
-  const dataFaceCards: IContactCard[] = convertFaceCards(faceCards)
-  const dataMiniCards: IMiniCard[] = convertMiniCards(miniCards)
-  const dataImageCards: IImageCard[] = convertImageCards(imageCards)
+  const dataSundayMeeting: IHeroCard = convertHeroCard(filterById(dataCards, config.pages.index.heroCardId), "dark")
+  const dataBannerCards: IBannerCard[] = convertBannerCards(filterByType(dataCards, "banner-card"))
+  const dataFaceCards: IContactCard[] = convertFaceCards(filterByType(dataCards, "face-card"))
+  const dataMiniCards: IMiniCard[] = convertMiniCards(filterByType(dataCards, "mini-card"))
+  const dataImageCards: IImageCard[] = convertImageCards(filterByType(dataCards, "image-card"))
   return (
     <Layout>
       <Head>
@@ -53,53 +39,31 @@ function Home({ announcements, heroCard, faceCards, miniCards, imageCards }) {
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
       </div>
-      {dataAnnouncements.length > 0 && (
+      {(dataAnnouncements.length > 0 || dataBannerCards.length > 0) && (
         <>
           <SectionHeader title="Announcements" subtitle="Find out more details of some of the upcoming events and activities." />
-          {/* <div className="pt-5">
-            <div className="bg-green-50 shadow-xl rounded-lg border-2 border-green-500">
-              <div className="px-4 py-5 sm:p-6">
-                <div className="sm:flex sm:items-start sm:justify-between">
-                  <div>
-                    <h3 className="text-lg leading-6 font-bold text-gray-900">Tithing Settlement</h3>
-                    <div className="mt-1 pr-2 flex items-center">
-                      <Icon name="calendar" className="h-4 w-4 mr-2 mb-0.5 text-gray-400" />
-                      <time>October 15th - December 31st</time>
+          {dataBannerCards.length > 0 && (
+            <div className="mt-7">
+              {dataBannerCards.map((card: IBannerCard) => (
+                <div key={card.title} className="py-4 w-full">
+                  <BannerCard {...card} />
+                </div>
+              ))}
+            </div>
+          )}
+          {dataAnnouncements.length > 0 && (
+            <div className="mt-7">
+              <div className="relative max-w-xl mx-auto lg:max-w-7xl">
+                <div className="grid gap-4 lg:grid-cols-2">
+                  {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement) => (
+                    <div key={generateAnnouncementKey(announcement)} className="p-4 bg-white rounded-lg shadow-xl lg:p-8">
+                      <Announcement {...announcement} />
                     </div>
-                  </div>
-                  <div className="mt-5 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
-                    <PrimaryButton
-                      type="dark"
-                      color="green"
-                      link={{
-                        url: "https://calendly.com/ssr3-bishop/tithing",
-                        calendly: true,
-                      }}
-                    >
-                      Schedule
-                    </PrimaryButton>
-                  </div>
-                </div>
-                <div className="bg-white border border-gray-200 mt-3 text-base p-5 rounded-xl">
-                  <p>
-                    Please schedule a time for your family. Tithing settlement is an opportunity for each ward member to meet with the bishop, to make sure his
-                    or her donations records are correct, and to declare to the bishop his or her tithing status.
-                  </p>
+                  ))}
                 </div>
               </div>
             </div>
-          </div> */}
-          <div className="mt-7">
-            <div className="relative max-w-xl mx-auto lg:max-w-7xl">
-              <div className="grid gap-4 lg:grid-cols-2">
-                {filterAndSortAnnouncements(dataAnnouncements).map((announcement: IAnnouncement) => (
-                  <div key={generateAnnouncementKey(announcement)} className="p-4 bg-white rounded-lg shadow-xl lg:p-8">
-                    <Announcement {...announcement} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          )}
         </>
       )}
       {dataFaceCards.length > 0 && (
