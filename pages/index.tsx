@@ -19,7 +19,7 @@ export const getServerSideProps = async ({ req, res }) => {
   return {
     props: {
       announcements: await announcements.json(),
-      dataCards: await dataCards.json(),
+      dataCards: (await dataCards.json()).sort((a, b) => a.order - b.order),
     },
   }
 }
