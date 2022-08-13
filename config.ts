@@ -1,4 +1,5 @@
 export const config = {
+  wardName: "Maples 3rd Ward",
   apiUrl: "https://api.latterdayward.com/api",
   apiWard: "maples3rd",
   apiHeaders: {

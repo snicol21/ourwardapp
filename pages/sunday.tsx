@@ -8,6 +8,7 @@ import { setHttpHeaders } from "../shared/utils/api.util"
 import PrimaryButton from "../components/elements/buttons/PrimaryButton"
 import Icon from "../components/elements/icons/Icon"
 import { convertSchedules, schedulesRequest } from "../services/schedule.service"
+import { config } from "../config"
 
 export const getServerSideProps = async ({ req, res }) => {
   setHttpHeaders(res)
@@ -32,7 +33,7 @@ function Sunday({ schedules }) {
   return (
     <>
       <Head>
-        <title>Maples 3rd Ward - Sunday Meetings</title>
+        <title>{config.wardName} - Sunday Meetings</title>
       </Head>
       <PageHeader title="Sunday Meetings" subtitle="Below is a list of scheduled events this upcoming Sunday" />
       <Layout>

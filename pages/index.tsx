@@ -34,7 +34,7 @@ function Home({ announcements, dataCards }) {
   return (
     <Layout>
       <Head>
-        <title>Maples 3rd Ward</title>
+        <title>{config.wardName}</title>
       </Head>
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
