@@ -26,14 +26,15 @@ const options = {
   className: "text-blue-700 hover:text-blue-500",
   defaultProtocol: "http",
   events: null,
-  format: (value, type) => value,
+  format: {
+    url: (value) => (value.length > 50 ? value.slice(0, 50) + "…" : value),
+  },
   formatHref: (href, type) => href,
   ignoreTags: [],
   nl2br: false,
   rel: null,
   tagName: "a",
   target: "_blank",
-  truncate: 0,
   validate: true,
 }
 

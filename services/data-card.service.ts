@@ -157,4 +157,5 @@ export type IDataCardResponse = {
   }
   type: string
   active: boolean
+  order: number
 }
