@@ -19,7 +19,7 @@ export const getServerSideProps = async ({ req, res }) => {
   return {
     props: {
       announcements: await announcements.json(),
-      dataCards: await dataCards.json(),
+      dataCards: (await dataCards.json()).sort((a, b) => a.order - b.order),
     },
   }
 }
@@ -34,7 +34,7 @@ function Home({ announcements, dataCards }) {
   return (
     <Layout>
       <Head>
-        <title>Maples 6th Ward</title>
+        <title>{config.wardName}</title>
       </Head>
       <div className="pt-16">
         <HeroCard {...dataSundayMeeting} />
