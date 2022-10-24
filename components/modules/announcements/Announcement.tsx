@@ -27,7 +27,7 @@ const options = {
   defaultProtocol: "http",
   events: null,
   format: {
-    url: (value) => (value.length > 50 ? value.slice(0, 50) + "…" : value),
+    url: (value) => (value.length > 45 ? value.slice(0, 45) + "…" : value),
   },
   formatHref: (href, type) => href,
   ignoreTags: [],
