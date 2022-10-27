@@ -1,5 +1,7 @@
 import { IButton, IImage } from "../../../shared/types"
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
+import {config} from "../../../config"
+import WardAddress from "../../elements/address/Address"
 
 export type IHeroCard = {
   title: string
@@ -16,6 +18,8 @@ const getColor = {
   light: ["bg-white", "text-primary-600", "text-black", "text-gray-600"],
 }
 
+const address =  config.wardAddress
+
 const HeroCard = ({ ...card }: IHeroCard) => {
   const buttonColor = card.button.color ? card.button.color : "primary"
   return (
@@ -26,6 +30,7 @@ const HeroCard = ({ ...card }: IHeroCard) => {
       <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
           <h2 className={`text-base font-semibold uppercase tracking-wider ${getColor[card.type][1]}`}>{card.subtitle}</h2>
+          <WardAddress className={`text-sm ${getColor[card.type][3]}`} street={address.street} city={address.city} zip={address.zip} mapUrl={address.mapUrl} />
           <p className={`mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl ${getColor[card.type][2]}`}>{card.title}</p>
           {card.paragraph && <p className={`mt-3 text-lg ${getColor[card.type][3]}`}>{card.paragraph}</p>}
           <div className="mt-2 md:mt-8 text-center sm:text-left">
