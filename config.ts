@@ -6,7 +6,7 @@ export const config = {
     street: "8137 Echo View Dr",
     city: "West Jordan",
     zip: "84081",
-    mapUrl: "https://goo.gl/maps/JcJ3M5VN5ZAGUTWT7"
+    mapUrl: "https://goo.gl/maps/JcJ3M5VN5ZAGUTWT7",
   },
   apiHeaders: {
     headers: {

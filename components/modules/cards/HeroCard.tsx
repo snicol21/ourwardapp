@@ -1,6 +1,6 @@
 import { IButton, IImage } from "../../../shared/types"
 import PrimaryButton from "../../elements/buttons/PrimaryButton"
-import {config} from "../../../config"
+import { config } from "../../../config"
 import WardAddress from "../../elements/address/Address"
 
 export type IHeroCard = {
@@ -18,7 +18,7 @@ const getColor = {
   light: ["bg-white", "text-primary-600", "text-black", "text-gray-600"],
 }
 
-const address =  config.wardAddress
+const address = config.wardAddress
 
 const HeroCard = ({ ...card }: IHeroCard) => {
   const buttonColor = card.button.color ? card.button.color : "primary"
