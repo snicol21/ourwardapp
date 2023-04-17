@@ -1,5 +1,5 @@
 export const config = {
-  wardName: "Maples 3rd Ward",
+  wardName: process.env.LATTER_DAY_API_WARD,
   apiUrl: "https://api.latterdayward.com/api",
   apiWard: "maples3rd",
   wardAddress: {
@@ -16,7 +16,7 @@ export const config = {
   },
   pages: {
     index: {
-      heroCardId: "62f09489fdb487701d190e75",
+      heroCardId: process.env.LATTER_DAY_HERO_CARD,
     },
   },
   httpHeaders: {

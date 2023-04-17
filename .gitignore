@@ -37,3 +37,7 @@ yarn-error.log*
 .netlify
 config/fire-config.js
 .env
+
+.idea/
+.env.development
+.env.production
