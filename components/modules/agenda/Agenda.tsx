@@ -67,14 +67,17 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           <AgendaItem name={agenda.benediction.name} title={agenda.benediction.title} />
         </div>
 
-        <AgendaDivider text="Announcements" className="mt-8 mb-4" fontClass="text-lg md:text-2xl text-gray-700 font-bold" />
-
-        {agenda.wardAnnouncement.map((announcement) => (
-          <div key={announcement.title} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 py-3 md:py-4">
-            <h2 className="text-md font-bold">{announcement.title}:</h2>
-            <p className="text-sm md:col-span-1 pt-1 md:pt-0">{announcement.name}</p>
-          </div>
-        ))}
+        {agenda?.wardAnnouncement.length > 0 && (
+          <>
+            <AgendaDivider text="Announcements" className="mt-8 mb-4" fontClass="text-lg md:text-2xl text-gray-700 font-bold" />
+            {agenda.wardAnnouncement.map((announcement) => (
+              <div key={announcement.title} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 py-3 md:py-4">
+                <h2 className="text-md font-bold">{announcement.title}:</h2>
+                <p className="text-sm md:col-span-1 pt-1 md:pt-0">{announcement.name}</p>
+              </div>
+            ))}
+          </>
+        )}
       </div>
     </>
   )
