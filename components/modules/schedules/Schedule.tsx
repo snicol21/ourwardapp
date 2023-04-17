@@ -59,13 +59,12 @@ const Schedule = ({ date, times }: ISchedule) => {
                         paragraph={event.description}
                         image={event.image}
                         button={
-                          event.title === "Sacrament"
+                          event.title === "Sacrament" && time.isAgenda
                             ? {
                                 text: "See Agenda",
                                 link: {
                                   url: "/sunday/agenda",
                                 },
-                                disabled: time.isAgenda,
                               }
                             : null
                         }
