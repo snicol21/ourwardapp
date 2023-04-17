@@ -1,7 +1,7 @@
 export const config = {
-  wardName: process.env.LATTER_DAY_API_WARD,
-  apiUrl: "https://api.latterdayward.com/api",
-  apiWard: "maples3rd",
+  wardName: "Maples 6th Ward",
+  apiUrl: process.env.LATTER_DAY_API_URL,
+  apiWard: process.env.LATTER_DAY_API_WARD,
   wardAddress: {
     street: "8137 Echo View Dr",
     city: "West Jordan",
