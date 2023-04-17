@@ -67,7 +67,7 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           <AgendaItem name={agenda.benediction.name} title={agenda.benediction.title} />
         </div>
 
-        {agenda?.wardAnnouncement.length > 0 && (
+        {agenda.wardAnnouncement.length > 0 && (
           <>
             <AgendaDivider text="Announcements" className="mt-8 mb-4" fontClass="text-lg md:text-2xl text-gray-700 font-bold" />
             {agenda.wardAnnouncement.map((announcement) => (
