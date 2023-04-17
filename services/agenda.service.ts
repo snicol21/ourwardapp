@@ -29,12 +29,15 @@ export const convertAgenda = (agenda: IAgendaResponse): IAgendaData => {
     }),
     closingHymn: agenda.closingHymn,
     benediction: agenda.benediction,
-    wardAnnouncement: agenda.wardAnnouncement.map((announcement) => {
-      return {
-        title: announcement.title,
-        name: announcement.description,
-      }
-    }),
+    wardAnnouncement:
+      agenda.wardAnnouncement.length > 0 && agenda.wardAnnouncement[0].title
+        ? agenda.wardAnnouncement.map((announcement) => {
+            return {
+              title: announcement.title,
+              name: announcement.description,
+            }
+          })
+        : [],
   }
 }
 
