@@ -36,7 +36,7 @@ const Agenda = ({ date, agenda }: IAgenda) => {
   return (
     <>
       <SectionHeader title={date.dateFullDisplay} />
-      <div className="w-full md:w-4/5 mx-auto bg-white px-5 py-8 md:px-16 md:py-20 mt-8 md:mt-12 lg:mt-14 rounded-lg">
+      <div className="w-full md:w-4/5 mx-auto bg-white px-5 py-8 md:px-16 md:py-20 mt-8 md:mt-12 lg:mt-14 rounded-lg text-sm sm:text-base">
         <div className="flex flex-col gap-4">
           <AgendaItem name={agenda.presiding.name} title={agenda.presiding.title} />
           <AgendaItem name={agenda.conducting.name} title={agenda.conducting.title} />
