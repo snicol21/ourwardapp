@@ -43,6 +43,7 @@ export const convertSchedule = (schedule: IScheduleResponse): IScheduleTime => {
         }),
       }
     }),
+    isAgenda: !!schedule.isAgenda,
   }
 }
 export const convertSchedules = (schedules: IScheduleResponse[]): IScheduleTime[] => {
@@ -80,4 +81,6 @@ export type IScheduleResponse = {
       }
     }
   ]
+  dateOverride: Date
+  isAgenda?: boolean
 }

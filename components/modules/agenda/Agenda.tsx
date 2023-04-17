@@ -1,6 +1,5 @@
 import { IDateDisplay } from "../../../shared/utils/date.util"
 import AgendaDivider from "../../elements/dividers/AgendaDivider"
-import Divider from "../../elements/dividers/Divider"
 import SectionHeader from "../../elements/headers/SectionHeader"
 
 export type IAgenda = {
@@ -33,13 +32,12 @@ export type IAgendaContent = {
 }
 
 const Agenda = ({ date, agenda }: IAgenda) => {
-  const dividerFont = "text-sm text-gray-400 font-light uppercase italic"
+  const dividerFont = "text-sm text-gray-500 font-light uppercase italic"
   return (
     <>
       <SectionHeader title={date.dateFullDisplay} />
-      <Divider className="mt-8 md:mt-12 lg:mt-14" />
-      <div className="w-full md:w-2/3 mx-auto">
-        <div className="flex flex-col gap-4 pt-8">
+      <div className="w-full md:w-4/5 mx-auto bg-white px-5 py-8 md:px-16 md:py-20 mt-8 md:mt-12 lg:mt-14 rounded-lg">
+        <div className="flex flex-col gap-4">
           <AgendaItem name={agenda.presiding.name} title={agenda.presiding.title} />
           <AgendaItem name={agenda.conducting.name} title={agenda.conducting.title} />
           <AgendaItem name={agenda.chorister.name} title={agenda.chorister.title} />
@@ -48,13 +46,13 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           <AgendaItem name={agenda.invocation.name} title={agenda.invocation.title} />
         </div>
 
-        <AgendaDivider text="Ward Business" className="mt-8" fontClass={dividerFont} borderClass="border-gray-300" />
+        <AgendaDivider text="Ward Business" className="mt-8" fontClass={dividerFont} borderClass="border-gray-400" />
 
         <div className="flex flex-col gap-4 pt-8">
           <AgendaItem name={agenda.sacramentHymn.name} title={agenda.sacramentHymn.title} />
         </div>
 
-        <AgendaDivider text="Administration of the Sacrament" className="mt-8 mb-4" fontClass={dividerFont} borderClass="border-gray-300" />
+        <AgendaDivider text="Administration of the Sacrament" className="mt-8 mb-4" fontClass={dividerFont} borderClass="border-gray-400" />
 
         {agenda.programContent
           .sort((a, b) => a.order - b.order)
@@ -69,12 +67,12 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           <AgendaItem name={agenda.benediction.name} title={agenda.benediction.title} />
         </div>
 
-        <AgendaDivider text="Announcements" className="mt-8" fontClass="text-lg md:text-2xl text-gray-700 font-bold" />
+        <AgendaDivider text="Announcements" className="mt-8 mb-4" fontClass="text-lg md:text-2xl text-gray-700 font-bold" />
 
         {agenda.wardAnnouncement.map((announcement) => (
-          <div key={announcement.title} className="grid grid-cols-2 gap-4 pt-8">
-            <div className="font-bold">{announcement.title}:</div>
-            <div>{announcement.name}</div>
+          <div key={announcement.title} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 py-3 md:py-4">
+            <h2 className="text-md font-bold">{announcement.title}:</h2>
+            <p className="text-sm md:col-span-1 pt-1 md:pt-0">{announcement.name}</p>
           </div>
         ))}
       </div>
@@ -85,8 +83,8 @@ const Agenda = ({ date, agenda }: IAgenda) => {
 export const AgendaItem = ({ title, name }: IAgendaItem) => {
   return (
     <div className="dots-in-between w-full">
-      <span className="font-bold bg-gray-100 pr-3">{title}</span>
-      <span className="text-right bg-gray-100 float-right pl-3">{name}</span>
+      <span className="font-bold bg-white pr-3">{title}</span>
+      <span className="text-right bg-white float-right pl-3">{name}</span>
     </div>
   )
 }

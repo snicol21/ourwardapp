@@ -13,7 +13,7 @@ const AgendaDivider = ({ text, className = "", fontClass = "", borderClass = "bo
       </div>
       {text && (
         <div className="relative flex justify-center">
-          <span className={`${fontClass} px-2 bg-gray-100`}>{text}</span>
+          <span className={`${fontClass} px-2 bg-white`}>{text}</span>
         </div>
       )}
     </div>
