@@ -19,6 +19,7 @@ export type IScheduleTime = {
   time: string
   color: IColor
   events: IScheduleEvent[]
+  isAgenda: boolean
 }
 
 export type IScheduleEvent = {
@@ -57,7 +58,17 @@ const Schedule = ({ date, times }: ISchedule) => {
                         subtitle={event.subtitle}
                         paragraph={event.description}
                         image={event.image}
-                        button={event.button ? { ...event.button, color: time.color } : null}
+                        button={
+                          event.title === "Sacrament"
+                            ? {
+                                text: "See Agenda",
+                                link: {
+                                  url: "/sunday/agenda",
+                                },
+                                disabled: time.isAgenda,
+                              }
+                            : null
+                        }
                       />
                     </div>
                   ) : (

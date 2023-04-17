@@ -35,6 +35,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
     ],
   },
@@ -73,6 +74,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
       {
         time: "10:00 AM",
@@ -104,6 +106,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
     ],
   },
@@ -152,6 +155,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
       {
         time: "6:00 PM",
@@ -173,6 +177,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
     ],
   },
@@ -199,6 +204,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
       {
         time: "2:00 PM",
@@ -220,6 +226,7 @@ export const dataSpecialSchedules: ISchedule[] = [
             },
           },
         ],
+        isAgenda: false
       },
     ],
   },

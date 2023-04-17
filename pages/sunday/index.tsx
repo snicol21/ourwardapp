@@ -1,14 +1,15 @@
 import Head from "next/head"
-import Layout from "../components/layouts/Layout"
-import PageHeader from "../components/elements/headers/PageHeader"
-import Schedule, { ISchedule, IScheduleTime } from "../components/modules/schedules/Schedule"
-import { dataSpecialSchedules } from "../data/dataSchedules"
-import { getScheduleDate, getNextSunday, isSameOrAfterToday } from "../shared/utils/date.util"
-import { setHttpHeaders } from "../shared/utils/api.util"
-import PrimaryButton from "../components/elements/buttons/PrimaryButton"
-import Icon from "../components/elements/icons/Icon"
-import { convertSchedules, schedulesRequest } from "../services/schedule.service"
-import { config } from "../config"
+
+import PrimaryButton from "../../components/elements/buttons/PrimaryButton"
+import PageHeader from "../../components/elements/headers/PageHeader"
+import Icon from "../../components/elements/icons/Icon"
+import Layout from "../../components/layouts/Layout"
+import Schedule, { ISchedule, IScheduleTime } from "../../components/modules/schedules/Schedule"
+import { config } from "../../config"
+import { dataSpecialSchedules } from "../../data/dataSchedules"
+import { convertSchedules, schedulesRequest } from "../../services/schedule.service"
+import { setHttpHeaders } from "../../shared/utils/api.util"
+import { getNextSunday, getScheduleDate, isSameOrAfterToday } from "../../shared/utils/date.util"
 
 export const getServerSideProps = async ({ req, res }) => {
   setHttpHeaders(res)
