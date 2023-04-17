@@ -37,3 +37,10 @@ input::-webkit-date-and-time-value {
   min-height: 100%;
   object-fit: cover;
 }
+
+.dots-in-between {
+  background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0 14px;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
