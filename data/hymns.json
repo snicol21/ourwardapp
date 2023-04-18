@@ -1,0 +1,631 @@
+{
+  "1": { "name": "The Morning Breaks", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-morning-breaks?lang=eng" },
+  "2": { "name": "The Spirit of God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-spirit-of-god?lang=eng" },
+  "3": { "name": "Now Let Us Rejoice", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/now-let-us-rejoice?lang=eng" },
+  "4": { "name": "Truth Eternal", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/truth-eternal?lang=eng" },
+  "5": { "name": "High on the Mountain Top", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/high-on-the-mountain-top?lang=eng" },
+  "6": { "name": "Redeemer of Israel", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/redeemer-of-israel?lang=eng" },
+  "7": { "name": "Israel, Israel, God Is Calling", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/israel-israel-god-is-calling?lang=eng" },
+  "8": { "name": "Awake and Arise", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/awake-and-arise?lang=eng" },
+  "9": { "name": "Come, Rejoice", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-rejoice?lang=eng" },
+  "10": { "name": "Come, Sing to the Lord ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-sing-to-the-lord?lang=eng" },
+  "11": {
+    "name": "What Was Witnessed in the Heavens? ",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/what-was-witnessed-in-the-heavens?lang=eng"
+  },
+  "12": {
+    "name": "Twas Witnessed in the Morning Sky",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/twas-witnessed-in-the-morning-sky?lang=eng (Copyright)"
+  },
+  "13": { "name": "An Angel from on High  ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/an-angel-from-on-high?lang=eng" },
+  "14": {
+    "name": "Sweet Is the Peace the Gospel Brings",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sweet-is-the-peace-the-gospel-brings?lang=eng"
+  },
+  "15": { "name": "I Saw a Mighty Angel Fly", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-saw-a-mighty-angel-fly?lang=eng" },
+  "16": {
+    "name": "What Glorious Scenes Mine Eyes Behold",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/what-glorious-scenes-mine-eyes-behold?lang=eng"
+  },
+  "17": { "name": "Awake, Ye Saints of God, Awake!", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/awake-ye-saints-of-god-awake?lang=eng" },
+  "18": {
+    "name": "The Voice of God Again Is Heard",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-voice-of-god-again-is-heard?lang=eng"
+  },
+  "19": {
+    "name": "We Thank Thee, O God, for a Prophet",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-thank-thee-o-god-for-a-prophet?lang=eng"
+  },
+  "20": { "name": "God of Power, God of Right", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-of-power-god-of-right?lang=eng" },
+  "21": {
+    "name": "Come, Listen to a Prophet’s Voice",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-listen-to-a-prophets-voice?lang=eng"
+  },
+  "22": { "name": "We Listen to a Prophet’s Voice", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-listen-to-a-prophets-voice?lang=eng" },
+  "23": { "name": "We Ever Pray for Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-ever-pray-for-thee?lang=eng" },
+  "24": { "name": "God Bless Our Prophet Dear", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-bless-our-prophet-dear?lang=eng" },
+  "25": { "name": "Now We’ll Sing with One Accord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/now-well-sing-with-one-accord?lang=eng" },
+  "26": { "name": "Joseph Smith’s First Prayer", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/joseph-smiths-first-prayer?lang=eng" },
+  "27": { "name": "Praise to the Man ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/praise-to-the-man?lang=eng" },
+  "28": {
+    "name": "Saints, Behold How Great Jehovah",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/saints-behold-how-great-jehovah?lang=eng"
+  },
+  "29": { "name": "A Poor Wayfaring Man of Grief", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/a-poor-wayfaring-man-of-grief?lang=eng" },
+  "30": { "name": "Come, Come, Ye Saints", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-come-ye-saints?lang=eng" },
+  "31": { "name": "O God, Our Help in Ages Past", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-god-our-help-in-ages-past?lang=eng" },
+  "32": { "name": "The Happy Day at Last Has Come", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-happy-day-at-last-has-come?lang=eng" },
+  "33": { "name": "Our Mountain Home So Dear", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/our-mountain-home-so-dear?lang=eng" },
+  "34": { "name": "O Ye Mountains High", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-ye-mountains-high?lang=eng" },
+  "35": { "name": "For the Strength of the Hills", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/for-the-strength-of-the-hills?lang=eng" },
+  "36": {
+    "name": "They, the Builders of the Nation",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/they-the-builders-of-the-nation?lang=eng"
+  },
+  "37": {
+    "name": "The Wintry Day, Descending to Its Close",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-wintry-day-descending-to-its-close?lang=eng"
+  },
+  "38": { "name": "Come, All Ye Saints of Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-all-ye-saints-of-zion?lang=eng" },
+  "39": { "name": "O Saints of Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-saints-of-zion?lang=eng" },
+  "40": { "name": "Arise, O Glorious Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/arise-o-glorious-zion?lang=eng" },
+  "41": { "name": "Let Zion in Her Beauty Rise", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/let-zion-in-her-beauty-rise?lang=eng" },
+  "42": {
+    "name": "Hail to the Brightness of Zion’s Glad Morning!",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/hail-to-the-brightness-of-zions-glad-morning?lang=eng"
+  },
+  "43": {
+    "name": "Zion Stands with Hills Surrounded",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/zion-stands-with-hills-surrounded?lang=eng"
+  },
+  "44": { "name": "Beautiful Zion, Built Above", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/beautiful-zion-built-above?lang=eng" },
+  "45": { "name": "Lead Me into Life Eternal", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lead-me-into-life-eternal?lang=eng" },
+  "46": {
+    "name": "Glorious Things of Thee Are Spoken",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/glorious-things-of-thee-are-spoken?lang=eng"
+  },
+  "47": { "name": "We Will Sing of Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-will-sing-of-zion?lang=eng" },
+  "48": {
+    "name": "Glorious Things Are Sung of Zion",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/glorious-things-are-sung-of-zion?lang=eng"
+  },
+  "49": { "name": "Adam-ondi-Ahman", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/adam-ondi-ahman?lang=eng" },
+  "50": {
+    "name": "Come, Thou Glorious Day of Promise",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-thou-glorious-day-of-promise?lang=eng"
+  },
+  "51": { "name": "Sons of Michael, He Approaches", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sons-of-michael-he-approaches?lang=eng" },
+  "52": { "name": "The Day Dawn Is Breaking", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-day-dawn-is-breaking?lang=eng" },
+  "53": {
+    "name": "Let Earth’s Inhabitants Rejoice",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/let-earths-inhabitants-rejoice?lang=eng"
+  },
+  "54": {
+    "name": "Behold, the Mountain of the Lord",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/behold-the-mountain-of-the-lord?lang=eng"
+  },
+  "55": { "name": "Lo, the Mighty God Appearing! ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lo-the-mighty-god-appearing?lang=eng" },
+  "56": {
+    "name": "Softly Beams the Sacred Dawning",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/softly-beams-the-sacred-dawning?lang=eng"
+  },
+  "57": {
+    "name": "We’re Not Ashamed to Own Our Lord",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/were-not-ashamed-to-own-our-lord?lang=eng"
+  },
+  "58": { "name": "Come, Ye Children of the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-ye-children-of-the-lord?lang=eng" },
+  "59": { "name": "Come, O Thou King of Kings", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-o-thou-king-of-kings?lang=eng" },
+  "60": { "name": "Battle Hymn of the Republic", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/battle-hymn-of-the-republic?lang=eng" },
+  "61": { "name": "Raise Your Voices to the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/raise-your-voices-to-the-lord?lang=eng" },
+  "62": {
+    "name": "All Creatures of Our God and King",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/all-creatures-of-our-god-and-king?lang=eng"
+  },
+  "63": { "name": "Great King of Heaven", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/great-king-of-heaven?lang=eng" },
+  "64": {
+    "name": "On This Day of Joy and Gladness",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/on-this-day-of-joy-and-gladness?lang=eng"
+  },
+  "65": {
+    "name": "Come, All Ye Saints Who Dwell on Earth",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-all-ye-saints-who-dwell-on-earth?lang=eng"
+  },
+  "66": { "name": "Rejoice, the Lord Is King!", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rejoice-the-lord-is-king?lang=eng " },
+  "67": { "name": "Glory to God on High", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/glory-to-god-on-high?lang=eng" },
+  "68": { "name": "A Mighty Fortress Is Our God ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/a-mighty-fortress-is-our-god?lang=eng" },
+  "69": { "name": "All Glory, Laud, and Honor", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/all-glory-laud-and-honor?lang=eng" },
+  "70": { "name": "Sing Praise to Him", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sing-praise-to-him?lang=eng" },
+  "71": { "name": "With Songs of Praise", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/with-songs-of-praise?lang=eng" },
+  "72": {
+    "name": "Praise to the Lord, the Almighty",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/praise-to-the-lord-the-almighty?lang=eng"
+  },
+  "73": {
+    "name": "Praise the Lord with Heart and Voice",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/praise-the-lord-with-heart-and-voice?lang=eng"
+  },
+  "74": { "name": "Praise Ye the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/praise-ye-the-lord?lang=eng" },
+  "75": { "name": "In Hymns of Praise", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-hymns-of-praise?lang=eng" },
+  "76": {
+    "name": "God of Our Fathers, We Come unto Thee",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-of-our-fathers-we-come-unto-thee?lang=eng"
+  },
+  "77": { "name": "Great Is the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/great-is-the-lord?lang=eng" },
+  "78": {
+    "name": "God of Our Fathers, Whose Almighty Hand",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-of-our-fathers-whose-almighty-hand?lang=eng"
+  },
+  "79": {
+    "name": "With All the Power of Heart and Tongue",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/with-all-the-power-of-heart-and-tongue?lang=eng"
+  },
+  "80": {
+    "name": "God of Our Fathers, Known of Old",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-of-our-fathers-known-of-old?lang=eng"
+  },
+  "81": { "name": "Press Forward, Saints", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/press-forward-saints?lang=eng" },
+  "82": { "name": "For All the Saints", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/for-all-the-saints?lang=eng" },
+  "83": { "name": "Guide Us, O Thou Great Jehovah", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/guide-us-o-thou-great-jehovah?lang=eng" },
+  "84": { "name": "Faith of Our Fathers", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/faith-of-our-fathers?lang=eng" },
+  "85": { "name": "How Firm a Foundation", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-firm-a-foundation?lang=eng" },
+  "86": { "name": "How Great Thou Art", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-great-thou-art?lang=eng  (Copyright)" },
+  "87": { "name": "God Is Love", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-is-love?lang=eng" },
+  "88": {
+    "name": "Great God, Attend While Zion Sings",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/great-god-attend-while-zion-sings?lang=eng"
+  },
+  "89": { "name": "The Lord Is My Light", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-lord-is-my-light?lang=eng" },
+  "90": {
+    "name": "From All That Dwell below the Skies",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/from-all-that-dwell-below-the-skies?lang=eng"
+  },
+  "91": {
+    "name": "Father, Thy Children to Thee Now Raise",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/father-thy-children-to-thee-now-raise?lang=eng"
+  },
+  "92": { "name": "For the Beauty of the Earth", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/for-the-beauty-of-the-earth?lang=eng" },
+  "93": { "name": "Prayer of Thanksgiving", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/prayer-of-thanksgiving?lang=eng" },
+  "94": { "name": "Come, Ye Thankful People", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-ye-thankful-people?lang=eng" },
+  "95": { "name": "Now Thank We All Our God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/now-thank-we-all-our-god?lang=eng" },
+  "96": {
+    "name": "Dearest Children, God Is Near You",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/dearest-children-god-is-near-you?lang=eng"
+  },
+  "97": { "name": "Lead, Kindly Light", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lead-kindly-light?lang=eng" },
+  "98": { "name": "I Need Thee Every Hour", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-need-thee-every-hour?lang=eng" },
+  "99": { "name": "Nearer, Dear Savior, to Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/nearer-dear-savior-to-thee?lang=eng" },
+  "100": { "name": "Nearer, My God, to Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/nearer-my-god-to-thee?lang=eng" },
+  "101": { "name": "Guide Me to Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/guide-me-to-thee?lang=eng" },
+  "102": { "name": "Jesus, Lover of My Soul", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-lover-of-my-soul?lang=eng" },
+  "103": { "name": "Precious Savior, Dear Redeemer", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/precious-savior-dear-redeemer?lang=eng" },
+  "104": { "name": "Jesus, Savior, Pilot Me", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-savior-pilot-me?lang=eng" },
+  "105": { "name": "Master, the Tempest Is Raging", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/master-the-tempest-is-raging?lang=eng" },
+  "106": { "name": "God Speed the Right", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-speed-the-right?lang=eng" },
+  "107": { "name": "Lord, Accept Our True Devotion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-accept-our-true-devotion?lang=eng" },
+  "108": { "name": "The Lord Is My Shepherd", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-lord-is-my-shepherd?lang=eng" },
+  "109": {
+    "name": "The Lord My Pasture Will Prepare",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-lord-my-pasture-will-prepare?lang=eng"
+  },
+  "110": { "name": "Cast Thy Burden upon the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/cast-thy-burden-upon-the-lord?lang=eng" },
+  "111": { "name": "Rock of Ages", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rock-of-ages?lang=eng" },
+  "112": { "name": "Savior, Redeemer of My Soul", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/savior-redeemer-of-my-soul?lang=eng" },
+  "113": { "name": "Our Savior’s Love", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/our-saviors-love?lang=eng" },
+  "114": { "name": "Come unto Him", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-unto-him?lang=eng" },
+  "115": { "name": "Come, Ye Disconsolate", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-ye-disconsolate?lang=eng" },
+  "116": { "name": "Come, Follow Me", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-follow-me?lang=eng" },
+  "117": { "name": "Come unto Jesus", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-unto-jesus?lang=eng" },
+  "118": { "name": "Ye Simple Souls Who Stray", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/ye-simple-souls-who-stray?lang=eng" },
+  "119": { "name": "Come, We That Love the Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-we-that-love-the-lord?lang=eng" },
+  "120": { "name": "Lean on My Ample Arm", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lean-on-my-ample-arm?lang=eng" },
+  "121": { "name": "I’m a Pilgrim, I’m a Stranger", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/im-a-pilgrim-im-a-stranger?lang=eng&" },
+  "122": { "name": "Though Deepening Trials", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/though-deepening-trials?lang=eng" },
+  "123": {
+    "name": "Oh, May My Soul Commune with Thee",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-may-my-soul-commune-with-thee?lang=eng"
+  },
+  "124": { "name": "Be Still, My Soul", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/be-still-my-soul?lang=eng" },
+  "125": { "name": "How Gentle God’s Commands", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-gentle-gods-commands?lang=eng" },
+  "126": {
+    "name": "How Long, O Lord Most Holy and True",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-long-o-lord-most-holy-and-true?lang=eng"
+  },
+  "127": { "name": "Does the Journey Seem Long?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/does-the-journey-seem-long?lang=eng" },
+  "128": { "name": "When Faith Endures", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/when-faith-endures?lang=eng" },
+  "129": { "name": "Where Can I Turn for Peace?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/where-can-i-turn-for-peace?lang=eng" },
+  "130": { "name": "Be Thou Humble", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/be-thou-humble?lang=eng" },
+  "131": { "name": "More Holiness Give Me", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/more-holiness-give-me?lang=eng" },
+  "132": { "name": "God Is in His Holy Temple", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-is-in-his-holy-temple?lang=eng" },
+  "133": { "name": "Father in Heaven", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/father-in-heaven?lang=eng" },
+  "134": { "name": "I Believe in Christ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-believe-in-christ?lang=eng" },
+  "135": { "name": "My Redeemer Lives", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/my-redeemer-lives?lang=eng" },
+  "136": { "name": "I Know That My Redeemer Lives", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-know-that-my-redeemer-lives?lang=eng " },
+  "137": { "name": "Testimony", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/testimony?lang=eng" },
+  "138": { "name": "Bless Our Fast, We Pray", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/bless-our-fast-we-pray?lang=eng" },
+  "139": { "name": "In Fasting We Approach Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-fasting-we-approach-thee?lang=eng" },
+  "140": { "name": "Did You Think to Pray?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/did-you-think-to-pray?lang=eng" },
+  "141": {
+    "name": "Jesus, the Very Thought of Thee",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-the-very-thought-of-thee?lang=eng"
+  },
+  "142": { "name": "Sweet Hour of Prayer", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sweet-hour-of-prayer?lang=eng" },
+  "143": { "name": "Let the Holy Spirit Guide", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/let-the-holy-spirit-guide?lang=eng" },
+  "144": { "name": "Secret Prayer", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/secret-prayer?lang=eng" },
+  "145": {
+    "name": "Prayer Is the Soul’s Sincere Desire",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/prayer-is-the-souls-sincere-desire?lang=eng"
+  },
+  "146": { "name": "Gently Raise the Sacred Strain", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/gently-raise-the-sacred-strain?lang=eng" },
+  "147": { "name": "Sweet Is the Work", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sweet-is-the-work?lang=eng" },
+  "148": { "name": "Sabbath Day", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sabbath-day?lang=eng" },
+  "149": {
+    "name": "As the Dew from Heaven Distilling",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-the-dew-from-heaven-distilling?lang=eng"
+  },
+  "150": {
+    "name": "O Thou Kind and Gracious Father",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-thou-kind-and-gracious-father?lang=eng"
+  },
+  "151": { "name": "We Meet, Dear Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-meet-dear-lord?lang=eng" },
+  "152": {
+    "name": "God Be with You Till We Meet Again",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-be-with-you-till-we-meet-again?lang=eng"
+  },
+  "153": { "name": "Lord, We Ask Thee Ere We Part", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-we-ask-thee-ere-we-part?lang=eng" },
+  "154": {
+    "name": "Father, This Hour Has Been One of Joy",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/father-this-hour-has-been-one-of-joy?lang=eng"
+  },
+  "155": { "name": "We Have Partaken of Thy Love", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-have-partaken-of-thy-love?lang=eng" },
+  "156": { "name": "Sing We Now at Parting", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sing-we-now-at-parting?lang=eng" },
+  "157": {
+    "name": "Thy Spirit, Lord, Has Stirred Our Souls",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thy-spirit-lord-has-stirred-our-souls?lang=eng"
+  },
+  "158": {
+    "name": "Before Thee, Lord, I Bow My Head",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/before-thee-lord-i-bow-my-head?lang=eng"
+  },
+  "159": { "name": "Now the Day Is Over", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/now-the-day-is-over?lang=eng" },
+  "160": { "name": "Softly Now the Light of Day", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/softly-now-the-light-of-day?lang=eng" },
+  "161": { "name": "The Lord Be with Us", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-lord-be-with-us?lang=eng" },
+  "162": { "name": "Lord, We Come before Thee Now", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-we-come-before-thee-now?lang=eng" },
+  "163": {
+    "name": "Lord, Dismiss Us with Thy Blessing",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-dismiss-us-with-thy-blessing?lang=eng"
+  },
+  "164": {
+    "name": "Great God, to Thee My Evening Song",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/great-god-to-thee-my-evening-song?lang=eng"
+  },
+  "165": { "name": "Abide with Me; ’Tis Eventide", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/abide-with-me-tis-eventide?lang=eng" },
+  "166": { "name": "Abide with Me!", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/abide-with-me?lang=eng" },
+  "167": {
+    "name": "Come, Let Us Sing an Evening Hymn",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-let-us-sing-an-evening-hymn?lang=eng"
+  },
+  "168": { "name": "As the Shadows Fall", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-the-shadows-fall?lang=eng" },
+  "169": { "name": "As Now We Take the Sacrament", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-now-we-take-the-sacrament?lang=eng" },
+  "170": { "name": "God, Our Father, Hear Us Pray", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-our-father-hear-us-pray?lang=eng" },
+  "171": { "name": "With Humble Heart", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/with-humble-heart?lang=eng" },
+  "172": { "name": "In Humility, Our Savior", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-humility-our-savior?lang=eng" },
+  "173": {
+    "name": "While of These Emblems We Partake",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/while-of-these-emblems-we-partake-saul?lang=eng"
+  },
+  "174": {
+    "name": "While of These Emblems We Partake",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/while-of-these-emblems-we-partake-aeolian?lang=eng"
+  },
+  "175": { "name": "O God, the Eternal Father", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-god-the-eternal-father?lang=eng" },
+  "176": {
+    "name": "’Tis Sweet to Sing the Matchless Love",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/tis-sweet-to-sing-the-matchless-love-meredith?lang=eng"
+  },
+  "177": {
+    "name": "’Tis Sweet to Sing the Matchless Love",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/tis-sweet-to-sing-the-matchless-love-hancock?lang=eng"
+  },
+  "178": { "name": "O Lord of Hosts", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-lord-of-hosts?lang=eng" },
+  "179": { "name": "Again, Our Dear Redeeming Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/again-our-dear-redeeming-lord?lang=eng" },
+  "180": {
+    "name": "Father in Heaven, We Do Believe",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/father-in-heaven-we-do-believe?lang=eng"
+  },
+  "181": {
+    "name": "Jesus of Nazareth, Savior and King",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-of-nazareth-savior-and-king?lang=eng"
+  },
+  "182": {
+    "name": "We’ll Sing All Hail to Jesus’ Name",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/well-sing-all-hail-to-jesus-name?lang=eng"
+  },
+  "183": {
+    "name": "In Remembrance of Thy Suffering",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-remembrance-of-thy-suffering?lang=eng"
+  },
+  "184": { "name": "Upon the Cross of Calvary", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/upon-the-cross-of-calvary?lang=eng" },
+  "185": { "name": "Reverently and Meekly Now", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/reverently-and-meekly-now?lang=eng" },
+  "186": { "name": "Again We Meet around the Board", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/again-we-meet-around-the-board?lang=eng" },
+  "187": {
+    "name": "God Loved Us, So He Sent His Son",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-loved-us-so-he-sent-his-son?lang=eng"
+  },
+  "188": { "name": "Thy Will, O Lord, Be Done", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thy-will-o-lord-be-done?lang=eng" },
+  "189": { "name": "O Thou, Before the World Began", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-thou-before-the-world-began?lang=eng" },
+  "190": { "name": "In Memory of the Crucified", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-memory-of-the-crucified?lang=eng" },
+  "191": { "name": "Behold the Great Redeemer Die", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/behold-the-great-redeemer-die?lang=eng" },
+  "192": {
+    "name": "He Died! The Great Redeemer Died",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/he-died-the-great-redeemer-died?lang=eng"
+  },
+  "193": { "name": "I Stand All Amazed", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-stand-all-amazed?lang=eng" },
+  "194": { "name": "There Is a Green Hill Far Away", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/there-is-a-green-hill-far-away?lang=eng" },
+  "195": {
+    "name": "How Great the Wisdom and the Love",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-great-the-wisdom-and-the-love?lang=eng"
+  },
+  "196": { "name": "Jesus, Once of Humble Birth", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-once-of-humble-birth?lang=eng" },
+  "197": {
+    "name": "O Savior, Thou Who Wearest a Crown",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-savior-thou-who-wearest-a-crown?lang=eng"
+  },
+  "198": { "name": "That Easter Morn", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/that-easter-morn?lang=eng" },
+  "199": { "name": "He Is Risen!", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/he-is-risen?lang=eng" },
+  "200": { "name": "Christ the Lord Is Risen Today", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/christ-the-lord-is-risen-today?lang=eng" },
+  "201": { "name": "Joy to the World", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/joy-to-the-world?lang=eng" },
+  "202": { "name": "Oh, Come, All Ye Faithful", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-come-all-ye-faithful?lang=eng" },
+  "203": { "name": "Angels We Have Heard on High", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/angels-we-have-heard-on-high?lang=eng" },
+  "204": { "name": "Silent Night", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/silent-night?lang=eng" },
+  "205": { "name": "Once in Royal David’s City", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/once-in-royal-davids-city?lang=eng" },
+  "206": { "name": "Away in a Manger", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/away-in-a-manger?lang=eng" },
+  "207": {
+    "name": "It Came upon the Midnight Clear",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/it-came-upon-the-midnight-clear?lang=eng"
+  },
+  "208": { "name": "O Little Town of Bethlehem", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-little-town-of-bethlehem?lang=eng" },
+  "209": { "name": "Hark! The Herald Angels Sing", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/hark-the-herald-angels-sing?lang=eng" },
+  "210": { "name": "With Wondering Awe", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/with-wondering-awe?lang=eng" },
+  "211": {
+    "name": "While Shepherds Watched Their Flocks",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/while-shepherds-watched-their-flocks?lang=eng"
+  },
+  "212": { "name": "Far, Far Away on Judea’s Plains", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/far-far-away-on-judeas-plains?lang=eng" },
+  "213": { "name": "The First Noel", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-first-noel?lang=eng" },
+  "214": {
+    "name": "I Heard the Bells on Christmas Day",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-heard-the-bells-on-christmas-day?lang=eng"
+  },
+  "215": { "name": "Ring Out, Wild Bells", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/ring-out-wild-bells?lang=eng" },
+  "216": { "name": "We Are Sowing", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-are-sowing?lang=eng" },
+  "217": { "name": "Come, Let Us Anew", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-let-us-anew?lang=eng" },
+  "218": { "name": "We Give Thee But Thine Own", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-give-thee-but-thine-own?lang=eng" },
+  "219": {
+    "name": "Because I Have Been Given Much",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/because-i-have-been-given-much?lang=eng (Copyright)"
+  },
+  "220": { "name": "Lord, I Would Follow Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-i-would-follow-thee?lang=eng" },
+  "221": {
+    "name": "Dear to the Heart of the Shepherd",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/dear-to-the-heart-of-the-shepherd?lang=eng"
+  },
+  "222": { "name": "Hear Thou Our Hymn, O Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/hear-thou-our-hymn-o-lord?lang=eng" },
+  "223": { "name": "Have I Done Any Good?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/have-i-done-any-good?lang=eng" },
+  "224": { "name": "I Have Work Enough to Do", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-have-work-enough-to-do?lang=eng" },
+  "225": { "name": "We Are Marching On to Glory", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-are-marching-on-to-glory?lang=eng" },
+  "226": { "name": "Improve the Shining Moments", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/improve-the-shining-moments?lang=eng" },
+  "227": {
+    "name": "There Is Sunshine in My Soul Today",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/there-is-sunshine-in-my-soul-today?lang=eng"
+  },
+  "228": {
+    "name": "You Can Make the Pathway Bright",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/you-can-make-the-pathway-bright?lang=eng"
+  },
+  "229": { "name": "Today, While the Sun Shines", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/today-while-the-sun-shines?lang=eng" },
+  "230": { "name": "Scatter Sunshine", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/scatter-sunshine?lang=eng" },
+  "231": {
+    "name": "Father, Cheer Our Souls Tonight",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/father-cheer-our-souls-tonight?lang=eng"
+  },
+  "232": { "name": "Let Us Oft Speak Kind Words", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/let-us-oft-speak-kind-words?lang=eng" },
+  "233": { "name": "Nay, Speak No Ill", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/nay-speak-no-ill?lang=eng" },
+  "234": { "name": "Jesus, Mighty King in Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-mighty-king-in-zion?lang=eng" },
+  "235": {
+    "name": "Should You Feel Inclined to Censure",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/should-you-feel-inclined-to-censure?lang=eng"
+  },
+  "236": { "name": "Lord, Accept into Thy Kingdom", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/lord-accept-into-thy-kingdom?lang=eng" },
+  "237": { "name": "Do What Is Right", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/do-what-is-right?lang=eng" },
+  "238": {
+    "name": "Behold Thy Sons and Daughters, Lord",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/behold-thy-sons-and-daughters-lord?lang=eng"
+  },
+  "239": { "name": "Choose the Right", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/choose-the-right?lang=eng" },
+  "240": {
+    "name": "Know This, That Every Soul Is Free",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/know-this-that-every-soul-is-free?lang=eng"
+  },
+  "241": { "name": "Count Your Blessings", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/count-your-blessings?lang=eng" },
+  "242": {
+    "name": "Praise God, from Whom All Blessings Flow",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/praise-god-from-whom-all-blessings-flow?lang=eng"
+  },
+  "243": { "name": "Let Us All Press On", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/let-us-all-press-on?lang=eng" },
+  "244": { "name": "Come Along, Come Along", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-along-come-along?lang=eng" },
+  "245": { "name": "This House We Dedicate to Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/this-house-we-dedicate-to-thee?lang=eng" },
+  "246": { "name": "Onward, Christian Soldiers", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/onward-christian-soldiers?lang=eng" },
+  "247": { "name": "We Love Thy House, O God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-love-thy-house-o-god?lang=eng" },
+  "248": { "name": "Up, Awake, Ye Defenders of Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/up-awake-ye-defenders-of-zion?lang=eng" },
+  "249": { "name": "Called to Serve", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/called-to-serve?lang=eng" },
+  "250": { "name": "We Are All Enlisted", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-are-all-enlisted?lang=eng" },
+  "251": { "name": "Behold! A Royal Army", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/behold-a-royal-army?lang=eng" },
+  "252": { "name": "Put Your Shoulder to the Wheel", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/put-your-shoulder-to-the-wheel?lang=eng" },
+  "253": {
+    "name": "Like Ten Thousand Legions Marching",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/like-ten-thousand-legions-marching?lang=eng"
+  },
+  "254": { "name": "True to the Faith", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/true-to-the-faith?lang=eng" },
+  "255": { "name": "Carry On", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/carry-on?lang=eng" },
+  "256": { "name": "As Zion’s Youth in Latter Days", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-zions-youth-in-latter-days?lang=eng" },
+  "257": {
+    "name": "Rejoice! A Glorious Sound Is Heard",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rejoice-a-glorious-sound-is-heard?lang=eng"
+  },
+  "258": { "name": "O Thou Rock of Our Salvation", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-thou-rock-of-our-salvation?lang=eng" },
+  "259": { "name": "Hope of Israel", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/hope-of-israel?lang=eng" },
+  "260": { "name": "Who’s on the Lord’s Side?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/whos-on-the-lords-side?lang=eng" },
+  "261": { "name": "Thy Servants Are Prepared", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thy-servants-are-prepared?lang=eng" },
+  "262": { "name": "Go, Ye Messengers of Glory", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/go-ye-messengers-of-glory?lang=eng" },
+  "263": { "name": "Go Forth with Faith", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/go-forth-with-faith?lang=eng" },
+  "264": { "name": "Hark, All Ye Nations!", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/hark-all-ye-nations?lang=eng" },
+  "265": { "name": "Arise, O God, and Shine", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/arise-o-god-and-shine?lang=eng" },
+  "266": { "name": "The Time Is Far Spent", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-time-is-far-spent?lang=eng" },
+  "267": { "name": "How Wondrous and Great", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-wondrous-and-great?lang=eng" },
+  "268": {
+    "name": "Come, All Whose Souls Are Lighted",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-all-whose-souls-are-lighted?lang=eng"
+  },
+  "269": {
+    "name": "Jehovah, Lord of Heaven and Earth",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jehovah-lord-of-heaven-and-earth?lang=eng"
+  },
+  "270": {
+    "name": "I’ll Go Where You Want Me to Go",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/ill-go-where-you-want-me-to-go?lang=eng"
+  },
+  "271": {
+    "name": "Oh, Holy Words of Truth and Love",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-holy-words-of-truth-and-love?lang=eng"
+  },
+  "272": { "name": "Oh Say, What Is Truth?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-say-what-is-truth?lang=eng" },
+  "273": { "name": "Truth Reflects upon Our Senses", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/truth-reflects-upon-our-senses?lang=eng" },
+  "274": { "name": "The Iron Rod", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-iron-rod?lang=eng" },
+  "275": {
+    "name": "Men Are That They Might Have Joy",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/men-are-that-they-might-have-joy?lang=eng"
+  },
+  "276": { "name": "Come Away to the Sunday School", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-away-to-the-sunday-school?lang=eng" },
+  "277": {
+    "name": "As I Search the Holy Scriptures",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-i-search-the-holy-scriptures?lang=eng"
+  },
+  "278": { "name": "Thanks for the Sabbath School", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thanks-for-the-sabbath-school?lang=eng" },
+  "279": { "name": "Thy Holy Word", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thy-holy-word?lang=eng" },
+  "280": {
+    "name": "Welcome, Welcome, Sabbath Morning",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/welcome-welcome-sabbath-morning?lang=eng"
+  },
+  "281": { "name": "Help Me Teach with Inspiration", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/help-me-teach-with-inspiration?lang=eng" },
+  "282": {
+    "name": "We Meet Again in Sabbath School",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-meet-again-in-sabbath-school?lang=eng"
+  },
+  "283": {
+    "name": "The Glorious Gospel Light Has Shone",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-glorious-gospel-light-has-shone?lang=eng"
+  },
+  "284": { "name": "If You Could Hie to Kolob", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/if-you-could-hie-to-kolob?lang=eng" },
+  "285": { "name": "God Moves in a Mysterious Way", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-moves-in-a-mysterious-way?lang=eng" },
+  "286": { "name": "Oh, What Songs of the Heart", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-what-songs-of-the-heart?lang=eng" },
+  "287": {
+    "name": "Rise, Ye Saints, and Temples Enter",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rise-ye-saints-and-temples-enter?lang=eng"
+  },
+  "288": {
+    "name": "How Beautiful Thy Temples, Lord",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-beautiful-thy-temples-lord?lang=eng"
+  },
+  "289": { "name": "Holy Temples on Mount Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/holy-temples-on-mount-zion?lang=eng" },
+  "290": {
+    "name": "Rejoice, Ye Saints of Latter Days",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rejoice-ye-saints-of-latter-days?lang=eng"
+  },
+  "291": { "name": "Turn Your Hearts", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/turn-your-hearts?lang=eng" },
+  "292": { "name": "O My Father", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-my-father?lang=eng" },
+  "293": {
+    "name": "Each Life That Touches Ours for Good",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/each-life-that-touches-ours-for-good?lang=eng"
+  },
+  "294": { "name": "Love at Home", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/love-at-home?lang=eng" },
+  "295": { "name": "O Love That Glorifies the Son", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-love-that-glorifies-the-son?lang=eng" },
+  "296": { "name": "Our Father, by Whose Name", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/our-father-by-whose-name?lang=eng" },
+  "297": {
+    "name": "From Homes of Saints Glad Songs Arise",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/from-homes-of-saints-glad-songs-arise?lang=eng"
+  },
+  "298": { "name": "Home Can Be a Heaven on Earth", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/home-can-be-a-heaven-on-earth?lang=eng" },
+  "299": {
+    "name": "Children of Our Heavenly Father",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/children-of-our-heavenly-father?lang=eng"
+  },
+  "300": {
+    "name": "Families Can Be Together Forever",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/families-can-be-together-forever?lang=eng"
+  },
+  "301": { "name": "I Am a Child of God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-am-a-child-of-god?lang=eng" },
+  "302": { "name": "I Know My Father Lives", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-know-my-father-lives?lang=eng" },
+  "303": { "name": "Keep the Commandments", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/keep-the-commandments?lang=eng" },
+  "304": { "name": "Teach Me to Walk in the Light", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/teach-me-to-walk-in-the-light?lang=eng" },
+  "305": { "name": "The Light Divine", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-light-divine?lang=eng" },
+  "306": { "name": "God’s Daily Care", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/gods-daily-care?lang=eng" },
+  "307": { "name": "In Our Lovely Deseret", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/in-our-lovely-deseret?lang=eng" },
+  "308": { "name": "Love One Another", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/love-one-another?lang=eng" },
+  "309": { "name": "As Sisters in Zion", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/as-sisters-in-zion-women?lang=eng" },
+  "310": {
+    "name": "A Key Was Turned in Latter Days",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/a-key-was-turned-in-latter-days-women?lang=eng"
+  },
+  "311": { "name": "We Meet Again as Sisters", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-meet-again-as-sisters-women?lang=eng" },
+  "312": { "name": "We Ever Pray for Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/we-ever-pray-for-thee-women?lang=eng" },
+  "313": { "name": "God Is Love", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-is-love-women?lang=eng " },
+  "314": { "name": "How Gentle God’s Commands", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/how-gentle-gods-commands-women?lang=eng" },
+  "315": {
+    "name": "Jesus, the Very Thought of Thee",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/jesus-the-very-thought-of-thee-women?lang=eng"
+  },
+  "316": { "name": "The Lord Is My Shepherd", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-lord-is-my-shepherd-women?lang=eng" },
+  "317": { "name": "Sweet Is the Work", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/sweet-is-the-work-women?lang=eng" },
+  "318": { "name": "Love at Home", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/love-at-home-women?lang=eng" },
+  "319": { "name": "Ye Elders of Israel", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/ye-elders-of-israel-men?lang=eng" },
+  "320": { "name": "The Priesthood of Our Lord", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-priesthood-of-our-lord-men?lang=eng" },
+  "321": { "name": "Ye Who Are Called to Labor", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/ye-who-are-called-to-labor-men?lang=eng" },
+  "322": { "name": "Come, All Ye Sons of God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-all-ye-sons-of-god-men?lang=eng" },
+  "323": { "name": "Rise Up, O Men of God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rise-up-o-men-of-god-mens-choir?lang=eng" },
+  "324": { "name": "Rise Up, O Men of God", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/rise-up-o-men-of-god-men?lang=eng" },
+  "325": {
+    "name": "See the Mighty Priesthood Gathered",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/see-the-mighty-priesthood-gathered-mens-choir?lang=eng"
+  },
+  "326": { "name": "Come, Come, Ye Saints ", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-come-ye-saints-mens-choir?lang=eng" },
+  "327": {
+    "name": "Go, Ye Messengers of Heaven",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/go-ye-messengers-of-heaven-mens-choir?lang=eng"
+  },
+  "328": { "name": "An Angel from on High", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/an-angel-from-on-high-mens-choir?lang=eng" },
+  "329": {
+    "name": "Thy Servants Are Prepared",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/thy-servants-are-prepared-mens-choir?lang=eng"
+  },
+  "330": {
+    "name": "See, the Mighty Angel Flying",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/see-the-mighty-angel-flying-mens-choir?lang=eng"
+  },
+  "331": { "name": "Oh Say, What Is Truth?", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/oh-say-what-is-truth-mens-choir?lang=eng" },
+  "332": {
+    "name": "Come, O Thou King of Kings",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/come-o-thou-king-of-kings-mens-choir?lang=eng"
+  },
+  "333": { "name": "High on the Mountain Top", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/high-on-the-mountain-top-mens-choir?lang=eng" },
+  "334": { "name": "I Need Thee Every Hour", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/i-need-thee-every-hour-mens-choir?lang=eng" },
+  "335": {
+    "name": "Brightly Beams Our Father’s Mercy",
+    "href": "https://www.churchofjesuschrist.org/study/manual/hymns/brightly-beams-our-fathers-mercy-mens-choir?lang=eng"
+  },
+  "336": { "name": "School Thy Feelings", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/school-thy-feelings-mens-choir?lang=eng" },
+  "337": { "name": "O Home Beloved", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/o-home-beloved-mens-choir?lang=eng" },
+  "338": { "name": "America the Beautiful", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/america-the-beautiful?lang=eng" },
+  "339": { "name": "My Country, ’Tis of Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/my-country-tis-of-thee?lang=eng" },
+  "340": { "name": "The Star-Spangled Banner", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-star-spangled-banner?lang=eng" },
+  "341": { "name": "God Save the King", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-save-the-king?lang=eng " }
+}

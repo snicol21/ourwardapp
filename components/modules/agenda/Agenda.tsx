@@ -1,6 +1,8 @@
+import { parseHymnNumber } from "../../../services/hymn.service"
 import { IDateDisplay } from "../../../shared/utils/date.util"
 import AgendaDivider from "../../elements/dividers/AgendaDivider"
 import SectionHeader from "../../elements/headers/SectionHeader"
+import Hymn from "../../elements/hymn/Hymn"
 
 export type IAgenda = {
   date: IDateDisplay
@@ -23,6 +25,7 @@ export type IAgendaData = {
 export type IAgendaItem = {
   title: string
   name: string
+  hymn?: boolean
 }
 
 export type IAgendaContent = {
@@ -42,14 +45,14 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           <AgendaItem name={agenda.conducting.name} title={agenda.conducting.title} />
           <AgendaItem name={agenda.chorister.name} title={agenda.chorister.title} />
           <AgendaItem name={agenda.organist.name} title={agenda.organist.title} />
-          <AgendaItem name={agenda.openHymn.name} title={agenda.openHymn.title} />
+          <AgendaItem name={agenda.openHymn.name} title={agenda.openHymn.title} hymn />
           <AgendaItem name={agenda.invocation.name} title={agenda.invocation.title} />
         </div>
 
         <AgendaDivider text="Ward Business" className="mt-8" fontClass={dividerFont} borderClass="border-gray-400" />
 
         <div className="flex flex-col gap-4 pt-8">
-          <AgendaItem name={agenda.sacramentHymn.name} title={agenda.sacramentHymn.title} />
+          <AgendaItem name={agenda.sacramentHymn.name} title={agenda.sacramentHymn.title} hymn />
         </div>
 
         <AgendaDivider text="Administration of the Sacrament" className="mt-8 mb-4" fontClass={dividerFont} borderClass="border-gray-400" />
@@ -63,7 +66,7 @@ const Agenda = ({ date, agenda }: IAgenda) => {
           ))}
 
         <div className="flex flex-col gap-4 pt-4">
-          <AgendaItem name={agenda.closingHymn.name} title={agenda.closingHymn.title} />
+          <AgendaItem name={agenda.closingHymn.name} title={agenda.closingHymn.title} hymn />
           <AgendaItem name={agenda.benediction.name} title={agenda.benediction.title} />
         </div>
 
@@ -83,11 +86,15 @@ const Agenda = ({ date, agenda }: IAgenda) => {
   )
 }
 
-export const AgendaItem = ({ title, name }: IAgendaItem) => {
+export const AgendaItem = ({ title, name, hymn = false }: IAgendaItem) => {
+  let hymnNumber: number | null
+  if (hymn) {
+    hymnNumber = parseHymnNumber(name)
+  }
   return (
     <div className="dots-in-between w-full">
       <span className="font-bold bg-white pr-3">{title}</span>
-      <span className="text-right bg-white float-right pl-3">{name}</span>
+      <span className="text-right bg-white float-right pl-3">{hymnNumber ? <Hymn number={hymnNumber} name={name} /> : name}</span>
     </div>
   )
 }
