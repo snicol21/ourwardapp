@@ -59,7 +59,9 @@ const Schedule = ({ date, times }: ISchedule) => {
                         paragraph={event.description}
                         image={event.image}
                         button={
-                          event.title === "Sacrament" && time.isAgenda
+                          event.button
+                            ? { ...event.button, color: time.color }
+                            : event.title === "Sacrament" && time.isAgenda
                             ? {
                                 text: "See Agenda",
                                 link: {
