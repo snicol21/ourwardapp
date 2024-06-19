@@ -627,5 +627,18 @@
   "338": { "name": "America the Beautiful", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/america-the-beautiful?lang=eng" },
   "339": { "name": "My Country, ’Tis of Thee", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/my-country-tis-of-thee?lang=eng" },
   "340": { "name": "The Star-Spangled Banner", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/the-star-spangled-banner?lang=eng" },
-  "341": { "name": "God Save the King", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-save-the-king?lang=eng " }
+  "341": { "name": "God Save the King", "href": "https://www.churchofjesuschrist.org/study/manual/hymns/god-save-the-king?lang=eng " },
+  "1001": { "name": "Come, Thou Fount of Every Blessing", "href": "https://www.churchofjesuschrist.org/media/music/songs/come-thou-fount-of-every-blessing?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1002": { "name": "When the Savior Comes Again", "href": "https://www.churchofjesuschrist.org/media/music/songs/when-the-savior-comes-again?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1003": { "name": "It Is Well with My Soul", "href": "https://www.churchofjesuschrist.org/media/music/songs/it-is-well-with-my-soul?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1004": { "name": "I Will Walk with Jesus", "href": "https://www.churchofjesuschrist.org/media/music/songs/i-will-walk-with-jesus?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1005": { "name": "His Eye Is on the Sparrow", "href": "https://www.churchofjesuschrist.org/media/music/songs/his-eye-is-on-the-sparrow?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1006": { "name": "Think a Sacred Song", "href": "https://www.churchofjesuschrist.org/media/music/songs/think-a-sacred-song?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1007": { "name": "As Bread Is Broken", "href": "https://www.churchofjesuschrist.org/media/music/songs/as-bread-is-broken?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1008": { "name": "Bread of Life, Living Water", "href": "https://www.churchofjesuschrist.org/media/music/songs/bread-of-life-living-water?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1009": { "name": "Gethsemane", "href": "https://www.churchofjesuschrist.org/media/music/songs/gethsemane?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1201": { "name": "Hail the Day That Sees Him Rise", "href": "https://www.churchofjesuschrist.org/media/music/songs/hail-the-day-that-sees-him-rise?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1202": { "name": "He Is Born, the Divine Christ Child", "href": "https://www.churchofjesuschrist.org/media/music/songs/he-is-born-the-divine-christ-child?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1203": { "name": "What Child Is This?", "href": "https://www.churchofjesuschrist.org/media/music/songs/what-child-is-this?crumbs=hymns-for-home-and-church&lang=eng" },
+  "1204": { "name": "Star Bright", "href": "https://www.churchofjesuschrist.org/media/music/songs/star-bright?crumbs=hymns-for-home-and-church&lang=eng" }
 }
