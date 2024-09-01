@@ -3,10 +3,10 @@ export const config = {
   apiUrl: "https://api.latterdayward.com/api",
   apiWard: "maples3rd",
   wardAddress: {
-    street: "8137 Echo View Dr",
+    street: "8107 S 6700 W",
     city: "West Jordan",
-    zip: "84081",
-    mapUrl: "https://goo.gl/maps/JcJ3M5VN5ZAGUTWT7",
+    zip: "84084",
+    mapUrl: "https://maps.app.goo.gl/1UVMVBmoB8sB7zGp7",
   },
   apiHeaders: {
     headers: {
