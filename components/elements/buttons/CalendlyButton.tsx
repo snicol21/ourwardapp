@@ -1,16 +1,21 @@
-import { openPopupWidget } from "react-calendly"
-import { Props } from "react-calendly/typings/components/PopupWidget/PopupWidget"
+import { PopupButton } from "react-calendly"
+import React, { useEffect, useState } from 'react';
 
 const CalendlyButton = ({ children, styles, url, disabled }) => {
-  return (
-    <button
-      disabled={disabled}
-      type="button"
-      className={`${styles} ${disabled ? "disabled:opacity-50" : ""}`}
-      onClick={() => openPopupWidget({ url, pageSettings: {} } as Props)}
-    >
-      {children}
-    </button>
+    const [rootElement, setRootElement] = useState(null);
+
+    useEffect(() => {
+        setRootElement(document.getElementById("__next"));
+    }, []);
+
+    if (!rootElement) return null;
+    return (
+      <PopupButton
+          url={url}
+          className={styles}
+          rootElement={rootElement}
+          text="Schedule"
+      />
   )
 }
 export default CalendlyButton
