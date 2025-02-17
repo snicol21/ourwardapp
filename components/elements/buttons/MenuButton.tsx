@@ -1,8 +1,9 @@
 import Link from "next/link"
 import { Menu, Transition } from "@headlessui/react"
-import { openPopupWidget } from "react-calendly"
+import {PopupButton} from "react-calendly"
 import Icon from "../icons/Icon"
 import { ILink } from "../../../shared/types"
+import React, {useEffect, useState} from "react";
 
 const MenuButton = ({ children, styles, links }) => {
   return (
@@ -49,18 +50,23 @@ const MenuButton = ({ children, styles, links }) => {
 export default MenuButton
 
 const CalendlyMenuItem = ({ label, url }) => {
+  const [rootElement, setRootElement] = useState(null);
+
+  useEffect(() => {
+    setRootElement(document.getElementById("__next"));
+  }, []);
   return (
     <Menu.Item>
-      {({ active }) => (
-        <a
-          className={`${
-            active ? "bg-gray-100 text-gray-900" : "text-gray-700"
-          } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer`}
-          onClick={() => openPopupWidget({ url })}
-        >
-          {label.text}
+      {
+        <a>
+        <PopupButton
+            url={url}
+            className="hover:bg-gray-100 hover:text-gray-900 text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer"
+            rootElement={rootElement}
+            text={label.text}
+        />
         </a>
-      )}
+        }
     </Menu.Item>
   )
 }
@@ -68,9 +74,9 @@ const LinkMenuItem = ({ label, url, external }) => {
   const styles = "flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer"
   return (
     <Menu.Item>
-      {({ active }) =>
+      {
         external ? (
-          <a href={url} target="_blank" rel="noreferrer" className={`${active ? "bg-gray-100 text-gray-900" : "text-gray-700"} ${styles}`}>
+          <a href={url} target="_blank" rel="noreferrer" className={`hover:bg-gray-100 hover:text-gray-900 text-gray-700"} ${styles}`}>
             {label.text}
           </a>
         ) : (
