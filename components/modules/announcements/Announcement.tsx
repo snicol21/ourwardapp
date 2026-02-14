@@ -38,6 +38,50 @@ const options = {
   validate: true,
 }
 
+const isSafeUrl = (url: string): boolean => {
+  try {
+    const parsed = new URL(url, "https://placeholder.com")
+    return ["http:", "https:", "mailto:"].includes(parsed.protocol)
+  } catch {
+    return false
+  }
+}
+
+const parseMarkdownLinks = (text: string): React.ReactNode[] => {
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts: React.ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    if (isSafeUrl(match[2])) {
+      parts.push(
+        <a
+          key={match.index}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:text-blue-500"
+        >
+          {match[1]}
+        </a>
+      )
+    } else {
+      parts.push(match[0])
+    }
+    lastIndex = match.index + match[0].length
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+
+  return parts
+}
+
 const renderDate = (date: Date, subTitle?: string) => {
   const dateDisplay = getDateDisplay(date, 7)
   return (
@@ -71,7 +115,7 @@ const Announcement = ({ ...announcement }: IAnnouncement) => {
         {announcement.dates && announcement.dates.map((subDate) => renderDate(subDate.date, subDate.subTitle))}
         {announcement.description && (
           <Linkify tagName="p" options={options} className="mt-2 text-sm text-gray-500 whitespace-pre-line">
-            {announcement.description}
+            {parseMarkdownLinks(announcement.description)}
           </Linkify>
         )}
       </div>
